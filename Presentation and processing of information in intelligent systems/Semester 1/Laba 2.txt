@@ -1,0 +1,36 @@
+1. git init
+2. git status
+3. последовательность коммитов, master / main
+4. git add {file} - добавить файл в контекст
+5. git commit -m "comment"
+6. git commit -am "comment"
+7. git log / git hist
+8. git config --list
+9. git reset
+10. git diff
+11. git reset + git checkout {file}
+12. gitk
+13. git add --all / dit add . / git add *
+14. git config --global - изменить глобальные настройки
+15. git config --global user.name {name}
+16. git branch
+17. git branch {name}
+18. git checkout {name}
+19. git checkout -b {name}
+20. git branch -d / -D
+21. gitk
+22. git merge {name}
+23. конфликт
+24. git merge + git status
+25. конфликт
+26. git checout {hash}
+27. git rebase
+28. -
+29. git rebase --abort
+30. git rebase --skip
+31. git push
+32. git fetch && git checkout -b
+33. git pull origin {name}
+34. git clone - копия репозитория
+35. git rm, git mv
+37. git push origin --delete
