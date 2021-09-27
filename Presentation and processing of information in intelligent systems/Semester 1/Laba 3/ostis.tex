@@ -4,65 +4,66 @@
 \usepackage{setspace}
 \usepackage{ragged2e}
 \usepackage{fancyhdr}
+\usepackage{titlesec}
 \usepackage[left=2.5cm,right=2.5cm,
-    top=2.5cm,bottom=2.5cm,bindingoffset=0cm]{geometry}
-\justifying
+    top=2.5cm,bottom=2.5cm]{geometry}
 
+\justifying
 \fancyhf{} % clear all header and footers
 \renewcommand{\headrulewidth}{0pt} % remove the header rule
 \cfoot{\vskip -1.5cm \thepage}
 \pagestyle{fancy}
+\linespread{0.84}
+\setlength{\columnsep}{0.5cm}
+\setcounter{page}{73}
+\renewcommand{\thesection}{\Roman{section}}
+\titleformat{\section}{\large\centering\sc}{\thesection. }{0cm}{}[]
 
 \title{
-\begin{spacing}{1.2}
-\textbf{\LARGE{The standardization of intelligent computer\\systems as a key challenge of the current stage\\of development of artificial intelligence\\technologies}}
-\end{spacing}
-}
-\author{
-Vladimir Golenkov\\\textit{Belarusian State University}\\\textit{of Informatics and Radioelectronics}\\Minsk, Belarus\\golen@bsuir.by\\
-\and
-Vladimir Golovko\\\textit{Brest State Technical University}\\Brest, Belarus\\vladimir.golovko@gmail.com
-\and
-Natalia Guliakina\\\textit{Belarusian State University}\\\textit{of Informatics and Radioelectronics}\\Minsk, Belarus\\guliakina@bsuir.by
-\and
-Viktor Krasnoproshin\\\textit{Belarusian State University}\\Minsk, Belarus\\krasnoproshin@bsu.by
+ \begin{spacing}{1.2}
+  \textbf{\LARGE{The standardization of intelligent computer\\systems as a key challenge of the current stage\\of development of artificial intelligence\\technologies}}
+ \end{spacing}
 }
 
-\linespread{0.84}
+\author{
+ Vladimir Golenkov\\\textit{Belarusian State University}\\\textit{of Informatics and Radioelectronics}\\Minsk, Belarus\\golen@bsuir.by\\
+ \and
+ Vladimir Golovko\\\textit{Brest State Technical University}\\Brest, Belarus\\vladimir.golovko@gmail.com
+ \and
+ Natalia Guliakina\\\textit{Belarusian State University}\\\textit{of Informatics and Radioelectronics}\\Minsk, Belarus\\guliakina@bsuir.by
+ \and
+ Viktor Krasnoproshin\\\textit{Belarusian State University}\\Minsk, Belarus\\krasnoproshin@bsu.by
+}
 
 \begin{document}
  \maketitle
  \textbf{
  \vskip 4cm
- \quad\textit{Abstract}—This work is devoted to the consideration of the most important factor providing semantic compatibility of intelligent computer systems and their components – standardization of intelligent computer systems, as well as standardization of methods and tools of their design.\\
- \quad\textit{Keywords}—intelligent computer system; integrated technology for the development of intelligent computer systems; knowledge base of an intelligent computer system; educational activities in the field of artificial intelligence; research activities in the field of artificial intelligence; development of artificial intelligence technologies; engineering activities in the field of artificial intelligence; convergence of scientific disciplines in the field of artificial intelligence; convergence of models for the representation and processing of knowledge in intelligent computer systems; general theory of intelligent computer systems; convergence of various methods and means of developing intelligent computer systems; semantic compatibility of intelligent computer systems and their components; hybrid intelligent computer system; semantic representation of knowledge; standard of intelligent computer systems.}\\
+  \quad\textit{Abstract}—This work is devoted to the consideration of the most important factor providing semantic compatibility of intelligent computer systems and their components – standardization of intelligent computer systems, as well as standardization of methods and tools of their design.\\
+  \quad\textit{Keywords}—intelligent computer system; integrated technology for the development of intelligent computer systems; knowledge base of an intelligent computer system; educational activities in the field of artificial intelligence; research activities in the field of artificial intelligence; development of artificial intelligence technologies; engineering activities in the field of artificial intelligence; convergence of scientific disciplines in the field of artificial intelligence; convergence of models for the representation and processing of knowledge in intelligent computer systems; general theory of intelligent computer systems; convergence of various methods and means of developing intelligent computer systems; semantic compatibility of intelligent computer systems and their components; hybrid intelligent computer system; semantic representation of knowledge; standard of intelligent computer systems.
+ }
  \justifying
- \begin{Center}
- \large \textsc{I. Introduction}\\
- \end{Center}
+ \section{Introduction}
  \normalsize
- \quad The report at the OSTIS-2019 conference [1] examined the key problem for the current stage of development of artificial intelligence technologies: to ensure \textit{\textbf{semantic compatibility}} of intelligent computer systems and \textit{semantic compatibility} of various components of such systems (various types of knowledge that are part of knowledge bases, various problem solving models, various\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\ components of a multimodal interface).\\
+ \quad The report at the OSTIS-2019 conference [1] examined the key problem for the current stage of development of artificial intelligence technologies: to ensure \textit{\textbf{semantic compatibility}} of intelligent computer systems and \textit{semantic compatibility} of various components of such systems (various types of knowledge that are part of knowledge bases, various problem solving models, various\\~\\\vskip 3.94cm components of a multimodal interface).\\
  \indent This work is devoted to the consideration of the most important factor providing \textit{semantic compatibility} of intelligent computer systems and their components – \textbf{\textit{standardization of intelligent computer systems}}, as well as standardization of methods and tools of their design.\\
- \indent The basis of the proposed approach to ensuring a high level of \textit{learnability} and \textit{semantic compatibility} of intelligent computer systems, as well as to the development of \textit{\textbf{standard of intelligent computer systems}} is the unification of \textit{\textbf{sense representation of knowledge}} in the memory of such systems and the construction of \textit{\textbf{global sense space of knowledge}}.\\
- %\section{The current state of artificial intelligence as a fielf of scientific and technical activities}
- \begin{Center}
- \large \textsc{II. The current state of artificial intelligence as a fielf of scientific and technical activities}\\
- \end{Center}
+ \indent The basis of the proposed approach to ensuring a high level of \textit{learnability} and \textit{semantic compatibility} of intelligent computer systems, as well as to the development of \textit{\textbf{standard of intelligent computer systems}} is the unification of \textit{\textbf{sense representation of knowledge}} in the memory of such systems and the construction of \textit{\textbf{global sense space of knowledge}}.
+ \section{The current state of artificial intelligence as a field of scientific and technical activities}
  \normalsize
  \textbf{\textit{artifical Intelligence}}
- \vspace{-0.3   cm}
+ \vspace{-0.3cm}
  \setlength{\columnsep}{-6cm}
  \begin{multicols}{2}
- :=
+  :=
 
- \columnbreak
- \noindent[An interdisciplinary (transdisciplinary) field of scientific and technical activity aimed at the development and application of \textbf{\textit{intelligent computer systems}}, which provide automation of various spheres of human activity]
+  \columnbreak
+  \noindent[An interdisciplinary (transdisciplinary) field of scientific and technical activity aimed at the development and application of \textbf{\textit{intelligent computer systems}}, which provide automation of various spheres of human activity]
  \end{multicols}
  \begin{multicols}{2}
- :=
+  :=
 
- \columnbreak
- \noindent[The field of human activity aimed at (1) building the theory of \textit{intelligent computer systems} (2) development of technologies (methods and tools) for their design, (3) development of applied \textit{intelligent computer systems}]
+  \columnbreak
+  \noindent[The field of human activity aimed at (1) building the theory of \textit{intelligent computer systems} (2) development of technologies (methods and tools) for their design, (3) development of applied \textit{intelligent computer systems}]
  \end{multicols}
  \(\Leftarrow\) decomposition*:\\
  \{
@@ -143,12 +144,9 @@ Viktor Krasnoproshin\\\textit{Belarusian State University}\\Minsk, Belarus\\kras
  \quad The problem of creating a fast-growing market for semantically compatible intelligent systems is a challenge addressed to specialists in the field of artificial intelligence, requiring overcoming the "Babylonian crowd" in all its manifestations, the formation of a high culture of negotiability and a unified, consistent form of representation of collectively accumulated, improved and used knowledge.\\
  \indent Scientists working in the field of artificial intelligence should ensure the convergence of the results of different areas of artificial intelligence and build a general theory of intelligent computer systems and \textit{integrated technology for semantically compatible intelligent computer systems design}, including the appropriate \textit{\textbf{standards of intelligent computer systems}} and their components.\\
  \indent Engineers developing intelligent computer systems should collaborate with scientists and participate in the development of integrated technology for intelligent computer systems design.\\
- %\section{The convergence of different activities in the field of artificial intelligence}
- \begin{Center}
- \large \textsc{III. The convergence of different activities in the field of artificial intelligence}\\
- \end{Center}
- \normalsize
- \quad The further development of artificial intelligence affects all forms and directions of activity in this area. We list the main areas of convergence in the field of artificial intelligence [8]–[10]:
+ \section{The convergence of different activities in the field of artificial intelligence}
+  \normalsize
+  \quad The further development of artificial intelligence affects all forms and directions of activity in this area. We list the main areas of convergence in the field of artificial intelligence [8]–[10]:
  \begin{itemize}
   \item The convergence of various disciplines in the training of specialists in the field of artificial intelligence in order to form a holistic picture of \textbf{problems} in the field of \textit{artificial intelligence};
   \item The convergence of various scientific studies in the field of \textit{artificial intelligence} in order to build \textbf{\textit{general theory of intelligent computer systems}};
