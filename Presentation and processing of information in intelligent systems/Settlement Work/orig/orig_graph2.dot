@@ -1,0 +1,14 @@
+graph orig_graph {
+	0[fillcolor=white];
+	1[fillcolor=white];
+	2[fillcolor=white];
+	3[fillcolor=white];
+	4[fillcolor=white];
+	5[fillcolor=white];
+	0--1;
+	1--2;
+	1--5;
+	2--3;
+	3--4;
+	3--5;
+	}

@@ -1,0 +1,7 @@
+graph sample_graph {
+	0[fillcolor=white];
+	1[fillcolor=white];
+	2[fillcolor=white];
+	0--1;
+	1--2;
+	}
