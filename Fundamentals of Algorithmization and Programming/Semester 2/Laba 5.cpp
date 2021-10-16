@@ -68,9 +68,21 @@ struct stack {
             t = t1;
         } while (target->next != t);
     }
+    
+    static double average(stack *target) {
+    	stack *t = target;
+    	double sum = 0; int i = 0;
+    	while (t != nullptr) {
+    		sum += t->info;
+    		i++;
+    		t = t->next;
+    	}
+    	return sum/i;
+    }
 
-    static int task(stack **target, int n) {
+    static int task(stack **target) {
         stack::info_swap(*target);
+        int n = average(*target);
         int counter = 0, v;
         while ((*target) != nullptr and (*target)->info < n) {
             counter++;
@@ -104,9 +116,7 @@ int main() {
         } else if (command == "iswap") {
             stack::info_swap(st);
         } else if (command == "task") {
-            cout << "Введите число для сравнения: ";
-            cin >> info; cin.ignore();
-            cout << stack::task(&st, info) << endl;
+            cout << "Количество удаленных: " << stack::task(&st) << endl;
         }
     }
     return 0;
