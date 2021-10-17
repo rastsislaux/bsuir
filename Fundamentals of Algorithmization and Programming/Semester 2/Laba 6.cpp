@@ -132,8 +132,9 @@ struct dc_queue {
         }
         double average = (double)sum/count;
         int out = 0;
-        for (int i = 0; i < average; i++)
-            out += remove(i);
+        for (dc_node * t = begin; t != nullptr; t = t->next)
+            if (t->info < average)
+                out += remove(t->info);
         return out;
     }
 
