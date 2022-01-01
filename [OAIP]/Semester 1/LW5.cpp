@@ -1,123 +1,47 @@
-#include <iostream>
+//---------------------------------------------------------------------------
 
-using namespace std;
+#include <vcl.h>
+#include <iostream.h>
+#include <conio.h>
+#include <cstdlib.h>
+#pragma hdrstop
 
-struct stack {
-    int info;
-    stack *next;
+//---------------------------------------------------------------------------
 
-    static stack * push(stack *target, int info) {
-        auto *t = new stack;
-        t->info = info;
-        t->next = target;
-        return t;
-    }
+#pragma argsused
+int main(int argc, char* argv[])
+{
+        cout << "Vvedite razmer massiva (n<=100): ";
+        int n;
+        cin >> n;
+        srand(time(NULL));
+        bool r;
+        cout << "Vvedite 0, esli hotite vvesti sami ili 1, esli randomno: ";
+        cin >> r;
 
-    static void peek(stack *target) {
-        stack *t = target;
-        while (t != nullptr) {
-            cout << t->info << " ";
-            t = t->next;
-        }
-    }
+        int arr[100], min = 0;
 
-    static stack * pop(stack *target, int *out) {
-        stack *t = target;
-        *out = target->info;
-        target = target->next;
-        delete t;
-        return target;
-    }
-
-    static void clear(stack **target) {
-        stack *t;
-        while (*target != nullptr) {
-            t = *target;
-            *target = (*target)->next;
-            delete t;
-        }
-    }
-
-    static void address_swap(stack **target) {
-        *target = stack::push(*target, 0);
-        stack *t = nullptr, *t1, *r;
-        if((*target)->next->next == nullptr) return;
-        do {
-            for (t1 = *target; t1->next->next != t; t1 = t1->next)
-                if (t1->next->info > t1->next->next->info) {
-                    r = t1->next->next;
-                    t1->next->next = r->next;
-                    r->next = t1->next;
-                    t1->next=r;
+        if (r) {
+                cout << "Vash massiv: ";
+                for(int i = 0; i < n; i++) {
+                        arr[i] = rand()%100-53;
+                        cout << arr[i] << " ";
                 }
-            t = t1->next;
-        } while ((*target)->next->next != t);
-        int i; *target = stack::pop(*target, &i);
-    }
+        } else
+                for(int i = 0; i < n; i++) cin >> arr[i];
 
-    static void info_swap(stack *target) {
-        stack *t = nullptr, *t1;
-        int r;
-        do {
-            for (t1 = target; t1->next != t; t1 = t1->next)
-                if (t1->info > t1->next->info) {
-                    r = t1->info;
-                    t1->info = t1->next->info;
-                    t1->next->info = r;
-                }
-            t = t1;
-        } while (target->next != t);
-    }
-    
-    static double average(stack *target) {
-    	stack *t = target;
-    	double sum = 0; int i = 0;
-    	while (t != nullptr) {
-    		sum += t->info;
-    		i++;
-    		t = t->next;
-    	}
-    	return sum/i;
-    }
+        for (int i = 0; i < n; i++)
+                if (abs(arr[min]) > abs(arr[i])) min = i;
 
-    static int task(stack **target) {
-        stack::info_swap(*target);
-        int n = average(*target);
-        int counter = 0, v;
-        while ((*target) != nullptr and (*target)->info < n) {
-            counter++;
-            *target = stack::pop(*target, &v);
+        int sum = 0;
+        for (int i = min+1; i < n; i++) {
+                sum += abs(arr[i]);
         }
-        return counter;
-    }
-};
 
-int main() {
-    stack *st = nullptr;
-    string command;
-    int info;
-    while (command != "quit") {
-        cout << "> ";
-        getline(cin, command);
-        if (command == "push") {
-            cout << "Введите информацию для ввода: ";
-            cin >> info; cin.ignore();
-            st = stack::push(st, info);
-        } else if (command == "pop") {
-            st = stack::pop(st, &info);
-            cout << info << endl;
-        } else if (command == "peek") {
-            stack::peek(st);
-            cout << endl;
-        } else if (command == "clear") {
-            stack::clear(&st);
-        } else if (command == "aswap") {
-            stack::address_swap(&st);
-        } else if (command == "iswap") {
-            stack::info_swap(st);
-        } else if (command == "task") {
-            cout << "Количество удаленных: " << stack::task(&st) << endl;
-        }
-    }
-    return 0;
+        cout << endl <<"Summa: " << sum;
+        getch();
+        
+        return 0;
 }
+//---------------------------------------------------------------------------
+ 
