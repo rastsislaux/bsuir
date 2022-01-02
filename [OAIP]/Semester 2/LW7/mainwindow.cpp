@@ -25,7 +25,9 @@ void MainWindow::on_addPushButton_clicked()
     else
         myTree->addLeaf(ui->addKeySpinBox->value(), ui->addNameLineEdit->text().toStdString());
 
-    ui->outputTextBrowser->clear();
+    if (ui->addAutoBalanceCheckBox->isChecked())
+        myTree = new Tree(myTree->getBalanced());
+
     ui->outputTextBrowser->setText(QString::fromStdString(myTree->printTree()));
     ui->addKeySpinBox->setValue(ui->addKeySpinBox->value() + 1);
 }
@@ -34,7 +36,6 @@ void MainWindow::on_balancePushButton_clicked()
 {
     if (myTree) {
         myTree = new Tree(myTree->getBalanced());
-        ui->outputTextBrowser->clear();
         ui->outputTextBrowser->setText(QString::fromStdString(myTree->printTree()));
     } else {
         QMessageBox::warning(this, "Ошибка!", "Дерево не инициализировано.");
@@ -55,6 +56,8 @@ void MainWindow::on_removePushButton_clicked()
 {
     if (myTree) {
         myTree->removeNode(ui->removeKeySpinBox->value());
+        if (ui->addAutoBalanceCheckBox->isChecked())
+            myTree = new Tree(myTree->getBalanced());
         ui->outputTextBrowser->setText(QString::fromStdString(myTree->printTree()));
     } else {
         QMessageBox::warning(this, "Ошибка!", "Дерево не инициализировано.");

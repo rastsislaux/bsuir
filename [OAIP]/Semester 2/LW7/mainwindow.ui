@@ -65,6 +65,16 @@
          <widget class="QLineEdit" name="addNameLineEdit"/>
         </item>
         <item>
+         <widget class="QCheckBox" name="addAutoBalanceCheckBox">
+          <property name="text">
+           <string>Автобалансировка</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
          <widget class="QPushButton" name="addPushButton">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
@@ -118,6 +128,16 @@
             <width>16777215</width>
             <height>16777215</height>
            </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="removeAutoBalanceCheckBox">
+          <property name="text">
+           <string>Автобалансировка</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
           </property>
          </widget>
         </item>
@@ -184,7 +204,8 @@
            <string>Индивидуальное задание</string>
           </property>
           <property name="icon">
-           <iconset theme="preview"/>
+           <iconset theme="preview">
+            <normaloff>.</normaloff>.</iconset>
           </property>
          </widget>
         </item>
@@ -235,7 +256,8 @@
          <string>Печать (прямой обход)</string>
         </property>
         <property name="icon">
-         <iconset theme="printer"/>
+         <iconset theme="printer">
+          <normaloff>.</normaloff>.</iconset>
         </property>
        </widget>
       </item>
@@ -245,7 +267,8 @@
          <string>Печать (обратный обход)</string>
         </property>
         <property name="icon">
-         <iconset theme="printer"/>
+         <iconset theme="printer">
+          <normaloff>.</normaloff>.</iconset>
         </property>
        </widget>
       </item>
@@ -255,7 +278,8 @@
          <string>Печать (по возрастанию ключа)</string>
         </property>
         <property name="icon">
-         <iconset theme="printer"/>
+         <iconset theme="printer">
+          <normaloff>.</normaloff>.</iconset>
         </property>
        </widget>
       </item>
