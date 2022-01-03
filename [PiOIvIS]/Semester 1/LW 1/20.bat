@@ -1,3 +1,5 @@
+:: This script counts all entries of a certain character in a given folder. Character is represented with its code.
+
 @echo off
 copy nul result > nul
 for %%i in (%~2\*) do (
