@@ -8,9 +8,7 @@
 #include "Animation2D.h"
 #include "cmath"
 
-class SinusAnimation : public Animation2D {
-
-public:
+struct SinusAnimation : public Animation2D {
 
     char formula(double x, double y, int t) override {
         return fabs(sin(x + t / 1000.) - y) < 0.03 ? '@' : ' ';
@@ -20,9 +18,7 @@ public:
 
 };
 
-class CosinusAnimation : public Animation2D {
-
-public:
+struct CosinusAnimation : public Animation2D {
 
     char formula(double x, double y, int t) override {
         return fabs(cos(x + t / 1000.) - y) < 0.03 ? '@' : ' ';
@@ -32,9 +28,7 @@ public:
 
 };
 
-class CosinusAndSinusAnimation : public Animation2D {
-
-public:
+struct CosinusAndSinusAnimation : public Animation2D {
 
     char formula(double x, double y, int t) override {
         return fabs(cos(x + t / 1000.) - y) < 0.03 || fabs(sin(x + t / 1000.) - y) < 0.03 ? '@' : ' ';
@@ -44,9 +38,7 @@ public:
 
 };
 
-class PumpingCircleAnimation : public Animation2D {
-
-public:
+struct PumpingCircleAnimation : public Animation2D {
 
     char formula(double x, double y, int t) override {
         return x*x + y*y < sin(t/1000.) ? '@' : ' ';
@@ -56,9 +48,8 @@ public:
 
 };
 
-class PumpingGradientAnimation : public Animation2D {
+struct PumpingGradientAnimation : public Animation2D {
 
-public:
     char formula(double x, double y, int t) override {
 
         int index = (x*x + y*y / sin(t/1000.)) * (asciisLength - 1);
@@ -71,9 +62,7 @@ public:
 
 };
 
-class FallingBallAnimation : public Animation2D {
-
-public:
+struct FallingBallAnimation : public Animation2D {
 
     constexpr static double acc = 0.0000003;
 
@@ -95,8 +84,7 @@ public:
 
 };
 
-class SpinningLine : public Animation2D {
-public:
+struct SpinningLine : public Animation2D {
 
     char formula(double x, double y, int t) override {
         return fabs(y - tan(t/1000.) * x) < 0.03 ? '$' : ' ';

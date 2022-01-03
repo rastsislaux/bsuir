@@ -11,14 +11,14 @@ private:
     int width, height;
     double aspect;
 
+    virtual double countX(int i) final { return ((double)i / width * 2. - 1.) * aspect; }
+
+    virtual double countY(int j) final { return -((double)j / height * 2. - 1.); }
+
 public:
 
     constexpr static char asciis[] = "@%MkdmOCUcujt){?_>!:^ ";
     constexpr static int asciisLength = 24;
-
-    virtual double countX(int i) final { return ((double)i / width * 2. - 1.) * aspect; }
-
-    virtual double countY(int j) final { return -((double)j / height * 2. - 1.); }
 
     virtual char formula(double x, double y, int t) {
         return ' ';
