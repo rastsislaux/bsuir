@@ -26,10 +26,11 @@ public:
         buffer[width * height] = '\0';
 
         for (int i = 0; i < width; i++)
-            for (int j = 0; j < height; j++)
-                buffer[i + j * width] = ' ';
-
-        system("clear");
+            for (int j = 0; j < height; j++) {
+                buffer[i + j * width] = '.';
+                setCursorPosition(i, j);
+                printf("%c", buffer[i + j * width]);
+            }
 
     }
 

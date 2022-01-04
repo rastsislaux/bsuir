@@ -50,8 +50,10 @@ public:
         frame[width * height] = '\0';
 
         for (int i = 0; i < width; i++)
-            for (int j = 0; j < height; j++)
-                frame[i + j * width] = frames[t % frames.size()][i + j * width] > 120. ? '@' : ' ';
+            for (int j = 0; j < height; j++) {
+                int index = (frames[t % frames.size()][i + j * width] / 256.) * asciisLength;
+                frame[i + j * width] = asciis[index];
+            }
 
         nanosleep((const struct timespec[]){{0, 25000000L}}, NULL);
         return frame;

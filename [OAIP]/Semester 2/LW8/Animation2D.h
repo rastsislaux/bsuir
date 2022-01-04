@@ -17,8 +17,8 @@ protected:
 
 public:
 
-    constexpr static char asciis[] = "@%MkdmOCUcujt){?_>!:^ ";
-    constexpr static int asciisLength = 24;
+    constexpr static char asciis[] = "@%MkdmOCUcujt){?_>!:^. ";
+    constexpr static int asciisLength = 23;
 
     virtual char formula(double x, double y, int t) {
         return ' ';

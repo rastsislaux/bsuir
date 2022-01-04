@@ -10,26 +10,25 @@ def rgb_to_gray(pixel: numpy.ndarray):
 
 
 def frame_to_string(frame):
-    
+
     width = int(frame[0].size / 3)
     height = int(frame.size / width / 3)
-    
+
     result = ''
-    
+
     for j in range(height):
         for i in range(width):
             result += f"{rgb_to_gray(frame[j][i])} "
         result += '\n'
-        
+
     return result
 
 
 def main(args: list):
-    
+
     video = mpy.VideoFileClip(args[0])
     video = mpy2.fx.resize.resize(video, (args[1], args[2]))
-    video = video.cutout(0, 10)
-    
+
     with open(args[0] + '.txtv', 'w') as output_file:
         output_file.write(f"{args[1]} {args[2]} {video.fps}\n")
 
@@ -37,7 +36,7 @@ def main(args: list):
             output_file.write(
                 frame_to_string(frame) + '\n'
             )
-        
-        
+
+
 if __name__ == '__main__':
     main(sys.argv[1:])
