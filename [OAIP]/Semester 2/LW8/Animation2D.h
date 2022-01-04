@@ -6,7 +6,7 @@
 
 class Animation2D {
 
-private:
+protected:
 
     int width, height;
     double aspect;
@@ -30,7 +30,7 @@ public:
         aspect = (double)width/height*0.5;
     }
 
-    char * generateFrame(int t) {
+    virtual char * generateFrame(int t) {
 
         char * frame = new char[width * height + 1];
         frame[width * height] = '\0';

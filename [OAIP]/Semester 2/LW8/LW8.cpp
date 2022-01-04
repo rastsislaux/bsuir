@@ -1,4 +1,5 @@
 #include "Animations2D.h"
+#include "Video.h"
 #include "Buffer.h"
 
 int main() {
@@ -8,6 +9,8 @@ int main() {
 
     system("clear");
 
+    printf("Console resolution: %d x %d\n", width, height);
+
     printf("What animation would you like to see?"
            "\n\t1 - Sinus function"
            "\n\t2 - Cosinus function"
@@ -16,6 +19,7 @@ int main() {
            "\n\t5 - Pumping Gradient"
            "\n\t6 - Falling ball"
            "\n\t7 - Spinning line"
+           "\n\t8 - Show video"
            "\nYour choice: ");
 
     int mode;
@@ -43,6 +47,9 @@ int main() {
             break;
         case 7:
             animation = new SpinningLine(width, height);
+            break;
+        case 8:
+            animation = new Video(width, height, "video.mp4.txtv");
             break;
         default:
             printf("Wrong animation number.\n");
