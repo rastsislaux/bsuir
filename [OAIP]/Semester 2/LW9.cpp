@@ -14,14 +14,15 @@ double derivative(const double & param) {
     return 3.*pow(param, 2.) - 10.*param;
 }
 
-double countXk(const double & xprev) {
-    return xprev - ( function(xprev) / derivative(xprev) );
-}
-
 double findRoot(const double & near) {
-    double x;
-    for (x = near; fabs(function(x)) > _eps; x = countXk(x));
-    return x;
+
+    if (fabs(function(near)) < _eps)
+        return near;
+
+    return findRoot(
+            near - ( function(near) / derivative(near) )
+            );
+
 }
 
 double roundToEps(double d) {
@@ -43,4 +44,5 @@ int main() {
     std::cout << "}, где R - множество корней уравнения." << std::endl;
 
     return 0;
+
 }
