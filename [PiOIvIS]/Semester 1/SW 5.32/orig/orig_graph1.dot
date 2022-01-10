@@ -1,0 +1,5 @@
+graph new_graph {
+    x0x0--x1x1;
+	x1x1--x2x2;
+	x0x0;
+	}
