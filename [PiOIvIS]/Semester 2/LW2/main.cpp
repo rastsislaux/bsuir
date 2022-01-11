@@ -10,7 +10,7 @@ int main(int argc, char ** argv) {
 
     Graph myGraph(argv[1]);
 
-    std::cout << "Максимальное расстояние: " << myGraph.getMaxDistanceOfAll() << std::endl;
+    std::cout << "Максимальное расстояние: " << myGraph.getTreeDiameter() << std::endl;
 
     return 0;
 
