@@ -1,5 +1,6 @@
 //
 // Created by rostislove on 08.01.2022.
+// ! График !
 //
 
 #include "Graph.h"
@@ -42,24 +43,13 @@ void Graph::addEdge(int where, int what, int weight) {
 
 int Graph::getTreeDiameter() {
 
-    int u = 0, w = 0;
-
-    std::map<int, int> d = getDistance(0);
-    for (int i = 0; i < size(); i++)
-        if (d[i] > d[u])
-            u = i;
-
-    d.clear();
-    d = getDistance(u);
-    for (int i = 0; i < size(); i++)
-        if (d[i] > d[w])
-            w = i;
-
-    return d[w];
+    std::pair<int, int> d = getDistance(0);
+    d = getDistance(d.first);
+    return d.second;
 
 }
 
-std::map<int, int> Graph::getDistance(int vStart) {
+std::pair<int, int> Graph::getDistance(int vStart) {
 
     std::vector<int> d(size(), INT32_MAX);
     d[vStart] = 0;
@@ -72,7 +62,7 @@ std::map<int, int> Graph::getDistance(int vStart) {
 
     queue.insert(vStart);
 
-    std::map<int, int> result;
+    std::pair<int, int> result(0, 0);
 
     while (!queue.empty()) {
 
@@ -87,7 +77,8 @@ std::map<int, int> Graph::getDistance(int vStart) {
             if (d[v] + len < d[to]) {
                 queue.erase(to);
                 d[to] = d[v] + len;
-                result[to] = d[to];
+                if (d[to] > result.second)
+                    result = std::make_pair(to, d[to]);
                 queue.insert(to);
             }
         }

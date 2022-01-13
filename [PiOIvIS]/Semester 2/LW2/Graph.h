@@ -23,7 +23,7 @@ public:
 
     int getTreeDiameter();
 
-    std::map<int, int> getDistance(int vStart);
+    std::pair<int, int> getDistance(int vStart);
 
     size_t size();
 
