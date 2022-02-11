@@ -1,4 +1,13 @@
+"""
+THIS FILE IS A PART OF MULTISETLIB (LABORATORY WORK #3)
+AUTHOR: ROSTISLAV LIPSKY
+DATE:   11.02.2022
+"""
+
 class Multiset(list):
+    """
+    This class implements multiset in Python
+    """
 
     def __init__(self, lst: list = None):
         if lst is None:
@@ -8,6 +17,11 @@ class Multiset(list):
         super().__init__(lst)
 
     def union(self, other):
+        """
+        Find union of multisets
+        :param other: multiset
+        :return: multiset (union)
+        """
         result = self.copy()
         for element in other:
             result += [element for i in range(other.count(element) - result.count(element))]

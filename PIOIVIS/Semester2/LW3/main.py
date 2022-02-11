@@ -1,5 +1,13 @@
 #! /bin/python3.10
 
+"""
+THIS FILE IS AN EXAMPLE OF MULTISETLIB USAGE.
+AUTHOR: ROSTISLAV LIPSKY
+DATE:   11.02.2022
+
+This app takes files containing multisets and finds their union.
+"""
+
 import argparse
 import os.path
 import sys
@@ -8,12 +16,21 @@ import multisetlib as msl
 
 
 def parse_args() -> argparse.Namespace:
+    """
+    Parsing args to get files to open
+    :return:argparse.Namespace
+    """
     parser = argparse.ArgumentParser(description="Find union of two multisets")
     parser.add_argument('files', type=str, nargs='+', help="files of sets")
     return parser.parse_args()
 
 
 def check_args(args: argparse.Namespace) -> bool:
+    """
+    Check if files provided exist
+    :param args: argparse.Namespace
+    :return: bool (true if exist, false otherwise)
+    """
     result = True
     for file in args.files:
         result = result and os.path.isfile(file)
@@ -21,11 +38,22 @@ def check_args(args: argparse.Namespace) -> bool:
 
 
 def read_file(path: str):
+    """
+    Open file and read string
+    :param path: path
+    :return: string (contents)
+    """
     with open(path) as file:
         return file.read()
 
 
 def get_multiset_math_form(mset, _first=True):
+    """
+    Writes multiset from multisetlib.Multiset in a string in mathematical form
+    :param mset: multisetlib.Multiset
+    :param _first: is this the first call
+    :return: string
+    """
 
     result = ""
 
@@ -51,6 +79,11 @@ def get_multiset_math_form(mset, _first=True):
 
 
 def eprint(text: str):
+    """
+    print to stderr
+    :param text: message
+    :return: None
+    """
     print(f"{__file__.split('/')[-1]}: error: {text}", file=sys.stderr)
 
 

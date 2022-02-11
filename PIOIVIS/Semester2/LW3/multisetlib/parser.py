@@ -1,18 +1,32 @@
-import json
+"""
+THIS FILE IS A PART OF MULTISETLIB (LABORATORY WORK #3)
+AUTHOR: ROSTISLAV LIPSKY
+DATE:   11.02.2022
+"""
+
 from multisetlib.multiset import Multiset
 
 
 class _Symbol:
+    """
+    This namespace contains symbols that represent different parts of multiset
+    """
     OPENSET = '{'
     CLOSESET = '}'
     OPENTUPLE = '<'
     CLOSETUPLE = '>'
-    TERMSET = ';'
     TERMNAME = ','
     DEFNAME = '='
 
 
 def _unite_set_token(s: list, open_s: str, close_s: str):
+    """
+    This method unites tuples and multisets after splitting them by comma
+    :param s: list of strings from string splitted by comma
+    :param open_s: opening symbol
+    :param close_s: closing symbol
+    :return: list of strings with united tuples and multisets
+    """
     cpy = s.copy()
     i, ignore, concat = 0, 0, False
     while i < len(cpy):
@@ -44,6 +58,12 @@ def _unite_set_token(s: list, open_s: str, close_s: str):
 
 
 def _parse_str(s: str, first: bool = True):
+    """
+    This method parses string.
+    :param s: string to parse
+    :param first: is this the first (non-recursive) call of this method
+    :return: int/float/Multiset/tuple depending on the content of the string
+    """
 
     tokens = s
     if first:
@@ -85,5 +105,10 @@ def _parse_str(s: str, first: bool = True):
 
 
 def parse(s: str) -> (str, Multiset):
+    """
+    Parse method for end user
+    :param s: string with a mathematical form of multiset
+    :return: multisetlib.Multiset
+    """
     def_index = s.find(_Symbol.DEFNAME)
     return s[0:def_index], _parse_str(s[def_index+1:])
