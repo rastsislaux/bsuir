@@ -1,0 +1,431 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#hasFreeLength -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#hasFreeLength">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#River"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Measurement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#hasInflow -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#hasInflow">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#River"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#River"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#hasLength -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#hasLength">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#River"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Measurement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#hasRiver -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#hasRiver">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#City"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Continent"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#River"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#hasUnit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Measurement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#hasWaterBasinArea -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#hasWaterBasinArea">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#River"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Measurement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#hasLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#hasLength">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#River"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#hasValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#stillExists -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#stillExists">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Artificially_created_object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Artificially_created_object"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Building">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Artificially_created_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Artificially_created_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Continent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Continent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Naturally_created_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Artificially_created_object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Gateway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Gateway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Measurement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Measurement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Naturally_created_object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Naturally_created_object"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#River -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#River">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Water_reservoir"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Unit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Unit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Water_reservoir -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Water_reservoir">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Naturally_created_object"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#AreaOfSozhWaterBasin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#AreaOfSozhWaterBasin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Measurement"/>
+        <hasUnit rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#km2"/>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42100</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Belarus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Belarus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Country"/>
+        <hasRiver rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Sozh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Besedy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Besedy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#River"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Chechersk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Chechersk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#City"/>
+        <hasRiver rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Sozh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Cherikov -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Cherikov">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#City"/>
+        <hasRiver rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Sozh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Dniepr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Dniepr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#River"/>
+        <hasInflow rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Sozh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Europe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Europe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Continent"/>
+        <hasRiver rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Sozh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Homiel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Homiel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#City"/>
+        <hasRiver rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Sozh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Iput -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Iput">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#River"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Krichev -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Krichev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#City"/>
+        <hasRiver rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Sozh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#LengthOfFreeSozh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#LengthOfFreeSozh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Measurement"/>
+        <hasUnit rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#km"/>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">373</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#LengthOfSozh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#LengthOfSozh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Measurement"/>
+        <hasUnit rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#km"/>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">648</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Oster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Oster">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#River"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Pronya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Pronya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#River"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Russia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Russia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Country"/>
+        <hasRiver rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Sozh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Slavgorod -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Slavgorod">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#City"/>
+        <hasRiver rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Sozh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Sozh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Sozh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#River"/>
+        <hasFreeLength rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#LengthOfFreeSozh"/>
+        <hasInflow rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Besedy"/>
+        <hasInflow rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Iput"/>
+        <hasInflow rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Oster"/>
+        <hasInflow rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Pronya"/>
+        <hasInflow rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Vihra"/>
+        <hasLength rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#LengthOfSozh"/>
+        <hasWaterBasinArea rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#AreaOfSozhWaterBasin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Sozh_Gateway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Sozh_Gateway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Gateway"/>
+        <stillExists rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</stillExists>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Ukraine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Ukraine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Country"/>
+        <hasRiver rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Sozh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Vetka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Vetka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Vihra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Vihra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#River"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#km -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#km">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#km2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#km2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rostislove/ontologies/2022/2/untitled-ontology-3#Unit"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
