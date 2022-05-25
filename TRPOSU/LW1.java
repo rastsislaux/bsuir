@@ -75,7 +75,7 @@ public class Main {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Шобик Инна\nДата получения задания: ???\nДата сдачи задания: ???");
+        System.out.println("ФИО\nДата получения задания: ???\nДата сдачи задания: ???");
 
         System.out.print("Ввведите размер матрицы (N M): ");
         int n = readInt(in),
