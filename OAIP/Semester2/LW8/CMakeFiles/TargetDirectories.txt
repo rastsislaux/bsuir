@@ -1,0 +1,3 @@
+/home/rostislove/Git/bsuir/OAIP/Semester2/LW8/CMakeFiles/rebuild_cache.dir
+/home/rostislove/Git/bsuir/OAIP/Semester2/LW8/CMakeFiles/edit_cache.dir
+/home/rostislove/Git/bsuir/OAIP/Semester2/LW8/CMakeFiles/LW8.dir
