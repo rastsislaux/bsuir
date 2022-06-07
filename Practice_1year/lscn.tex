@@ -1,0 +1,12 @@
+\newcommand{\lscnsource}[1]{
+    \scnaddlevel{1}
+        \scneq{#1}
+    \scnaddlevel{-1}
+}
+
+\newcommand{\lscnquote}[2]{
+    \scnrelfrom{цитата}{#1}
+    \scnaddlevel{1}
+        \scneq{\scnfileitem{#2}}
+    \scnaddlevel{-1}
+}
