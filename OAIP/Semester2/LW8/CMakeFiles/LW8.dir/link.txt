@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/LW8.dir/LW8.cpp.o -o LW8 
