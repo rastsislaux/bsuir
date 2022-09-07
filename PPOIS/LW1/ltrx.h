@@ -7,53 +7,68 @@
 
 
 #include <vector>
+#include <exception>
 
 namespace ltrx {
 
+    class MatrixError : public std::runtime_error {
+    public:
+        explicit MatrixError(std::string msg) : std::runtime_error(msg) { }
+    };
+
     template<typename T>
-    class matrix {
+    class Matrix {
     private:
-        std::vector<std::vector<T>> _matrix;
+        std::vector<std::vector<T>> matrix;
         size_t width;
         size_t height;
 
     public:
-        class functor {
+        class AbstractFunctor {
         public:
             virtual T& invoke(T& elem) = 0;
         };
 
-        class const_functor {
-        public:
-            virtual const T& invoke(const T& elem) = 0;
-        };
-
     private:
-        class inc_functor : public functor {
+        class IncFunctor : public AbstractFunctor {
             T& invoke(T& elem) override {
-                return elem++;
+                elem++;
+                return elem;
             }
-        };
+        } s_incFunctor;
 
-        class dec_functor : public functor {
+        class DecFunctor : public AbstractFunctor {
             T& invoke(T& elem) override {
-                return elem--;
+                elem--;
+                return elem;
             }
-        };
+        } s_decFunctor;
 
     public:
-        matrix(T default_value, size_t width, size_t height) {
+        Matrix(T defaultValue, size_t width, size_t height) {
             this->width = width;
             this->height = height;
-            _matrix.resize(width);
-            for (auto& line : _matrix) {
+            matrix.resize(width);
+            for (auto& line : matrix) {
                 line = std::vector<T>();
-                line.resize(height, default_value);
+                line.resize(height, defaultValue);
             }
         }
 
-        matrix& map(functor f) {
-            for (const auto& line : _matrix) {
+        size_t getWidth() {
+            return width;
+        }
+
+        size_t getHeight() {
+            return height;
+        }
+
+        T get(size_t horizontalIndex, size_t verticalIndex) {
+            return matrix[horizontalIndex][verticalIndex];
+        }
+
+        Matrix& map(AbstractFunctor& f) {
+            for (auto& line : matrix) {
                 for (auto& elem : line) {
                     elem = f.invoke(elem);
                 }
@@ -61,28 +76,47 @@ namespace ltrx {
             return *this;
         }
 
-        void for_each(const_functor f) const {
-            for (const auto& line : _matrix) {
-                for (const auto &elem : line) {
-                    f.invoke(elem);
-                }
+        Matrix& mapLine(size_t lineIndex, AbstractFunctor& f) {
+            for (auto& elem : matrix[lineIndex]) {
+                elem = f.invoke(elem);
             }
-        }
-
-        matrix& operator++() {
-            this->map(inc_functor());
             return *this;
         }
 
-        matrix operator++(int) {
-            const matrix<T> temp = *this;
-            this->map(inc_functor());
+        Matrix& operator++() {
+            this->map(s_incFunctor);
+            return *this;
+        }
+
+        Matrix operator++(int) {
+            Matrix<T> temp = *this;
+            this->map(s_incFunctor);
             return temp;
         }
 
-        matrix& operator--() {
-            this->map(dec_functor());
+        Matrix& operator--() {
+            this->map(s_decFunctor);
             return *this;
+        }
+
+        Matrix operator--(int) {
+            Matrix<T> temp = *this;
+            this->map(s_decFunctor);
+            return temp;
+        }
+
+        Matrix operator+(const Matrix& other) const {
+            auto size = this->size();
+            if (other.size() != size) {
+                throw MatrixError("Matrix of different size cant be added.");
+            }
+            auto result = Matrix(0, size.first, size.second);
+            for (int i = 0; i < size.first; i++) {
+                for (int j = 0; j < size.second; j++) {
+                    result.matrix[i][j] = this->matrix[i][j] + other.matrix[i][j];
+                }
+            }
+            return result;
         }
 
         [[nodiscard]] std::pair<int, int> size() const {

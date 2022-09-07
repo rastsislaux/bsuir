@@ -3,18 +3,19 @@
 
 #include "ltrx.h"
 
-class print_functor : public ltrx::matrix<int>::const_functor {
-    const int& invoke(const int& elem) override {
+template<typename T>
+class PrintFunctor : public ltrx::Matrix<T>::AbstractFunctor {
+    T& invoke(T& elem) override {
         std::cout << elem << " ";
+        return elem;
     }
 };
 
-void print_matrix(const ltrx::matrix<int>& matrix) {
-    auto size = matrix.size();
-    matrix.for_each(print_functor());
-}
-
 int main() {
-    ltrx::matrix<int> matrix = ltrx::matrix<int>(0, 10, 10);
-    matrix++;
+    auto matrix = ltrx::Matrix<int>(2, 5, 5);
+    auto matrix2 = ltrx::Matrix<int>(3, 5, 5);
+    auto printFunctor = PrintFunctor<int>();
+
+    auto res = matrix + matrix2;
+    res.mapLine(0, printFunctor);
 }
