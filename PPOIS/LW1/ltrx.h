@@ -5,7 +5,6 @@
 #ifndef LTRX_LTRX_H
 #define LTRX_LTRX_H
 
-
 #include <vector>
 #include <exception>
 
@@ -24,25 +23,73 @@ namespace ltrx {
         size_t height;
 
     public:
+        template <typename K>
         class AbstractFunctor {
         public:
-            virtual T& invoke(T& elem) = 0;
+            virtual K invoke(T& elem) = 0;
         };
 
     private:
-        class IncFunctor : public AbstractFunctor {
-            T& invoke(T& elem) override {
-                elem++;
-                return elem;
+        #define functor(NAME, RET_TYPE, IN_TYPE, BODY) \
+            class NAME : public AbstractFunctor<RET_TYPE> { \
+                virtual RET_TYPE invoke(IN_TYPE& elem) BODY \
             }
-        } s_incFunctor;
 
-        class DecFunctor : public AbstractFunctor {
-            T& invoke(T& elem) override {
-                elem--;
-                return elem;
+        functor(IncFunctor, T, T, {
+            elem++;
+            return elem;
+        }) s_incFunctor;
+
+        functor(DecFunctor, T, T, {
+            elem--;
+            return elem;
+        }) s_decFunctor;
+
+        void checkSizeEquals(const Matrix& s) {
+            auto size = this->size();
+            if (s.size() != size) {
+                throw MatrixError("This operation is not supported for matrixes of different size.");
             }
-        } s_decFunctor;
+        }
+
+        Matrix& add(const Matrix& other) {
+            checkSizeEquals(other);
+            for (size_t i = 0; i < width; i++) {
+                for (size_t j = 0; j < height; j++) {
+                    this->set(i, j, this->matrix[i][j] + other.matrix[i][j]);
+                }
+            }
+            return *this;
+        }
+
+        Matrix& sub(const Matrix& other) {
+            checkSizeEquals(other);
+            for (size_t i = 0; i < width; i++) {
+                for (size_t j = 0; j < height; j++) {
+                    this->set(i, j, this->matrix[i][j] - other.matrix[i][j]);
+                }
+            }
+            return *this;
+        }
+
+        Matrix& mul(const Matrix& other) {
+            checkSizeEquals(other);
+            for (size_t i = 0; i < width; i++) {
+                for (size_t j = 0; j < height; j++) {
+                    this->set(i, j, this->matrix[i][j] * other.matrix[i][j]);
+                }
+            }
+            return *this;
+        }
+
+        Matrix& mul(const T& value) {
+            for (size_t i = 0; i < width; i++) {
+                for (size_t j = 0; j < height; j++) {
+                    this->set(i, j, this->matrix[i][j] * value);
+                }
+            }
+            return *this;
+        }
 
     public:
         Matrix(T defaultValue, size_t width, size_t height) {
@@ -55,6 +102,16 @@ namespace ltrx {
             }
         }
 
+        Matrix(size_t width, size_t height) {
+            this->width = width;
+            this->height = height;
+            matrix.resize(width);
+            for (auto& line : matrix) {
+                line = std::vector<T>();
+                line.resize(height);
+            }
+        }
+
         size_t getWidth() {
             return width;
         }
@@ -63,20 +120,28 @@ namespace ltrx {
             return height;
         }
 
-        T get(size_t horizontalIndex, size_t verticalIndex) {
+        T get(size_t horizontalIndex, size_t verticalIndex) const {
             return matrix[horizontalIndex][verticalIndex];
         }
 
-        Matrix& map(AbstractFunctor& f) {
-            for (auto& line : matrix) {
-                for (auto& elem : line) {
-                    elem = f.invoke(elem);
-                }
-            }
-            return *this;
+        void set(size_t horizontalIndex, size_t verticalIndex, T value) {
+            matrix[horizontalIndex][verticalIndex] = value;
         }
 
-        Matrix& mapLine(size_t lineIndex, AbstractFunctor& f) {
+        template<typename K>
+        Matrix<K> map(AbstractFunctor<K>& f) {
+            Matrix<K> result = Matrix<K>(width, height);
+            for (int i = 0; i < width; i++) {
+                for (int j = 0; j < height; j++) {
+                    std::cout << matrix[i][j] << " ";
+                    result.set(i, j, f.invoke(matrix[i][j]));
+                }
+            }
+            return result;
+        }
+
+        template<typename K>
+        Matrix<K>& mapLine(size_t lineIndex, AbstractFunctor<K>& f) {
             for (auto& elem : matrix[lineIndex]) {
                 elem = f.invoke(elem);
             }
@@ -106,17 +171,39 @@ namespace ltrx {
         }
 
         Matrix operator+(const Matrix& other) const {
-            auto size = this->size();
-            if (other.size() != size) {
-                throw MatrixError("Matrix of different size cant be added.");
-            }
-            auto result = Matrix(0, size.first, size.second);
-            for (int i = 0; i < size.first; i++) {
-                for (int j = 0; j < size.second; j++) {
-                    result.matrix[i][j] = this->matrix[i][j] + other.matrix[i][j];
-                }
-            }
-            return result;
+            Matrix result = Matrix(*this);
+            return result.add(other);
+        }
+
+        Matrix& operator+=(const Matrix& other) {
+            return add(other);
+        }
+
+        Matrix operator-(const Matrix& other) const {
+            Matrix result = Matrix(*this);
+            return result.sub(other);
+        }
+
+        Matrix& operator-=(const Matrix& other) {
+            return sub(other);
+        }
+
+        Matrix operator*(const Matrix& other) {
+            Matrix result = Matrix(*this);
+            return result.mul(other);
+        }
+
+        Matrix& operator*=(const Matrix& other) {
+            return mul(other);
+        }
+
+        Matrix operator*(const T& value) {
+            Matrix result = Matrix(*this);
+            return result.mul(value);
+        }
+
+        Matrix& operator*= (const T& value) {
+            return mul(value);
         }
 
         [[nodiscard]] std::pair<int, int> size() const {
@@ -126,5 +213,9 @@ namespace ltrx {
 
 }
 
+#define functor(NAME, RET_TYPE, IN_TYPE, BODY) \
+    class NAME : public ltrx::Matrix<IN_TYPE>::AbstractFunctor<RET_TYPE> { \
+        virtual RET_TYPE invoke(IN_TYPE& elem) BODY \
+    }
 
 #endif //LTRX_LTRX_H
