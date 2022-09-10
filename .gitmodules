@@ -4,3 +4,6 @@
 [submodule "PPOIS/dockerized-ostis-example-app"]
 	path = PPOIS/dockerized-ostis-example-app
 	url = https://github.com/ungaf/dockerized-ostis-example-app
+[submodule "PPOIS/LW1/googletest"]
+	path = PPOIS/LW1/googletest
+	url = https://github.com/google/googletest.git

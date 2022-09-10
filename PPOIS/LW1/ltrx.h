@@ -69,11 +69,29 @@ namespace ltrx {
             return *this;
         }
 
+        Matrix& add(const T& value) {
+            for (size_t i = 0; i < width; i++) {
+                for (size_t j = 0; j < height; j++) {
+                    this->set(i, j, this->matrix[i][j] + value);
+                }
+            }
+            return *this;
+        }
+
         Matrix& sub(const Matrix& other) {
             checkSizeEquals(other);
             for (size_t i = 0; i < width; i++) {
                 for (size_t j = 0; j < height; j++) {
                     this->set(i, j, this->matrix[i][j] - other.matrix[i][j]);
+                }
+            }
+            return *this;
+        }
+
+        Matrix& sub(const T& value) {
+            for (size_t i = 0; i < width; i++) {
+                for (size_t j = 0; j < height; j++) {
+                    this->set(i, j, this->matrix[i][j] - value);
                 }
             }
             return *this;
@@ -204,12 +222,30 @@ namespace ltrx {
             return add(other);
         }
 
+        Matrix operator+(const T& other) const {
+            auto result = Matrix(*this);
+            return result.add(other);
+        }
+
+        Matrix& operator+=(const T& other) {
+            return add(other);
+        }
+
         Matrix operator-(const Matrix& other) const {
             auto result = Matrix(*this);
             return result.sub(other);
         }
 
         Matrix& operator-=(const Matrix& other) {
+            return sub(other);
+        }
+
+        Matrix operator-(const T& other) const {
+            auto result = Matrix(*this);
+            return result.sub(other);
+        }
+
+        Matrix& operator-=(const T& other) {
             return sub(other);
         }
 
@@ -246,7 +282,21 @@ namespace ltrx {
         }
 
         Matrix& operator^=(const T& value) {
-            return pow(value);
+            return mpow(value);
+        }
+
+        bool operator==(const Matrix& other) const {
+            if (size() != other.size()) {
+                return false;
+            }
+            for (int i = 0; i < width; i++) {
+                for (int j = 0; j < height; j++) {
+                    if (get(i, j) != other.get(i, j)) {
+                        return false;
+                    }
+                }
+            }
+            return true;
         }
 
         Matrix minor(size_t& line, size_t& row) {
@@ -267,6 +317,12 @@ namespace ltrx {
                 }
             }
             return result;
+        }
+
+        Matrix minor(int line, int row) {
+            size_t l = line;
+            size_t r = row;
+            return minor(l, r);
         }
 
         T determinator() {
