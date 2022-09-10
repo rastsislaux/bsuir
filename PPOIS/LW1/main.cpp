@@ -10,13 +10,10 @@ functor(PrintFunctor, T, T, {
 });
 
 int main() {
-    auto p = PrintFunctor<double>();
-
-    auto m1 = ltrx::Matrix<double>(1, 5, 5);
-    auto m2 = ltrx::Matrix<double>(2, 5, 5);
-    auto m3 = m2 ^ 3;
-    for (int i = 0; i < m3.size().first; i++) {
-        m3.mapLine(i, p);
-        std::cout << std::endl;
-    }
+    auto p = PrintFunctor<int>();
+    auto m = ltrx::Matrix<int>(2, 3, 3);
+    m.set(0, 0, 1);
+    m.set(0, 1, 2);
+    m.set(0, 2, 3);
+    std::cout << m.norm() << std::endl;
 }

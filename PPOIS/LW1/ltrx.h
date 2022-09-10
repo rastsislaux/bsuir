@@ -46,6 +46,12 @@ namespace ltrx {
             return elem;
         }) s_decFunctor;
 
+        static bool getSign(size_t i, size_t j) {
+                return (i % 2 == 0)
+                    ? (j % 2 == 0)
+                    : (j % 2 == 1);
+        }
+
         void checkSizeEquals(const Matrix& s) {
             auto size = this->size();
             if (s.size() != size) {
@@ -241,6 +247,59 @@ namespace ltrx {
 
         Matrix& operator^=(const T& value) {
             return pow(value);
+        }
+
+        Matrix minor(size_t& line, size_t& row) {
+            Matrix result = Matrix(width - 1, height - 1);
+            T lineSkipped = 0;
+            for (int i = 0; i < width; i++) {
+                if (i == line) {
+                    lineSkipped = 1;
+                    continue;
+                }
+                T rowSkipped = 0;
+                for (int j = 0; j < height; j++) {
+                    if (j == row) {
+                        rowSkipped = 1;
+                        continue;
+                    }
+                    result.set(i - lineSkipped, j - rowSkipped, get(i, j));
+                }
+            }
+            return result;
+        }
+
+        T determinator() {
+            if (height != width || height < 1) {
+                throw new MatrixError("Determinator is not defined for this matrix.");
+            }
+
+            if (height == 2) {
+                return get(1, 1) * get(0, 0) - get(1, 0) * get(0, 1);
+            }
+
+            T result = 0;
+            size_t zero = 0;
+            for (size_t i = 0; i < width; i++) {
+                Matrix aMinor = minor(i, zero);
+                result += (getSign(i, 0) ? 1 : -1) * get(i, 0) * aMinor.determinator();
+            }
+
+            return result;
+        }
+
+        T norm() {
+            T result = 0;
+            for (int i = 0; i < height; i++) {
+                T lineSum = 0;
+                for (int j = 0; j < width; j++) {
+                    lineSum += get(j, i);
+                }
+                if (result < lineSum) {
+                    result = lineSum;
+                }
+            }
+            return result;
         }
 
         [[nodiscard]] std::pair<int, int> size() const {
