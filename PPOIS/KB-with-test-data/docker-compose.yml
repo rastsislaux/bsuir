@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  app:
+    build: ./
+    container_name: ppois-test-kb
+    ports:
+      - 8000:8000
