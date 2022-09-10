@@ -7,6 +7,7 @@
 
 #include <vector>
 #include <exception>
+#include <cmath>
 
 namespace ltrx {
 
@@ -86,6 +87,24 @@ namespace ltrx {
             for (size_t i = 0; i < width; i++) {
                 for (size_t j = 0; j < height; j++) {
                     this->set(i, j, this->matrix[i][j] * value);
+                }
+            }
+            return *this;
+        }
+
+        Matrix& div(const T& value) {
+            for (size_t i = 0; i < width; i++) {
+                for (size_t j = 0; j < height; j++) {
+                    this->set(i, j, this->matrix[i][j] / value);
+                }
+            }
+            return *this;
+        }
+
+        Matrix& mpow(const T& value) {
+            for (size_t i = 0; i < width; i++) {
+                for (size_t j = 0; j < height; j++) {
+                    this->set(i, j, pow(this->matrix[i][j], value));
                 }
             }
             return *this;
@@ -171,7 +190,7 @@ namespace ltrx {
         }
 
         Matrix operator+(const Matrix& other) const {
-            Matrix result = Matrix(*this);
+            auto result = Matrix(*this);
             return result.add(other);
         }
 
@@ -180,7 +199,7 @@ namespace ltrx {
         }
 
         Matrix operator-(const Matrix& other) const {
-            Matrix result = Matrix(*this);
+            auto result = Matrix(*this);
             return result.sub(other);
         }
 
@@ -189,7 +208,7 @@ namespace ltrx {
         }
 
         Matrix operator*(const Matrix& other) {
-            Matrix result = Matrix(*this);
+            auto result = Matrix(*this);
             return result.mul(other);
         }
 
@@ -198,12 +217,30 @@ namespace ltrx {
         }
 
         Matrix operator*(const T& value) {
-            Matrix result = Matrix(*this);
+            auto result = Matrix(*this);
             return result.mul(value);
         }
 
         Matrix& operator*= (const T& value) {
             return mul(value);
+        }
+
+        Matrix operator/(const T& value) {
+            auto result = Matrix(*this);
+            return result.div(value);
+        }
+
+        Matrix& operator/=(const T& value) {
+            return div(value);
+        }
+
+        Matrix operator^(const T& value) {
+            auto result = Matrix(*this);
+            return result.mpow(value);
+        }
+
+        Matrix& operator^=(const T& value) {
+            return pow(value);
         }
 
         [[nodiscard]] std::pair<int, int> size() const {

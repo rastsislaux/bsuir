@@ -1,3 +1,6 @@
 [submodule "junior-practice"]
 	path = junior-practice
 	url = https://github.com/ungaf/junior-practice
+[submodule "PPOIS/dockerized-ostis-example-app"]
+	path = PPOIS/dockerized-ostis-example-app
+	url = https://github.com/ungaf/dockerized-ostis-example-app
