@@ -4,3 +4,6 @@
 [submodule "semester-3/PPOIS/dockerized-ostis-example-app"]
 	path = semester-3/PPOIS/dockerized-ostis-example-app
 	url = https://github.com/ungaf/dockerized-ostis-example-app
+[submodule "semester-3/PPOIS/LW1/googletest"]
+	path = semester-3/PPOIS/LW1/googletest
+	url = https://github.com/google/googletest
