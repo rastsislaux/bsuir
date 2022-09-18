@@ -1,0 +1,773 @@
+\hypertarget{classltrx_1_1Matrix}{}\doxysection{ltrx\+::Matrix$<$ T $>$ Class Template Reference}
+\label{classltrx_1_1Matrix}\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+
+
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} class.  
+
+
+
+
+{\ttfamily \#include $<$ltrx.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classltrx_1_1Matrix_1_1AbstractFunctor}{Abstract\+Functor}}
+\begin{DoxyCompactList}\small\item\em Abstract class to represent functors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classltrx_1_1Matrix_a078eee73039164396aac531b6ceadc14}{Matrix}} (T default\+Value, size\+\_\+t width, size\+\_\+t height)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix_aafcbfb2a9d4e009a09bbd0192a16ae84}{Matrix}} (size\+\_\+t width, size\+\_\+t height)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} object. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classltrx_1_1Matrix_a157c5ecfe601cb8ce2ccb1baf7d7d511}{get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Get the width of a \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classltrx_1_1Matrix_abfed5825026e1947175b6e4a7d02092c}{get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Get the height of a matrix. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classltrx_1_1Matrix_a2b18f37d37f14690fa05c0b0d7b527c0}{get}} (size\+\_\+t horizontal\+Index, size\+\_\+t vertical\+Index) const
+\begin{DoxyCompactList}\small\item\em Get an element of a matrix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classltrx_1_1Matrix_a1e2775c6ad82f84c95df1825bea919a2}{set}} (size\+\_\+t horizontal\+Index, size\+\_\+t vertical\+Index, T value)
+\begin{DoxyCompactList}\small\item\em Set an element of a matrix. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename K $>$ }\\\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}$<$ K $>$ \mbox{\hyperlink{classltrx_1_1Matrix_abf764f8a4e0769ca2522616869f82385}{map}} (\mbox{\hyperlink{classltrx_1_1Matrix_1_1AbstractFunctor}{Abstract\+Functor}}$<$ K $>$ \&f)
+\begin{DoxyCompactList}\small\item\em map each element of a matrix to a functor \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename K $>$ }\\\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}$<$ K $>$ \& \mbox{\hyperlink{classltrx_1_1Matrix_a31723eae12a2b9f3b86bab752454362b}{map\+Line}} (size\+\_\+t line\+Index, \mbox{\hyperlink{classltrx_1_1Matrix_1_1AbstractFunctor}{Abstract\+Functor}}$<$ K $>$ \&f)
+\begin{DoxyCompactList}\small\item\em map each element of a certain line of a matrix to a functor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \& \mbox{\hyperlink{classltrx_1_1Matrix_a806a61fb6b7dae0ec14ad98fc82fe895}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em preincrement operator, see also sum() \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix_a12f69e4d7e34fecbf5e2da04c56ef62f}{operator++}} (int)
+\begin{DoxyCompactList}\small\item\em postincrement operator, see alse sum() \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \& \mbox{\hyperlink{classltrx_1_1Matrix_a3bb878afbb542dda50733cfb28d8c429}{operator-\/-\/}} ()
+\begin{DoxyCompactList}\small\item\em predecrement operator, see also sub() \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix_a83453fc664e271f12a471e8cd2eb24e9}{operator-\/-\/}} (int)
+\begin{DoxyCompactList}\small\item\em postdecrement operator, see alse sub() \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix_aa1c997612c5f96936c63860c3c857cc1}{operator+}} (const \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \&other) const
+\begin{DoxyCompactList}\small\item\em sum operator, see alse sum() \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \& \mbox{\hyperlink{classltrx_1_1Matrix_ae46406d32451038b88c29b9a08d3f9f6}{operator+=}} (const \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \&other)
+\begin{DoxyCompactList}\small\item\em += operator, see alse sum() \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix_acbfa502f6005841eaa7a8f7fc71cdda0}{operator+}} (const T \&other) const
+\begin{DoxyCompactList}\small\item\em sum operator, see also sum() \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \& \mbox{\hyperlink{classltrx_1_1Matrix_aa0c68a6aea41b20ef872d2712b59bc98}{operator+=}} (const T \&other)
+\begin{DoxyCompactList}\small\item\em =+ operator, see alse sum() \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix_a16539eb26f878e1402c45a89e320be20}{operator-\/}} (const \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \&other) const
+\begin{DoxyCompactList}\small\item\em subtract operator, see also sub() \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \& \mbox{\hyperlink{classltrx_1_1Matrix_ae03a239ca42abffb4067b21eba0c4263}{operator-\/=}} (const \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \&other)
+\begin{DoxyCompactList}\small\item\em -\/= operator, see also sub() \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix_a640bea3f256ef630b78785b647bbcc48}{operator-\/}} (const T \&other) const
+\begin{DoxyCompactList}\small\item\em subtract operator, see also sub() \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \& \mbox{\hyperlink{classltrx_1_1Matrix_a3950a5af5bfa8c8298980b118c802070}{operator-\/=}} (const T \&other)
+\begin{DoxyCompactList}\small\item\em -\/= operator, see also sub() \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix_a5f66b8966592d4f46442ad1a0e0f2f48}{operator$\ast$}} (const \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \&other)
+\begin{DoxyCompactList}\small\item\em multiply operator, see also mul() \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \& \mbox{\hyperlink{classltrx_1_1Matrix_af025bb1d55a763aeb29aae1e9b7a1dc8}{operator$\ast$=}} (const \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \&other)
+\begin{DoxyCompactList}\small\item\em $\ast$= operator, see also mul() \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix_a6bac2adb1c12d9a6e51e64155514f27e}{operator$\ast$}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em $\ast$= operator, see alse mul() \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \& \mbox{\hyperlink{classltrx_1_1Matrix_a74b9e33eb7b770a898d8e13e14d144de}{operator$\ast$=}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em $\ast$= operator, see alse mul() \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix_a54d65d6b02088f37a08ed35cf37adbec}{operator/}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em divide operator, see also div(const T\& value) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \& \mbox{\hyperlink{classltrx_1_1Matrix_a11131ba4bb5e5923dab77cacdd07c6db}{operator/=}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em /= operator, see alse div(const T\& value) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix_a70bd9f9f2c01f662da66bcc9f469a038}{operator$^\wedge$}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em power operator, see alse ltrx\+::\+Matrix\+::pow(const T\& value) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \& \mbox{\hyperlink{classltrx_1_1Matrix_a887b0f8a5f7503d9fa1d5a3aeb87d7df}{operator$^\wedge$=}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em $^\wedge$= operator, see also pow() \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classltrx_1_1Matrix_a8bcfb684bbd004595226f2f2680cf537}{operator==}} (const \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \&other) const
+\begin{DoxyCompactList}\small\item\em equals operator \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix_a63859c048751a8d659e6f82a44bc1847}{minor}} (size\+\_\+t \&line, size\+\_\+t \&row)
+\begin{DoxyCompactList}\small\item\em find the minor of an element of a \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix_a8e04e2d26c5fbe28fe5840c7cfb91cb8}{minor}} (int line, int row)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{classltrx_1_1Matrix_a63859c048751a8d659e6f82a44bc1847}{ltrx\+::\+Matrix$<$\+T$>$\+::minor(size\+\_\+t\& line, size\+\_\+t\& row)}} \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classltrx_1_1Matrix_a3ce5c7735936ad78903bcedb84609f2d}{determinator}} ()
+\begin{DoxyCompactList}\small\item\em find the determinator of current \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classltrx_1_1Matrix_a800477690c567fb695ee51ef0fda1e38}{norm}} ()
+\begin{DoxyCompactList}\small\item\em find the norm a current \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classltrx_1_1Matrix_a30b1adea60124ba07076634d43a9b334}{size}} () const
+\begin{DoxyCompactList}\small\item\em get size of current \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class ltrx\+::\+Matrix$<$ T $>$}
+
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} class. 
+
+Class that represents matrix of any numeric type, supports some features of functional-\/style programming, all of basic math operators.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & -\/ type of matrix elements\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyWarning}{Warning}
+supports only numeric types (int, long, float, double, etc.)
+\end{DoxyWarning}
+\begin{DoxyAuthor}{Author}
+R. Lipski 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a078eee73039164396aac531b6ceadc14}\label{classltrx_1_1Matrix_a078eee73039164396aac531b6ceadc14}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} (\begin{DoxyParamCaption}\item[{T}]{default\+Value,  }\item[{size\+\_\+t}]{width,  }\item[{size\+\_\+t}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em default\+Value} & value to initialize elements with \\
+\hline
+{\em width} & width of a matrix \\
+\hline
+{\em height} & height of a matrix\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+R. Lipski 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classltrx_1_1Matrix_aafcbfb2a9d4e009a09bbd0192a16ae84}\label{classltrx_1_1Matrix_aafcbfb2a9d4e009a09bbd0192a16ae84}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{width,  }\item[{size\+\_\+t}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & width of a matrix \\
+\hline
+{\em height} & height of a matrix\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+elements of matrix remain uninitialized
+\end{DoxyWarning}
+\begin{DoxyAuthor}{Author}
+R. Lipski 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a3ce5c7735936ad78903bcedb84609f2d}\label{classltrx_1_1Matrix_a3ce5c7735936ad78903bcedb84609f2d}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!determinator@{determinator}}
+\index{determinator@{determinator}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{determinator()}{determinator()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::determinator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+find the determinator of current \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} 
+
+\begin{DoxyReturn}{Returns}
+T determinator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a2b18f37d37f14690fa05c0b0d7b527c0}\label{classltrx_1_1Matrix_a2b18f37d37f14690fa05c0b0d7b527c0}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!get@{get}}
+\index{get@{get}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::get (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{horizontal\+Index,  }\item[{size\+\_\+t}]{vertical\+Index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get an element of a matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em horizontal\+Index} & location of an element horizontally \\
+\hline
+{\em vertical\+Index} & location of an element vertically \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T element
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+R. Lipski 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classltrx_1_1Matrix_abfed5825026e1947175b6e4a7d02092c}\label{classltrx_1_1Matrix_abfed5825026e1947175b6e4a7d02092c}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+size\+\_\+t \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the height of a matrix. 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t height of a matrix
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+R. Lipski 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a157c5ecfe601cb8ce2ccb1baf7d7d511}\label{classltrx_1_1Matrix_a157c5ecfe601cb8ce2ccb1baf7d7d511}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+size\+\_\+t \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the width of a \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}. 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t width of a matrix
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+R. Lipski 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classltrx_1_1Matrix_abf764f8a4e0769ca2522616869f82385}\label{classltrx_1_1Matrix_abf764f8a4e0769ca2522616869f82385}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!map@{map}}
+\index{map@{map}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename K $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}$<$K$>$ \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classltrx_1_1Matrix_1_1AbstractFunctor}{Abstract\+Functor}}$<$ K $>$ \&}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+map each element of a matrix to a functor 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em K} & type of new elements of a matrix \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em f} & functor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix$<$\+K$>$ new matrix consisting of mapped values of current matrix
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+R. Lipski 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a31723eae12a2b9f3b86bab752454362b}\label{classltrx_1_1Matrix_a31723eae12a2b9f3b86bab752454362b}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!mapLine@{mapLine}}
+\index{mapLine@{mapLine}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mapLine()}{mapLine()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename K $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}$<$K$>$\& \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::map\+Line (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{line\+Index,  }\item[{\mbox{\hyperlink{classltrx_1_1Matrix_1_1AbstractFunctor}{Abstract\+Functor}}$<$ K $>$ \&}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+map each element of a certain line of a matrix to a functor 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em K} & type of new elements of a matrix \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em line\+Index} & number of line \\
+\hline
+{\em f} & functor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix$<$\+K$>$\& reference to this object
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+R. Lipski
+\end{DoxyAuthor}
+\begin{DoxyWarning}{Warning}
+trying to use a functor with return type different from current will lead to undefined behaviour. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a8e04e2d26c5fbe28fe5840c7cfb91cb8}\label{classltrx_1_1Matrix_a8e04e2d26c5fbe28fe5840c7cfb91cb8}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!minor@{minor}}
+\index{minor@{minor}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{minor()}{minor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::minor (\begin{DoxyParamCaption}\item[{int}]{line,  }\item[{int}]{row }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+see \mbox{\hyperlink{classltrx_1_1Matrix_a63859c048751a8d659e6f82a44bc1847}{ltrx\+::\+Matrix$<$\+T$>$\+::minor(size\+\_\+t\& line, size\+\_\+t\& row)}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & line of an element \\
+\hline
+{\em row} & row of an element \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} new \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} object, minor of an element in current \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a63859c048751a8d659e6f82a44bc1847}\label{classltrx_1_1Matrix_a63859c048751a8d659e6f82a44bc1847}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!minor@{minor}}
+\index{minor@{minor}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{minor()}{minor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::minor (\begin{DoxyParamCaption}\item[{size\+\_\+t \&}]{line,  }\item[{size\+\_\+t \&}]{row }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+find the minor of an element of a \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & line of an element \\
+\hline
+{\em row} & row of an element \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} new \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} object, minor of an element in current \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a800477690c567fb695ee51ef0fda1e38}\label{classltrx_1_1Matrix_a800477690c567fb695ee51ef0fda1e38}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!norm@{norm}}
+\index{norm@{norm}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{norm()}{norm()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::norm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+find the norm a current \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} 
+
+\begin{DoxyReturn}{Returns}
+T norm 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a5f66b8966592d4f46442ad1a0e0f2f48}\label{classltrx_1_1Matrix_a5f66b8966592d4f46442ad1a0e0f2f48}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+multiply operator, see also mul() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & matrix to multiply by \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} new object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a6bac2adb1c12d9a6e51e64155514f27e}\label{classltrx_1_1Matrix_a6bac2adb1c12d9a6e51e64155514f27e}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+$\ast$= operator, see alse mul() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & value to multiply by \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} new object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_af025bb1d55a763aeb29aae1e9b7a1dc8}\label{classltrx_1_1Matrix_af025bb1d55a763aeb29aae1e9b7a1dc8}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+$\ast$= operator, see also mul() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & matrix to multiply by \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& reference to this object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a74b9e33eb7b770a898d8e13e14d144de}\label{classltrx_1_1Matrix_a74b9e33eb7b770a898d8e13e14d144de}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+$\ast$= operator, see alse mul() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & value to multiply by \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& reference to this object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_aa1c997612c5f96936c63860c3c857cc1}\label{classltrx_1_1Matrix_aa1c997612c5f96936c63860c3c857cc1}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+sum operator, see alse sum() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & other matrix to sum with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} new object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_acbfa502f6005841eaa7a8f7fc71cdda0}\label{classltrx_1_1Matrix_acbfa502f6005841eaa7a8f7fc71cdda0}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator+ (\begin{DoxyParamCaption}\item[{const T \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+sum operator, see also sum() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & number to sum with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} new object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a806a61fb6b7dae0ec14ad98fc82fe895}\label{classltrx_1_1Matrix_a806a61fb6b7dae0ec14ad98fc82fe895}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator++@{operator++}}
+\index{operator++@{operator++}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+preincrement operator, see also sum() 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& reference to this object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a12f69e4d7e34fecbf5e2da04c56ef62f}\label{classltrx_1_1Matrix_a12f69e4d7e34fecbf5e2da04c56ef62f}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator++@{operator++}}
+\index{operator++@{operator++}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+postincrement operator, see alse sum() 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} new object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_ae46406d32451038b88c29b9a08d3f9f6}\label{classltrx_1_1Matrix_ae46406d32451038b88c29b9a08d3f9f6}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
++= operator, see alse sum() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & matrix to sum with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& reference to this object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_aa0c68a6aea41b20ef872d2712b59bc98}\label{classltrx_1_1Matrix_aa0c68a6aea41b20ef872d2712b59bc98}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const T \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+=+ operator, see alse sum() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & number to sum with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& reference to this object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a16539eb26f878e1402c45a89e320be20}\label{classltrx_1_1Matrix_a16539eb26f878e1402c45a89e320be20}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+subtract operator, see also sub() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & matrix to subract \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} new object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a640bea3f256ef630b78785b647bbcc48}\label{classltrx_1_1Matrix_a640bea3f256ef630b78785b647bbcc48}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{const T \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+subtract operator, see also sub() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & number to subract \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} new object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a3bb878afbb542dda50733cfb28d8c429}\label{classltrx_1_1Matrix_a3bb878afbb542dda50733cfb28d8c429}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+predecrement operator, see also sub() 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& reference to this object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a83453fc664e271f12a471e8cd2eb24e9}\label{classltrx_1_1Matrix_a83453fc664e271f12a471e8cd2eb24e9}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+postdecrement operator, see alse sub() 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} new object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_ae03a239ca42abffb4067b21eba0c4263}\label{classltrx_1_1Matrix_ae03a239ca42abffb4067b21eba0c4263}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+-\/= operator, see also sub() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & matrix to subtract \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& reference to this object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a3950a5af5bfa8c8298980b118c802070}\label{classltrx_1_1Matrix_a3950a5af5bfa8c8298980b118c802070}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{const T \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+-\/= operator, see also sub() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & number to subtract \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& reference to this object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a54d65d6b02088f37a08ed35cf37adbec}\label{classltrx_1_1Matrix_a54d65d6b02088f37a08ed35cf37adbec}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator/@{operator/}}
+\index{operator/@{operator/}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator/ (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+divide operator, see also div(const T\& value) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & value to divide by \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} new object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a11131ba4bb5e5923dab77cacdd07c6db}\label{classltrx_1_1Matrix_a11131ba4bb5e5923dab77cacdd07c6db}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator/=()}{operator/=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator/= (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+/= operator, see alse div(const T\& value) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & value to divide by \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& reference to this object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a8bcfb684bbd004595226f2f2680cf537}\label{classltrx_1_1Matrix_a8bcfb684bbd004595226f2f2680cf537}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+equals operator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & other matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true is equal 
+
+false is NOT equal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a70bd9f9f2c01f662da66bcc9f469a038}\label{classltrx_1_1Matrix_a70bd9f9f2c01f662da66bcc9f469a038}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator$^\wedge$@{operator$^\wedge$}}
+\index{operator$^\wedge$@{operator$^\wedge$}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$^\wedge$()}{operator^()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator$^\wedge$ (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+power operator, see alse ltrx\+::\+Matrix\+::pow(const T\& value) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & value to exponentiate in the power of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} new object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a887b0f8a5f7503d9fa1d5a3aeb87d7df}\label{classltrx_1_1Matrix_a887b0f8a5f7503d9fa1d5a3aeb87d7df}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!operator$^\wedge$=@{operator$^\wedge$=}}
+\index{operator$^\wedge$=@{operator$^\wedge$=}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$^\wedge$=()}{operator^=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::operator$^\wedge$= (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+$^\wedge$= operator, see also pow() 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & value to exponentiate in the power of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}}\& reference to this object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a1e2775c6ad82f84c95df1825bea919a2}\label{classltrx_1_1Matrix_a1e2775c6ad82f84c95df1825bea919a2}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!set@{set}}
+\index{set@{set}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::set (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{horizontal\+Index,  }\item[{size\+\_\+t}]{vertical\+Index,  }\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set an element of a matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em horizontal\+Index} & location of an element horizontally \\
+\hline
+{\em vertical\+Index} & location of an element vertically \\
+\hline
+{\em value} & value to set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+R. Lipski 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classltrx_1_1Matrix_a30b1adea60124ba07076634d43a9b334}\label{classltrx_1_1Matrix_a30b1adea60124ba07076634d43a9b334}} 
+\index{ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}!size@{size}}
+\index{size@{size}!ltrx::Matrix$<$ T $>$@{ltrx::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::pair$<$int, int$>$ \mbox{\hyperlink{classltrx_1_1Matrix}{ltrx\+::\+Matrix}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get size of current \mbox{\hyperlink{classltrx_1_1Matrix}{Matrix}} 
+
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$int, int$>$ first is width, second is length 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ltrx_8h}{ltrx.\+h}}\end{DoxyCompactItemize}
