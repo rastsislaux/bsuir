@@ -3,9 +3,10 @@
 #define MAKE_TOKEN(TYPE) XmlLexer::Token(TYPE, row, col)
 #define MAKE_TEXT_TOKEN(TYPE, TEXT) XmlLexer::Token(TYPE, row, col, TEXT)
 
-XmlLexer::Lexer::Error::Error(const std::string& msg) : std::runtime_error(msg) {
+XmlLexer::Lexer::Error::Error(const std::string& msg) : std::runtime_error(msg) { }
 
-}
+XmlLexer::Lexer::UnexpectedTokenError::UnexpectedTokenError(const std::string &msg)
+: Error(msg) { }
 
 char XmlLexer::Lexer::currentChar() {
     return source[index];
@@ -36,6 +37,8 @@ XmlLexer::Token XmlLexer::Lexer::_next() {
         case XmlLexer::Symbol::OP_PAREN:
         case XmlLexer::Symbol::CL_SHARD:
         case XmlLexer::Symbol::BANG:
+        case XmlLexer::Symbol::EQUALS:
+        case XmlLexer::Symbol::DOT:
             return parseUnaryToken();
         case XmlLexer::Symbol::OP_SHARD:
         case XmlLexer::Symbol::QUESTION:
@@ -62,6 +65,10 @@ XmlLexer::Token XmlLexer::Lexer::parseUnaryToken() {
             return MAKE_TOKEN(Token::Type::CL_SHARD);
         case XmlLexer::Symbol::BANG:
             return MAKE_TOKEN(Token::Type::BANG);
+        case XmlLexer::Symbol::EQUALS:
+            return MAKE_TOKEN(Token::Type::EQUALS);
+        case XmlLexer::Symbol::DOT:
+            return MAKE_TOKEN(Token::Type::DOT);
     }
     throw UnreachableError();
 }
@@ -74,6 +81,11 @@ XmlLexer::Token XmlLexer::Lexer::parseToken() {
                 relativeChar(2) == Symbol::DASH &&
                 relativeChar(3) == Symbol::DASH) {
                 move(4); return MAKE_TOKEN(Token::Type::OP_COMMENT);
+            }
+
+            // Open close tag
+            if (relativeChar(1) == Symbol::SLASH) {
+                move(2); return MAKE_TOKEN(Token::Type::OP_CLOSE_TAG);
             }
 
             // Processing instruction
@@ -98,20 +110,32 @@ XmlLexer::Token XmlLexer::Lexer::parseToken() {
                 move(2); return MAKE_TOKEN(Token::Type::CL_INSTRUCTION);
             }
         }
+
+        case Symbol::SLASH: {
+            // Close empty tag
+            if (relativeChar(1) == Symbol::CL_SHARD) {
+                move(2); return MAKE_TOKEN(Token::Type::CL_EMPTY_TAG);
+            }
+        }
     }
     return parseUnaryToken();
 }
 
-// todo: implement parsing string literal
 XmlLexer::Token XmlLexer::Lexer::parseStringLiteral() {
-    throw NotImplemented(__FILE__, __LINE__);
+    std::string str;
+    move(1);
+    while (currentChar() != Symbol::DBL_QUOTE) {
+        str += currentChar();
+        move(1);
+    }
+    move(1);
+    return MAKE_TEXT_TOKEN(Token::Type::STRING, str);
 }
 
 bool isNumberOrDigit(char c) {
     return ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
 
-// todo: implement parsing string literal
 XmlLexer::Token XmlLexer::Lexer::parseWord() {
     std::string word;
     while (isNumberOrDigit(currentChar())) {
@@ -142,6 +166,13 @@ XmlLexer::Token XmlLexer::Lexer::next() {
 
 bool XmlLexer::Lexer::hasNext() {
     return currentToken.getType() != Token::Type::END;
+}
+
+void XmlLexer::Lexer::expect(XmlLexer::Token::Type expectedType) {
+    if (currentToken.getType() != expectedType) {
+        throw UnexpectedTokenError("Unexpected token type `" + currentToken.getTypeName() + "` at " + currentToken.getLocation() + ", expected: `"
+                                    + currentToken.getTypeName(expectedType) + "`");
+    }
 }
 
 #undef MAKE_TOKEN

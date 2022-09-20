@@ -26,6 +26,10 @@ namespace XmlLexer {
             OP_COMMENT,
             CL_COMMENT,
             BANG,
+            EQUALS,
+            OP_CLOSE_TAG,
+            CL_EMPTY_TAG,
+            DOT,
 
             WORD,
             STRING,
@@ -52,10 +56,19 @@ namespace XmlLexer {
                 GEN_ENTRY(CL_COMMENT),
                 GEN_ENTRY(BANG),
                 GEN_ENTRY(END),
+                GEN_ENTRY(STRING),
+                GEN_ENTRY(WORD),
+                GEN_ENTRY(EQUALS),
+                GEN_ENTRY(OP_CLOSE_TAG),
+                GEN_ENTRY(DOT),
         };
         #undef GEN_ENTRY
 
     public:
+        std::string getTypeName();
+
+        std::string getTypeName(Type type);
+
         class TokenError : public std::runtime_error {
         public:
             explicit TokenError(const std::string &msg);
@@ -71,6 +84,8 @@ namespace XmlLexer {
         Type getType();
 
         std::string getText();
+
+        std::string getLocation();
 
         std::string str();
 

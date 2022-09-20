@@ -22,6 +22,10 @@ namespace XmlLexer {
 
         char currentChar();
 
+        char relativeChar(size_t offset);
+
+        void newline();
+
         void move(size_t offset);
 
         Token parseUnaryToken();
@@ -40,15 +44,18 @@ namespace XmlLexer {
             explicit Error(const std::string &msg);
         };
 
+        class UnexpectedTokenError : public Error {
+        public:
+            explicit UnexpectedTokenError(const std::string &msg);
+        };
+
         [[maybe_unused]] explicit Lexer(std::string source);
 
         Token next();
 
         Token current();
 
-        char relativeChar(size_t offset);
-
-        void newline();
+        void expect(Token::Type expectedType);
 
         bool hasNext();
     };
