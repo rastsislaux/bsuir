@@ -1,17 +1,17 @@
-<!-- Особый вид инструкции обработки -->
+<!-- instruction -->
 <?xml version="1.0" ?>
-<bookstore> <!-- Корневой тэг -->
-    <book> <!-- Вложенный тэг -->
-        <!-- Тег с атрибутом -->
-        <title lang="ru">Гарри Поттер</title>
-        <!-- Текст -->
-        Это книга про волшебника Гарри Поттера.
+<bookstore> <!-- root tag -->
+    <book> <!-- nested tag -->
+        <!-- tag with attr -->
+        <title lang="en">Harry Potter</title>
+        <!-- text -->
+        Book about Harry Potter
         <price>15000</price>
-        <!-- Пустой тег -->
+        <!-- empty tag -->
         <count />
     </book>
     <book>
-        <title lang="ru">Изучаем XML</title>
+        <title lang="en">Learning XML</title>
         <price>20000</price>
         <count>5</count>
     </book>

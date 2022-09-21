@@ -18,6 +18,11 @@ namespace XmlLexer::Symbol {
     static constexpr char SPACE     = ' ';
     static constexpr char EQUALS    = '=';
     static constexpr char DOT       = '.';
+    static constexpr char OP_SQUARE = '[';
+    static constexpr char CL_SQUARE = ']';
+    static constexpr char COMMA     = ',';
+    static constexpr char AMPERSAND = '&';
+    static constexpr char BAR       = '|';
 
     static constexpr char NEWLINE   = '\n';
     static constexpr char NULL_TERM = '\0';

@@ -51,11 +51,15 @@ XmlLexer::Token XmlLexer::Lexer::_next() {
         case XmlLexer::Symbol::BANG:
         case XmlLexer::Symbol::EQUALS:
         case XmlLexer::Symbol::DOT:
-            return parseUnaryToken();
+        case XmlLexer::Symbol::CL_SQUARE:
+        case XmlLexer::Symbol::OP_SQUARE:
         case XmlLexer::Symbol::OP_SHARD:
         case XmlLexer::Symbol::QUESTION:
         case XmlLexer::Symbol::DASH:
         case XmlLexer::Symbol::SLASH:
+        case XmlLexer::Symbol::COMMA:
+        case XmlLexer::Symbol::BAR:
+        case XmlLexer::Symbol::AMPERSAND:
             return parseToken();
         case XmlLexer::Symbol::DBL_QUOTE:
             return parseStringLiteral();
@@ -81,6 +85,14 @@ XmlLexer::Token XmlLexer::Lexer::parseUnaryToken() {
             return MAKE_TOKEN(Token::Type::EQUALS);
         case XmlLexer::Symbol::DOT:
             return MAKE_TOKEN(Token::Type::DOT);
+        case XmlLexer::Symbol::SLASH:
+            return MAKE_TOKEN(Token::Type::SLASH);
+        case XmlLexer::Symbol::OP_SQUARE:
+            return MAKE_TOKEN(Token::Type::OP_SQUARE);
+        case XmlLexer::Symbol::CL_SQUARE:
+            return MAKE_TOKEN(Token::Type::CL_SQUARE);
+        case XmlLexer::Symbol::COMMA:
+            return MAKE_TOKEN(Token::Type::COMMA);
     }
     throw UnreachableError();
 }
@@ -127,6 +139,19 @@ XmlLexer::Token XmlLexer::Lexer::parseToken() {
             // Close empty tag
             if (relativeChar(1) == Symbol::CL_SHARD) {
                 move(2); return MAKE_TOKEN(Token::Type::CL_EMPTY_TAG);
+            }
+        }
+
+        case Symbol::BAR: {
+            // OR
+            if (relativeChar(1) == Symbol::BAR) {
+                move(2); return MAKE_TOKEN(Token::Type::DBL_BAR);
+            }
+        }
+
+        case Symbol::AMPERSAND: {
+            if (relativeChar(1) == Symbol::AMPERSAND) {
+                move(2); return MAKE_TOKEN(Token::Type::DBL_AMPERSAND);
             }
         }
     }

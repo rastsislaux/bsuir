@@ -16,6 +16,9 @@ namespace XmlLexer {
     class Token {
     public:
         enum class Type {
+            OP_SQUARE,
+            CL_SQUARE,
+
             OP_INSTRUCTION,
             CL_INSTRUCTION,
             OP_SHARD_BRACKET,
@@ -30,6 +33,12 @@ namespace XmlLexer {
             OP_CLOSE_TAG,
             CL_EMPTY_TAG,
             DOT,
+            SLASH,
+            COMMA,
+            BAR,
+            AMPERSAND,
+            DBL_BAR,
+            DBL_AMPERSAND,
 
             WORD,
             STRING,
@@ -63,6 +72,14 @@ namespace XmlLexer {
                 GEN_ENTRY(DOT),
                 GEN_ENTRY(CL_EMPTY_TAG),
                 GEN_ENTRY(ERROR),
+                GEN_ENTRY(SLASH),
+                GEN_ENTRY(OP_SQUARE),
+                GEN_ENTRY(CL_SQUARE),
+                GEN_ENTRY(COMMA),
+                GEN_ENTRY(BAR),
+                GEN_ENTRY(AMPERSAND),
+                GEN_ENTRY(DBL_BAR),
+                GEN_ENTRY(DBL_AMPERSAND),
         };
         #undef GEN_ENTRY
 

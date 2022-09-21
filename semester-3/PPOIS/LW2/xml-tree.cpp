@@ -1,28 +1,39 @@
 #include "parser/Parser.h"
 
 #include <iostream>
+#include <fstream>
+#include <stdexcept>
+#include <sstream>
+
+#include "xmlpath/Request.h"
+#include "xmlpath/Holder.h"
+
+std::string readFile(std::string path) {
+    std::string file_content;
+    std::getline(std::ifstream(path), file_content, '\0');
+    return file_content;
+}
 
 int main(int argc, char** argv) {
-    auto lexer = XmlParser::Parser("<!-- special kind of processing instruction --> \n"
-                                 "<?xml version=\"1.0\"?>\n"
-                                 "<bookstore> <!-- Root tag -->\n"
-                                 "    <book> <!-- nested tag -->\n"
-                                 "        <!-- tag with an attribute -->\n"
-                                 "        <title lang=\"ru\">Harry Potter</title>\n"
-                                 "        <!-- text -->\n"
-                                 "        This is a book about a wizard Harry Potter.\n"
-                                 "        <price>15000</price>\n"
-                                 "        <!-- empty tag -->\n"
-                                 "        <count />\n"
-                                 "    </book>\n"
-                                 "    <book>\n"
-                                 "        <title lang=\"ru\">Learning XML</title>\n"
-                                 "        <price>20000</price>\n"
-                                 "        <count>5</count>\n"
-                                 "    </book>\n"
-                                 "</bookstore>");
+    std::string path;
+    getline(std::cin, path);
 
-    auto doc = lexer.parse();
-    auto i = doc.getContent();
-    printf("%s", i.c_str());
+    auto source = readFile(path);
+    auto parser = XmlParser::Parser(source);
+    auto document = parser.parse();
+
+    std::string cmd;
+    XmlPath::Holder holder(document);
+    while (cmd != "!exit") {
+        getline(std::cin, cmd);
+        XmlPath::Request req(cmd);
+        auto res = holder.find(req);
+        int i = 0;
+        for (auto& node : res) {
+            std::cout << ++i << ". Name: " << node->getName() << "\n"
+                             << "Text: " << node->getContent() << "\n"
+                             << "Lang attr: " << node->getAttribute("lang") << std::endl;
+        }
+
+    }
 }
