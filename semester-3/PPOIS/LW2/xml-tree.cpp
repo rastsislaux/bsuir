@@ -4,7 +4,7 @@
 
 int main(int argc, char** argv) {
     auto lexer = XmlParser::Parser("<!-- special kind of processing instruction --> \n"
-                                 "<?xml version=\"1.0\" test=\"hello, world\"?>\n");/*
+                                 "<?xml version=\"1.0\"?>\n"
                                  "<bookstore> <!-- Root tag -->\n"
                                  "    <book> <!-- nested tag -->\n"
                                  "        <!-- tag with an attribute -->\n"
@@ -20,9 +20,9 @@ int main(int argc, char** argv) {
                                  "        <price>20000</price>\n"
                                  "        <count>5</count>\n"
                                  "    </book>\n"
-                                 "</bookstore>");*/
+                                 "</bookstore>");
 
     auto doc = lexer.parse();
-    auto i = doc.getInstruction("test");
+    auto i = doc.getContent();
     printf("%s", i.c_str());
 }

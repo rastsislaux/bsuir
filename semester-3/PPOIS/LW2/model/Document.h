@@ -8,22 +8,27 @@
 #include <vector>
 #include <string>
 #include <map>
+#include <memory>
 
 #include "Tag.h"
 
 namespace Xml {
 
+    class Tag;
+
     class Document {
 
     protected:
         std::map<std::string, std::string> instructions;
-        std::vector<Tag> children;
+        std::vector<std::shared_ptr<Tag>> children;
         std::string content;
 
     public:
         std::string getContent();
 
-        std::vector<Tag> getChildren();
+        std::vector<std::shared_ptr<Tag>> getChildren();
+
+        void addChild(const std::shared_ptr<Tag>& child);
 
         std::string getInstruction(std::string name);
 

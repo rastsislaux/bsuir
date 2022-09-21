@@ -8,6 +8,7 @@
 #include "consts.h"
 #include "Token.h"
 #include "exceptions.h"
+#include "OpLogEntry.h"
 
 namespace XmlLexer {
 
@@ -19,6 +20,8 @@ namespace XmlLexer {
         size_t index = 0;
 
         Token currentToken = Token(Token::Type::ERROR, 0, 0, "Lexing is yet to be started.");
+
+        std::vector<OpLogEntry> opLog;
 
         char currentChar();
 
@@ -45,8 +48,9 @@ namespace XmlLexer {
         };
 
         class UnexpectedTokenError : public Error {
+            static std::string makeExpectedString(Token token, std::initializer_list<Token::Type> expected);
         public:
-            explicit UnexpectedTokenError(const std::string &msg);
+            explicit UnexpectedTokenError(Token token, std::initializer_list<Token::Type> expected);
         };
 
         [[maybe_unused]] explicit Lexer(std::string source);
@@ -55,9 +59,11 @@ namespace XmlLexer {
 
         Token current();
 
-        void expect(Token::Type expectedType);
+        void expect(std::initializer_list<Token::Type> types);
 
         bool hasNext();
+
+        Token previous();
     };
 
 };

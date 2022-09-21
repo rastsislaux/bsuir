@@ -61,6 +61,8 @@ namespace XmlLexer {
                 GEN_ENTRY(EQUALS),
                 GEN_ENTRY(OP_CLOSE_TAG),
                 GEN_ENTRY(DOT),
+                GEN_ENTRY(CL_EMPTY_TAG),
+                GEN_ENTRY(ERROR),
         };
         #undef GEN_ENTRY
 
@@ -81,7 +83,7 @@ namespace XmlLexer {
 
         Token(Type type, size_t row, size_t col, std::string text = "");
 
-        Type getType();
+        Type getType() const;
 
         std::string getText();
 

@@ -14,9 +14,17 @@ namespace XmlParser {
 
         XmlLexer::Lexer lexer;
 
-        std::map<std::string, std::string> parseInstruction();
+        std::shared_ptr<Xml::Document> root;
+
+        std::shared_ptr<Xml::Tag> tag;
+
+        void parseInstruction();
+
+        void openTag();
 
         void skipComments();
+
+        void insertTag(const std::shared_ptr<Xml::Tag>& newTag);
 
     public:
         class Error : public std::runtime_error {
@@ -28,6 +36,9 @@ namespace XmlParser {
 
         Xml::Document parse();
 
+        void closeTag();
+
+        void parseContent();
     };
 
 }

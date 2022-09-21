@@ -12,14 +12,11 @@ XmlLexer::Token::NotSupportedError::NotSupportedError(const std::string &msg) : 
 
 }
 
-XmlLexer::Token::Type XmlLexer::Token::getType() {
+XmlLexer::Token::Type XmlLexer::Token::getType() const {
     return type;
 }
 
 std::string XmlLexer::Token::getText() {
-    if (type != Type::WORD && type != Type::ERROR && type != Type::STRING) {
-        throw NotSupportedError("This operation is not supported for token type `" + typeNameMap[type] + "`");
-    }
     return text;
 }
 

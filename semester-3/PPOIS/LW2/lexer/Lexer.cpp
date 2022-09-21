@@ -1,12 +1,24 @@
 #include "Lexer.h"
 
+#include <utility>
+
 #define MAKE_TOKEN(TYPE) XmlLexer::Token(TYPE, row, col)
 #define MAKE_TEXT_TOKEN(TYPE, TEXT) XmlLexer::Token(TYPE, row, col, TEXT)
 
 XmlLexer::Lexer::Error::Error(const std::string& msg) : std::runtime_error(msg) { }
 
-XmlLexer::Lexer::UnexpectedTokenError::UnexpectedTokenError(const std::string &msg)
-: Error(msg) { }
+std::string XmlLexer::Lexer::UnexpectedTokenError::makeExpectedString(XmlLexer::Token token,
+                                                                      std::initializer_list<Token::Type> expected) {
+    auto s = "Unexpected token type `" + token.getTypeName() + "`, expected: ";
+    for (auto type : expected) {
+        s.append(token.getTypeName(type));
+        s.append(", ");
+    }
+    return s;
+}
+
+XmlLexer::Lexer::UnexpectedTokenError::UnexpectedTokenError(Token token, std::initializer_list<Token::Type> expected)
+: Error(makeExpectedString(std::move(token), expected)) { }
 
 char XmlLexer::Lexer::currentChar() {
     return source[index];
@@ -161,6 +173,16 @@ XmlLexer::Token XmlLexer::Lexer::current() {
 }
 
 XmlLexer::Token XmlLexer::Lexer::next() {
+    opLog.emplace_back(row, col, index);
+    return currentToken = _next();
+}
+
+XmlLexer::Token XmlLexer::Lexer::previous() {
+    opLog.pop_back();
+    auto entry = opLog[opLog.size() - 1];
+    row = entry.row;
+    col = entry.col;
+    index = entry.ind;
     return currentToken = _next();
 }
 
@@ -168,10 +190,10 @@ bool XmlLexer::Lexer::hasNext() {
     return currentToken.getType() != Token::Type::END;
 }
 
-void XmlLexer::Lexer::expect(XmlLexer::Token::Type expectedType) {
-    if (currentToken.getType() != expectedType) {
-        throw UnexpectedTokenError("Unexpected token type `" + currentToken.getTypeName() + "` at " + currentToken.getLocation() + ", expected: `"
-                                    + currentToken.getTypeName(expectedType) + "`");
+void XmlLexer::Lexer::expect(std::initializer_list<Token::Type> types) {
+    Token t = currentToken;
+    if (!std::any_of(types.begin(), types.end(), [t](Token::Type tp){ return tp == t.getType(); })) {
+        throw UnexpectedTokenError(currentToken, types);
     }
 }
 

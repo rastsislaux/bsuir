@@ -8,14 +8,18 @@ std::string Xml::Document::getContent() {
     return content;
 }
 
-std::vector<Xml::Tag> Xml::Document::getChildren() {
-    return children;
-}
-
 std::string Xml::Document::getInstruction(std::string name) {
     return instructions[name];
 }
 
 void Xml::Document::setInstruction(std::map<std::string, std::string>& instructions) {
     this->instructions = instructions;
+}
+
+void Xml::Document::addChild(const std::shared_ptr<Tag>& child) {
+    children.emplace_back(child);
+}
+
+std::vector<std::shared_ptr<Xml::Tag>> Xml::Document::getChildren() {
+    return children;
 }
