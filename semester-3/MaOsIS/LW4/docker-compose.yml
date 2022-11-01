@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  app:
+    build: ./
+    container_name: maosis_kb
+    ports:
+      - 8000:8000
+    volumes:
+      - /home/rostislav/app/ostis-example-app/problem-solvers:/app/ostis-example-app/problem-solvers
+      - /home/rostislav/app/ostis-example-app/kb:/app/ostis-example-app/ostis-web-platform/kb
