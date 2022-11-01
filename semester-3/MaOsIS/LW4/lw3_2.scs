@@ -1,0 +1,52 @@
+lw4_3_2 = [*
+
+    sc_node_class
+        -> concept_measurement_of_length;
+        -> concept_circle;
+        -> concept_atomic_existence;;
+
+    sc_node_norole_relation
+        -> nrel_multiplication;
+        -> nrel_length;
+        -> nrel_radius;
+        -> nrel_universality;
+        -> nrel_implication;;
+
+    sc_node_role_relation
+        -> rrel_linked_variables;
+        -> rrel_linked_if;
+        -> rrel_linked_then;;
+
+    nrel_universality -> ... (*
+        -> rrel_linked_variables: [*
+            sc_var
+                -> _c;
+                -> _r;
+                -> _l;;
+        *];;
+
+        -> ... (*
+            <- nrel_implication;;
+
+            -> rrel_linked_if: [*
+                concept_circle -> _c (*
+                    _=> nrel_radius: _r (* <- concept_measurement_of_length;; *);;
+                *);;
+            *] (* <- concept_atomic_existence;; *);;
+
+            -> rrel_linked_then: [*
+                concept_circle -> _c (*
+                    _=> nrel_length: _l (*
+                        _<= nrel_multiplication: ... (*
+                            _-> _r (* <- concept_measurement_of_length;; *);;
+                            -> 2 (* <- concept_number;; *);;
+                            -> pi (* <- concept_number;; *);;
+                        *);;
+                    *);;
+                *);;
+            *] (* <- concept_atomic_existence;; *);;
+
+        *);;
+    *);;
+
+*];;
