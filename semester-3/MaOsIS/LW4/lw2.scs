@@ -1,0 +1,131 @@
+lw4_2 = [*
+
+    sc_node_class
+        -> concept_curve;
+        -> concept_point;
+        -> concept_sc_definition;
+        -> concept_sc_statement;
+        -> concept_circle;
+        -> concept_planet;
+        -> concept_line_segment;
+        -> concept_set;
+        -> concept_measurement_of_length;
+        -> concept_number;
+        -> concept_arity;
+        -> concept_parameter;
+        -> concept_binary_relation;
+        -> concept_relation;
+        -> concept_oriented_relation;
+        -> concept_asymmetric_relation;
+        -> concept_antireflexive_relation;
+        -> concept_antitransitive_relation;;
+
+    sc_node_norole_relation
+        -> nrel_main_idtf;
+        -> nrel_sc_text_translation;
+        -> nrel_sys_idtf;
+        -> nrel_inclusion;
+        -> nrel_used_constants;
+        -> nrel_center;
+        -> nrel_idtf;
+        -> nrel_first_domain;
+        -> nrel_second_domain;
+        -> nrel_radius;
+        -> nrel_domain;
+        -> nrel_union;;
+
+    sc_node_role_relation
+        -> rrel_key_sc_element;
+        -> rrel_border_point;;
+        -> rrel_equator;;
+
+    concept_circle
+        => nrel_sys_idtf: [concept_circle];
+        => nrel_main_idtf: [circle] (* <- lang_eng;; *);
+        => nrel_main_idtf: [окружность] (* <- lang_ru;; *);
+        <= nrel_inclusion: concept_curve;
+        -> rrel_key_sc_element: ... (*
+            <- concept_sc_definition;;
+            => nrel_used_constants: ... (*
+                <- sc_node_not_binary_tuple;;
+                -> concept_point;;
+                -> concept_curve;;
+                -> nrel_center;;
+            *);;
+            <= nrel_sc_text_translation: ... (*
+                <- [замкнутая кривая, все точки к-рой равно удалены от цента] (* <- lang_ru;; *);;
+            *);;
+            => nrel_idtf: [определение (окружность)];;
+        *);;
+
+    nrel_radius
+        => nrel_sys_idtf: [nrel_radius];
+        => nrel_main_idtf: [радиус] (* <- lang_ru;; *);
+        => nrel_main_idtf: [radius] (* <- lang_eng;; *);
+        => nrel_first_domain: concept_circle;
+        => nrel_second_domain: concept_line_segment;
+
+        <- concept_asymmetric_relation;
+        <- concept_antireflexive_relation;
+        <- concept_antitransitive_relation;
+        <- concept_oriented_relation;
+        <- concept_binary_relation (*
+            <- concept_arity (* <- concept_parameter;; *);;
+            => 2 (* <- concept_number;; *);;
+        *);;
+
+    ...
+        -> concept_circle;
+        -> concept_line_segment;
+        => nrel_union: ... (*
+            <- concept_set;;
+            => nrel_domain: nrel_radius;;
+        *);; 
+
+    concept_relation
+        => nrel_inclusion: concept_binary_relation (*
+            => nrel_inclusion: concept_asymmetric_relation;;
+            => nrel_inclusion: concept_antireflexive_relation;;
+            => nrel_inclusion: concept_antitransitive_relation;;
+        *);
+        => nrel_inclusion: concept_oriented_relation;;
+
+    concept_circle
+        -> ... (*
+            -> center_point (*
+                <- concept_point;;
+            *);;
+            => nrel_center: circle_point (*
+                <- concept_point;;
+            *);;
+            => nrel_radius: ... (*
+                <- concept_line_segment;;
+                -> rrel_border_point: center_point;;
+                -> rrel_border_point: circle_point;;
+            *);;
+        *);;
+
+    ...
+        <= nrel_sc_text_translation: ... (* <- [отрезок, соединяющий центр с любой точкой окружности];; *);
+        <- concept_sc_definition;
+        => nrel_used_constants: ... (*
+            -> concept_circle;;
+            -> concept_point;;
+            -> concept_line_segment;;
+        *);
+        => nrel_idtf: [определение ( радиус* )] (* <- lang_ru;; *);
+        <- rrel_key_sc_element: nrel_radius;;
+
+    ...
+        <- concept_sc_statement;
+        -> rrel_key_sc_element: nrel_radius;
+        => nrel_idtf: [утверждение (радиус экватора земли)] (* <- lang_ru;; *);
+        => nrel_used_constants: ... (*
+            -> rrel_equator;;
+            -> kilometer (* <- concept_measurement_of_length;; *);;
+        *);
+        <= nrel_sc_text_translation: ... (*
+            <- [радиус экватора земли составляет 6000км] (* <- lang_ru;; *);;
+        *);;
+        
+*];;

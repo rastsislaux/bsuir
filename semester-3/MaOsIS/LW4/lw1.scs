@@ -1,0 +1,100 @@
+lw4_1=[*
+    // Basic
+    sc_node_class
+        -> concept_length_17cm;
+        -> concept_length_4cm;
+
+        -> concept_point;
+        -> concept_line_segment;
+        -> concept_triangle;
+        -> concept_trapezium;
+        -> concept_isosceles_trapezium;
+
+        -> concept_number;
+        -> concept_exact_value;
+        -> concept_length;
+        -> concept_measurement_with_fixed_unit;;
+
+    sc_node_norole_relation
+        -> nrel_inclusion;
+        -> nrel_measurement_in_centimeters;
+        -> nrel_parallel;
+        -> nrel_perimeter;
+        -> nrel_intersection_point;
+        -> nrel_unit;;
+
+    sc_node_role_relation
+        -> rel_apex;
+        -> rel_side;;
+
+    // Numbers
+    concept_number
+        -> 4;
+        -> 17;;
+
+    // Relations
+    concept_trapezium
+        => nrel_inclusion: concept_isosceles_trapezium;;
+
+    concept_isosceles_trapezium
+        -> concept_trapezium_ABCD;;
+
+    concept_point
+        -> concept_A;
+        -> concept_B;
+        -> concept_C;
+        -> concept_D;
+        -> concept_N;;
+
+    concept_line_segment
+        -> concept_CD;
+        -> concept_BN;
+        -> concept_AD;
+        -> concept_CB;;
+
+    concept_trapezium_ABCD
+        -> rel_apex: concept_A;
+        -> rel_apex: concept_B;
+        -> rel_apex: concept_C;
+        -> rel_apex: concept_D;
+
+        -> rel_side: concept_CD;
+        -> rel_side: concept_AD;
+        -> rel_side: concept_BN;
+        
+        => nrel_perimeter: concept_perimeter_ABCD;;
+
+    concept_CD
+        <=> nrel_parallel: concept_BN;;
+
+    (concept_BN <=> nrel_basis: concept_AD)
+        => nrel_intersection_point: concept_N;;
+
+    concept_triangle_ABN
+        <- concept_triangle;
+        => nrel_perimeter: concept_perimeter_ABN;;
+
+    nrel_measurement_in_centimeters
+        <- concept_measurement_with_fixed_unit;
+        => nrel_unit: concept_length_1cm (*
+            <- concept_length;;
+        *);;
+
+    concept_length_17cm
+        <- concept_length;
+        <- concept_exact_value;
+        => nrel_measurement_in_centimeters: 17;;
+
+    concept_length_4cm
+        <- concept_length;
+        <- concept_exact_value;
+        -> concept_CB;
+        => nrel_measurement_in_centimeters: 4;;
+
+    ...
+        <- concept_exact_value;
+        <- sc_node_class;
+        => nrel_measurement_in_centimeters:
+            ... (* <- concept_number;; *);;
+    
+*];;
