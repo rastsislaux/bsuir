@@ -24,8 +24,8 @@ lw4_1=[*
         -> nrel_unit;;
 
     sc_node_role_relation
-        -> rel_apex;
-        -> rel_side;;
+        -> rrel_apex;
+        -> rrel_side;;
 
     // Numbers
     concept_number
@@ -53,14 +53,14 @@ lw4_1=[*
         -> concept_CB;;
 
     concept_trapezium_ABCD
-        -> rel_apex: concept_A;
-        -> rel_apex: concept_B;
-        -> rel_apex: concept_C;
-        -> rel_apex: concept_D;
+        -> rrel_apex: concept_A;
+        -> rrel_apex: concept_B;
+        -> rrel_apex: concept_C;
+        -> rrel_apex: concept_D;
 
-        -> rel_side: concept_CD;
-        -> rel_side: concept_AD;
-        -> rel_side: concept_BN;
+        -> rrel_side: concept_CD;
+        -> rrel_side: concept_AD;
+        -> rrel_side: concept_BN;
         
         => nrel_perimeter: concept_perimeter_ABCD;;
 
