@@ -10,3 +10,6 @@
 [submodule "semester-3/PPOIS/LW3/googletest"]
 	path = semester-3/PPOIS/LW3/googletest
 	url = https://github.com/google/googletest
+[submodule "semester-3/OS/LW_4/googletest"]
+	path = semester-3/OS/LW_4/googletest
+	url = https://github.com/google/googletest
