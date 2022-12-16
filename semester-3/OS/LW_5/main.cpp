@@ -5,6 +5,22 @@
 
 int main(int argc, char** argv) {
 
+    auto _fs = fs::create("test_drive");
+    for (int i = 1; i < 1000; i++) {
+        auto name = "file" + std::to_string(i);
+        fs::file f = {name, 0, {'s', 'o', 'm', 'e', 'c', 'o', 'n', 't', 'e', 'n', 't'}};
+        _fs.add_file(f);
+        _fs.save_state();
+
+
+        auto st = clock();
+        _fs.get_file_by_name(name);
+        auto et = clock();
+
+        std::cout << et - st << std::endl;
+    }
+
+/*
     if (argc < 3) {
         std::cout << "not enough args." << std::endl;
         exit(1);
@@ -155,6 +171,7 @@ int main(int argc, char** argv) {
         _fs.set_content(filename, content);
         _fs.save_state();
     }
+    */
 
     return 0;
 }
