@@ -5,11 +5,13 @@ from enum import Enum, auto
 
 _OP_BRACE = "("
 _CL_BRACE = ")"
-_AND = "*"
-_OR = "+"
+_AND = "&"
+_OR = "|"
 _EQU = "~"
 _IMP = "->"
 _NEG = "!"
+_TRUE = "T"
+_FALSE = ".L"
 
 
 class Node:
@@ -21,6 +23,16 @@ class Node:
 
     def __repr__(self):
         return f"Node({self.value})"
+
+
+def get_tree_string(node, prefix="", is_left=True):
+    tree_str = ""
+    if node is None:
+        return tree_str
+    tree_str += get_tree_string(node.right, prefix + ("│   " if is_left else "    "), False)
+    tree_str += prefix + ("└── " if is_left else "┌── ") + str(node.value) + "\n"
+    tree_str += get_tree_string(node.left, prefix + ("    " if is_left else "│   "), True)
+    return tree_str
 
 
 def print_tree(node, prefix="", is_left=True):
@@ -40,6 +52,8 @@ class Token(Enum):
     IMP = auto()
     EQU = auto()
     VAR = auto()
+    TRUE = auto()
+    FALSE = auto()
 
     def __repr__(self):
         return self.name
@@ -77,8 +91,14 @@ def get_tokens(raw: str):
             tokens.append(Token.NEG)
         elif raw[i] == _EQU:
             tokens.append(Token.EQU)
-        elif raw[i:i + 1] == _IMP:
+        elif raw[i:i + 2] == _IMP:
             tokens.append(Token.IMP)
+            i += 1
+        elif raw[i] == _TRUE:
+            tokens.append(Token.TRUE)
+        elif raw[i:i + 2] == _FALSE:
+            tokens.append(Token.FALSE)
+            i += 1
         elif raw[i].isalpha():
             tokens.append(Token.VAR)
         else:
@@ -91,7 +111,7 @@ def to_rpn(tokens):
     output = []
     stack = []
     for token in tokens:
-        if token == Token.VAR:
+        if token in [Token.VAR, Token.TRUE, Token.FALSE]:
             output.append(token)
         elif token in [Token.AND, Token.OR, Token.NEG, Token.IMP, Token.EQU]:
             while stack and TOKEN_PRECEDENCE.get(token, 0) <= TOKEN_PRECEDENCE.get(stack[-1], 0):
@@ -126,7 +146,7 @@ def to_tree(prn, root=None):
 
 def is_and(node):
     for child in [node.left, node.right]:
-        if child is not None and child.value not in [Token.AND, Token.VAR, Token.NEG, None]:
+        if child is not None and child.value not in [Token.AND, Token.VAR, Token.TRUE, Token.FALSE, Token.NEG, None]:
             return False
         if child is not None and child.value == Token.AND:
             if not is_and(child):
@@ -135,17 +155,23 @@ def is_and(node):
 
 
 def is_dnf(node):
+    if node.value == Token.NEG:
+        return node.left.value in [Token.VAR, Token.TRUE, Token.FALSE]
+
+    if node.value in [Token.VAR, Token.TRUE, Token.FALSE]:
+        return True
+
+    if node.value == Token.AND:
+        return is_and(node)
+
     if node.value != Token.OR:
         return False
 
     for child in [node.left, node.right]:
-        if child.value not in [Token.AND, Token.VAR, Token.NEG, Token.OR]:
+        if child.value not in [Token.AND, Token.VAR, Token.TRUE, Token.FALSE, Token.NEG, Token.OR]:
             return False
-        if child.value == Token.OR:
+        if child.value in [Token.OR, Token.AND]:
             if not is_dnf(child):
-                return False
-        if child.value == Token.AND:
-            if not is_and(child):
                 return False
 
     return True
