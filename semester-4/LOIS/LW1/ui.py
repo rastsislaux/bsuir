@@ -1,6 +1,6 @@
 import tkinter as tk
 
-from system import *
+from cli import *
 
 
 class Application(tk.Frame):
