@@ -1,9 +1,5 @@
 #! /bin/python3
-
-from cli.standart_mode import standart_mode
-from cli.test_mode import test_mode
-from dnflib.generator import generate_test_set
-
+from cli.cli_main import cli_main
 
 if __name__ == "__main__":
-    main()
+    cli_main()

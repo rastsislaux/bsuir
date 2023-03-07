@@ -1,6 +1,6 @@
 from copy import deepcopy
 
-from lexer import Token
+from dnflib.lexer import Token
 
 
 class Node:

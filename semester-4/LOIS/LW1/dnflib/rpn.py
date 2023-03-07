@@ -1,4 +1,4 @@
-from lexer import Token
+from dnflib.lexer import Token
 
 TOKEN_PRECEDENCE = {
         Token.NEG: 3,

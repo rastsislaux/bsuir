@@ -1,4 +1,4 @@
-from lexer import Token
+from dnflib.lexer import Token
 
 
 ATOMIC_EXPRESSIONS = [
