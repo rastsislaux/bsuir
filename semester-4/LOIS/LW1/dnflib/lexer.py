@@ -3,8 +3,8 @@ from enum import Enum, auto
 
 _OP_BRACE = "("
 _CL_BRACE = ")"
-_AND = "&"
-_OR = "|"
+_AND = "/\\"
+_OR = "\\/"
 _EQU = "~"
 _IMP = "->"
 _NEG = "!"
@@ -32,7 +32,8 @@ class Token(Enum):
 
 
 def to_tokens(raw: str):
-    raw = raw.replace(" ", "")
+    if raw.find(" ") != -1:
+        raise RuntimeError("Spaces are not allowed.")
 
     i = -1
     tokens = []
@@ -43,10 +44,12 @@ def to_tokens(raw: str):
             tokens.append(Token.OP_BRACE)
         elif raw[i] == _CL_BRACE:
             tokens.append(Token.CL_BRACE)
-        elif raw[i] == _AND:
+        elif raw[i:i+2] == _AND:
             tokens.append(Token.AND)
-        elif raw[i] == _OR:
+            i += 1
+        elif raw[i:i+2] == _OR:
             tokens.append(Token.OR)
+            i += 1
         elif raw[i] == _NEG:
             tokens.append(Token.NEG)
         elif raw[i] == _EQU:
@@ -60,6 +63,8 @@ def to_tokens(raw: str):
             tokens.append(Token.FALSE)
             i += 1
         elif raw[i].isalpha():
+            while i+1 < len(raw) and raw[i + 1] in ['1', '2', '3', '4', '5', '6', '7', '8', '9']:
+                i += 1
             tokens.append(Token.VAR)
         else:
             raise RuntimeError(f"Unexpected symbol while lexing: {raw[i]}")

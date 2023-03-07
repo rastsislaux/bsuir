@@ -1,3 +1,5 @@
+from copy import deepcopy
+
 from lexer import Token
 
 
@@ -23,6 +25,8 @@ def get_tree_string(node, prefix="", is_left=True):
 
 
 def to_tree(prn, root=None):
+    prn = deepcopy(prn)
+
     if root is None:
         root = Node(prn.pop())
 
