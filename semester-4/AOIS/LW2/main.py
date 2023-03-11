@@ -6,6 +6,22 @@ from lexer import to_tokens
 from reverse_polish_notation import to_rpn
 from truth_table import make_truth_table
 
+EDUCATION_FILE = "education.json"
+
+HELP_TEXT = ("What do you want to do?\n"
+             "\t/q\t\t\tquit\n"
+             "\t/fdnf\t\tget full disjunctive normal form\n"
+             "\t/fcnf\t\tget full conjunctive normal form\n"
+             "\t/forms\t\tget numeric and index forms\n"
+             "\t/tt\t\t\tget truth table\n"
+             "> ")
+MODE_CHOICE_TEXT = ("Choose mode:\n"
+                    "\t1) Normal\n"
+                    "\t2) Education\n"
+                    "Your choice: ")
+ENTER_FORMULA_TEXT = "Enter your formula: "
+FAILED_TO_PARSE_TEXT = "Failed to parse formula: "
+
 
 def print_truth_table(table, variables):
     for values, result in table:
@@ -18,15 +34,8 @@ def print_truth_table(table, variables):
 
 
 def normal_mode():
-
     def actions_with_formula():
-        print("What do you want to do?\n"
-              "\t/q\t\t\tquit\n"
-              "\t/fdnf\t\tget full disjunctive normal form\n"
-              "\t/fcnf\t\tget full conjunctive normal form\n"
-              "\t/forms\t\tget numeric and index forms"
-              "\t/truthtable\tget truth table\n"
-              "> ", end="")
+        print(HELP_TEXT, end="")
 
         command = input()
 
@@ -45,7 +54,7 @@ def normal_mode():
             case "/fcnf":
                 fcnf = make_fcnf(make_truth_table(rpn, variables), variables)
                 print(f"Answer: {fcnf}")
-            case "/truthtable":
+            case "/tt":
                 truth_table = make_truth_table(rpn, variables)
                 print_truth_table(truth_table, variables)
             case "/q":
@@ -55,7 +64,7 @@ def normal_mode():
 
     while True:
         try:
-            print("Enter your formula: ", end="")
+            print(ENTER_FORMULA_TEXT, end="")
             raw_input = input()
 
             if raw_input == "/q":
@@ -65,7 +74,7 @@ def normal_mode():
             variables = list(sorted(variables))
             rpn = to_rpn(tokens)
         except RuntimeError as e:
-            print(f"Failed to parse formula: {e}")
+            print(f"{FAILED_TO_PARSE_TEXT}{e}")
             continue
 
         while actions_with_formula():
@@ -73,7 +82,7 @@ def normal_mode():
 
 
 def education_mode():
-    with open("education.json") as file:
+    with open(EDUCATION_FILE) as file:
         qa = json.loads(file.read())
 
     questions = list(map(lambda x: x['q'], qa))
@@ -97,12 +106,8 @@ def education_mode():
             continue
 
 
-
 def main():
-    print("Choose mode:\n"
-          "\t1) Normal\n"
-          "\t2) Education\n"
-          "Your choice: ", end="")
+    print(MODE_CHOICE_TEXT, end="")
 
     match input():
         case "1":

@@ -1,7 +1,6 @@
 from dataclasses import dataclass
 from enum import Enum, auto
 
-
 _OP_BRACE = "("
 _CL_BRACE = ")"
 _AND = "/\\"
@@ -37,8 +36,8 @@ class Token:
     value: str
     type: TokenType
 
-    def __init__(self, type: TokenType, value=None):
-        self.type = type
+    def __init__(self, atype: TokenType, value=None):
+        self.type = atype
         self.value = value
 
 
@@ -54,10 +53,10 @@ def to_tokens(raw: str):
             tokens.append(Token(TokenType.OP_BRACE))
         elif raw[i] == _CL_BRACE:
             tokens.append(Token(TokenType.CL_BRACE))
-        elif raw[i:i+2] == _AND:
+        elif raw[i:i + 2] == _AND:
             tokens.append(Token(TokenType.AND))
             i += 1
-        elif raw[i:i+2] == _OR:
+        elif raw[i:i + 2] == _OR:
             tokens.append(Token(TokenType.OR))
             i += 1
         elif raw[i] == _NEG:
@@ -74,7 +73,7 @@ def to_tokens(raw: str):
             i += 1
         elif raw[i].isalpha():
             start = i
-            while i+1 < len(raw) and raw[i + 1].isalnum():
+            while i + 1 < len(raw) and raw[i + 1].isalnum():
                 i += 1
             finish = i
             tokens.append(Token(TokenType.VAR, value=raw[start:finish + 1]))

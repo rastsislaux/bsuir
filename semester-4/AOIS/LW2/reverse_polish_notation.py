@@ -1,11 +1,11 @@
 from lexer import TokenType
 
 TOKEN_PRECEDENCE = {
-        TokenType.NEG: 3,
-        TokenType.AND: 2,
-        TokenType.OR: 1,
-        TokenType.IMP: 0,
-        TokenType.EQU: 0,
+    TokenType.NEG: 3,
+    TokenType.AND: 2,
+    TokenType.OR: 1,
+    TokenType.IMP: 0,
+    TokenType.EQU: 0,
 }
 
 

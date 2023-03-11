@@ -1,3 +1,7 @@
+CONJUNCTION = "/\\"
+DISJUNCTION = "\\/"
+
+
 def make_fcnf(table, variables):
     table = list(filter(lambda x: x[1] is False, table))
     constituents = []
@@ -8,8 +12,8 @@ def make_fcnf(table, variables):
                 vars2.append(f"!{variable}")
             else:
                 vars2.append(f"{variable}")
-        constituents.append("(" + "\\/".join(vars2) + ")")
-    return "/\\".join(constituents)
+        constituents.append("(" + DISJUNCTION.join(vars2) + ")")
+    return CONJUNCTION.join(constituents)
 
 
 def make_numeric_fcnf(table):
@@ -24,23 +28,12 @@ def make_numeric_fcnf(table):
 
 
 def make_index(table):
-
     def bool_tuple_to_int(bool_tuple):
         binary_str = ''.join('1' if not b else '0' for b in bool_tuple)
         return int(binary_str, 2)
 
     index = 0
     for values, result in table:
-        #match binstr(values):
-        #    case "000": weight = 128
-        #    case "001": weight = 64
-        #    case "010": weight = 32
-        #    case "011": weight = 16
-        #    case "100": weight = 8
-        #    case "101": weight = 4
-        #    case "110": weight = 2
-        #    case "111": weight = 1
-        #    case _: raise RuntimeError("Unreachable")
         weight = pow(2, bool_tuple_to_int(values))
         if result:
             index += weight
@@ -57,8 +50,8 @@ def make_fdnf(table, variables):
                 vars2.append(f"!{variable}")
             else:
                 vars2.append(f"{variable}")
-        constituents.append("(" + "/\\".join(vars2) + ")")
-    return "\\/".join(constituents)
+        constituents.append("(" + CONJUNCTION.join(vars2) + ")")
+    return DISJUNCTION.join(constituents)
 
 
 def make_numeric_fdnf(table):

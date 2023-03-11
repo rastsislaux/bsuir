@@ -1,6 +1,9 @@
 from lexer import Token, TokenType
 
 
+OPERATION_NOT_SUPPORTED_TEXT = "Operation not supported: "
+
+
 def calculate(expr: list[Token], **kwargs):
     stack = []
     for token in expr:
@@ -27,5 +30,5 @@ def calculate(expr: list[Token], **kwargs):
                 op1 = stack.pop()
                 stack.append(not op1)
             case _:
-                raise RuntimeError(f"Operation not supported: {token.type}")
+                raise RuntimeError(f"{OPERATION_NOT_SUPPORTED_TEXT}{token.type}")
     return stack[0]
