@@ -6,13 +6,13 @@ def make_fcnf(table, variables):
     table = list(filter(lambda x: x[1] is False, table))
     constituents = []
     for values, _ in table:
-        vars2 = []
+        used_variables = []
         for variable, value in zip(variables, values):
             if value is True:
-                vars2.append(f"!{variable}")
+                used_variables.append(f"!{variable}")
             else:
-                vars2.append(f"{variable}")
-        constituents.append("(" + DISJUNCTION.join(vars2) + ")")
+                used_variables.append(f"{variable}")
+        constituents.append("(" + DISJUNCTION.join(used_variables) + ")")
     return CONJUNCTION.join(constituents)
 
 

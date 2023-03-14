@@ -81,8 +81,8 @@ def to_tokens(raw: str):
             raise RuntimeError(f"Unexpected symbol while lexing: {raw[i]}")
 
     variables = []
-    for tok in tokens:
-        if tok.type == TokenType.VAR and tok.value not in variables:
-            variables.append(tok.value)
+    for token in tokens:
+        if token.type == TokenType.VAR and token.value not in variables:
+            variables.append(token.value)
 
     return tokens, variables

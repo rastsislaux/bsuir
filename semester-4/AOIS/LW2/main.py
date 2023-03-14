@@ -1,3 +1,5 @@
+# !((!a\/!b)/\(c\/b)/\!(!a/\c))
+
 import json
 import textwrap
 
@@ -100,7 +102,7 @@ def education_mode():
             continue
 
         try:
-            print('\n'.join(textwrap.wrap(qa[qid - 1]['a'], width=80)))
+            print('\n'.join(textwrap.wrap(qa[qid - 1]['a'], width=150)))
         except IndexError as e:
             print(e)
             continue
