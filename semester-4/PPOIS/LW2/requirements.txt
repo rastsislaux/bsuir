@@ -1,0 +1,4 @@
+tk
+beautifulsoup4
+lxml
+faker
