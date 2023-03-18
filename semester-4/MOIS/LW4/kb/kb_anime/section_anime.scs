@@ -1,0 +1,219 @@
+section_anime_animes
+    -> bakemonogatari;
+    -> nisekoi;
+    -> bungou_stray_dogs;
+    -> death_note;
+    -> jojo;
+    -> zombieland_saga;
+    -> boiling_point;
+    -> attack_on_titans;
+    -> ya_boy_kongming;
+    -> kaguya_san;
+    -> horimiya;
+    -> code_geass;
+    -> tokyo_ghoul;;
+
+bakemonogatari
+    => nrel_main_idtf: [Истории монстров] (* <- lang_ru;; *);
+    => nrel_year_on_air: year_2009;
+    => nrel_studio: studio_Shaft;
+
+    => nrel_genre:
+        genre_supernatural;
+        genre_detective;
+        genre_romance;
+        genre_vampires;
+        
+    => nrel_series_count: 15;
+
+    <- concept_anime;;
+
+nisekoi
+    => nrel_main_idtf: [Притворная любовь] (* <- lang_ru;; *);
+    => nrel_year_on_air: year_2014;
+    => nrel_studio: studio_Shaft;
+
+    => nrel_genre:
+        genre_comedy;
+        genre_romance;
+        genre_school;
+        genre_shonen;
+        genre_harem;
+
+    => nrel_series_count: 20;
+
+    <- concept_anime;;
+
+bungou_stray_dogs
+    => nrel_main_idtf: [Великие из бродячих псов] (* <- lang_ru;; *);
+    => nrel_year_on_air: year_2016;
+    => nrel_studio: studio_Bones;
+
+    => nrel_genre:
+        genre_action;
+        genre_detective;
+        genre_supernatural;
+        genre_superpower;
+        genre_shonen;
+
+    => nrel_series_count: 12;
+
+    <- concept_anime;;
+
+death_note
+    => nrel_main_idtf: [Тетрадь смерти] (* <- lang_ru;; *);
+    => nrel_year_on_air: year_2006;
+    => nrel_studio: studio_Madhouse;
+
+    => nrel_genre:
+        genre_supernatural;
+        genre_thriller;
+        genre_psychological;
+        genre_shonen;
+
+    => nrel_series_count: 37;
+
+    => nrel_restricted_in: country_Russia;
+    <- concept_anime;;
+
+jojo
+    => nrel_main_idtf: [Невероятные приключения ДжоДжо] (* <- lang_ru;; *);
+    => nrel_year_on_air: year_2012;
+    => nrel_studio: studio_David_Production;
+
+    => nrel_genre:
+        genre_shonen;
+        genre_action;
+        genre_adventures;
+        genre_supernatural;
+        genre_vampires;
+
+    => nrel_series_count: 26;
+
+    <- concept_anime;;
+
+zombieland_saga
+    => nrel_main_idtf: [Зомбиленд-Сага] (* <- lang_ru;; *);
+    => nrel_year_on_air: year_2018;
+    => nrel_studio: studio_Mappa;
+
+    => nrel_genre:
+        genre_comedy;
+        genre_supernatural;
+        genre_music;
+
+    => nrel_series_count: 12;
+
+    <- concept_original_anime;
+    <- concept_anime;;
+
+boiling_point
+    => nrel_main_idtf: [Точка кипения] (* <- lang_ru;; *);
+    => nrel_year_on_air: year_2015;
+    => nrel_studio: studio_Mappa;
+
+    => nrel_genre:
+        genre_comedy;
+        genre_fantastic;
+        genre_supernatural;
+        genre_ecchi;
+        genre_superpower;
+
+    => nrel_series_count: 12;
+
+    <- concept_original_anime;
+    <- concept_anime;;
+
+attack_on_titans
+    => nrel_main_idtf: [Атака титанов] (* <- lang_ru;; *);
+    => nrel_year_on_air: year_2013;
+    => nrel_studio: studio_Wit;
+
+    => nrel_genre:
+        genre_shonen;
+        genre_action;
+        genre_drama;
+        genre_thriller;
+        genre_military;
+
+    => nrel_series_count: 25;
+
+    <- concept_anime;;
+
+ya_boy_kongming
+    => nrel_main_idtf: [Тусовщик Кунмин] (* <- lang_ru;; *);
+    => nrel_year_on_air: year_2022;
+    => nrel_studio: studio_PA;
+
+    => nrel_genre:
+        genre_comedy;
+        genre_music;
+
+    => nrel_series_count: 12;
+
+    <- concept_anime;;
+
+kaguya_san
+    => nrel_main_idtf: [Госпожа Кагуя: в любви как на войне] (* <- lang_ru;; *);
+    => nrel_year_on_air: year_2019;
+    => nrel_studio: studio_A1;
+
+    => nrel_genre:
+        genre_comedy;
+        genre_psychological;
+        genre_school;
+        genre_shonen;
+
+    => nrel_series_count: 12;
+
+    <- concept_anime;;
+
+horimiya
+    => nrel_main_idtf: [Хоримия] (* <- lang_ru;; *);
+    => nrel_year_on_air: year_2021;
+    => nrel_studio: studio_Cloverworks;
+
+    => nrel_genre:
+        genre_shonen;
+        genre_romance;
+        genre_school;
+
+    => nrel_series_count: 13;
+
+    <- concept_anime;;
+
+code_geass
+    => nrel_main_idtf: [Код Гиасс: Восставший Лелуш] (* <- lang_ru;; *);
+    => nrel_year_on_air: year_2006;
+    => nrel_studio: studio_Sunrise;
+
+    => nrel_genre:
+        genre_action;
+        genre_drama;
+        genre_fantastic;
+        genre_mecha;
+        genre_military;
+        genre_school;
+        genre_superpower;
+
+    => nrel_series_count: 25;
+
+    <- concept_original_anime;
+    <- concept_anime;;
+
+tokyo_ghoul
+    => nrel_main_idtf: [Токийский гуль] (* <- lang_ru;; *);
+    => nrel_year_on_air: year_2014;
+    => nrel_studio: studio_Pierrot;
+
+    => nrel_genre:
+        genre_shonen;
+        genre_action;
+        genre_fantasy;
+        genre_horror;
+        genre_psychological;
+
+    => nrel_series_count: 12;
+
+    => nrel_restricted_in: country_Russia;
+    <- concept_anime;;

@@ -1,0 +1,230 @@
+// Section
+
+subject_domain_anime_section
+	=> nrel_main_idtf: [Раздел. Предметная область аниме] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of anime] (* <- lang_en;; *);
+
+	<= nrel_section_decomposition:
+		{
+			section_anime_studios;
+			section_anime_genres;
+			section_anime_history;
+			section_anime_awards;
+			section_anime_characters;
+			section_anime_technology;
+			section_anime_globalisation;
+			section_anime_manga;
+			section_anime_fans;
+			section_anime_animes
+		};
+
+	-> rrel_key_sc_element:
+		lw4_patterns;
+		concept_anime_industry;
+		concept_anime;
+		concept_manga;
+		concept_anime_genre;
+		subject_domain_anime;
+		lang_jp;
+		country_Japan;
+
+	<- non_atomic_section;;
+
+// Sections
+
+section_anime_studios
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. Аниме-студии] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Anime studios] (* <- lang_en;; *);;
+
+section_anime_genres
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. Жанры аниме] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Anime genres] (* <- lang_en;; *);;
+
+section_anime_history
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. История аниме] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. History of anime] (* <- lang_en;; *);;
+
+section_anime_awards
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. Награды в аниме-индустрии] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Anime industry awards] (* <- lang_en;; *);;
+
+section_anime_characters
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. Персонажи аниме] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Anime characters] (* <- lang_en;; *);;
+
+section_anime_technology
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. Технологии в аниме] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Setion. Anime technology] (* <- lang_en;; *);;
+
+section_anime_globalisation
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. Аниме и глобализация] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Anime and globalisation] (* <- lang_en;; *);;
+
+section_anime_manga
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. Манга] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Manga] (* <- lang_en;; *);;
+
+section_anime_fans
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. Фанаты аниме] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Anime fans] (* <- lang_en;; *);;
+
+section_anime_animes
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Раздел. Аниме] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Anime] (* <- lang_en;; *);;
+
+// Key sc elements
+
+concept_anime_industry
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Аниме-индустрия] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Anime industry] (* <- lang_en;; *);;
+
+country_Japan
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Япония] (* <- lang_ru;; *);
+    => nrel_main_idtf: [Japan] (* <- lang_en;; *);;
+
+lang_jp
+    <- sc_node_not_relation;
+    => nrel_main_idtf: [Японский язык] (* <- lang_ru;; *);
+    => nrel_main_idtf: [Japanese language] (* <- lang_en;; *);;
+
+// Subject domain
+subject_domain_anime_section = [*
+
+	subject_domain_anime
+		<- sc_node_not_relation;
+		=> nrel_main_idtf: [Предметная область аниме] (* <- lang_ru;; *);
+    	=> nrel_main_idtf: [Subject domain of anime] (* <- lang_en;; *);
+
+		-> rrel_maximum_studied_object_class:
+			concept_anime_industry;
+
+		<- rrel_not_maximum_studied_object_class:
+			concept_anime;
+			concept_manga;
+			concept_anime_genre;
+
+		-> rrel_studied_relation:
+			nrel_years_of_show;
+			nrel_country_of_origin;
+			nrel_right_holder;
+			nrel_creator_studio;
+
+		=> nrel_private_subject_domain:
+			subject_domain_anime_studios;
+			subject_domain_anime_genres;
+			subject_domain_anime_history;
+			subject_domain_anime_awards;
+			subject_domain_anime_characters;
+			subject_domain_anime_technology;
+			subject_domain_anime_globalisation;
+			subject_domain_anime_manga;
+			subject_domain_anime_fans;
+
+		<= nrel_private_subject_domain:
+			subject_domain_cartoons;
+
+		<- subject_domain;;
+
+*];;
+
+subject_domain_cartoons
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область мультипликации] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of cartoons] (* <- lang_en;; *);;
+
+subject_domain_anime_studios
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область аниме-студий] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of anime studios] (* <- lang_en;; *);;
+
+subject_domain_anime_genres
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область аниме жанров] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of anime genres] (* <- lang_en;; *);;
+
+subject_domain_anime_history
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область истории аниме] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of history of anime] (* <- lang_en;; *);;
+
+subject_domain_anime_awards
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область наград в аниме-индустрии] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of anime awards] (* <- lang_en;; *);;
+
+subject_domain_anime_characters
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область персонажей аниме] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of anime characters] (* <- lang_en;; *);;
+
+subject_domain_anime_technology
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область технологий в аниме] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of anime technology] (* <- lang_en;; *);;
+
+subject_domain_anime_globalisation
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область аниме и глобализации] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of anime and globalisation] (* <- lang_en;; *);;
+
+subject_domain_anime_manga
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область манги] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of manga] (* <- lang_en;; *);;
+
+subject_domain_anime_fans
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [Предметная область фанатов аниме] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Subject domain of anime fans] (* <- lang_en;; *);;
+
+concept_anime_industry
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [аниме-индустрия] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [anime industry] (* <- lang_en;; *);;
+
+concept_anime
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [аниме] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [anime] (* <- lang_en;; *);;
+
+concept_manga
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [манга] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [manga] (* <- lang_en;; *);;
+
+concept_anime_genre
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [жанр] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [genre] (* <- lang_en;; *);;
+
+nrel_years_of_show
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [годы показа*] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [years of show*] (* <- lang_en;; *);;
+
+nrel_country_of_origin
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [страна производства*] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [country of origin*] (* <- lang_en;; *);;
+
+nrel_right_holder
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [правообладатель*] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [right holder*] (* <- lang_en;; *);;
+
+nrel_creator_studio
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [студия производства*] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [creator studio*] (* <- lang_en;; *);;

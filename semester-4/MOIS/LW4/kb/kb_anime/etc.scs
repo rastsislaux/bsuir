@@ -1,0 +1,248 @@
+country_Russia
+    => nrel_main_idtf: [Россия] (* <- lang_ru;; *);;
+
+nrel_series_count
+    => nrel_main_idtf: [количество серий*] (* <- lang_ru;; *);;
+
+nrel_year_on_air
+   => nrel_main_idtf: [год показа*] (* <- lang_ru;; *);;
+
+year_1978
+   
+   => nrel_main_idtf: [1978 год](*<- lang_ru;;*);
+   -> [1978];;
+
+year_1979
+   
+   => nrel_main_idtf: [1979 год](*<- lang_ru;;*);
+   -> [1979];;
+
+year_1980
+   
+   => nrel_main_idtf: [1980 год](*<- lang_ru;;*);
+   -> [1980];;
+
+year_1981
+   
+   => nrel_main_idtf: [1981 год](*<- lang_ru;;*);
+   -> [1981];;
+
+year_1982
+   
+   => nrel_main_idtf: [1982 год](*<- lang_ru;;*);
+   -> [1982];;
+
+year_1983
+   
+   => nrel_main_idtf: [1983 год](*<- lang_ru;;*);
+   -> [1983];;
+
+year_1984
+   
+   => nrel_main_idtf: [1984 год](*<- lang_ru;;*);
+   -> [1984];;
+
+year_1985
+   
+   => nrel_main_idtf: [1985 год](*<- lang_ru;;*);
+   -> [1985];;
+
+year_1986
+   
+   => nrel_main_idtf: [1986 год](*<- lang_ru;;*);
+   -> [1986];;
+
+year_1987
+   
+   => nrel_main_idtf: [1987 год](*<- lang_ru;;*);
+   -> [1987];;
+
+year_1988
+   
+   => nrel_main_idtf: [1988 год](*<- lang_ru;;*);
+   -> [1988];;
+
+year_1989
+   
+   => nrel_main_idtf: [1989 год](*<- lang_ru;;*);
+   -> [1989];;
+
+year_1990
+   
+   => nrel_main_idtf: [1990 год](*<- lang_ru;;*);
+   -> [1990];;
+
+year_1991
+   
+   => nrel_main_idtf: [1991 год](*<- lang_ru;;*);
+   -> [1991];;
+
+year_1992
+   
+   => nrel_main_idtf: [1992 год](*<- lang_ru;;*);
+   -> [1992];;
+
+year_1993
+   
+   => nrel_main_idtf: [1993 год](*<- lang_ru;;*);
+   -> [1993];;
+
+year_1994
+   
+   => nrel_main_idtf: [1994 год](*<- lang_ru;;*);
+   -> [1994];;
+
+year_1995
+   
+   => nrel_main_idtf: [1995 год](*<- lang_ru;;*);
+   -> [1995];;
+
+year_1996
+   
+   => nrel_main_idtf: [1996 год](*<- lang_ru;;*);
+   -> [1996];;
+
+year_1997
+   
+   => nrel_main_idtf: [1997 год](*<- lang_ru;;*);
+   -> [1997];;
+
+year_1998
+   
+   => nrel_main_idtf: [1998 год](*<- lang_ru;;*);
+   -> [1998];;
+
+year_1999
+   
+   => nrel_main_idtf: [1999 год](*<- lang_ru;;*);
+   -> [1999];;
+
+year_2000
+   
+   => nrel_main_idtf: [2000 год](*<- lang_ru;;*);
+   -> [2000];;
+
+year_2001
+   
+   => nrel_main_idtf: [2001 год](*<- lang_ru;;*);
+   -> [2001];;
+
+year_2002
+   
+   => nrel_main_idtf: [2002 год](*<- lang_ru;;*);
+   -> [2002];;
+
+year_2003
+   
+   => nrel_main_idtf: [2003 год](*<- lang_ru;;*);
+   -> [2003];;
+
+year_2004
+   
+   => nrel_main_idtf: [2004 год](*<- lang_ru;;*);
+   -> [2004];;
+
+year_2005
+   
+   => nrel_main_idtf: [2005 год](*<- lang_ru;;*);
+   -> [2005];;
+
+year_2006
+   
+   => nrel_main_idtf: [2006 год](*<- lang_ru;;*);
+   -> [2006];;
+
+year_2007
+   
+   => nrel_main_idtf: [2007 год](*<- lang_ru;;*);
+   -> [2007];;
+
+year_2008
+   
+   => nrel_main_idtf: [2008 год](*<- lang_ru;;*);
+   -> [2008];;
+
+year_2009
+   
+   => nrel_main_idtf: [2009 год](*<- lang_ru;;*);
+   -> [2009];;
+
+year_2010
+   
+   => nrel_main_idtf: [2010 год](*<- lang_ru;;*);
+   -> [2010];;
+
+year_2011
+   
+   => nrel_main_idtf: [2011 год](*<- lang_ru;;*);
+   -> [2011];;
+
+year_2012
+   
+   => nrel_main_idtf: [2012 год](*<- lang_ru;;*);
+   -> [2012];;
+
+year_2013
+   
+   => nrel_main_idtf: [2013 год](*<- lang_ru;;*);
+   -> [2013];;
+
+year_2014
+   
+   => nrel_main_idtf: [2014 год](*<- lang_ru;;*);
+   -> [2014];;
+
+year_2015
+   
+   => nrel_main_idtf: [2015 год](*<- lang_ru;;*);
+   -> [2015];;
+
+year_2016
+   
+   => nrel_main_idtf: [2016 год](*<- lang_ru;;*);
+   -> [2016];;
+
+year_2017
+   
+   => nrel_main_idtf: [2017 год](*<- lang_ru;;*);
+   -> [2017];;
+
+year_2018
+   
+   => nrel_main_idtf: [2018 год](*<- lang_ru;;*);
+   -> [2018];;
+
+year_2019
+   
+   => nrel_main_idtf: [2019 год](*<- lang_ru;;*);
+   -> [2019];;
+
+year_2020
+   
+   => nrel_main_idtf: [2020 год](*<- lang_ru;;*);
+   -> [2020];;
+
+year_2021
+   
+   => nrel_main_idtf: [2021 год](*<- lang_ru;;*);
+   -> [2021];;
+
+year_2022
+   
+   => nrel_main_idtf: [2022 год](*<- lang_ru;;*);
+   -> [2022];;
+
+year_2023
+   
+   => nrel_main_idtf: [2023 год](*<- lang_ru;;*);
+   -> [2023];;
+
+year_2024
+   
+   => nrel_main_idtf: [2024 год](*<- lang_ru;;*);
+   -> [2024];;
+
+year_2025
+   
+   => nrel_main_idtf: [2025 год](*<- lang_ru;;*);
+   -> [2025];;

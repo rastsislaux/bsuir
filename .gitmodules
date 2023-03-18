@@ -19,3 +19,9 @@
 [submodule "semester-4/PPOIS/LW1/slang"]
 	path = semester-4/PPOIS/LW1/slang
 	url = https://github.com/ungaf/slang
+[submodule "semester-4/MOIS/LW4/ims.ostis.kb"]
+	path = semester-4/MOIS/LW4/ims.ostis.kb
+	url = https://github.com/ostis-ai/ims.ostis.kb
+[submodule "semester-4/MOIS/LW4/sc-web"]
+	path = semester-4/MOIS/LW4/sc-web
+	url = https://github.com/ostis-ai/sc-web

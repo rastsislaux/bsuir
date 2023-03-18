@@ -1,0 +1,32 @@
+studio_Shaft
+    => nrel_main_idtf: [Shaft] (* <- lang_ru;; <- lang_en;; *);;
+
+studio_Bones
+    => nrel_main_idtf: [Bones] (* <- lang_ru;; <- lang_en;; *);;
+
+studio_Madhouse
+    => nrel_main_idtf: [Madhouse] (* <- lang_ru;; <- lang_en;; *);;
+
+studio_David_Production
+    => nrel_main_idtf: [David Production] (* <- lang_ru;; <- lang_en;; *);;
+
+studio_Mappa
+    => nrel_main_idtf: [Mappa] (* <- lang_ru;; <- lang_en;; *);;
+
+studio_Wit
+    => nrel_main_idtf: [Wit Studio] (* <- lang_ru;; <- lang_en;; *);;
+
+studio_PA
+    => nrel_main_idtf: [P. A. Works] (* <- lang_ru;; <- lang_en;; *);;
+
+studio_PA
+    => nrel_main_idtf: [A1 Pictures] (* <- lang_ru;; <- lang_en;; *);;
+
+studio_Cloverworks
+    => nrel_main_idtf: [Cloverworks] (* <- lang_ru;; <- lang_en;; *);;
+
+studio_Sunrise
+    => nrel_main_idtf: [Sunrise] (* <- lang_ru;; <- lang_en;; *);;
+
+studio_Pierrot
+    => nrel_main_idtf: [Pierrot] (* <- lang_ru;; <- lang_en;; *);;

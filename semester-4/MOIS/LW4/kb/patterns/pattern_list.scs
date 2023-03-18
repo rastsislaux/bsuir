@@ -1,0 +1,23 @@
+lw4_patterns
+    => nrel_main_idtf: [Шаблоны для поиска по БЗ] (* <- lang_ru;; *);
+    -> pattern1;
+    -> pattern2;
+    -> pattern3;
+    -> pattern4;
+    -> pattern5;
+    -> pattern6;
+    -> pattern7;
+    -> pattern8;
+    -> pattern9;
+    -> pattern10;;
+
+pattern1 => nrel_main_idtf: [Найти год трансляции всех аниме] (* <- lang_ru;; *);;
+pattern2 => nrel_main_idtf: [Найти все аниме студии Shaft] (* <- lang_ru;; *);;
+pattern3 => nrel_main_idtf: [Найти все аниме жанра сёнэн] (* <- lang_ru;; *);;
+pattern4 => nrel_main_idtf: [Найти все аниме жанра комедия студии Mappa] (* <- lang_ru;; *);;
+pattern5 => nrel_main_idtf: [Найти все жанры аниме Атака Титанов] (* <- lang_ru;; *);;
+pattern6 => nrel_main_idtf: [Найти все аниме, транслированные в 2022] (* <- lang_ru;; *);;
+pattern7 => nrel_main_idtf: [Найти все аниме с 12 сериями] (* <- lang_ru;; *);;
+pattern8 => nrel_main_idtf: [Найти все аниме жанров триллер и психологическое] (* <- lang_ru;; *);;
+pattern9 => nrel_main_idtf: [Найти все оригинальные аниме] (* <- lang_ru;; *);;
+pattern10 => nrel_main_idtf: [Найти все аниме запрещенные на территории России] (* <- lang_ru;; *);;

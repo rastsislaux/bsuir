@@ -1,0 +1,22 @@
+genre_school => nrel_main_idtf: [Школа] (* <- lang_ru;; *);;
+genre_action => nrel_main_idtf: [Экшн] (* <- lang_ru;; *);;
+genre_adventures => nrel_main_idtf: [Приключения] (* <- lang_ru;; *);;
+genre_comedy => nrel_main_idtf: [Комедия] (* <- lang_ru;; *);;
+genre_detective => nrel_main_idtf: [Детектив] (* <- lang_ru;; *);;
+genre_drama => nrel_main_idtf: [Драма] (* <- lang_ru;; *);;
+genre_ecchi => nrel_main_idtf: [Этти] (* <- lang_ru;; *);;
+genre_fantastic => nrel_main_idtf: [Фантастика] (* <- lang_ru;; *);;
+genre_fantasy => nrel_main_idtf: [Фэнтези] (* <- lang_ru;; *);;
+genre_harem => nrel_main_idtf: [Гарем] (* <- lang_ru;; *);;
+genre_mecha => nrel_main_idtf: [Меха] (* <- lang_ru;; *);;
+genre_military => nrel_main_idtf: [Военное] (* <- lang_ru;; *);;
+genre_music => nrel_main_idtf: [Музыка] (* <- lang_ru;; *);;
+genre_psychological => nrel_main_idtf: [Психологическое] (* <- lang_ru;; *);;
+genre_romance => nrel_main_idtf: [Романтика] (* <- lang_ru;; *);;
+genre_shonen => nrel_main_idtf: [Сёнэн] (* <- lang_ru;; *);;
+genre_supernatural => nrel_main_idtf: [Сверхъестественное] (* <- lang_ru;; *);;
+genre_thriller => nrel_main_idtf: [Триллер] (* <- lang_ru;; *);;
+genre_vampires => nrel_main_idtf: [Вампиры] (* <- lang_ru;; *);;
+
+nrel_genre
+    => nrel_main_idtf: [жанр*] (* <- lang_ru;; *);;
