@@ -1,0 +1,20 @@
+{
+  "sky_color": "#5c94fc",
+  "tubes": [
+    {"x": 28, "y": 10},
+    {"x": 37, "y": 9},
+    {"x": 46, "y": 8},
+    {"x": 55, "y": 8},
+    {"x": 163, "y": 10},
+    {"x": 179, "y": 10}
+  ],
+  "goombas": [
+    {"x": 736, "y": 352, "direction": false},
+    {"x": 1295, "y": 352, "direction": true},
+    {"x": 1632, "y": 352, "direction": false},
+    {"x": 1672, "y": 352, "direction": false},
+    {"x": 5570, "y": 352, "direction": false},
+    {"x": 5620, "y": 352, "direction": false}
+  ],
+  "flag": {"x": 6336, "y": 48}
+}
