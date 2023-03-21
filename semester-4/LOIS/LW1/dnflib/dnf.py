@@ -44,8 +44,8 @@ def is_dnf(node):
     if node.value in ATOMIC_EXPRESSIONS:
         return True
 
-    if node.value == Token.AND:
-        return is_and(node)
+    #if node.value == Token.AND:
+    #   return is_and(node)
 
     if node.value != Token.OR:
         return False
@@ -53,7 +53,9 @@ def is_dnf(node):
     for child in [node.left, node.right]:
         if child.value not in ALLOWED_OPS:
             return False
-        if child.value in [Token.OR, Token.AND]:
+        if child.value == Token.AND:
+            return is_and(child)
+        if child.value in [Token.OR]:
             if not is_dnf(child):
                 return False
 

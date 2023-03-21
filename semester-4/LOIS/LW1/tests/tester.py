@@ -42,3 +42,6 @@ def tests():
         except Exception as e:
             print(f"[ ] Test #{i} FAILED:\n"
                   f"\t- For formula `{formula}` {outcome} expected, but `{e}` was thrown")
+
+if __name__ == '__main__':
+    tests()
