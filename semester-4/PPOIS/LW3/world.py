@@ -9,6 +9,7 @@ from const import WINDOW_WIDTH, WINDOW_HEIGHT
 from event import Event
 from flag import Flag
 from goomba import Goomba
+from mob import Mob
 from platform import Platform
 from platform_debris import PlatformDebris
 from player import Player
@@ -18,6 +19,10 @@ from ui import GameUI
 
 
 class World:
+
+    mob_type = {
+        "goomba": Goomba
+    }
 
     def __init__(self, world_name):
         self.obj = []
@@ -34,6 +39,7 @@ class World:
         self.sky = 0
         self.textures = {}
         self.name = world_name
+        self.mobs_to_spawn = None
 
         self.is_mob_spawned = [False, False]
         self.score_for_killing_mob = 100
@@ -68,6 +74,7 @@ class World:
         self.map_size = (tmx_data.width, tmx_data.height)
         self.sky = pygame.Surface((WINDOW_WIDTH, WINDOW_HEIGHT))
         self.sky.fill((pygame.Color(json_data["sky_color"])))
+        self.mobs_to_spawn = json_data["mobs"]
 
         self.map = [[0] * tmx_data.height for _ in range(tmx_data.width)]
 
@@ -94,9 +101,6 @@ class World:
 
         for tube in json_data["tubes"]:
             self.spawn_tube(tube["x"], tube["y"])
-
-        for goomba in json_data["goombas"]:
-            self.spawn_goomba(goomba["x"], goomba["y"], goomba["direction"])
 
         self.flag = Flag(json_data["flag"]["x"], json_data["flag"]["y"])
         
@@ -199,31 +203,21 @@ class World:
             for x in range(x_coords, x_coords + 2):
                 self.map[x][y] = Platform(x * 32, y * 32, image=None, type_id=0)
 
-    def spawn_goomba(self, x, y, move_direction):
-        self.mobs.append(Goomba(x, y, move_direction))
-
     def spawn_debris(self, x, y, type):
         if type == 0:
             self.debris.append(PlatformDebris(x, y))
         elif type == 1:
             self.debris.append(CoinDebris(x, y))
-        
-    def try_spawn_mobs(self, game):
-        if self.player.rect.x > 2080 and not self.is_mob_spawned[0]:
-            self.spawn_goomba(2495, 224, False)
-            self.spawn_goomba(2560, 96, False)
-            self.is_mob_spawned[0] = True
 
-        elif self.player.rect.x > 2460 and not self.is_mob_spawned[1]:
-            self.spawn_goomba(3200, 352, False)
-            self.spawn_goomba(3250, 352, False)
-            self.spawn_goomba(3700, 352, False)
-            self.spawn_goomba(3750, 352, False)
-            self.spawn_goomba(4060, 352, False)
-            self.spawn_goomba(4110, 352, False)
-            self.spawn_goomba(4190, 352, False)
-            self.spawn_goomba(4240, 352, False)
-            self.is_mob_spawned[1] = True
+    def try_spawn_mobs(self, game):
+        for pack in self.mobs_to_spawn:
+            if game.world.player.pos_x > pack["player_x_pos"] and not pack.get("spawned"):
+                kind = self.mob_type.get(pack["type"])
+                if kind is None:
+                    raise RuntimeError(f"Unknown mob type: {pack['type']}")
+                for mob in pack["pos"]:
+                    self.mobs.append(kind(mob["x"], mob["y"], mob["direction"]))
+                pack["spawned"] = True
         
     def update(self, game):
         self.update_entities(game)

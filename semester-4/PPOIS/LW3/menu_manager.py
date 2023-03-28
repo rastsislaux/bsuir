@@ -4,6 +4,7 @@ from const import STATE_MAIN_MENU, STATE_LOADING, STATE_GAME
 from loading_menu import LoadingMenu
 from main_menu import MainMenu
 
+
 class MenuManager:
 
     def __init__(self, game):
@@ -32,8 +33,6 @@ class MenuManager:
 
         elif self.current_state == STATE_GAME:
             game.world.render(game)
-            # Enable UI render
-            # game.world.ui.render(game)
 
         pygame.display.update()
 
