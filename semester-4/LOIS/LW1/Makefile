@@ -8,13 +8,17 @@ GRAMMAR_FILE=dnf.g4
 all: antlr
 
 antlr: $(ANTLR_JAR_NAME) antlr4-python3-runtime
-	java -jar $(ANTLR_JAR_NAME) -Dlanguage=Python3 -o dist $(GRAMMAR_FILE)
+	@echo "<----     \033[34mGenerate lexer and parser\033[0m        ---->"
+	@java -jar $(ANTLR_JAR_NAME) -Dlanguage=Python3 -o dist $(GRAMMAR_FILE)
 
 $(ANTLR_JAR_NAME):
-	curl -O $(ANTLR_JAR_URL)
+	@echo "<----    \033[34mDownload an antlr distribution\033[0m    ---->"
+	@curl -O $(ANTLR_JAR_URL)
 
 antlr4-python3-runtime:
-	pip3 install antlr4-python3-runtime
+	@echo "<---- \033[34mInstall antlr python runtime library\033[0m ---->"
+	@pip3 install antlr4-python3-runtime==${ANTLR_VERSION}
 
 clean:
-	rm -rf *.pyc __pycache__ $(ANTLR_JAR_NAME)
+	@echo "<----        \033[34mClean all the mess\033[0m            ---->"
+	@rm -rf *.pyc __pycache__ dist $(ANTLR_JAR_NAME)
