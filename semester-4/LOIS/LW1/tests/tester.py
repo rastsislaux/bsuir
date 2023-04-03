@@ -1,15 +1,16 @@
-from dnflib.dnf import is_dnf
-from dnflib.gram_checker import check_grammar
-from dnflib.lexer import to_tokens
-from dnflib.rpn import to_rpn
+from old.dnflib import is_dnf
+from old.dnflib import check_tokens, check_rpn
+from old.dnflib import to_tokens
+from old.dnflib import to_rpn
 from tests.test_suites import TESTS
-from dnflib.tree import to_tree
+from old.dnflib import to_tree
 
 
 def raw_to_tree(raw):
     result = to_tokens(raw)
-    check_grammar(result)
+    check_tokens(result)
     result = to_rpn(result)
+    check_rpn(result)
     result = to_tree(result)
     return result
 

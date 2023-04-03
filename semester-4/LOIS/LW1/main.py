@@ -1,15 +1,27 @@
 #! /bin/python3
+from antlr4 import InputStream, CommonTokenStream
+
+from dist.dnfLexer import dnfLexer
+from dist.dnfParser import dnfParser
+
 
 # Лабораторная работа по ЛОИС №1.
 #
+# Вариант: F6
+#
 # Авторы: Липский Р. В., Смольник В. В., Олешкевич А. С.
 #
-# Источники: https://chat.openai.com/,
-#            https://habr.com/ru/post/100869/
-#            https://www.techiedelight.com/ru/expression-tree/
-#            https://neerc.ifmo.ru/wiki/index.php?title=%D0%94%D0%9D%D0%A4
-#            https://habr.com/ru/post/435102/
-#            Интеграционная платформа
+# Источники: 1. ChatGPT -- https://chat.openai.com/,
+
+#            2. Основы программирования в среде С++ Builder: лаб. практикум по курсу
+#               «Основы алгоритмизации и программирования» для студ. 1 – 2-го курсов БГУИР.
+#               В 2 ч. Ч. 2 / Бусько В. Л. [и др.] . – Минск : БГУИР, 2009. – 61 с.: ил.
+#               - ОПЗ, стек, деревья
+#
+#            3. Клини - Математическая логика - 1973 (1967) - Издательство "Мир"
+#               - ДНФ
+#
+#            4. Интеграционная платформа
 
 from cli.cli_main import cli_main
 
