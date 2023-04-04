@@ -2,15 +2,16 @@ grammar dnf;
 
 // Parser rules
 dnf: normal_disjunct EOF;
-normal_disjunct: ( conjunct | (OPB conjunct OR normal_disjunct CLB) | (OPB normal_disjunct OR conjunct CLB) | (OPB conjunct OR conjunct CLB) );
-conjunct: LITERAL | (OPB LITERAL AND LITERAL CLB) | (OPB conjunct AND LITERAL CLB) | (OPB LITERAL AND conjunct CLB);
+normal_disjunct: ( conjuct | (OPB conjuct OR normal_disjunct CLB) | (OPB normal_disjunct OR conjuct CLB) | (OPB conjuct OR conjuct CLB) );
+conjuct: LITERAL | (OPB LITERAL AND LITERAL CLB) | (OPB conjuct AND LITERAL CLB) | (OPB LITERAL AND conjuct CLB);
 
 // Lexer rules
 LITERAL: VAR | (OPB NOT VAR CLB);
-VAR: [a-zA-Z][0-9]*;
+VAR: [a-zA-Z][1-9]*;
 OR: '\\/';
 AND: '/\\';
 NOT: '!';
 OPB: '(';
 CLB: ')';
+
 WS: [ \t\r\n]+ -> skip ;

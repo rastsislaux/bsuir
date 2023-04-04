@@ -1,23 +1,8 @@
-from old.dnflib import is_dnf
-from old.dnflib import check_tokens, check_rpn
-from old.dnflib import to_tokens
-from old.dnflib import to_rpn
 from tests.test_suites import TESTS
-from old.dnflib import to_tree
-
-
-def raw_to_tree(raw):
-    result = to_tokens(raw)
-    check_tokens(result)
-    result = to_rpn(result)
-    check_rpn(result)
-    result = to_tree(result)
-    return result
 
 
 def is_formula_dnf(raw):
-    tree = raw_to_tree(raw)
-    return is_dnf(tree)
+    return check_dnf
 
 
 def tests():

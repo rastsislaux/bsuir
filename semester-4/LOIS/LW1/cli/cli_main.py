@@ -1,29 +1,6 @@
-from antlr4 import InputStream, CommonTokenStream
-from antlr4.error.ErrorListener import ErrorListener
-
-from dist.dnfLexer import dnfLexer
-from dist.dnfParser import dnfParser
-
-
-class DNFException(RuntimeError):
-    pass
-
-
-class ExceptionErrorListener(ErrorListener):
-    def syntaxError(self, recognizer, offendingSymbol, line, column, msg, e):
-        raise DNFException(f"{line}:{column}: {msg}")
-
-
-def check_dnf(formula: str):
-    data = InputStream(formula)
-    lexer = dnfLexer(data)
-    lexer.removeErrorListeners()
-    lexer.addErrorListener(ExceptionErrorListener())
-    stream = CommonTokenStream(lexer)
-    parser = dnfParser(stream)
-    parser.removeErrorListeners()
-    parser.addErrorListener(ExceptionErrorListener())
-    parser.dnf()
+from cli.checker import check_dnf, DNFException
+from cli.test_mode import test_mode
+from generator.generator import generate_test_set
 
 
 def cli_main():
@@ -51,6 +28,12 @@ def cli_main():
         match command:
             case "1":
                 check_mode()
+            case "2":
+                test_mode()
+            case "3":
+                generate_test_set("dnf.json", True)
+            case "4":
+                generate_test_set("non_dnf.json", False)
             case "5":
                 print("До свидания.")
                 break
