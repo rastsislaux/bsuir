@@ -1,8 +1,10 @@
+from cli.checker import check_dnf
 from tests.test_suites import TESTS
 
 
 def is_formula_dnf(raw):
-    return check_dnf
+    check_dnf(raw)
+    return True
 
 
 def tests():
@@ -17,7 +19,9 @@ def tests():
                 continue
             except Exception as e:
                 print(f"[ ] Test #{i} FAILED: expected {outcome}, but {e} was thrown.")
+                continue
             print(f"[ ] Test #{i} FAILED: expected {outcome}, but nothing was thrown.")
+            continue
 
         try:
             if is_formula_dnf(formula) == outcome:
@@ -28,6 +32,7 @@ def tests():
         except Exception as e:
             print(f"[ ] Test #{i} FAILED:\n"
                   f"\t- For formula `{formula}` {outcome} expected, but `{e}` was thrown")
+
 
 if __name__ == '__main__':
     tests()
