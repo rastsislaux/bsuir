@@ -9,7 +9,8 @@ lw4_patterns
     -> pattern7;
     -> pattern8;
     -> pattern9;
-    -> pattern10;;
+    -> pattern10;
+    -> pattern11;;
 
 pattern1 => nrel_main_idtf: [Найти год трансляции всех аниме] (* <- lang_ru;; *);;
 pattern2 => nrel_main_idtf: [Найти все аниме студии Shaft] (* <- lang_ru;; *);;
@@ -21,3 +22,4 @@ pattern7 => nrel_main_idtf: [Найти все аниме с 12 сериями] 
 pattern8 => nrel_main_idtf: [Найти все аниме жанров триллер и психологическое] (* <- lang_ru;; *);;
 pattern9 => nrel_main_idtf: [Найти все оригинальные аниме] (* <- lang_ru;; *);;
 pattern10 => nrel_main_idtf: [Найти все аниме запрещенные на территории России] (* <- lang_ru;; *);;
+pattern11 => nrel_main_idtf: [Найти все оригинальные аниме жанра психологическое запрещенные на территории России] (* <- lang_ru;; *);;

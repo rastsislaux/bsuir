@@ -74,6 +74,7 @@ death_note
     => nrel_series_count: 37;
 
     => nrel_restricted_in: country_Russia;
+    <- concept_original_anime;
     <- concept_anime;;
 
 jojo
