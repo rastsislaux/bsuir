@@ -1,8 +1,4 @@
 #! /bin/python3
-from antlr4 import InputStream, CommonTokenStream
-
-from dist.dnfLexer import dnfLexer
-from dist.dnfParser import dnfParser
 
 
 # Лабораторная работа по ЛОИС №1.

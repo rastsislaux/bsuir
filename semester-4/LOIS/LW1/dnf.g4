@@ -7,11 +7,9 @@ conjuct: LITERAL | (OPB LITERAL AND LITERAL CLB) | (OPB conjuct AND LITERAL CLB)
 
 // Lexer rules
 LITERAL: VAR | (OPB NOT VAR CLB);
-VAR: [a-zA-Z][1-9]*;
+VAR: [A-Z];
 OR: '\\/';
 AND: '/\\';
 NOT: '!';
 OPB: '(';
 CLB: ')';
-
-WS: [ \t\r\n]+ -> skip ;
