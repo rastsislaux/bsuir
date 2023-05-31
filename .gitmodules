@@ -28,3 +28,6 @@
 [submodule "semester-4/sem4-course-project-note"]
 	path = semester-4/sem4-course-project-note
 	url = https://github.com/ungaf/sem4-course-project-note
+[submodule "semester-4/ostis-bibliography"]
+	path = semester-4/ostis-bibliography
+	url = https://github.com/ostis-apps/ostis-bibliography
