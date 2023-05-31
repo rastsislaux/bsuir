@@ -25,3 +25,6 @@
 [submodule "semester-4/MOIS/LW4/sc-web"]
 	path = semester-4/MOIS/LW4/sc-web
 	url = https://github.com/ostis-ai/sc-web
+[submodule "semester-4/sem4-course-project-note"]
+	path = semester-4/sem4-course-project-note
+	url = https://github.com/ungaf/sem4-course-project-note
