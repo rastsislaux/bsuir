@@ -78,6 +78,8 @@ class SalariesApp:
                 self.handle_get_lowest()
             case "/quit":
                 self._dao.commit()
+            case "/help":
+                self.help()
 
     def handle_workers(self):
         workers = self._dao.get_all_workers()
@@ -157,6 +159,22 @@ class SalariesApp:
         print(tabulate.tabulate(table, headers=[
             "ID", "Surname", "Name", "Patronim", "Position", "Trade Union", "Grade", "Payoff"
         ]))
+
+    def help(self):
+        print("""Available commands:
+- /workers: Get information about all workers.
+- /addworker: Add a new worker to the database.
+- /editworker: Edit the details of an existing worker.
+- /delworker: Delete a worker from the database.
+- /grades: Get information about all grades.
+- /addgrade: Add a new grade to the database.
+- /editgrade: Edit the details of an existing grade.
+- /delgrade: Delete a grade from the database.
+- /payday: Generate payments for the current month.
+- /payments: Get information about all payments.
+- /lowest: Get workers with the lowest salary for a specific month.
+- /quit: Save changes and exit the program.
+- /help: Show this message""")
 
 
 if __name__ == '__main__':

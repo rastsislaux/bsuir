@@ -58,7 +58,7 @@ class DAO:
     def add_worker(self, surname, name, patronim, position, trade_union, grade):
         grade_id = self._get_grade_id_by_name(grade)
         return self._execute_query(f"INSERT INTO workers(surname, name, patronim, pos, trade_union, grade_id) "
-                                   f"VALUES ({surname}, {name}, {patronim}, {position}, {trade_union}, {grade_id})",
+                                   f"VALUES ('{surname}', '{name}', '{patronim}', '{position}', {trade_union}, {grade_id})",
                                    fetch=False)
 
     def edit_worker(self, worker_id, surname, name, patronim, position, trade_union, grade):
