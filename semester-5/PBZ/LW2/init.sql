@@ -31,7 +31,7 @@ CREATE TABLE payments(
                                  (salary + surcharge - income_tax - pension_fund - trade_union)
                                  STORED,
 
-                         worker_id INT REFERENCES workers(id)
+                         worker_id INT REFERENCES workers(id) ON DELETE CASCADE
 );
 
 CREATE TABLE settings(

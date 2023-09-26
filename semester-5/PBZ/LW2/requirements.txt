@@ -1,2 +1,4 @@
 psycopg2
 tabulate
+flask
+flask_cors

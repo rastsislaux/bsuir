@@ -1,0 +1,190 @@
+<mat-tab-group>
+
+  <mat-tab label="Workers">
+
+    <mat-accordion>
+
+      <mat-expansion-panel style="margin-top: 20px; margin-bottom: 20px;">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Add new worker
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+
+        <mat-form-field style="margin: 10px;">
+          <input matInput [(ngModel)]="add_worker_surname" placeholder="Surname..." value="">
+        </mat-form-field>
+
+        <mat-form-field style="margin: 10px;">
+          <input matInput [(ngModel)]="add_worker_name" placeholder="Name..." value="">
+        </mat-form-field>
+
+        <mat-form-field style="margin: 10px;">
+          <input matInput [(ngModel)]="add_worker_patronim" placeholder="Patronim..." value="">
+        </mat-form-field>
+
+        <mat-form-field style="margin: 10px;">
+          <input matInput [(ngModel)]="add_worker_position" placeholder="Position..." value="">
+        </mat-form-field>
+
+        <mat-checkbox [(ngModel)]="add_worker_trade_union">Trade Union</mat-checkbox>
+
+        <mat-select [(ngModel)]="add_worker_grade" placeholder="Grade">
+          <mat-option *ngFor="let grade of grades" value="{{ grade.name }}">{{ grade.name }}</mat-option>
+        </mat-select>
+
+        <button mat-button color="primary" (click)="add_worker()">Add worker</button>
+      </mat-expansion-panel>
+      <hr>
+      <mat-expansion-panel *ngFor="let worker of workers">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{ worker.surname + " " + worker.name + " " + worker.patronim }}
+          </mat-panel-title>
+
+          <mat-panel-description>
+            {{ worker.position }} ({{ worker.grade }}) {{ worker.trade_union ? ", Trade Union Member" : "" }}
+          </mat-panel-description>
+
+        </mat-expansion-panel-header>
+
+        <p>
+
+          <mat-form-field style="margin: 10px;">
+            <input matInput [(ngModel)]="worker.surname" placeholder="Surname..." value="">
+          </mat-form-field>
+
+          <mat-form-field style="margin: 10px;">
+            <input matInput [(ngModel)]="worker.name" placeholder="Name..." value="">
+          </mat-form-field>
+
+          <mat-form-field style="margin: 10px;">
+            <input matInput [(ngModel)]="worker.patronim" placeholder="Patronim..." value="">
+          </mat-form-field>
+
+          <mat-form-field style="margin: 10px;">
+            <input matInput [(ngModel)]="worker.position" placeholder="Position..." value="">
+          </mat-form-field>
+
+          <mat-checkbox [(ngModel)]="worker.trade_union">Trade Union</mat-checkbox>
+
+          <mat-select [(ngModel)]="worker.grade" style="margin: 10px;" placeholder="Grade">
+            <mat-option *ngFor="let grade of grades" value="{{ grade.name }}">{{ grade.name }}</mat-option>
+          </mat-select>
+
+          <button mat-button color="primary" (click)="save_worker(worker)">Save worker</button>
+          <button mat-button color="basic" [routerLink]="['/payments', worker.id]">View payments</button>
+          <button mat-button color="warn" (click)="delete_worker(worker.id)">Delete this worker</button>
+
+        </p>
+      </mat-expansion-panel>
+
+    </mat-accordion>
+
+  </mat-tab>
+
+  <mat-tab label="Grades">
+    <mat-accordion>
+
+      <mat-expansion-panel style="margin-top: 20px; margin-bottom: 20px;">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Add new grade
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <p>
+          <mat-form-field style="margin: 10px;">
+            <input matInput [(ngModel)]="add_grade_name" placeholder="Name..." value="">
+          </mat-form-field>
+
+          <mat-form-field style="margin: 10px;">
+            <input matInput type="number" [(ngModel)]="add_grade_coefficient" placeholder="Coefficient..." value="">
+          </mat-form-field>
+
+          <button mat-button color="primary" (click)="add_grade()">Add grade</button>
+        </p>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel *ngFor="let grade of grades">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{ grade.name }}
+          </mat-panel-title>
+
+          <mat-panel-description>
+            Coefficient: {{ grade.coefficient }}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <p>
+          <mat-form-field style="margin: 10px;">
+            <input matInput [(ngModel)]="grade.name" placeholder="Name..." value="">
+          </mat-form-field>
+
+          <mat-form-field style="margin: 10px;">
+            <input matInput type="number" [(ngModel)]="grade.coefficient" placeholder="Coefficient..." value="">
+          </mat-form-field>
+
+          <button mat-button color="primary" (click)="save_grade(grade)">Save grade</button>
+        </p>
+      </mat-expansion-panel>
+
+    </mat-accordion>
+  </mat-tab>
+
+  <mat-tab label="Settings">
+
+    <div style="padding: 10px">
+      Minimal payment:<br>
+      <mat-form-field style="margin: 10px;">
+        <input matInput type="number" [(ngModel)]="minimal_payment" placeholder="Mininal payment..." value="">
+      </mat-form-field>
+      <br>
+
+      Surcharge:<br>
+      <mat-form-field style="margin: 10px;">
+        <input matInput type="number" [(ngModel)]="surcharge" placeholder="Surcharge..." value="">
+      </mat-form-field>
+      <br>
+
+      Income tax:<br>
+      <mat-form-field style="margin: 10px;">
+        <input matInput type="number" [(ngModel)]="income_tax" placeholder="Income tax..." value="">
+      </mat-form-field>
+      <br>
+
+      Pension fund:<br>
+      <mat-form-field style="margin: 10px;">
+        <input matInput type="number" [(ngModel)]="pension_fund" placeholder="Pension fund..." value="">
+      </mat-form-field>
+      <br>
+
+      Trade union:<br>
+      <mat-form-field style="margin: 10px;">
+        <input matInput type="number" [(ngModel)]="trade_union" placeholder="Trade union..." value="">
+      </mat-form-field>
+      <br>
+
+      <button mat-button color="primary" (click)="save_settings()">Save settings</button>
+    </div>
+
+  </mat-tab>
+
+  <mat-tab label="Payday">
+    <mat-card style="padding: 10px; margin: 10px">
+      <mat-card-header>
+        <mat-card-title>Payday</mat-card-title>
+      </mat-card-header>
+
+      <mat-form-field style="margin: 10px;">
+        <input matInput [(ngModel)]="payday_date" placeholder="Payday date...">
+      </mat-form-field>
+
+      <button mat-button color="primary" (click)="payday()">Make payments</button>
+    </mat-card>
+
+  </mat-tab>
+
+</mat-tab-group>

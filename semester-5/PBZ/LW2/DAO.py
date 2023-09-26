@@ -36,11 +36,14 @@ class DAO:
             cursor.execute(query)
             if fetch:
                 result = cursor.fetchall()
+                self._connection.commit()
                 return result
             else:
+                self._connection.commit()
                 return None
         except OperationalError as e:
             logging.error(f"PSQL Error: {e}")
+        self._connection.commit()
         return result
 
     def _get_grade_id_by_name(self, grade):
@@ -134,6 +137,18 @@ class DAO:
             WHERE datetime LIKE '{datetime}'
         )
         """)
+
+    def get_settings(self):
+        return self._execute_query(f"SELECT * FROM settings")
+
+    def edit_settings(self, minimal_payment, surcharge, income_tax, pension_fund, trade_union):
+        self._execute_query(f"""
+        UPDATE settings SET value = {minimal_payment} WHERE name = 'minimal_payment';
+        UPDATE settings SET value = {surcharge}       WHERE name = 'surcharge';
+        UPDATE settings SET value = {income_tax}      WHERE name = 'income_tax';
+        UPDATE settings SET value = {pension_fund}    WHERE name = 'pension_fund';
+        UPDATE settings SET value = {trade_union}     WHERE name = 'trade_union';
+        """, fetch=False)
 
     def commit(self):
         self._connection.commit()
