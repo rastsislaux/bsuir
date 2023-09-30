@@ -16,7 +16,9 @@ dao = DAO(
 
 @app.route("/workers", methods=["POST"])
 def get_workers():
-    workers = dao.get_all_workers()
+    search = request.args.get("search")
+    print(search)
+    workers = dao.get_all_workers(search=search)
     workers = map(lambda x: {
         "id": x[0],
         "surname": x[1],
@@ -108,10 +110,6 @@ def delete_grade():
     return {}, 200
 
 
-# workers.id, surname, workers.name, patronim, pos, workers.trade_union, "
-#                                    f"g.name, p.id, datetime, "
-#                                    f"       salary, surcharge, income_tax, pension_fund, p.trade_union, p.payoff
-
 @app.route("/payments", methods=["POST"])
 def get_payments():
     payments = dao.get_worker_payments(**request.get_json())
@@ -183,4 +181,4 @@ def edit_settings():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0")

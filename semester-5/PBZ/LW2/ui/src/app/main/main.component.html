@@ -37,6 +37,42 @@
         <button mat-button color="primary" (click)="add_worker()">Add worker</button>
       </mat-expansion-panel>
       <hr>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Lowest salary</mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <p *ngFor="let worker of lowest_salary_workers">
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>{{ worker.surname + " " + worker.name + " " + worker.patronim }}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <mat-chip-set>
+                <mat-chip>Payoff: {{ worker.payoff }}</mat-chip>
+                <mat-chip>{{ worker.position }}</mat-chip>
+                <mat-chip>{{ worker.grade }}</mat-chip>
+                <mat-chip *ngIf="worker.trade_union">Trade Union Member"</mat-chip>
+              </mat-chip-set>
+            </mat-card-content>
+
+          </mat-card>
+        </p>
+
+        <mat-form-field>
+          <input matInput [(ngModel)]="lowest_month" placeholder="Month..." value="">
+        </mat-form-field>
+
+        <button mat-button color="primary" (click)="get_lowest(lowest_month)">Get lowest</button>
+      </mat-expansion-panel>
+
+      <hr>
+
+      <mat-form-field style="margin: 10px; width: 97%">
+        <input matInput [(ngModel)]="query" (change)="get_workers()" placeholder="Query..." value="">
+      </mat-form-field>
+
       <mat-expansion-panel *ngFor="let worker of workers">
         <mat-expansion-panel-header>
           <mat-panel-title>
@@ -134,44 +170,6 @@
     </mat-accordion>
   </mat-tab>
 
-  <mat-tab label="Settings">
-
-    <div style="padding: 10px">
-      Minimal payment:<br>
-      <mat-form-field style="margin: 10px;">
-        <input matInput type="number" [(ngModel)]="minimal_payment" placeholder="Mininal payment..." value="">
-      </mat-form-field>
-      <br>
-
-      Surcharge:<br>
-      <mat-form-field style="margin: 10px;">
-        <input matInput type="number" [(ngModel)]="surcharge" placeholder="Surcharge..." value="">
-      </mat-form-field>
-      <br>
-
-      Income tax:<br>
-      <mat-form-field style="margin: 10px;">
-        <input matInput type="number" [(ngModel)]="income_tax" placeholder="Income tax..." value="">
-      </mat-form-field>
-      <br>
-
-      Pension fund:<br>
-      <mat-form-field style="margin: 10px;">
-        <input matInput type="number" [(ngModel)]="pension_fund" placeholder="Pension fund..." value="">
-      </mat-form-field>
-      <br>
-
-      Trade union:<br>
-      <mat-form-field style="margin: 10px;">
-        <input matInput type="number" [(ngModel)]="trade_union" placeholder="Trade union..." value="">
-      </mat-form-field>
-      <br>
-
-      <button mat-button color="primary" (click)="save_settings()">Save settings</button>
-    </div>
-
-  </mat-tab>
-
   <mat-tab label="Payday">
     <mat-card style="padding: 10px; margin: 10px">
       <mat-card-header>
@@ -183,6 +181,48 @@
       </mat-form-field>
 
       <button mat-button color="primary" (click)="payday()">Make payments</button>
+    </mat-card>
+
+  </mat-tab>
+
+  <mat-tab label="Settings" style="display: flex">
+
+    <mat-card style="margin: 10px auto;padding: 10px; width: 20%">
+
+      <div style="padding: 10px">
+        Minimal payment:<br>
+        <mat-form-field style="margin: 10px;">
+          <input matInput type="number" [(ngModel)]="minimal_payment" placeholder="Mininal payment..." value="">
+        </mat-form-field>
+        <br>
+
+        Surcharge:<br>
+        <mat-form-field style="margin: 10px;">
+          <input matInput type="number" [(ngModel)]="surcharge" placeholder="Surcharge..." value="">
+        </mat-form-field>
+        <br>
+
+        Income tax:<br>
+        <mat-form-field style="margin: 10px;">
+          <input matInput type="number" [(ngModel)]="income_tax" placeholder="Income tax..." value="">
+        </mat-form-field>
+        <br>
+
+        Pension fund:<br>
+        <mat-form-field style="margin: 10px;">
+          <input matInput type="number" [(ngModel)]="pension_fund" placeholder="Pension fund..." value="">
+        </mat-form-field>
+        <br>
+
+        Trade union:<br>
+        <mat-form-field style="margin: 10px;">
+          <input matInput type="number" [(ngModel)]="trade_union" placeholder="Trade union..." value="">
+        </mat-form-field>
+        <br>
+
+        <button mat-button color="primary" (click)="save_settings()">Save settings</button>
+      </div>
+
     </mat-card>
 
   </mat-tab>

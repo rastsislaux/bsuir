@@ -19,6 +19,7 @@ import { PaymentsComponent } from './payments/payments.component';
 import { MainComponent } from './main/main.component';
 import { HeaderComponent } from './header/header.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatChipsModule} from "@angular/material/chips";
 
 @NgModule({
   declarations: [
@@ -27,23 +28,24 @@ import {MatToolbarModule} from "@angular/material/toolbar";
     MainComponent,
     HeaderComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatCardModule,
-    MatCheckboxModule,
-    MatSelectModule,
-    MatInputModule,
-    MatButtonModule,
-    HttpClientModule,
-    FormsModule,
-    MatTabsModule,
-    ToastrModule.forRoot(),
-    MatTableModule,
-    MatExpansionModule,
-    MatToolbarModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatCardModule,
+        MatCheckboxModule,
+        MatSelectModule,
+        MatInputModule,
+        MatButtonModule,
+        HttpClientModule,
+        FormsModule,
+        MatTabsModule,
+        ToastrModule.forRoot(),
+        MatTableModule,
+        MatExpansionModule,
+        MatToolbarModule,
+        MatChipsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

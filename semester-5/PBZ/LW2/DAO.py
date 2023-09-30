@@ -49,9 +49,14 @@ class DAO:
     def _get_grade_id_by_name(self, grade):
         return self._execute_query(f"SELECT id FROM grades WHERE name = '{grade}'")[0][0]
 
-    def get_all_workers(self):
-        return self._execute_query("SELECT w.id, surname, w.name, patronim, pos, trade_union, g.name FROM workers w "
-                                   "JOIN grades g ON w.grade_id = g.id")
+    def get_all_workers(self, search=None):
+        if search is None:
+            return self._execute_query("SELECT w.id, surname, w.name, patronim, pos, trade_union, g.name FROM workers w "
+                                       "JOIN grades g ON w.grade_id = g.id")
+        else:
+            return self._execute_query(f"SELECT w.id, surname, w.name, patronim, pos, trade_union, g.name FROM workers w "
+                                       f"JOIN grades g ON w.grade_id = g.id "
+                                       f"WHERE CONCAT(w.surname, ' ', w.name, ' ', w.patronim) ILIKE '%{search}%'")
 
     def get_worker(self, worker_id):
         return self._execute_query(f"SELECT w.id, surname, w.name, patronim, pos, trade_union, g.name FROM workers w "

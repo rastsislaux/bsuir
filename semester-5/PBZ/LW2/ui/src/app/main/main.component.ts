@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {ToastrService} from "ngx-toastr";
+import {query} from "@angular/animations";
 
 @Component({
   selector: 'app-main',
@@ -14,11 +15,14 @@ export class MainComponent {
     this.get_grades()
     this.get_workers()
     this.get_settings()
+    this.get_lowest(this.getCurrentMonthAndYear())
   }
 
   grades: any = [];
   workers: any = [];
   payments: any = [];
+
+  lowest_salary_workers: any = null;
 
   add_worker_surname: string = "";
   add_worker_name: string = "";
@@ -36,6 +40,8 @@ export class MainComponent {
   surcharge: number = 0;
   trade_union: number = 0;
   payday_date: string = this.getCurrentMonthAndYear();
+  lowest_month: string = this.getCurrentMonthAndYear();
+  query: string = "";
 
   get_grades() {
     this.http.post("http://localhost:5000/grades", { }).subscribe(
@@ -49,7 +55,8 @@ export class MainComponent {
   }
 
   get_workers() {
-    this.http.post("http://localhost:5000/workers", { }).subscribe({
+    let url = "http://localhost:5000/workers?search=" + this.query
+    this.http.post(url, { }).subscribe({
       next: value => {
         this.workers = value
       },
@@ -150,6 +157,15 @@ export class MainComponent {
     }).subscribe({
       next: value => { this.toast.success("Settings saved successfully."); },
       error: err => { this.toast.error("Failed to saved settings."); }
+    })
+  }
+
+  get_lowest(month: string) {
+    this.http.post<any>("http://localhost:5000/lowest", { "month": month }).subscribe({
+      next: value => {
+        this.lowest_salary_workers = value
+      },
+      error: err => this.toast.error("Failed to fetch worker with lowest salary.")
     })
   }
 
