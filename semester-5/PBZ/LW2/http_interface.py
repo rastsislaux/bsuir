@@ -17,7 +17,6 @@ dao = DAO(
 @app.route("/workers", methods=["POST"])
 def get_workers():
     search = request.args.get("search")
-    print(search)
     workers = dao.get_all_workers(search=search)
     workers = map(lambda x: {
         "id": x[0],
