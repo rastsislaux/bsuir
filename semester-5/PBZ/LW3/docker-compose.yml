@@ -1,0 +1,24 @@
+version: '3'
+services:
+  neo4j:
+    image: neo4j:latest
+    container_name: my-neo4j
+    ports:
+      - "7474:7474"  # HTTP
+      - "7687:7687"  # Bolt
+    volumes:
+      - ./data:/data
+      - ./logs:/logs
+      - ./import:/import
+      - ./plugins:/plugins
+    environment:
+      NEO4J_AUTH: neo4j/password  # Set your desired username and password here
+
+  neo4j-browser:
+    image: neo4j/neo4j-browser:latest
+    container_name: my-neo4j-browser
+    ports:
+      - "7473:7473"  # HTTPS
+    environment:
+      NEO4J_URI: neo4j://neo4j:7687
+      NEO4J_PASSWORD: password  # Match the NEO4J_AUTH password here

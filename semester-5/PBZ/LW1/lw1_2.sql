@@ -149,5 +149,5 @@ WHERE
 
 -- 17.	Для каждой детали, поставляемой для проекта, получить номер детали, номер проекта и соответствующее общее количество.
 
-select detail_code, project_code, number from number_of_details;
+SELECT detail_code, project_code, number FROM number_of_details;
 
