@@ -1,0 +1,45 @@
+@startuml
+left to right direction
+
+actor Администратор as Admin
+
+rectangle "Платформа для проведения аукционов" as Platform {
+  usecase "Управление информацией о лотах" as ManageLots
+
+  usecase "Создание лотов" as CreateLots
+  usecase "Редактирование лотов" as EditLots
+  usecase "Деактивация лотов" as DeactivateLots
+  usecase "Просмотр лотов" as ViewLots
+  usecase "Определение победителя аукциона" as RunAuctions
+
+  usecase "Управление информацией о продавцах" as ManageSellers
+
+  usecase "Создание продавцов" as CreateSellers
+  usecase "Редактирование продавцов" as EditSellers
+  usecase "Просмотр продавцов" as ViewSellers
+
+  usecase "Управление информацией о покупателях" as ManageBuyers
+
+  usecase "Создание покупателей" as CreateBuyers
+  usecase "Редактирование покупателей" as EditBuyers
+  usecase "Просмотр покупателей" as ViewBuyers
+
+  Admin --> ManageLots
+  Admin --> ManageSellers
+  Admin --> ManageBuyers
+ 
+  ManageLots --> CreateLots : include
+  ManageLots --> EditLots : include
+  ManageLots --> DeactivateLots : include
+  ManageLots --> ViewLots : include
+  ManageLots --> RunAuctions : include
+
+  ManageSellers --> ViewSellers : include
+  ManageSellers --> CreateSellers : include
+  ManageSellers --> EditSellers : include
+
+  ManageBuyers --> CreateBuyers : include
+  ManageBuyers --> EditBuyers : include
+  ManageBuyers --> ViewBuyers : include
+}
+@enduml

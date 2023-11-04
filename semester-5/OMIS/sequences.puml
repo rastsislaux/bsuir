@@ -1,0 +1,38 @@
+@startuml sequences
+
+actor "Администратор аукционного дома" as admin 
+boundary "Интерфейс платформы для проведения онлайн-аукционов" as interface
+entity "Логический компонент платформы для проведения онлайн-аукционов" as system
+database "База данных" as database
+
+activate admin
+activate interface
+admin ->> interface : Определить победителя аукциона
+interface -> system : Запросить победителя аукциона
+
+activate database
+system -> database : Запросить необходимый лот
+database --> system : Вернуть необходимый лот
+deactivate database
+
+alt Лот неактивен
+  system --> interface : Сообщить о неактивности лота
+  interface --> admin : Отобразить сообщение о неактивности лота
+else Лот активен
+  activate database
+  system -> database : Запросить ставки на необходимый лот
+  database --> system : Вернуть необходимые ставки
+  alt Нет ставок на лот
+    system --> interface : Сообщить об отсутсвии ставок на лот
+    interface --> admin : Отобразить уведомление об отсутствии ставок на лот
+  else Ставки есть
+    system -> database : Деактивировать лот и сохранить победителя
+    deactivate database
+    system --> interface : Вернуть победителя аукциона
+    interface --> admin : Отобразить информацию о победителе аукциона
+  end
+end
+
+deactivate admin
+
+@enduml

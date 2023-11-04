@@ -1,0 +1,114 @@
+@startuml
+
+class AuctionSystem {
+  - lotService: LotService
+  - buyerService: BuyerService
+  - sellerService: SellerService
+}
+
+class LotService {
+    - lots: List<Lot>
+    + viewLotHistory(): void
+    + filterLotsByStatus(status: Status): List<Lot>
+    + addLot(lot: Lot): void
+    + editLot(lot: Lot): void
+    + deactivateLot(lot: Lot): void
+    + placeBidOnLot(buyer: Buyer, lot: Lot, bid: Bid): void
+    + determineAuctionWinners(lot: Lot): void
+}
+
+class BuyerService {
+    - buyers: List<Buyer>
+    + viewBuyersList(): void
+    + addBuyer(buyer: Buyer): void
+    + editBuyer(buyer: Buyer): void
+    + archiveBuyer(buyer: Buyer): void
+    + viewBuyerBiddingHistory(buyer: Buyer): void
+    + viewBuyerPurchaseHistory(buyer: Buyer): void
+}
+
+class SellerService {
+    - sellers: List<Seller>
+  
+    + viewSellersList(): void
+    + addSeller(seller: Seller): void
+    + editSeller(seller: Seller): void
+    + archiveSeller(seller: Seller): void
+    + viewSellerLotHistory(seller: Seller): void
+    + viewSellerSalesHistory(seller: Seller): void
+    + registerSellerReview(seller: Seller, review: Review): void
+}
+
+class Buyer {
+  - fullName: String
+  - balance: Double
+  - deliveryAddress: String
+  - bids: List<Bid>
+  - purchases: List<Purchase>
+}
+
+class Seller {
+  - fullName: String
+  - balance: Double
+  - pickupAddress: String
+  - lots: List<Lot>
+  - rating: Double
+  - reviews: List<Review>
+  + getLots(): List<Lot>
+  + getRating(): Double
+  + getReviews(): List<Review>
+  + addReview(review: Review): void
+}
+
+class Lot {
+  - title: String
+  - description: String
+  - startingPrice: Double
+  - minimumBidIncrement: Double
+  - bids: List<Bid>
+  - winningBid: Bid
+  - status: Status
+  + getBids(): List<Bid>
+}
+
+class Bid {
+  - bidder: Buyer
+  - amount: Double
+}
+
+
+class Review {
+  - seller: Seller
+  - rating: Double
+  - comment: String
+}
+
+enum Status {
+  ACTIVE
+  INACTIVE
+}
+
+BuyerService "1" *-- "0..*" Buyer
+SellerService "1" *-- "0..*" Seller
+LotService "1" *-- "0..*" Lot
+
+AuctionSystem "1" --o "1" BuyerService
+AuctionSystem "1" --o "1" SellerService
+AuctionSystem "1" --o "1" LotService
+
+Bid -- Lot
+Bid -- Buyer
+Lot -- Seller
+Review - Seller
+
+Lot *-- Status
+
+' AuctionSystem "1" *-- "0..*" Buyer
+' Buyer "1" *-- "*" Bid
+' Buyer "1" *-- "*" Purchase
+' Seller "1" *-- "*" Review
+' Lot "1" *-- "*" Bid
+' Lot "0..1" -- "1" Bid
+' Lot "1" *-- "*" Purchase
+
+@enduml
