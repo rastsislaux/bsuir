@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Графический редактор 1337</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px;
+        }
+
+        #canvasContainer {
+            margin-right: 20px;
+        }
+
+        canvas {
+            border: 1px solid #ccc;
+        }
+
+        #toolPanel {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .toolGroup {
+            margin-bottom: 10px;
+        }
+
+        .toolGroup label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .tool {
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+        .tool input[type="radio"] {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="canvasContainer">
+            <canvas id="cnv" width="1300" height="800"></canvas>
+        </div>
+        <div id="toolPanel">
+            <div class="toolGroup">
+                <label>Прямые линии</label>
+
+                <div class="tool">
+                    <input type="radio" name="tool" value="dda" id="tool-dda" checked>
+                    <label for="tool-dda">ЦДА-линия</label>
+                </div>
+                <div class="tool">
+                    <input type="radio" name="tool" value="bresenham" id="tool-bresenham">
+                    <label for="tool-bresenham">Линия Брезенхэма</label>
+                </div>
+                <div class="tool">
+                    <input type="radio" name="tool" value="wu" id="tool-wu">
+                    <label for="tool-wu">Линия Ву</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="LW1.js"></script>
+</body>
+</html>
