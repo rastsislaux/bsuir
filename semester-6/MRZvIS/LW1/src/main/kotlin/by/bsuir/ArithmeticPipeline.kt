@@ -44,22 +44,25 @@ open class ArithmeticPipeline<T>(vararg steps: Step<T>) {
 
     private fun tick(input: MutableList<T>, output: ArrayDeque<T>) {
         tick++
-        preTick()
-        if (steps[steps.lastIndex].content != null) {
-            output.addFirst(steps[steps.lastIndex].content!!)
-            steps[steps.lastIndex].content = null
-        }
-
         for (i in steps.lastIndex downTo 1) {
             steps[i].content = steps[i - 1].content
             steps[i - 1].content = null
-            steps[i].doWork()
         }
 
         if (input.isNotEmpty()) {
             steps[0].content = input.removeLast()
         }
+
+        preTick()
+        for (step in steps) {
+            step.doWork()
+        }
         postTick()
+
+        if (steps[steps.lastIndex].content != null) {
+            output.addFirst(steps[steps.lastIndex].content!!)
+            steps[steps.lastIndex].content = null
+        }
     }
 
 }

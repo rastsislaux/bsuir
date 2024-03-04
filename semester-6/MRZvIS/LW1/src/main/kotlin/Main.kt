@@ -15,16 +15,16 @@
         / М. В. Качинский, В. Б. Клюс, А. Б. Давыдов. - Минск : БГУИР, 2014. - 64 с. : ил.
  */
 
-import by.bsuir.*
-import java.lang.Exception
-import java.time.Duration
-import java.time.Instant
-import java.util.stream.IntStream
-import kotlin.streams.toList
+// интерактивность, 16 битный результат
+// 8 этапов, посчитать тики правильно
+
+import by.bsuir.ArithmeticPipeline
+import by.bsuir.MultiplicationStep
+import by.bsuir.MultiplicationTriple
+import by.bsuir.Number8
 
 fun lwMain() {
     val pipeline = object: ArithmeticPipeline<MultiplicationTriple>(
-        MultiplicationStep(),
         MultiplicationStep(),
         MultiplicationStep(),
         MultiplicationStep(),
@@ -40,6 +40,9 @@ fun lwMain() {
             steps.forEachIndexed { i, step ->
                 println("$i. Multiplicand: ${step.content?.multiplicand} | Factor: ${step.content?.factor} | Partial sum: ${step.content?.partialSum}")
             }
+
+            readln()
+            ConsoleUtilsFactory.getInstance().clearConsole()
         }
 
     }
@@ -58,53 +61,9 @@ fun lwMain() {
     }
 }
 
-class Benchmark(private val ops: Int) {
-
-    fun calculateSimple() {
-        for (i in 1..ops) {
-            val x = Number8(15) * Number8(15)
-        }
-    }
-
-    fun calculateParallel(list: List<MultiplicationTriple>) {
-        ArithmeticPipeline(
-            MultiplicationStep(),
-            MultiplicationStep(),
-            MultiplicationStep(),
-            MultiplicationStep(),
-            MultiplicationStep(),
-            MultiplicationStep(),
-            MultiplicationStep(),
-            MultiplicationStep(),
-            MultiplicationStep(),
-        ).run(*list.toTypedArray())
-    }
-
-    fun time(x: () -> Unit): Long {
-        val start = Instant.now().epochSecond
-        x()
-        val finish = Instant.now().epochSecond
-        return finish - start
-    }
-
-    fun run() {
-        val timeSimple = time { calculateSimple() }
-
-        val list = mutableListOf<MultiplicationTriple>()
-        for (i in 1..ops) {
-            list.add(MultiplicationTriple(Number8(15), Number8(15), Number8.ZERO))
-        }
-        val timeParallel = time { calculateParallel(list) }
-
-        println("Time Simple: ${timeSimple}s")
-        println("Time Parallel: ${timeParallel}s")
-    }
-
-}
-
 fun main() {
     try {
-        Benchmark(5000000).run()
+        lwMain()
     } catch (e: Exception) {
         println("Ошибка: ${e.message} (${e::class.qualifiedName})")
     }
