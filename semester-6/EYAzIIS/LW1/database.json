@@ -1,0 +1,2474 @@
+{
+  "Once": [
+    1,
+    {
+      "text": "Once",
+      "lemma": "once",
+      "pos": "adverb"
+    }
+  ],
+  "upon": [
+    1,
+    {
+      "text": "upon",
+      "lemma": "upon",
+      "pos": "subordinating conjunction"
+    }
+  ],
+  "a": [
+    19,
+    {
+      "text": "a",
+      "lemma": "a",
+      "pos": "pronoun"
+    }
+  ],
+  "time": [
+    3,
+    {
+      "text": "time",
+      "lemma": "time",
+      "pos": "noun"
+    }
+  ],
+  "in": [
+    7,
+    {
+      "text": "in",
+      "lemma": "in",
+      "pos": "adposition"
+    }
+  ],
+  "bustling": [
+    1,
+    {
+      "text": "bustling",
+      "lemma": "bustle",
+      "pos": "verb"
+    }
+  ],
+  "city": [
+    1,
+    {
+      "text": "city",
+      "lemma": "city",
+      "pos": "noun"
+    }
+  ],
+  "there": [
+    2,
+    {
+      "text": "there",
+      "lemma": "there",
+      "pos": "adverb"
+    }
+  ],
+  "lived": [
+    1,
+    {
+      "text": "lived",
+      "lemma": "live",
+      "pos": "verb"
+    }
+  ],
+  "young": [
+    1,
+    {
+      "text": "young",
+      "lemma": "young",
+      "pos": "adjective"
+    }
+  ],
+  "woman": [
+    1,
+    {
+      "text": "woman",
+      "lemma": "woman",
+      "pos": "noun"
+    }
+  ],
+  "named": [
+    2,
+    {
+      "text": "named",
+      "lemma": "name",
+      "pos": "verb"
+    }
+  ],
+  "Emily": [
+    8,
+    {
+      "text": "Emily",
+      "lemma": "emily",
+      "pos": "adverb"
+    }
+  ],
+  "She": [
+    4,
+    {
+      "text": "She",
+      "lemma": "she",
+      "pos": "pronoun"
+    }
+  ],
+  "worked": [
+    2,
+    {
+      "text": "worked",
+      "lemma": "work",
+      "pos": "verb"
+    }
+  ],
+  "at": [
+    5,
+    {
+      "text": "at",
+      "lemma": "at",
+      "pos": "adposition"
+    }
+  ],
+  "large": [
+    1,
+    {
+      "text": "large",
+      "lemma": "large",
+      "pos": "adjective"
+    }
+  ],
+  "corporate": [
+    1,
+    {
+      "text": "corporate",
+      "lemma": "corporate",
+      "pos": "adjective"
+    }
+  ],
+  "office": [
+    7,
+    {
+      "text": "office",
+      "lemma": "office",
+      "pos": "noun"
+    }
+  ],
+  "surrounded": [
+    1,
+    {
+      "text": "surrounded",
+      "lemma": "surround",
+      "pos": "verb"
+    }
+  ],
+  "by": [
+    3,
+    {
+      "text": "by",
+      "lemma": "by",
+      "pos": "adposition"
+    }
+  ],
+  "tall": [
+    1,
+    {
+      "text": "tall",
+      "lemma": "tall",
+      "pos": "adjective"
+    }
+  ],
+  "buildings": [
+    1,
+    {
+      "text": "buildings",
+      "lemma": "building",
+      "pos": "noun"
+    }
+  ],
+  "and": [
+    22,
+    {
+      "text": "and",
+      "lemma": "and",
+      "pos": "coordinating conjunction"
+    }
+  ],
+  "the": [
+    18,
+    {
+      "text": "the",
+      "lemma": "the",
+      "pos": "pronoun"
+    }
+  ],
+  "constant": [
+    2,
+    {
+      "text": "constant",
+      "lemma": "constant",
+      "pos": "adjective"
+    }
+  ],
+  "hum": [
+    1,
+    {
+      "text": "hum",
+      "lemma": "hum",
+      "pos": "proper noun"
+    }
+  ],
+  "of": [
+    13,
+    {
+      "text": "of",
+      "lemma": "of",
+      "pos": "adposition"
+    }
+  ],
+  "busy": [
+    1,
+    {
+      "text": "busy",
+      "lemma": "busy",
+      "pos": "adjective"
+    }
+  ],
+  "professionals": [
+    1,
+    {
+      "text": "professionals",
+      "lemma": "professional",
+      "pos": "noun"
+    }
+  ],
+  "was": [
+    7,
+    {
+      "text": "was",
+      "lemma": "be",
+      "pos": "auxiliary"
+    }
+  ],
+  "diligent": [
+    1,
+    {
+      "text": "diligent",
+      "lemma": "diligent",
+      "pos": "adjective"
+    }
+  ],
+  "hardworking": [
+    1,
+    {
+      "text": "hardworking",
+      "lemma": "hardworke",
+      "pos": "verb"
+    }
+  ],
+  "but": [
+    4,
+    {
+      "text": "but",
+      "lemma": "but",
+      "pos": "coordinating conjunction"
+    }
+  ],
+  "something": [
+    1,
+    {
+      "text": "something",
+      "lemma": "something",
+      "pos": "pronoun"
+    }
+  ],
+  "peculiar": [
+    1,
+    {
+      "text": "peculiar",
+      "lemma": "peculiar",
+      "pos": "adjective"
+    }
+  ],
+  "about": [
+    2,
+    {
+      "text": "about",
+      "lemma": "about",
+      "pos": "adverb"
+    }
+  ],
+  "her": [
+    26,
+    {
+      "text": "her",
+      "lemma": "her",
+      "pos": "pronoun"
+    }
+  ],
+  "that": [
+    9,
+    {
+      "text": "that",
+      "lemma": "that",
+      "pos": "pronoun"
+    }
+  ],
+  "set": [
+    1,
+    {
+      "text": "set",
+      "lemma": "set",
+      "pos": "verb"
+    }
+  ],
+  "apart": [
+    1,
+    {
+      "text": "apart",
+      "lemma": "apart",
+      "pos": "adverb"
+    }
+  ],
+  "from": [
+    2,
+    {
+      "text": "from",
+      "lemma": "from",
+      "pos": "adposition"
+    }
+  ],
+  "colleagues": [
+    3,
+    {
+      "text": "colleagues",
+      "lemma": "colleague",
+      "pos": "noun"
+    }
+  ],
+  "had": [
+    4,
+    {
+      "text": "had",
+      "lemma": "have",
+      "pos": "verb"
+    }
+  ],
+  "developed": [
+    1,
+    {
+      "text": "developed",
+      "lemma": "develop",
+      "pos": "verb"
+    }
+  ],
+  "an": [
+    2,
+    {
+      "text": "an",
+      "lemma": "an",
+      "pos": "pronoun"
+    }
+  ],
+  "unusual": [
+    1,
+    {
+      "text": "unusual",
+      "lemma": "unusual",
+      "pos": "adjective"
+    }
+  ],
+  "fondness": [
+    2,
+    {
+      "text": "fondness",
+      "lemma": "fondness",
+      "pos": "noun"
+    }
+  ],
+  "for": [
+    5,
+    {
+      "text": "for",
+      "lemma": "for",
+      "pos": "adposition"
+    }
+  ],
+  "chair": [
+    13,
+    {
+      "text": "chair",
+      "lemma": "chair",
+      "pos": "noun"
+    }
+  ],
+  "Now": [
+    1,
+    {
+      "text": "Now",
+      "lemma": "now",
+      "pos": "adverb"
+    }
+  ],
+  "this": [
+    2,
+    {
+      "text": "this",
+      "lemma": "this",
+      "pos": "pronoun"
+    }
+  ],
+  "wasn't": [
+    1,
+    {
+      "text": "n't",
+      "lemma": "not",
+      "pos": "particle"
+    }
+  ],
+  "just": [
+    2,
+    {
+      "text": "just",
+      "lemma": "just",
+      "pos": "adverb"
+    }
+  ],
+  "any": [
+    1,
+    {
+      "text": "any",
+      "lemma": "any",
+      "pos": "pronoun"
+    }
+  ],
+  "ordinary": [
+    1,
+    {
+      "text": "ordinary",
+      "lemma": "ordinary",
+      "pos": "adjective"
+    }
+  ],
+  "It": [
+    2,
+    {
+      "text": "It",
+      "lemma": "it",
+      "pos": "pronoun"
+    }
+  ],
+  "sleek": [
+    1,
+    {
+      "text": "sleek",
+      "lemma": "sleek",
+      "pos": "verb"
+    }
+  ],
+  "ergonomic": [
+    1,
+    {
+      "text": "ergonomic",
+      "lemma": "ergonomic",
+      "pos": "adjective"
+    }
+  ],
+  "masterpiece": [
+    1,
+    {
+      "text": "masterpiece",
+      "lemma": "masterpiece",
+      "pos": "noun"
+    }
+  ],
+  "provided": [
+    1,
+    {
+      "text": "provided",
+      "lemma": "provide",
+      "pos": "verb"
+    }
+  ],
+  "perfect": [
+    1,
+    {
+      "text": "perfect",
+      "lemma": "perfect",
+      "pos": "adjective"
+    }
+  ],
+  "balance": [
+    1,
+    {
+      "text": "balance",
+      "lemma": "balance",
+      "pos": "noun"
+    }
+  ],
+  "comfort": [
+    1,
+    {
+      "text": "comfort",
+      "lemma": "comfort",
+      "pos": "noun"
+    }
+  ],
+  "support": [
+    1,
+    {
+      "text": "support",
+      "lemma": "support",
+      "pos": "noun"
+    }
+  ],
+  "would": [
+    4,
+    {
+      "text": "would",
+      "lemma": "would",
+      "pos": "auxiliary"
+    }
+  ],
+  "often": [
+    2,
+    {
+      "text": "often",
+      "lemma": "often",
+      "pos": "adverb"
+    }
+  ],
+  "find": [
+    2,
+    {
+      "text": "find",
+      "lemma": "find",
+      "pos": "verb"
+    }
+  ],
+  "herself": [
+    2,
+    {
+      "text": "herself",
+      "lemma": "herself",
+      "pos": "pronoun"
+    }
+  ],
+  "sinking": [
+    1,
+    {
+      "text": "sinking",
+      "lemma": "sink",
+      "pos": "verb"
+    }
+  ],
+  "into": [
+    5,
+    {
+      "text": "into",
+      "lemma": "into",
+      "pos": "adposition"
+    }
+  ],
+  "its": [
+    3,
+    {
+      "text": "its",
+      "lemma": "its",
+      "pos": "pronoun"
+    }
+  ],
+  "plush": [
+    1,
+    {
+      "text": "plush",
+      "lemma": "plush",
+      "pos": "verb"
+    }
+  ],
+  "cushioning": [
+    1,
+    {
+      "text": "cushioning",
+      "lemma": "cushion",
+      "pos": "verb"
+    }
+  ],
+  "feeling": [
+    1,
+    {
+      "text": "feeling",
+      "lemma": "feel",
+      "pos": "verb"
+    }
+  ],
+  "as": [
+    5,
+    {
+      "text": "as",
+      "lemma": "as",
+      "pos": "adposition"
+    }
+  ],
+  "though": [
+    1,
+    {
+      "text": "though",
+      "lemma": "though",
+      "pos": "subordinating conjunction"
+    }
+  ],
+  "she": [
+    2,
+    {
+      "text": "she",
+      "lemma": "she",
+      "pos": "pronoun"
+    }
+  ],
+  "were": [
+    2,
+    {
+      "text": "were",
+      "lemma": "be",
+      "pos": "auxiliary"
+    }
+  ],
+  "enveloped": [
+    1,
+    {
+      "text": "enveloped",
+      "lemma": "envelop",
+      "pos": "verb"
+    }
+  ],
+  "cloud": [
+    1,
+    {
+      "text": "cloud",
+      "lemma": "cloud",
+      "pos": "proper noun"
+    }
+  ],
+  "The": [
+    2,
+    {
+      "text": "The",
+      "lemma": "the",
+      "pos": "pronoun"
+    }
+  ],
+  "seemed": [
+    1,
+    {
+      "text": "seemed",
+      "lemma": "seem",
+      "pos": "verb"
+    }
+  ],
+  "to": [
+    13,
+    {
+      "text": "to",
+      "lemma": "to",
+      "pos": "particle"
+    }
+  ],
+  "understand": [
+    1,
+    {
+      "text": "understand",
+      "lemma": "understand",
+      "pos": "verb"
+    }
+  ],
+  "body's": [
+    1,
+    {
+      "text": "'s",
+      "lemma": "'s",
+      "pos": "particle"
+    }
+  ],
+  "every": [
+    1,
+    {
+      "text": "every",
+      "lemma": "every",
+      "pos": "pronoun"
+    }
+  ],
+  "need": [
+    1,
+    {
+      "text": "need",
+      "lemma": "need",
+      "pos": "verb"
+    }
+  ],
+  "couldn't": [
+    2,
+    {
+      "text": "n't",
+      "lemma": "not",
+      "pos": "particle"
+    }
+  ],
+  "help": [
+    2,
+    {
+      "text": "help",
+      "lemma": "help",
+      "pos": "verb"
+    }
+  ],
+  "appreciate": [
+    1,
+    {
+      "text": "appreciate",
+      "lemma": "appreciate",
+      "pos": "verb"
+    }
+  ],
+  "unique": [
+    2,
+    {
+      "text": "unique",
+      "lemma": "unique",
+      "pos": "adjective"
+    }
+  ],
+  "design": [
+    1,
+    {
+      "text": "design",
+      "lemma": "design",
+      "pos": "verb"
+    }
+  ],
+  "As": [
+    2,
+    {
+      "text": "As",
+      "lemma": "as",
+      "pos": "adposition"
+    }
+  ],
+  "days": [
+    2,
+    {
+      "text": "days",
+      "lemma": "day",
+      "pos": "noun"
+    }
+  ],
+  "turned": [
+    1,
+    {
+      "text": "turned",
+      "lemma": "turn",
+      "pos": "verb"
+    }
+  ],
+  "weeks": [
+    1,
+    {
+      "text": "weeks",
+      "lemma": "week",
+      "pos": "noun"
+    }
+  ],
+  "Emily's": [
+    7,
+    {
+      "text": "'s",
+      "lemma": "'s",
+      "pos": "particle"
+    }
+  ],
+  "attachment": [
+    2,
+    {
+      "text": "attachment",
+      "lemma": "attachment",
+      "pos": "noun"
+    }
+  ],
+  "grew": [
+    2,
+    {
+      "text": "grew",
+      "lemma": "grow",
+      "pos": "verb"
+    }
+  ],
+  "stronger": [
+    2,
+    {
+      "text": "stronger",
+      "lemma": "strong",
+      "pos": "adjective"
+    }
+  ],
+  "found": [
+    2,
+    {
+      "text": "found",
+      "lemma": "find",
+      "pos": "verb"
+    }
+  ],
+  "spending": [
+    1,
+    {
+      "text": "spending",
+      "lemma": "spend",
+      "pos": "verb"
+    }
+  ],
+  "more": [
+    2,
+    {
+      "text": "more",
+      "lemma": "more",
+      "pos": "adverb"
+    }
+  ],
+  "seated": [
+    1,
+    {
+      "text": "seated",
+      "lemma": "seat",
+      "pos": "verb"
+    }
+  ],
+  "embrace": [
+    1,
+    {
+      "text": "embrace",
+      "lemma": "embrace",
+      "pos": "verb"
+    }
+  ],
+  "than": [
+    2,
+    {
+      "text": "than",
+      "lemma": "than",
+      "pos": "adposition"
+    }
+  ],
+  "anywhere": [
+    1,
+    {
+      "text": "anywhere",
+      "lemma": "anywhere",
+      "pos": "adverb"
+    }
+  ],
+  "else": [
+    1,
+    {
+      "text": "else",
+      "lemma": "else",
+      "pos": "adverb"
+    }
+  ],
+  "arrive": [
+    1,
+    {
+      "text": "arrive",
+      "lemma": "arrive",
+      "pos": "verb"
+    }
+  ],
+  "early": [
+    1,
+    {
+      "text": "early",
+      "lemma": "early",
+      "pos": "adverb"
+    }
+  ],
+  "morning": [
+    1,
+    {
+      "text": "morning",
+      "lemma": "morning",
+      "pos": "noun"
+    }
+  ],
+  "eagerly": [
+    1,
+    {
+      "text": "eagerly",
+      "lemma": "eagerly",
+      "pos": "adverb"
+    }
+  ],
+  "claiming": [
+    1,
+    {
+      "text": "claiming",
+      "lemma": "claim",
+      "pos": "verb"
+    }
+  ],
+  "seat": [
+    1,
+    {
+      "text": "seat",
+      "lemma": "seat",
+      "pos": "noun"
+    }
+  ],
+  "reluctantly": [
+    1,
+    {
+      "text": "reluctantly",
+      "lemma": "reluctantly",
+      "pos": "adverb"
+    }
+  ],
+  "leave": [
+    1,
+    {
+      "text": "leave",
+      "lemma": "leave",
+      "pos": "verb"
+    }
+  ],
+  "it": [
+    5,
+    {
+      "text": "it",
+      "lemma": "it",
+      "pos": "pronoun"
+    }
+  ],
+  "only": [
+    1,
+    {
+      "text": "only",
+      "lemma": "only",
+      "pos": "adverb"
+    }
+  ],
+  "when": [
+    1,
+    {
+      "text": "when",
+      "lemma": "when",
+      "pos": "subordinating conjunction"
+    }
+  ],
+  "absolutely": [
+    1,
+    {
+      "text": "absolutely",
+      "lemma": "absolutely",
+      "pos": "adverb"
+    }
+  ],
+  "necessary": [
+    1,
+    {
+      "text": "necessary",
+      "lemma": "necessary",
+      "pos": "adjective"
+    }
+  ],
+  "To": [
+    1,
+    {
+      "text": "To",
+      "lemma": "to",
+      "pos": "particle"
+    }
+  ],
+  "chair;": [
+    1,
+    {
+      "text": ";",
+      "lemma": ";",
+      "pos": "punctuation"
+    }
+  ],
+  "sanctuary": [
+    1,
+    {
+      "text": "sanctuary",
+      "lemma": "sanctuary",
+      "pos": "adjective"
+    }
+  ],
+  "creative": [
+    1,
+    {
+      "text": "creative",
+      "lemma": "creative",
+      "pos": "adjective"
+    }
+  ],
+  "haven": [
+    1,
+    {
+      "text": "haven",
+      "lemma": "haven",
+      "pos": "verb"
+    }
+  ],
+  "infatuation": [
+    1,
+    {
+      "text": "infatuation",
+      "lemma": "infatuation",
+      "pos": "noun"
+    }
+  ],
+  "with": [
+    5,
+    {
+      "text": "with",
+      "lemma": "with",
+      "pos": "adposition"
+    }
+  ],
+  "didn't": [
+    1,
+    {
+      "text": "n't",
+      "lemma": "not",
+      "pos": "particle"
+    }
+  ],
+  "go": [
+    1,
+    {
+      "text": "go",
+      "lemma": "go",
+      "pos": "verb"
+    }
+  ],
+  "unnoticed": [
+    1,
+    {
+      "text": "unnoticed",
+      "lemma": "unnoticed",
+      "pos": "adjective"
+    }
+  ],
+  "They": [
+    6,
+    {
+      "text": "They",
+      "lemma": "they",
+      "pos": "pronoun"
+    }
+  ],
+  "chuckle": [
+    1,
+    {
+      "text": "chuckle",
+      "lemma": "chuckle",
+      "pos": "verb"
+    }
+  ],
+  "dedication": [
+    1,
+    {
+      "text": "dedication",
+      "lemma": "dedication",
+      "pos": "noun"
+    }
+  ],
+  "inanimate": [
+    1,
+    {
+      "text": "inanimate",
+      "lemma": "inanimate",
+      "pos": "verb"
+    }
+  ],
+  "object": [
+    1,
+    {
+      "text": "object",
+      "lemma": "object",
+      "pos": "noun"
+    }
+  ],
+  "However": [
+    1,
+    {
+      "text": "However",
+      "lemma": "however",
+      "pos": "adverb"
+    }
+  ],
+  "one": [
+    1,
+    {
+      "text": "one",
+      "lemma": "one",
+      "pos": "numeral"
+    }
+  ],
+  "person": [
+    1,
+    {
+      "text": "person",
+      "lemma": "person",
+      "pos": "noun"
+    }
+  ],
+  "Daniel": [
+    3,
+    {
+      "text": "Daniel",
+      "lemma": "Daniel",
+      "pos": "proper noun"
+    }
+  ],
+  "who": [
+    1,
+    {
+      "text": "who",
+      "lemma": "who",
+      "pos": "pronoun"
+    }
+  ],
+  "cubicle": [
+    1,
+    {
+      "text": "cubicle",
+      "lemma": "cubicle",
+      "pos": "noun"
+    }
+  ],
+  "next": [
+    1,
+    {
+      "text": "next",
+      "lemma": "next",
+      "pos": "adverb"
+    }
+  ],
+  "obsession": [
+    2,
+    {
+      "text": "obsession",
+      "lemma": "obsession",
+      "pos": "noun"
+    }
+  ],
+  "endearing": [
+    1,
+    {
+      "text": "endearing",
+      "lemma": "endear",
+      "pos": "verb"
+    }
+  ],
+  "kind-hearted": [
+    1,
+    {
+      "text": "hearted",
+      "lemma": "hearted",
+      "pos": "adjective"
+    }
+  ],
+  "soul": [
+    1,
+    {
+      "text": "soul",
+      "lemma": "soul",
+      "pos": "noun"
+    }
+  ],
+  "always": [
+    1,
+    {
+      "text": "always",
+      "lemma": "always",
+      "pos": "adverb"
+    }
+  ],
+  "ready": [
+    1,
+    {
+      "text": "ready",
+      "lemma": "ready",
+      "pos": "adjective"
+    }
+  ],
+  "lend": [
+    1,
+    {
+      "text": "lend",
+      "lemma": "lend",
+      "pos": "verb"
+    }
+  ],
+  "listening": [
+    1,
+    {
+      "text": "listening",
+      "lemma": "listen",
+      "pos": "verb"
+    }
+  ],
+  "ear": [
+    1,
+    {
+      "text": "ear",
+      "lemma": "ear",
+      "pos": "noun"
+    }
+  ],
+  "He": [
+    2,
+    {
+      "text": "He",
+      "lemma": "he",
+      "pos": "pronoun"
+    }
+  ],
+  "admired": [
+    1,
+    {
+      "text": "admired",
+      "lemma": "admire",
+      "pos": "verb"
+    }
+  ],
+  "passion": [
+    1,
+    {
+      "text": "passion",
+      "lemma": "passion",
+      "pos": "noun"
+    }
+  ],
+  "saw": [
+    1,
+    {
+      "text": "saw",
+      "lemma": "see",
+      "pos": "verb"
+    }
+  ],
+  "quirk": [
+    1,
+    {
+      "text": "quirk",
+      "lemma": "quirk",
+      "pos": "noun"
+    }
+  ],
+  "made": [
+    2,
+    {
+      "text": "made",
+      "lemma": "make",
+      "pos": "verb"
+    }
+  ],
+  "special": [
+    1,
+    {
+      "text": "special",
+      "lemma": "special",
+      "pos": "adjective"
+    }
+  ],
+  "One": [
+    1,
+    {
+      "text": "One",
+      "lemma": "one",
+      "pos": "numeral"
+    }
+  ],
+  "day": [
+    4,
+    {
+      "text": "day",
+      "lemma": "day",
+      "pos": "noun"
+    }
+  ],
+  "he": [
+    1,
+    {
+      "text": "he",
+      "lemma": "he",
+      "pos": "pronoun"
+    }
+  ],
+  "decided": [
+    2,
+    {
+      "text": "decided",
+      "lemma": "decide",
+      "pos": "verb"
+    }
+  ],
+  "play": [
+    1,
+    {
+      "text": "play",
+      "lemma": "play",
+      "pos": "verb"
+    }
+  ],
+  "along": [
+    1,
+    {
+      "text": "along",
+      "lemma": "along",
+      "pos": "adposition"
+    }
+  ],
+  "fascination": [
+    1,
+    {
+      "text": "fascination",
+      "lemma": "fascination",
+      "pos": "noun"
+    }
+  ],
+  "began": [
+    3,
+    {
+      "text": "began",
+      "lemma": "begin",
+      "pos": "verb"
+    }
+  ],
+  "sending": [
+    1,
+    {
+      "text": "sending",
+      "lemma": "send",
+      "pos": "verb"
+    }
+  ],
+  "playful": [
+    4,
+    {
+      "text": "playful",
+      "lemma": "playful",
+      "pos": "adjective"
+    }
+  ],
+  "emails": [
+    5,
+    {
+      "text": "emails",
+      "lemma": "email",
+      "pos": "noun"
+    }
+  ],
+  "pretending": [
+    1,
+    {
+      "text": "pretending",
+      "lemma": "pretend",
+      "pos": "verb"
+    }
+  ],
+  "be": [
+    1,
+    {
+      "text": "be",
+      "lemma": "be",
+      "pos": "auxiliary"
+    }
+  ],
+  "itself": [
+    1,
+    {
+      "text": "itself",
+      "lemma": "itself",
+      "pos": "pronoun"
+    }
+  ],
+  "Dear": [
+    1,
+    {
+      "text": "Dear",
+      "lemma": "dear",
+      "pos": "adjective"
+    }
+  ],
+  "Emily,": [
+    1,
+    {
+      "text": ",",
+      "lemma": ",",
+      "pos": "punctuation"
+    }
+  ],
+  "his": [
+    1,
+    {
+      "text": "his",
+      "lemma": "his",
+      "pos": "pronoun"
+    }
+  ],
+  "first": [
+    1,
+    {
+      "text": "first",
+      "lemma": "first",
+      "pos": "adverb"
+    }
+  ],
+  "email": [
+    1,
+    {
+      "text": "email",
+      "lemma": "email",
+      "pos": "noun"
+    }
+  ],
+  "read": [
+    1,
+    {
+      "text": "read",
+      "lemma": "read",
+      "pos": "verb"
+    }
+  ],
+  "I": [
+    2,
+    {
+      "text": "I",
+      "lemma": "I",
+      "pos": "pronoun"
+    }
+  ],
+  "felt": [
+    2,
+    {
+      "text": "felt",
+      "lemma": "feel",
+      "pos": "verb"
+    }
+  ],
+  "your": [
+    1,
+    {
+      "text": "your",
+      "lemma": "your",
+      "pos": "pronoun"
+    }
+  ],
+  "presence": [
+    1,
+    {
+      "text": "presence",
+      "lemma": "presence",
+      "pos": "noun"
+    }
+  ],
+  "all": [
+    1,
+    {
+      "text": "all",
+      "lemma": "all",
+      "pos": "pronoun"
+    }
+  ],
+  "today": [
+    1,
+    {
+      "text": "today",
+      "lemma": "today",
+      "pos": "noun"
+    }
+  ],
+  "must": [
+    1,
+    {
+      "text": "must",
+      "lemma": "must",
+      "pos": "auxiliary"
+    }
+  ],
+  "say": [
+    1,
+    {
+      "text": "say",
+      "lemma": "say",
+      "pos": "verb"
+    }
+  ],
+  "delightful": [
+    1,
+    {
+      "text": "delightful",
+      "lemma": "delightful",
+      "pos": "adjective"
+    }
+  ],
+  "You": [
+    1,
+    {
+      "text": "You",
+      "lemma": "you",
+      "pos": "pronoun"
+    }
+  ],
+  "sat": [
+    1,
+    {
+      "text": "sat",
+      "lemma": "sit",
+      "pos": "verb"
+    }
+  ],
+  "on": [
+    3,
+    {
+      "text": "on",
+      "lemma": "on",
+      "pos": "adposition"
+    }
+  ],
+  "me": [
+    1,
+    {
+      "text": "me",
+      "lemma": "I",
+      "pos": "pronoun"
+    }
+  ],
+  "such": [
+    1,
+    {
+      "text": "such",
+      "lemma": "such",
+      "pos": "adjective"
+    }
+  ],
+  "grace": [
+    1,
+    {
+      "text": "grace",
+      "lemma": "grace",
+      "pos": "noun"
+    }
+  ],
+  "elegance": [
+    1,
+    {
+      "text": "elegance",
+      "lemma": "elegance",
+      "pos": "noun"
+    }
+  ],
+  "It's": [
+    1,
+    {
+      "text": "'s",
+      "lemma": "be",
+      "pos": "auxiliary"
+    }
+  ],
+  "if": [
+    1,
+    {
+      "text": "if",
+      "lemma": "if",
+      "pos": "subordinating conjunction"
+    }
+  ],
+  "we": [
+    1,
+    {
+      "text": "we",
+      "lemma": "we",
+      "pos": "pronoun"
+    }
+  ],
+  "each": [
+    3,
+    {
+      "text": "each",
+      "lemma": "each",
+      "pos": "pronoun"
+    }
+  ],
+  "other.": [
+    1,
+    {
+      "text": ".",
+      "lemma": ".",
+      "pos": "punctuation"
+    }
+  ],
+  "giggle": [
+    1,
+    {
+      "text": "giggle",
+      "lemma": "giggle",
+      "pos": "verb"
+    }
+  ],
+  "Daniel's": [
+    3,
+    {
+      "text": "'s",
+      "lemma": "'s",
+      "pos": "particle"
+    }
+  ],
+  "message": [
+    1,
+    {
+      "text": "message",
+      "lemma": "message",
+      "pos": "noun"
+    }
+  ],
+  "From": [
+    2,
+    {
+      "text": "From",
+      "lemma": "from",
+      "pos": "adposition"
+    }
+  ],
+  "moment": [
+    1,
+    {
+      "text": "moment",
+      "lemma": "moment",
+      "pos": "noun"
+    }
+  ],
+  "whimsical": [
+    1,
+    {
+      "text": "whimsical",
+      "lemma": "whimsical",
+      "pos": "adjective"
+    }
+  ],
+  "exchange": [
+    1,
+    {
+      "text": "exchange",
+      "lemma": "exchange",
+      "pos": "noun"
+    }
+  ],
+  "between": [
+    1,
+    {
+      "text": "between",
+      "lemma": "between",
+      "pos": "adposition"
+    }
+  ],
+  "imaginary": [
+    2,
+    {
+      "text": "imaginary",
+      "lemma": "imaginary",
+      "pos": "noun"
+    }
+  ],
+  "write": [
+    1,
+    {
+      "text": "write",
+      "lemma": "write",
+      "pos": "verb"
+    }
+  ],
+  "other": [
+    2,
+    {
+      "text": "other",
+      "lemma": "other",
+      "pos": "adjective"
+    }
+  ],
+  "throughout": [
+    1,
+    {
+      "text": "throughout",
+      "lemma": "throughout",
+      "pos": "adposition"
+    }
+  ],
+  "sharing": [
+    1,
+    {
+      "text": "sharing",
+      "lemma": "share",
+      "pos": "verb"
+    }
+  ],
+  "stories": [
+    1,
+    {
+      "text": "stories",
+      "lemma": "story",
+      "pos": "noun"
+    }
+  ],
+  "jokes": [
+    1,
+    {
+      "text": "jokes",
+      "lemma": "joke",
+      "pos": "noun"
+    }
+  ],
+  "even": [
+    2,
+    {
+      "text": "even",
+      "lemma": "even",
+      "pos": "adverb"
+    }
+  ],
+  "secrets": [
+    1,
+    {
+      "text": "secrets",
+      "lemma": "secret",
+      "pos": "noun"
+    }
+  ],
+  "chair's": [
+    1,
+    {
+      "text": "'s",
+      "lemma": "'s",
+      "pos": "particle"
+    }
+  ],
+  "became": [
+    3,
+    {
+      "text": "became",
+      "lemma": "become",
+      "pos": "verb"
+    }
+  ],
+  "source": [
+    1,
+    {
+      "text": "source",
+      "lemma": "source",
+      "pos": "noun"
+    }
+  ],
+  "joy": [
+    1,
+    {
+      "text": "joy",
+      "lemma": "joy",
+      "pos": "noun"
+    }
+  ],
+  "inspiration": [
+    1,
+    {
+      "text": "inspiration",
+      "lemma": "inspiration",
+      "pos": "noun"
+    }
+  ],
+  "brightening": [
+    1,
+    {
+      "text": "brightening",
+      "lemma": "brighten",
+      "pos": "verb"
+    }
+  ],
+  "work": [
+    2,
+    {
+      "text": "work",
+      "lemma": "work",
+      "pos": "noun"
+    }
+  ],
+  "their": [
+    7,
+    {
+      "text": "their",
+      "lemma": "their",
+      "pos": "pronoun"
+    }
+  ],
+  "correspondence": [
+    1,
+    {
+      "text": "correspondence",
+      "lemma": "correspondence",
+      "pos": "noun"
+    }
+  ],
+  "continued": [
+    2,
+    {
+      "text": "continued",
+      "lemma": "continue",
+      "pos": "verb"
+    }
+  ],
+  "connection": [
+    3,
+    {
+      "text": "connection",
+      "lemma": "connection",
+      "pos": "noun"
+    }
+  ],
+  "deeper": [
+    1,
+    {
+      "text": "deeper",
+      "lemma": "deeply",
+      "pos": "adverb"
+    }
+  ],
+  "discovered": [
+    1,
+    {
+      "text": "discovered",
+      "lemma": "discover",
+      "pos": "verb"
+    }
+  ],
+  "shared": [
+    1,
+    {
+      "text": "shared",
+      "lemma": "share",
+      "pos": "verb"
+    }
+  ],
+  "interests": [
+    1,
+    {
+      "text": "interests",
+      "lemma": "interest",
+      "pos": "noun"
+    }
+  ],
+  "similar": [
+    1,
+    {
+      "text": "similar",
+      "lemma": "similar",
+      "pos": "adjective"
+    }
+  ],
+  "sense": [
+    1,
+    {
+      "text": "sense",
+      "lemma": "sense",
+      "pos": "noun"
+    }
+  ],
+  "humor": [
+    1,
+    {
+      "text": "humor",
+      "lemma": "humor",
+      "pos": "noun"
+    }
+  ],
+  "Their": [
+    2,
+    {
+      "text": "Their",
+      "lemma": "their",
+      "pos": "pronoun"
+    }
+  ],
+  "extended": [
+    2,
+    {
+      "text": "extended",
+      "lemma": "extend",
+      "pos": "verb"
+    }
+  ],
+  "beyond": [
+    2,
+    {
+      "text": "beyond",
+      "lemma": "beyond",
+      "pos": "adposition"
+    }
+  ],
+  "realm": [
+    1,
+    {
+      "text": "realm",
+      "lemma": "realm",
+      "pos": "noun"
+    }
+  ],
+  "they": [
+    2,
+    {
+      "text": "they",
+      "lemma": "they",
+      "pos": "pronoun"
+    }
+  ],
+  "started": [
+    2,
+    {
+      "text": "started",
+      "lemma": "start",
+      "pos": "verb"
+    }
+  ],
+  "opening": [
+    1,
+    {
+      "text": "opening",
+      "lemma": "open",
+      "pos": "verb"
+    }
+  ],
+  "up": [
+    1,
+    {
+      "text": "up",
+      "lemma": "up",
+      "pos": "adverb"
+    }
+  ],
+  "dreams": [
+    1,
+    {
+      "text": "dreams",
+      "lemma": "dream",
+      "pos": "noun"
+    }
+  ],
+  "aspirations": [
+    1,
+    {
+      "text": "aspirations",
+      "lemma": "aspiration",
+      "pos": "noun"
+    }
+  ],
+  "personal": [
+    2,
+    {
+      "text": "personal",
+      "lemma": "personal",
+      "pos": "adjective"
+    }
+  ],
+  "experiences": [
+    1,
+    {
+      "text": "experiences",
+      "lemma": "experience",
+      "pos": "noun"
+    }
+  ],
+  "What": [
+    1,
+    {
+      "text": "What",
+      "lemma": "what",
+      "pos": "pronoun"
+    }
+  ],
+  "game": [
+    1,
+    {
+      "text": "game",
+      "lemma": "game",
+      "pos": "noun"
+    }
+  ],
+  "blossomed": [
+    2,
+    {
+      "text": "blossomed",
+      "lemma": "blossom",
+      "pos": "verb"
+    }
+  ],
+  "genuine": [
+    1,
+    {
+      "text": "genuine",
+      "lemma": "genuine",
+      "pos": "adjective"
+    }
+  ],
+  "friendship": [
+    3,
+    {
+      "text": "friendship",
+      "lemma": "friendship",
+      "pos": "noun"
+    }
+  ],
+  "Months": [
+    1,
+    {
+      "text": "Months",
+      "lemma": "month",
+      "pos": "noun"
+    }
+  ],
+  "passed": [
+    1,
+    {
+      "text": "passed",
+      "lemma": "pass",
+      "pos": "verb"
+    }
+  ],
+  "remained": [
+    1,
+    {
+      "text": "remained",
+      "lemma": "remain",
+      "pos": "verb"
+    }
+  ],
+  "grown": [
+    1,
+    {
+      "text": "grown",
+      "lemma": "grown",
+      "pos": "noun"
+    }
+  ],
+  "eventually": [
+    1,
+    {
+      "text": "eventually",
+      "lemma": "eventually",
+      "pos": "adverb"
+    }
+  ],
+  "meet": [
+    1,
+    {
+      "text": "meet",
+      "lemma": "meet",
+      "pos": "verb"
+    }
+  ],
+  "outside": [
+    1,
+    {
+      "text": "outside",
+      "lemma": "outside",
+      "pos": "adverb"
+    }
+  ],
+  "surprise": [
+    1,
+    {
+      "text": "surprise",
+      "lemma": "surprise",
+      "pos": "noun"
+    }
+  ],
+  "through": [
+    1,
+    {
+      "text": "through",
+      "lemma": "through",
+      "pos": "adposition"
+    }
+  ],
+  "translated": [
+    1,
+    {
+      "text": "translated",
+      "lemma": "translate",
+      "pos": "verb"
+    }
+  ],
+  "real-life": [
+    1,
+    {
+      "text": "life",
+      "lemma": "life",
+      "pos": "noun"
+    }
+  ],
+  "chemistry": [
+    1,
+    {
+      "text": "chemistry",
+      "lemma": "chemistry",
+      "pos": "noun"
+    }
+  ],
+  "quickly": [
+    1,
+    {
+      "text": "quickly",
+      "lemma": "quickly",
+      "pos": "adverb"
+    }
+  ],
+  "realized": [
+    1,
+    {
+      "text": "realized",
+      "lemma": "realize",
+      "pos": "verb"
+    }
+  ],
+  "bond": [
+    1,
+    {
+      "text": "bond",
+      "lemma": "bond",
+      "pos": "noun"
+    }
+  ],
+  "far": [
+    1,
+    {
+      "text": "far",
+      "lemma": "far",
+      "pos": "adverb"
+    }
+  ],
+  "exchanges": [
+    1,
+    {
+      "text": "exchanges",
+      "lemma": "exchange",
+      "pos": "noun"
+    }
+  ],
+  "In": [
+    1,
+    {
+      "text": "In",
+      "lemma": "in",
+      "pos": "adposition"
+    }
+  ],
+  "beautiful": [
+    1,
+    {
+      "text": "beautiful",
+      "lemma": "beautiful",
+      "pos": "adjective"
+    }
+  ],
+  "romance": [
+    1,
+    {
+      "text": "romance",
+      "lemma": "romance",
+      "pos": "noun"
+    }
+  ],
+  "side": [
+    2,
+    {
+      "text": "side",
+      "lemma": "side",
+      "pos": "noun"
+    }
+  ],
+  "beloved": [
+    1,
+    {
+      "text": "beloved",
+      "lemma": "belove",
+      "pos": "verb"
+    }
+  ],
+  "reminder": [
+    2,
+    {
+      "text": "reminder",
+      "lemma": "reminder",
+      "pos": "noun"
+    }
+  ],
+  "how": [
+    1,
+    {
+      "text": "how",
+      "lemma": "how",
+      "pos": "subordinating conjunction"
+    }
+  ],
+  "relationship": [
+    1,
+    {
+      "text": "relationship",
+      "lemma": "relationship",
+      "pos": "noun"
+    }
+  ],
+  "love": [
+    3,
+    {
+      "text": "love",
+      "lemma": "love",
+      "pos": "noun"
+    }
+  ],
+  "story": [
+    1,
+    {
+      "text": "story",
+      "lemma": "story",
+      "pos": "noun"
+    }
+  ],
+  "talk": [
+    1,
+    {
+      "text": "talk",
+      "lemma": "talk",
+      "pos": "verb"
+    }
+  ],
+  "marveled": [
+    1,
+    {
+      "text": "marveled",
+      "lemma": "marvel",
+      "pos": "verb"
+    }
+  ],
+  "serendipitous": [
+    1,
+    {
+      "text": "serendipitous",
+      "lemma": "serendipitous",
+      "pos": "adjective"
+    }
+  ],
+  "circumstances": [
+    1,
+    {
+      "text": "circumstances",
+      "lemma": "circumstance",
+      "pos": "noun"
+    }
+  ],
+  "brought": [
+    1,
+    {
+      "text": "brought",
+      "lemma": "bring",
+      "pos": "verb"
+    }
+  ],
+  "them": [
+    1,
+    {
+      "text": "them",
+      "lemma": "they",
+      "pos": "pronoun"
+    }
+  ],
+  "together": [
+    1,
+    {
+      "text": "together",
+      "lemma": "together",
+      "pos": "adverb"
+    }
+  ],
+  "And": [
+    1,
+    {
+      "text": "And",
+      "lemma": "and",
+      "pos": "coordinating conjunction"
+    }
+  ],
+  "so": [
+    1,
+    {
+      "text": "so",
+      "lemma": "so",
+      "pos": "adverb"
+    }
+  ],
+  "led": [
+    1,
+    {
+      "text": "led",
+      "lemma": "lead",
+      "pos": "verb"
+    }
+  ],
+  "unexpected": [
+    2,
+    {
+      "text": "unexpected",
+      "lemma": "unexpected",
+      "pos": "adjective"
+    }
+  ],
+  "journey": [
+    1,
+    {
+      "text": "journey",
+      "lemma": "journey",
+      "pos": "proper noun"
+    }
+  ],
+  "growth": [
+    1,
+    {
+      "text": "growth",
+      "lemma": "growth",
+      "pos": "noun"
+    }
+  ],
+  "taught": [
+    1,
+    {
+      "text": "taught",
+      "lemma": "teach",
+      "pos": "verb"
+    }
+  ],
+  "sometimes": [
+    1,
+    {
+      "text": "sometimes",
+      "lemma": "sometimes",
+      "pos": "adverb"
+    }
+  ],
+  "most": [
+    3,
+    {
+      "text": "most",
+      "lemma": "most",
+      "pos": "adverb"
+    }
+  ],
+  "extraordinary": [
+    2,
+    {
+      "text": "extraordinary",
+      "lemma": "extraordinary",
+      "pos": "adjective"
+    }
+  ],
+  "connections": [
+    1,
+    {
+      "text": "connections",
+      "lemma": "connection",
+      "pos": "noun"
+    }
+  ],
+  "can": [
+    2,
+    {
+      "text": "can",
+      "lemma": "can",
+      "pos": "auxiliary"
+    }
+  ],
+  "arise": [
+    1,
+    {
+      "text": "arise",
+      "lemma": "arise",
+      "pos": "verb"
+    }
+  ],
+  "simplest": [
+    1,
+    {
+      "text": "simplest",
+      "lemma": "simple",
+      "pos": "adjective"
+    }
+  ],
+  "sources": [
+    1,
+    {
+      "text": "sources",
+      "lemma": "source",
+      "pos": "noun"
+    }
+  ],
+  "forward": [
+    1,
+    {
+      "text": "forward",
+      "lemma": "forward",
+      "pos": "adverb"
+    }
+  ],
+  "symbol": [
+    1,
+    {
+      "text": "symbol",
+      "lemma": "symbol",
+      "pos": "noun"
+    }
+  ],
+  "power": [
+    1,
+    {
+      "text": "power",
+      "lemma": "power",
+      "pos": "noun"
+    }
+  ],
+  "human": [
+    1,
+    {
+      "text": "human",
+      "lemma": "human",
+      "pos": "proper noun"
+    }
+  ],
+  "us": [
+    1,
+    {
+      "text": "us",
+      "lemma": "we",
+      "pos": "pronoun"
+    }
+  ],
+  "mundane": [
+    1,
+    {
+      "text": "mundane",
+      "lemma": "mundane",
+      "pos": "verb"
+    }
+  ],
+  "places": [
+    1,
+    {
+      "text": "places",
+      "lemma": "place",
+      "pos": "noun"
+    }
+  ]
+}
