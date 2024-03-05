@@ -19,41 +19,47 @@
 // 8 этапов, посчитать тики правильно
 
 import by.bsuir.ArithmeticPipeline
+import by.bsuir.BinaryNumber
 import by.bsuir.MultiplicationStep
 import by.bsuir.MultiplicationTriple
-import by.bsuir.Number8
+import com.google.gson.GsonBuilder
+import com.google.gson.reflect.TypeToken
+import java.io.File
 
-fun lwMain() {
-    val pipeline = object: ArithmeticPipeline<MultiplicationTriple>(
-        MultiplicationStep(),
-        MultiplicationStep(),
-        MultiplicationStep(),
-        MultiplicationStep(),
-        MultiplicationStep(),
-        MultiplicationStep(),
-        MultiplicationStep(),
-        MultiplicationStep(),
-    ) {
+val multiplicationPipeline = object: ArithmeticPipeline<MultiplicationTriple>(
+    MultiplicationStep(),
+    MultiplicationStep(),
+    MultiplicationStep(),
+    MultiplicationStep(),
+    MultiplicationStep(),
+    MultiplicationStep(),
+    MultiplicationStep(),
+    MultiplicationStep(),
+) {
 
-        override fun postTick() {
-            println("===================== TICK $tick =====================")
-            steps.forEachIndexed { i, step ->
-                println("$i. Multiplicand: ${step.content?.multiplicand} | Factor: ${step.content?.factor} | Partial sum: ${step.content?.partialSum}")
-            }
-
-            readln()
-            ConsoleUtilsFactory.getInstance().clearConsole()
+    override fun postTick() {
+        println("===================== TICK $tick =====================")
+        steps.forEachIndexed { i, step ->
+            println("$i. Multiplicand: ${step.content?.multiplicand} | Factor: ${step.content?.factor} | Partial sum: ${step.content?.partialSum}")
         }
 
+        readln()
     }
 
-    val res = pipeline.run(
-        MultiplicationTriple(Number8(2), Number8(8),   Number8.ZERO),
-        MultiplicationTriple(Number8(6), Number8(6),   Number8.ZERO),
-        MultiplicationTriple(Number8(12), Number8(9),  Number8.ZERO),
-        MultiplicationTriple(Number8(15), Number8(15), Number8.ZERO),
-        MultiplicationTriple(Number8(14), Number8(7),  Number8.ZERO),
-        MultiplicationTriple(Number8(3), Number8(7),   Number8.ZERO)
+}
+
+val GSON = GsonBuilder().setPrettyPrinting().create()
+
+fun lwMain() {
+    val x: List<List<Int>> = GSON.fromJson(File("input.json").readText(), object: TypeToken<List<List<Int>>>() { }.type)
+
+    if ( x.any { it[0] > 255 || it[1] > 255 } ) {
+        throw IllegalStateException("Numbers must fit in 8 bits.")
+    }
+
+    val res = multiplicationPipeline.run(
+        *x.map { MultiplicationTriple(BinaryNumber(16, it[0]), BinaryNumber(16, it[1]) shl 8, BinaryNumber(16, 0)) }
+            .toTypedArray()
     )
 
     res.forEach {

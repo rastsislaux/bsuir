@@ -1,4 +1,4 @@
-import by.bsuir.Number8
+import by.bsuir.BinaryNumber
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.shouldBe
 import io.kotest.property.Arb
@@ -13,7 +13,7 @@ class Number8Test: StringSpec({
             Arb.int(1, 15)
         ) { num1, num2 ->
             println("Testing with num1=$num1, num2=$num2")
-            (Number8(num1) * Number8(num2)) shouldBe Number8(num2 * num1)
+            (BinaryNumber(num1) * BinaryNumber(num2)) shouldBe BinaryNumber(num2 * num1)
         }
     }
 

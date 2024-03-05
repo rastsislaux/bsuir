@@ -11,6 +11,8 @@ repositories {
 }
 
 dependencies {
+    implementation("com.google.code.gson:gson:2.10.1")
+
     testImplementation(kotlin("test"))
 
     testImplementation("io.kotest:kotest-runner-junit5:4.6.3")

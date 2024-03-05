@@ -6,7 +6,7 @@
     Липский Р. В., Стронгин А. В., Жолнерчик И. А.
 
 Задание:
-    (16) реализовать алгоритм вычисления произведения пары 8-разрядных чисел умножением со старших разрядов
+    (16) реализовать алгоритм вычисления произведения пары this.bits-разрядных чисел умножением со старших разрядов
          со сдвигом частичной суммы влево
 
 Источники:
@@ -17,21 +17,21 @@
 
 package by.bsuir
 
-class Number8(private val number: List<Boolean>) {
+class BinaryNumber(val bits: Int, private val number: List<Boolean>) {
 
-    constructor(number: String) : this(strToList(number))
+    constructor(number: String) : this(number.length, strToList(number))
 
-    constructor(number: Int): this(intToList(number))
+    constructor(bits: Int, number: Int): this(bits, intToList(bits, number))
 
-    infix fun shl(places: Int): Number8 {
+    infix fun shl(places: Int): BinaryNumber {
         var copy = number
         repeat(places) {
             copy = copy.drop(1) + false
         }
-        return Number8(copy)
+        return BinaryNumber(this.bits, copy)
     }
 
-    operator fun plus(other: Number8): Number8 {
+    operator fun plus(other: BinaryNumber): BinaryNumber {
         val result = mutableListOf<Boolean>()
         var carry = false
 
@@ -41,13 +41,13 @@ class Number8(private val number: List<Boolean>) {
             result.add(sumBit)
         }
 
-        return Number8(result.reversed())
+        return BinaryNumber(result.size, result.reversed())
     }
 
-    operator fun times(other: Number8): Number8 {
-        var partialSum = ZERO
-        for (i in 0..7) {
-            partialSum = (partialSum shl 1) + (if (other[i]) this else ZERO)
+    operator fun times(other: BinaryNumber): BinaryNumber {
+        var partialSum = BinaryNumber(this.bits + other.bits, 0)
+        for (i in 0 ..< this.bits) {
+            partialSum = (partialSum shl 1) + (if (other[i]) this else BinaryNumber(this.bits + other.bits, 0))
         }
         return partialSum
     }
@@ -58,13 +58,13 @@ class Number8(private val number: List<Boolean>) {
 
     override fun toString(): String {
         val bs = number.map { if (it) '1' else '0' }.joinToString("")
-        return  "Number8[$bs (${Integer.parseInt(bs, 2)})]"
+        return  "Number$bits[$bs (${Integer.parseInt(bs, 2)})]"
     }
 
     override fun equals(other: Any?): Boolean {
         if (other == null) return false
         if (this === other) return true
-        if (other !is Number8) return false
+        if (other !is BinaryNumber) return false
 
         return this.number == other.number
     }
@@ -76,10 +76,6 @@ class Number8(private val number: List<Boolean>) {
     companion object {
 
         fun strToList(number: String): List<Boolean> {
-            if (number.length != 8) {
-                throw IllegalArgumentException("Входные числа должны иметь 8 разрядов.")
-            }
-
             if (number.any { it !in listOf('1', '0') }) {
                 throw IllegalArgumentException("Входные числа должны быть двоичными.")
             }
@@ -87,22 +83,20 @@ class Number8(private val number: List<Boolean>) {
             return number.map { it == '1' }
         }
 
-        fun intToList(value: Int): List<Boolean> {
+        fun intToList(bits: Int, value: Int): List<Boolean> {
             val x = Integer.toBinaryString(value)
 
-            if (x.length > 8) {
-                val substr = x.substring(x.length - 8, x.length)
+            if (x.length > bits) {
+                val substr = x.substring(x.length - bits, x.length)
                 return strToList(substr)
             }
 
             var str = x
-            repeat(8 - x.length) {
+            repeat(bits - x.length) {
                 str = "0$str"
             }
             return strToList(str)
         }
-
-        val ZERO = Number8(0)
 
     }
 

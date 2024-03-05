@@ -80,15 +80,15 @@ abstract class Step<T> {
 }
 
 data class MultiplicationTriple(
-    val multiplicand: Number8,
-    val factor: Number8,
-    val partialSum: Number8
+    val multiplicand: BinaryNumber,
+    val factor: BinaryNumber,
+    val partialSum: BinaryNumber
 )
 
 class MultiplicationStep: Step<MultiplicationTriple>() {
 
     override fun doWork(input: MultiplicationTriple): MultiplicationTriple {
-        val newPartialSum = (input.partialSum shl 1) + (if (input.factor[0]) input.multiplicand else Number8.ZERO)
+        val newPartialSum = (input.partialSum shl 1) + (if (input.factor[0]) input.multiplicand else BinaryNumber(16, 0))
         val newFactor = input.factor shl 1
         return MultiplicationTriple(input.multiplicand, newFactor, newPartialSum)
     }
