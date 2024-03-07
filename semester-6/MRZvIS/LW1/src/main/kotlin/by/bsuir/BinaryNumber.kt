@@ -6,7 +6,7 @@
     Липский Р. В., Стронгин А. В., Жолнерчик И. А.
 
 Задание:
-    (16) реализовать алгоритм вычисления произведения пары this.bits-разрядных чисел умножением со старших разрядов
+    (16) реализовать алгоритм вычисления произведения пары 8-разрядных чисел умножением со старших разрядов
          со сдвигом частичной суммы влево
 
 Источники:
@@ -57,8 +57,16 @@ class BinaryNumber(val bits: Int, private val number: List<Boolean>) {
     }
 
     override fun toString(): String {
+        return  "Number$bits[${toBinaryString()} (${toInt()})]"
+    }
+
+    fun toInt(): Int {
         val bs = number.map { if (it) '1' else '0' }.joinToString("")
-        return  "Number$bits[$bs (${Integer.parseInt(bs, 2)})]"
+        return Integer.parseInt(bs, 2)
+    }
+
+    fun toBinaryString(): String {
+        return "0b" + number.map { if (it) '1' else '0' }.joinToString("").dropWhile { it == '0' }
     }
 
     override fun equals(other: Any?): Boolean {
