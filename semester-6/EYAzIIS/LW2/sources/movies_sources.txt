@@ -1,0 +1,219 @@
+textID	fileID	#words	genre	date	country	language(s)	IMDB	title
+-----	-----	-----	-----	-----	-----	-----	-----	-----
+
+20641	176501	11140	Drama, Romance	1930	USA	English	0020641	Anna Christie
+22241	5992934	7426	Drama	1931	USA	English	0022241	Over the Hill
+25641	4613561	238	Animation, Short, Comedy	1934	USA	English	0025641	Peculiar Penguins
+26641	3639561	7536	Comedy, Drama, Family	1935	USA	English	0026641	The Littlest Rebel
+26941	4613564	330	Animation, Comedy, Family	1935	USA	English	0026941	The Robber Kitten
+27441	3097530	9379	Comedy, Crime, Mystery	1936	USA	English, Cantonese	0027441	Charlie Chan at the Race Track
+28141	6458656	7936	Biography, Drama, History	1936	USA	English	0028141	The Prisoner of Shark Island
+30341	3148641	10157	Mystery, Thriller	1938	UK	English, German, French, Italian	0030341	The Lady Vanishes
+30241	5192290	13428	Comedy, Romance	1938	USA	English	0030241	Holiday
+31241	3656878	114	Family, Animation, Comedy	1939	USA	English	0031241	Donald's Cousin Gus
+34241	4257286	7265	Comedy, Music, Romance	1941	USA	English	0034241	Sun Valley Serenade
+36241	4799965	8999	Comedy, Drama, Romance	1943	USA	English, Spanish	0036241	The Outlaw
+36341	6510398	7481	Drama, Horror, Mystery	1943	USA	English, Italian, Latin, French	0036341	The Seventh Victim
+36441	6691593	445	Animation, Family, Short	1943	USA	English	0036441	Tin Pan Alley Cats
+36641	3589306	1628	Mystery, Drama, Fantasy	1944	USA	English	0036641	Between Two Worlds
+39941	5243442	12111	Drama, Film-Noir, Mystery	1947	USA	English	0039941	The Unsuspected
+41841	5883516	8230	Action, Drama, Romance, War	1949	USA	English	0041841	Sands of Iwo Jima
+42041	4671350	10109	Action, Crime, Drama	1949	USA	English	0042041	White Heat
+42541	6017201	10879	Comedy	1950	UK	English	0042541	The Happiest Days of Your Life
+44941	4788308	14126	Drama	1952	USA	English	0044941	My Son John
+44841	3557993	494	Family, Animation, Short	1952	USA	English	0044841	The Little House
+45941	6648679	6519	Drama, History, War	1953	USA	English	0045941	The Juggler
+48441	6520352	5513	Musical	1955	UK	English	0048441	Oh... Rosalinda!!
+51141	6776618	10417	Drama, Romance, War	1957	USA	English	0051141	Until They Sail
+52141	6349778	10092	Comedy	1958	USA	English	0052141	Rock-a-Bye Baby
+53041	6333252	7804	Drama, Horror, Sci-Fi	1959	UK	English	0053041	The Man Who Could Cheat Death
+53841	3838558	15025	Drama, Romance	1960	USA	English	0053841	From the Terrace
+54641	4063067	4422	Adventure, Fantasy	1961	Italy, France	English, Italian	0054641	Journey Beneath the Desert
+56141	6711210	12992	Drama, Romance	1962	UK	English, German	0056141	A Kind of Loving
+56541	3419585	12581	Drama	1962	USA	English	0056541	Sweet Bird of Youth
+56241	3992313	6703	Biography, Drama	1962	USA	English, American Sign Language	0056241	The Miracle Worker
+59641	5841175	11355	Action, Drama, Sport	1965	USA	English	0059641	Red Line 7000
+60841	4592570	6350	Horror	1966	UK	English	0060841	The Plague of the Zombies
+62341	4865083	4943	Action, Adventure	1967	Switzerland, USA	English	0062341	Tarzan and the Great River
+62141	6747461	13606	Drama	1967	UK	English	0062141	Poor Cow
+62741	7008578	4604	Adventure, Crime	1968	Spain, West Germany, UK, USA	English, German	0062741	The Blood of Fu Manchu
+63141	5888026	6617	Biography, Drama, Music	1968	UK, France	English	0063141	Isadora
+63341	6326694	9608	Family, Comedy, Crime	1968	USA	English	0063341	Never a Dull Moment
+64541	117722	11129	Drama, Family	1969	UK	English	0064541	Kes
+64041	6101321	11183	Drama, Romance	1969	USA	English	0064041	The Arrangement
+67541	4782831	5581	Drama, Thriller	1971	Australia, USA, UK	English	0067541	Wake in Fright
+66141	5795415	5429	Crime, Thriller, Horror	1971	Sweden, USA	English	0066141	The Night Visitor
+67141	3654524	4780	Adventure, Sci-Fi	1971	USA	English	0067141	Glen and Randa
+67341	4843810	4025	Drama, Horror, Mystery	1971	USA	English	0067341	Let's Scare Jessica to Death
+67741	37855	6507	Action, Crime, Thriller	1971	USA	English	0067741	Shaft
+68341	3494483	11244	Crime, Drama	1972	France, Italy, USA	English, Italian	0068341	The Valachi Papers
+69341	3155231	4289	Horror	1972	UK, USA	English	0069341	Tales from the Crypt
+73341	3287491	7775	Adventure	1975	UK, USA	English	0073341	The Man Who Would Be King
+74441	5393824	8276	Comedy, Western	1976	USA	English, Hebrew, French, German	0074441	The Duchess and the Dirtwater Fox
+76341	5992403	3662	Comedy, Drama	1977	Philippines	English	0076341	Perfumed Nightmare
+76141	3614724	8012	Comedy	1977	USA	English	0076141	High Anxiety
+78841	3626284	9317	Comedy, Drama	1979	USA, West Germany	English, Russian, Italian	0078841	Being There
+80741	3141659	5779	Documentary, Sport	1980	Hong Kong, USA	English	0080741	Fist of Fear, Touch of Death
+80641	5468989	6078	Action, Adventure, Drama	1980	UK	English	0080641	The Dogs of War
+83641	3680162	10670	Comedy, Drama, Romance	1982	USA	English, Spanish	0083641	Best Friends
+86541	3134239	6318	Horror, Sci-Fi, Thriller	1983	Canada	English	0086541	Videodrome
+89841	4964321	10000	Comedy, Crime, Drama	1985	USA	English	0089841	Prizzi's Honor
+89941	3689889	7598	Action, Adventure, Drama, Thriller	1985	USA	English	0089941	Runaway Train
+91541	4142541	10242	Comedy	1986	USA	English, Spanish, Chinese	0091541	The Money Pit
+92641	6449781	5393	Action, Crime, Drama	1987	USA	English	0092641	Best Seller
+198341	143744	10627	Drama, Horror, Thriller	1987	USA	English	0198341	Body Count
+96341	6406360	8634	Horror, Sci-Fi	1988	USA	English	0096341	Uninvited
+95341	5542280	13467	Documentary, Biography	1988	West Germany, France, USA	English, Spanish, French, German	0095341	H�tel Terminus
+98141	4972639	4596	Action, Crime, Drama	1989	Australia, USA	English	0098141	The Punisher
+97441	3557370	7098	Biography, Drama, History	1989	USA	English	0097441	Glory
+99141	3157381	8852	Action, Comedy	1990	USA	English	0099141	Bird on a Wire
+100641	7036483	9027	Drama, Crime	1990	USA	English	0100641	Small Time
+103241	5061156	10116	Comedy	1991	USA	English	0103241	What About Bob?
+106341	3572086	5100	Comedy, Crime, Drama	1993	Australia, Italy	English	0106341	Bad Boy Bubby
+106941	3300799	11016	Comedy, Drama, Romance	1993	USA	English	0106941	For Love or Money
+219841	3546832	3598	Documentary, Short	1994	UK	English	0219841	Josef von Sternberg, the Man Who Made Dietrich
+112541	3378717	12230	Comedy	1995	USA	English	0112541	Blue in the Face
+113041	3094716	13924	Comedy, Family, Romance	1995	USA	English	0113041	Father of the Bride Part II
+112641	203601	26152	Crime, Drama	1995	USA, France	English	0112641	Casino
+115641	5132258	8456	Animation, Adventure, Comedy	1996	USA	English, Spanish, Hindi	0115641	Beavis and Butt-Head Do America
+246641	3300733	8744	Documentary, Comedy	1996	USA	English	0246641	George Carlin: Back in Town
+116441	4398492	13456	Biography, Crime, Drama	1996	USA, Canada	English	0116441	Gotti
+119141	3824955	8615	Comedy, Drama, Romance	1997	USA	English, Spanish	0119141	Fools Rush In
+120241	87989	14506	Comedy, Drama, Mystery, Thriller, Crime	1997	USA	English	0120241	Suicide Kings
+118541	116834	10119	Comedy, Crime	1997	USA, UK	English, Spanish	0118541	8 Heads in a Duffel Bag
+171741	173500	5870	Drama, War	1998	Canada, USA	English	0171741	Shot Through the Heart
+167341	3705947	2915	Adventure, Family, Drama	1998	Finland	English, Finnish	0167341	Poika ja ilves
+194341	5763918	704	Short	1998	N/A	N/A	0194341	The Second Bakery Attack
+164841	3169563	8669	Drama	1998	UK	English	0164841	A Rather English Marriage
+118441	118560	8105	Comedy	1998	UK, USA	English	0118441	RPM
+175541	197055	6078	Comedy, Drama	1998	USA	English	0175541	Crocodile Tears
+138541	5158622	5980	Crime, Drama, Thriller	1998	USA	English	0138541	Judas Kiss
+120741	240430	7363	Comedy, Crime	1998	USA	English, Italian	0120741	Mafia!
+120841	3361360	5963	Action, Horror, Sci-Fi, Thriller	1998	USA	English	0120841	Species II
+172341	4927870	4609	Western	1998	USA, Spain	English	0172341	Dollar for the Dead
+217641	4288799	5177	Documentary	1999	UK	English	0217641	The Making of 'Walking with Dinosaurs'
+122541	5737999	10386	Comedy, Romance	1999	UK, France, USA	English	0122541	An Ideal Husband
+274041	5062779	4066	Comedy, Crime	1999	USA	English	0274041	Red Silk
+218141	3896765	4447	Drama, Fantasy, Mystery	2000	Canada, Germany	English	0218141	Deeply
+211941	7028477	5891	Drama	2000	USA	English	0211941	Beat
+214641	3331215	6544	Action, Adventure, Comedy	2000	USA	English	0214641	Dragonheart: A New Beginning
+260141	3546752	2533	N/A	2000	USA	English	0260141	Locked Up Down Shorty's
+308541	4827571	2856	Documentary, Short	2000	USA	English	0308541	The Making of 'Evil Dead II' or The Gore the Merrier
+156841	6219998	12944	Comedy, Drama, Romance	2000	USA	English, French	0156841	The Next Best Thing
+202641	7018952	11661	Comedy, Drama, Romance	2000	USA	English	0202641	Two Family House
+291341	3134368	8429	Comedy, Crime, Drama	2001	UK, USA	English	0291341	Mean Machine
+288441	4091251	3625	Animation, Family, Musical, Romance	2001	USA	English	0288441	Barbie in the Nutcracker
+282541	3265140	7598	Comedy, Documentary	2001	USA	English	0282541	Hail Sid Caesar! The Golden Age of Comedy
+239641	5530524	5292	Horror, Thriller, Sci-Fi	2001	USA	English	0239641	Mimic 2
+269341	213973	9842	Comedy, Romance	2001	USA	English	0269341	Two Can Play That Game
+311941	117380	6209	Comedy, Drama	2002	Canada, USA	English, German	0311941	Try Seventeen
+284741	4904523	8546	Biography, Drama, History	2002	Netherlands, Italy, Germany, USA	English	0284741	Caesar
+258841	3659993	5067	Horror, Thriller	2002	UK	English	0258841	Nine Tenths
+324941	39804	6743	Animation, Adventure, Comedy, Family, Musical	2002	USA	English	0324941	101 Dalmatians 2: Patch's London Adventure
+273041	3546690	3499	Horror, Mystery, Thriller	2002	USA	English	0273041	13th Child
+353341	215439	2903	Comedy, Horror	2002	USA	English	0353341	Dead/Undead
+329241	4619183	12138	Documentary	2002	USA	English	0329241	Joan Crawford: The Ultimate Movie Star
+277941	52059	13722	Action, Adventure, Biography	2003	Australia, UK, USA, France	English	0277941	Ned Kelly
+320241	176341	4320	Drama	2003	USA	English	0320241	Particles of Truth
+337741	3130499	11726	Comedy, Drama, Romance	2003	USA	English, French	0337741	Something's Gotta Give
+306841	52485	7870	Adventure, Comedy, Family	2003	USA	English, Italian	0306841	The Lizzie McGuire Movie
+387541	85498	9360	Action, Adventure, Drama	2004	Germany, UK, South Africa, Italy	English	0387541	Curse of the Ring
+318641	3681074	6522	Comedy	2004	UK	English	0318641	The Rutles 2: Can't Buy Me Lunch
+304141	3290054	9787	Adventure, Family, Fantasy	2004	UK, USA	English	0304141	Harry Potter and the Prisoner of Azkaban
+361841	226748	12481	Comedy, Romance, Drama	2004	USA	English	0361841	Little Black Book
+427541	3367118	2713	Documentary	2004	USA	English	0427541	Miles Electric: A Different Kind of Blue
+418141	6672813	6197	Animation, Adventure, Comedy	2004	USA	English	0418141	Scooby-Doo and the Loch Ness Monster
+334541	3159624	6564	Action, Adventure, Comedy	2004	USA	English	0334541	Tremors 4: The Legend Begins
+428441	3312121	14147	Documentary	2004	USA, Japan, UK	English	0428441	The Cutting Edge: The Magic of Movie Editing
+376541	3180633	7317	Drama, Romance	2004	USA, UK	English	0376541	Closer
+369441	3149417	8531	Comedy, Crime	2005	USA	English, Spanish	0369441	Fun with Dick and Jane
+386741	3082270	4172	Animation, Action, Sci-Fi	2006	France, Luxembourg, UK	English, French	0386741	Renaissance
+428541	3151568	6580	Drama, Thriller	2006	USA	English	0428541	Five Fingers
+381341	3473714	7193	Comedy	2006	USA	English	0381341	Kisses and Caroms
+454841	3167504	4807	Horror, Thriller	2006	USA	English	0454841	The Hills Have Eyes
+469641	3087801	9297	Drama, History, Thriller	2006	USA	English	0469641	World Trade Center
+1062941	6006318	86	Short	2007	N/A	N/A	1062941	My Dear Rosetta
+968741	3338333	10513	Drama	2007	UK	English	0968741	Futureshock: Comet
+790741	3330901	10774	Crime, Drama, Mystery	2007	UK	English	0790741	The Riddle
+462441	5603931	15902	Documentary, Music	2007	UK, USA	English	0462441	Amazing Journey: The Story of The Who
+834941	3506069	8289	Adventure, Family	2007	USA	English	0834941	A Plumm Summer
+849441	3360757	9209	Western	2007	USA	English	0849441	Ghost Town: The Movie
+415141	3290227	9473	Comedy, Drama	2007	USA	English	0415141	Mama's Boy
+481141	3175011	8316	Comedy, Drama, Romance	2007	USA	English	0481141	No Reservations
+1107841	4260330	3348	Documentary, Short	2007	USA	English	1107841	Return of the Living Dead: The Dead Have Risen
+804541	4054650	3841	Thriller, Western	2007	USA	English	0804541	Shiloh Falls
+1234241	6646712	5436	Comedy, Horror	2008	Australia	English	1234241	Bloodspit
+1029241	3487457	2898	Drama, Horror, Thriller	2008	France, Belgium, UK, Australia	English, Thai	1029241	Vinyan
+479341	3566580	8212	Drama, War	2008	Germany, USA, Israel	English	0479341	Adam Resurrected
+800241	3353045	7073	Crime, Drama, Mystery, Thriller	2008	UK, Germany, Spain, Lithuania	English, Russian, Spanish, Chinese, French	0800241	Transsiberian
+954541	3265602	10600	Comedy	2008	USA	English, German	0954541	Bachelor Party 2: The Last Temptation
+1798141	5138357	4403	Animation	2008	USA	English	1798141	Disney's Christmas Favorites
+1249441	3353026	86	Comedy	2008	USA	English	1249441	Hoochie Mamma Drama
+1073241	3500832	13824	Crime, Drama, Mystery	2008	USA	English	1073241	Nothing But the Truth
+815241	3423744	15260	Documentary, Comedy, War	2008	USA	English, Hebrew, Arabic, Persian, Spanish	0815241	Religulous
+1189341	5719597	2330	Drama	2008	USA	English	1189341	The Lost Coast
+1056441	3626320	12148	Comedy, Drama, Romance	2008	USA	English	1056441	Tru Loved
+1068641	3507366	4491	Crime, Drama, Romance	2008	USA, Argentina	English, Spanish	1068641	The Burning Plain
+1140941	3348011	5941	Crime, Horror, Romance	2008	USA, Canada	English	1140941	Joy Ride 2: Dead Ahead
+464041	3342117	5214	Drama, Horror, Mystery, Thriller	2008	USA, Canada, UK	English	0464041	The Lazarus Project
+1339641	3698161	1398	Documentary	2009	Canada	English	1339641	The Coca-Cola Case
+1031241	5210230	9645	Adventure, Drama, Fantasy	2009	UK	English	1031241	From Time to Time
+417741	3540265	9955	Adventure, Family, Fantasy, Mystery	2009	UK, USA	English	0417741	Harry Potter and the Half-Blood Prince
+471041	3579947	5061	Action, Thriller	2009	UK, USA	English	0471041	The Tournament
+993841	5532799	7285	Horror, Sci-Fi, Thriller	2009	USA	English	0993841	Dead Air
+929241	3492781	5349	Horror, Sci-Fi	2009	USA	English	0929241	Portal
+1398941	3572050	4183	Animation, Action, Drama	2009	USA	English	1398941	Superman/Batman: Public Enemies
+1129441	6766000	6678	Comedy, Horror, Thriller	2009	USA	English	1129441	ThanksKilling
+1187041	3582904	9313	Comedy, Romance	2009	USA	English	1187041	The Answer Man
+1234541	3472822	6852	Crime, Sci-Fi, Thriller	2009	USA	English	1234541	The Butterfly Effect 3: Revelations
+960741	6864101	5472	Thriller	2009	USA	English	0960741	The Canyon
+1456941	4050075	7381	Action, Adventure, Drama	2010	Australia	English	1456941	Tomorrow, When the War Began
+1972641	5453821	5423	Animation, Short, Family	2010	Norway, Sweden	English	1972641	The Last Norwegian Troll
+1514041	3983999	11100	Crime, Thriller	2010	UK	English	1514041	4.3.2.1.
+1674741	4868469	6725	Documentary	2010	UK	English	1674741	The Secret Life of Chaos
+1282041	5800875	4131	Drama	2010	USA	English, Spanish	1282041	Anton Chekhov's The Duel
+1273241	4079070	9040	Crime, Drama, Thriller	2010	USA	English	1273241	Brotherhood
+1341341	4195898	12546	Comedy, Romance	2010	USA	English	1341341	Ceremony
+1754141	4253549	8126	Comedy	2010	USA	English	1754141	Living Will...
+1401241	4238278	9008	Action, Crime, Drama	2010	USA	English	1401241	Madso's War
+1478841	3861906	9961	Documentary	2010	USA	English	1478841	The Buddha
+1196141	3737502	9722	Comedy, Family	2010	USA, UK	English, German	1196141	Diary of a Wimpy Kid
+1551641	5272248	6395	Biography, Drama, History	2011	South Africa, Canada	English, Xhosa	1551641	Winnie Mandela
+1659341	6935779	13470	Drama	2011	USA	English	1659341	Certainty
+1999141	5169794	3342	Action, Adventure, Fantasy	2011	USA	English	1999141	Dragon Crusaders
+2096541	4785650	15191	Documentary	2011	USA	English	2096541	Method to the Madness of Jerry Lewis
+1645141	6809856	10852	Drama, Musical	2011	USA	English	1645141	Sironia
+1568341	4790461	7534	Comedy, Crime, Drama, Horror, Mystery, Thriller	2011	USA	English	1568341	Some Guy Who Kills People
+1462041	4452183	5730	Drama, Mystery, Thriller	2011	USA, Canada	English	1462041	Dream House
+2214941	6406633	9201	Horror, Thriller	2012	Australia	English	2214941	Daddy's Little Girl
+2182241	5046814	6197	Action, Thriller	2012	Italy, Romania, USA	English, Italian	2182241	Sins Expiation
+2281241	5002092	5738	Drama	2012	USA	English	2281241	Firelight
+1995341	4958864	12667	Comedy, Drama	2012	USA	English	1995341	It's a Disaster
+2246941	5146564	8818	Drama, Family	2012	USA	English	2246941	Raising Izzie
+2101441	5069275	6742	Crime, Drama	2012	USA	English	2101441	Spring Breakers
+1800741	4710182	7066	Drama, Music, Romance	2012	USA	English	1800741	Step Up Revolution
+1772341	4812691	10526	Animation, Adventure, Comedy	2012	USA	English	1772341	Wreck-It Ralph
+2322641	5570047	9512	Drama	2013	Australia	English	2322641	The Turning
+1847541	6406448	8873	Drama	2013	Australia, USA	English	1847541	Around the Block
+1540741	5492793	7544	Crime, Drama, Thriller	2013	UK, USA, Canada	English	1540741	A Single Shot
+1800241	5562832	21968	Crime, Drama	2013	USA	English, Arabic	1800241	American Hustle
+2101341	5028554	6212	Action, Crime, Drama	2013	USA	English, French, Albanian, Spanish, Hungarian	2101341	Dead Man Down
+1731141	5517221	8623	Action, Adventure, Fantasy	2013	USA	English	1731141	Ender's Game
+2364841	5446994	10600	Crime, Thriller	2013	USA	English, Spanish	2364841	Runner Runner
+2327541	6296001	6795	Comedy, Drama	2013	USA	English	2327541	The Big Ask
+2334841	4835179	6492	Action, Thriller	2013	USA	English	2334841	The Marine 3: Homefront
+1905041	5072405	8299	Action, Crime, Thriller	2013	USA, Japan, Spain	English, Russian, Spanish, Indonesian, Danish...	1905041	Fast & Furious 6
+1403241	5860678	6685	Action, Fantasy, Horror, Thriller	2014	France, Canada	English	1403241	Wolves
+1641841	6127211	2609	Action, Crime, Thriller	2014	Thailand, Canada, USA	English, Thai	1641841	Skin Trade
+2339741	6093769	4280	Drama, Horror, Thriller	2014	UK, USA, Canada	English	2339741	The Woman in Black 2: Angel of Death
+1698641	6011146	9831	Comedy, Family	2014	USA	English	1698641	Alexander and the Terrible, Horrible, No Good, Very Bad Day
+2141941	5984510	4932	Drama	2014	USA	English	2141941	Night Has Settled
+2198241	5580653	8507	Action, Crime, Drama	2014	USA	English	2198241	The Outsider
+2322441	6127842	7406	Drama, Romance, Thriller	2015	USA	English	2322441	Fifty Shades of Grey
+2381941	6218413	9743	Comedy, Crime, Drama	2015	USA, Argentina	English, Spanish	2381941	Focus
+1655441	6185152	8250	Drama, Fantasy, Romance	2015	USA, Canada	English, Portuguese, Italian	1655441	The Age of Adaline
+1628841	6756550	10964	Action, Adventure, Sci-Fi	2016	USA	English, Mandarin	1628841	Independence Day: Resurgence
+1700841	6769407	11071	Animation, Adventure, Comedy	2016	USA	English	1700841	Sausage Party
+1878841	6717502	5859	Horror, Thriller	2016	USA	English	1878841	The Darkness
+2337841	6870044	4744	Drama, Mystery, Thriller	2017	Canada, USA	English	2337841	Bottom of the World
+2398241	7017640	6899	Animation, Adventure, Comedy, Family, Fantasy	2017	USA, Hong Kong	English	2398241	Smurfs: The Lost Village
