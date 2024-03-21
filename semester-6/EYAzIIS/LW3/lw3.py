@@ -77,9 +77,14 @@ def generate_html(tokens):
     <html>
     <head>
         <style>
+            body {
+                font-size: 17px;
+            }
+
             .hovertip {
                 position: relative;
                 display: inline-block;
+                cursor: pointer;
             }
             
             .hovertip:hover::after {
@@ -94,22 +99,122 @@ def generate_html(tokens):
                 border-radius: 4px;
                 white-space: nowrap;
             }
+
+            table {
+                border-collapse: collapse;
+                width: 100vw;
+                max-width: 600px;
+                margin-bottom: 20px;
+                margin: 20px;
+            }
+
+            th, td {
+                padding: 10px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+
+            .tag {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                margin-right: 5px;
+                border-radius: 50%;
+                border: 1px solid #ccc;
+            }
+
+            #token-container {
+                padding: 10px;
+                border: 1px solid #ccc;
+                line-height: 25px;
+            }
+
+            .custom-button {
+                padding: 10px 20px;
+                font-size: 16px;
+                font-weight: bold;
+                border: none;
+                border-radius: 4px;
+                background-color: #4CAF50;
+                color: white;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            .custom-button:hover {
+                background-color: #45a049;
+            }
         </style>
     </head>
     <body>
-        <div>
+        <div style="text-align: center; padding: 10px;">
+            <button class="custom-button" onclick="saveHtml()">Save</button>
+        </div>
+
+        <div id="token-container">
             """
     for token in tokens:
         html += f'<span class="hovertip" data-dep="{token["dep"]}" onclick="changeDep(this)">{token["token"]}</span> '
     html += """
         </div>
-        <div>
-            <button onclick="saveHtml()">Save</button>
-        </div>
+
+        <table>
+    <tr>
+        <th>Tag</th>
+        <th>Color</th>
+    </tr>
+    <tr>
+        <td><span class="tag" style="background-color: darkred;"></span>Root</td>
+        <td>Dark Red</td>
+    </tr>
+    <tr>
+        <td><span class="tag" style="background-color: darkgreen;"></span>Subject, Nominal subject, Clausal subject</td>
+        <td>Dark Green</td>
+    </tr>
+    <tr>
+        <td><span class="tag" style="background-color: darkblue;"></span>Direct object, Indirect object, Object of preposition</td>
+        <td>Dark Blue</td>
+    </tr>
+    <tr>
+        <td><span class="tag" style="background-color: purple;"></span>Attribute</td>
+        <td>Purple</td>
+    </tr>
+    <tr>
+        <td><span class="tag" style="background-color: darkorange;"></span>Agent</td>
+        <td>Dark Orange</td>
+    </tr>
+    <tr>
+        <td><span class="tag" style="background-color: teal;"></span>Adverbial clause modifier, Adverbial modifier, Adjectival modifier, Appositional modifier</td>
+        <td>Teal</td>
+    </tr>
+    <tr>
+        <td><span class="tag" style="background-color: darkgoldenrod;"></span>Auxiliary, Passive auxiliary</td>
+        <td>Dark Goldenrod</td>
+    </tr>
+    <tr>
+        <td><span class="tag" style="background-color: maroon;"></span>Coordinating conjunction</td>
+        <td>Maroon</td>
+    </tr>
+    <tr>
+        <td><span class="tag" style="background-color: darkcyan;"></span>Clausal complement, Open clausal complement</td>
+        <td>Dark Cyan</td>
+    </tr>
+    <tr>
+        <td><span class="tag" style="background-color: firebrick;"></span>Compound word</td>
+        <td>Firebrick</td>
+    </tr>
+    <!-- Add more rows for other tags -->
+</table>
     
         <script>
+            renewUnderlining();
+
             function changeDep(token) {
-                var newDep = prompt("Enter new dep value:");
+                var newDep = prompt("Enter new dep value:", token.dataset.dep);
                 if (newDep !== null) {
                     token.dataset.dep = newDep;
                 }
@@ -122,6 +227,126 @@ def generate_html(tokens):
                 a.href = url;
                 a.download = "output.html";
                 a.click();
+            }
+
+            function renewUnderlining() {
+                const elements = document.querySelectorAll('[data-dep]');
+                elements.forEach((element) => {
+                    const dep = element.getAttribute('data-dep');
+
+                    element.style.textDecoration = null;
+                    element.style.fontWeight = null;
+                    element.style.fontStyle = null;
+                    element.style.color = null;
+                    
+                    switch (dep) {
+    case 'Root':
+        element.style.color = "darkred";
+        break;
+    case 'Subject':
+    case 'Nominal subject':
+    case 'Clausal subject':
+        element.style.color = "darkgreen";
+        break;
+    case 'Direct object':
+    case 'Indirect object':
+    case 'Object of preposition':
+        element.style.color = "darkblue";
+        break;
+    case 'Attribute':
+        element.style.color = "purple";
+        break;
+    case 'Agent':
+        element.style.color = "darkorange";
+        break;
+    case 'Adverbial clause modifier':
+    case 'Adverbial modifier':
+    case 'Adjectival modifier':
+    case 'Appositional modifier':
+        element.style.color = "teal";
+        break;
+    case 'Auxiliary':
+    case 'Passive auxiliary':
+        element.style.color = "darkgoldenrod";
+        break;
+    case 'Coordinating conjunction':
+        element.style.color = "maroon";
+        break;
+    case 'Clausal complement':
+    case 'Open clausal complement':
+        element.style.color = "darkcyan";
+        break;
+    case 'Compound word':
+        element.style.color = "firebrick";
+        break;
+    case 'Conjunct':
+    case 'Preconjunct':
+        element.style.color = "darkolivegreen";
+        break;
+    case 'Dative':
+        element.style.color = "indigo";
+        break;
+    case 'Unspecified dependency':
+        element.style.color = "dimgray";
+        break;
+    case 'Determiner':
+    case 'Pre-determiner':
+        element.style.color = "fuchsia";
+        break;
+    case 'Expletive':
+    case 'Particle':
+        element.style.color = "navy";
+        break;
+    case 'Interjection':
+        element.style.color = "olive";
+        break;
+    case 'Marker':
+        element.style.color = "darkred";
+        break;
+    case 'Meta modifier':
+        element.style.color = "saddlebrown";
+        break;
+    case 'Negation modifier':
+        element.style.color = "limegreen";
+        break;
+    case 'Nominal modifier':
+        element.style.color = "coral";
+        break;
+    case 'Noun phrase as adverbial modifier':
+        element.style.color = "hotpink";
+        break;
+    case 'Numeric modifier':
+        element.style.color = "silver";
+        break;
+    case 'Object predicate':
+        element.style.color = "darkcyan";
+        break;
+    case 'Parataxis':
+        element.style.color = "darkgray";
+        break;
+    case 'Prepositional complement':
+        element.style.color = "darkorange";
+        break;
+    case 'Possession modifier':
+        element.style.color = "navy";
+        break;
+    case 'Prepositional modifier':
+        element.style.color = "goldenrod";
+        break;
+    case 'Punctuation':
+        // No specific color
+        break;
+    case 'Quantifier modifier':
+        element.style.color = "deepskyblue";
+        break;
+    case 'Relative clause modifier':
+        element.style.color = "deeppink";
+        break;
+    default:
+        // No specific color
+        break;
+}
+                })
             }
         </script>
     </body>
