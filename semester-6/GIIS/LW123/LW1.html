@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Графический редактор</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px;
+        }
+
+        #canvasContainer {
+            margin-right: 20px;
+        }
+
+        canvas {
+            border: 1px solid #ccc;
+        }
+
+        #toolPanel {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .toolGroup {
+            margin-bottom: 10px;
+        }
+
+        .toolGroup label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .tool {
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+        .tool input[type="radio"] {
+            margin-right: 5px;
+        }
+    </style>
+    <script src="d3.v7.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="canvasContainer">
+            <canvas id="cnv" width="1300" height="800"></canvas>
+        </div>
+        <div id="toolPanel">
+            <div class="toolGroup">
+                <label>Прямые линии</label>
+
+                <div class="tool">
+                    <input type="radio" name="tool" value="dda" id="tool-dda" checked>
+                    <label for="tool-dda">ЦДА-линия</label>
+                </div>
+                <div class="tool">
+                    <input type="radio" name="tool" value="bresenham" id="tool-bresenham">
+                    <label for="tool-bresenham">Линия Брезенхэма</label>
+                </div>
+                <div class="tool">
+                    <input type="radio" name="tool" value="wu" id="tool-wu">
+                    <label for="tool-wu">Линия Ву</label>
+                </div>
+
+                <hr>
+
+                <label>Линии 2-ого порядка</label>
+
+                <div class="tool">
+                    <input type="radio" name="tool" value="circle" id="tool-circle">
+                    <label for="tool-circle">Окружность</label>
+                </div>
+
+                <div class="tool">
+                    <input type="radio" name="tool" value="ellipse" id="tool-ellipse">
+                    <label for="tool-ellipse">Эллипс</label>
+                </div>
+
+                <div class="tool">
+                    <input type="radio" name="tool" value="hyperbola" id="tool-hyperbola">
+                    <label for="tool-hyperbola">Гипербола</label>
+                </div>
+
+                <div class="tool">
+                    <input type="radio" name="tool" value="parabola" id="tool-parabola">
+                    <label for="tool-parabola">Парабола</label>
+                </div>
+
+                <hr>
+                
+                <label>Параметрические кривые</label>
+
+                <div class="tool">
+                    <input type="radio" name="tool" value="hermite" id="tool-hermite">
+                    <label for="tool-hermite">Форма Эрмита</label>
+                </div>
+
+                <div class="tool">
+                    <input type="radio" name="tool" value="bezier" id="tool-bezier">
+                    <label for="tool-bezier">Форма Безье</label>
+                </div>
+
+                <div class="tool">
+                    <input type="radio" name="tool" value="bspline" id="tool-bspline">
+                    <label for="tool-bspline">В-сплайн</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="LW1.js"></script>
+</body>
+</html>
