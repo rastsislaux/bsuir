@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Графический редактор</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px;
+        }
+
+        #canvasContainer {
+            margin-right: 20px;
+        }
+
+        canvas {
+            border: 1px solid #ccc;
+        }
+
+        #toolPanel {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            color: #ffffff;
+            background-color: #4CAF50;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .button:active {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="canvasContainer">
+            <canvas id="cnv" width="1300" height="800"></canvas>
+        </div>
+        <div id="toolPanel">
+            <button class="button" onclick="checkConvexity()">Проверить на выпуклость</button>
+            <button class="button" onclick="calculateNormals()">Рассчитать нормали</button>
+            <button class="button" onclick="computeConvexHullGraham()">Выпуклая оболочка по Грэхему</button>
+            <button class="button" onclick="computeConvexHullJarvis()">Выпуклая оболочка по Джарвису</button>
+            <button class="button" onclick="clearApp()">Подчистить</button>
+        </div>
+    </div>
+
+    <script defer src="LW5.js"></script>
+</body>
+</html>
