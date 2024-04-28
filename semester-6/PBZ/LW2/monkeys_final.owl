@@ -1,0 +1,4205 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:monkey="http://evoflex.tech/monkey#"
+     xmlns:unnamed="http://www.owl-ontologies.com/unnamed.owl#"
+     xmlns:AfricanWildlifeOntology1="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#">
+    <Ontology>
+        <rdfs:comment>African Wildlide Ontology, Semantic Web Primer, 4.3.1 pages 119-133</rdfs:comment>
+        <rdfs:comment>AfricanWildlifeOntology0.owl was then modified by Maria Keet (classes and object properties added, more comments added, updated the uri etc) and renamed into AfricanWildlifeOntology1.owl. 
+This is still an ontology just for tutorial purposes, so take it with a grain of salt</rdfs:comment>
+        <rdfs:comment>CC-BY licence (do with it whatever you like, just give the author credit)</rdfs:comment>
+        <rdfs:comment>MK downloaded this file from http://www.iro.umontreal.ca/~lapalme/ift6281/OWL/AfricanWildlifeOntology.xml, changed the extension to .owl and appended the name with Web. That ontology give a load error in protege due to the use of Collection in the definition of Herbivore, so the AfricanWildlifeOntology0.owl has that piece removed.</rdfs:comment>
+        <rdfs:comment>The Protege metadata ontology (in the version that is used inside Protege. Note that this is an OWL Full ontology, with annotation properties that have range and domain restrictions. However, the &quot;official&quot; online release of this file is OWL DL, so that ontologies that use Protege metadata annotations can still be shared as OWL DL.</rdfs:comment>
+        <rdfs:comment>Version 4 has some things cleaned up and added toward a slight bit more science-y, more OWL langauge features are used, and some educational explanations and questions for further exploration have been added in annotation fields</rdfs:comment>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://evoflex.tech/monkey#rang -->
+
+    <ObjectProperty rdf:about="http://evoflex.tech/monkey#rang">
+        <rdfs:domain rdf:resource="http://evoflex.tech/monkey#Eukaryota"/>
+        <rdfs:range rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eaten-by -->
+
+    <ObjectProperty rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eaten-by">
+        <inverseOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats -->
+
+    <ObjectProperty rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats">
+        <rdfs:range>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal"/>
+                    <rdf:Description rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Plant"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#is-proper-part-of"/>
+                        <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#is-proper-part-of"/>
+                        <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Plant"/>
+                    </Restriction>
+                </unionOf>
+            </Class>
+        </rdfs:range>
+        <rdfs:comment>Note: cf AWO1, the axiom changed from is-part-of to is-proper-part-of, which is what was really intended</rdfs:comment>
+        <rdfs:comment>domain is not specified, as it is used in one of the exercises (declaring it to be Animal makes the CarnivorousPlant unsatisfiable)</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#has-part -->
+
+    <ObjectProperty rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#has-part">
+        <inverseOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#is-part-of"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#is-part-of -->
+
+    <ObjectProperty rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#is-part-of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#is-proper-part-of -->
+
+    <ObjectProperty rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#is-proper-part-of">
+        <rdfs:subPropertyOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#is-part-of"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#has-member -->
+
+    <ObjectProperty rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#has-member">
+        <rdfs:comment>intended to be the same as the membership relation in the taxonomy of part-whole relations. Added here for playing with animals and their collectives</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#inhabits -->
+
+    <ObjectProperty rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#inhabits"/>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#inheres-in -->
+
+    <ObjectProperty rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#inheres-in">
+        <rdfs:comment>to relate dependent to indpendent entities</rdfs:comment>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#eats -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#eats">
+        <inverseOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_eaten_by"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Living_thing"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#has_age_group -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#has_age_group">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Age_group"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#has_arm -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#has_arm">
+        <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_limb"/>
+        <inverseOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_arm_of"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Arm"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#has_avoidance_means -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#has_avoidance_means">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Avoidance_means"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#has_dangerousness -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#has_dangerousness">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Dangerousness"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#has_domestication -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#has_domestication">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Domestication"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#has_leg -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#has_leg">
+        <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_limb"/>
+        <inverseOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_leg_of"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Leg"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#has_limb -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#has_limb">
+        <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_part"/>
+        <inverseOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_limb_of"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+        <rdfs:range>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Arm"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Leg"/>
+                </unionOf>
+            </Class>
+        </rdfs:range>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#has_location -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#has_location">
+        <inverseOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_location_of"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Geographical_feature"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Geographical_region"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#has_locus -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#has_locus">
+        <inverseOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_locus_of"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#has_parent -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#has_parent">
+        <inverseOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_parent_of"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#has_part -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#has_part">
+        <inverseOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_part_of"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Geographical_entity"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Living_thing"/>
+                </unionOf>
+            </Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Domain_entity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#has_quality -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#has_quality">
+        <inverseOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_quality_of"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#has_risk_seriousness -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#has_risk_seriousness">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Risk_seriousness"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#has_risk_type -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#has_risk_type">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Risk_type"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#has_sex -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#has_sex">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#has_subregion -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#has_subregion">
+        <inverseOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_subregion_of"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#inverse_of_has_quality -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#inverse_of_has_quality"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#is_arm_of -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#is_arm_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_limb_of"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#is_eaten_by -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#is_eaten_by"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#is_leg_of -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#is_leg_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_limb_of"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#is_limb_of -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#is_limb_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_part_of"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#is_location_of -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#is_location_of"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#is_locus_of -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#is_locus_of"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#is_owned_by -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#is_owned_by">
+        <inverseOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#owns"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#is_parent_of -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#is_parent_of">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#is_part_of -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#is_part_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Geographical_entity"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Living_thing"/>
+                </unionOf>
+            </Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Domain_entity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#is_quality_of -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#is_quality_of"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#is_subregion_of -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#is_subregion_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Geographical_region"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Geographical_region"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#owns -->
+
+    <ObjectProperty rdf:about="http://www.owl-ontologies.com/unnamed.owl#owns">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Domain_entity"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://evoflex.tech/monkey#habitat -->
+
+    <DatatypeProperty rdf:about="http://evoflex.tech/monkey#habitat">
+        <rdfs:domain rdf:resource="http://evoflex.tech/monkey#Animalia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://evoflex.tech/monkey#rang -->
+
+    <DatatypeProperty rdf:about="http://evoflex.tech/monkey#rang"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://evoflex.tech/monkey#Amniota -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Amniota">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Reptiliomorpha"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Animalia -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Animalia">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Eukaryota"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Aotidae -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Aotidae">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Plathyrini"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Atelidae -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Atelidae">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Plathyrini"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Bilateria -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Bilateria">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Eumetazoa"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Bonobo -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Bonobo">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Paninini"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Boreoeutheria -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Boreoeutheria">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Exafroplacentalia"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Callitrichidae -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Callitrichidae">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Plathyrini"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Capuchin -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Capuchin">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Cebidae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Catarhini -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Catarhini">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Haplorrhini"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Cebidae -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Cebidae">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Plathyrini"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Cercopithecidae -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Cercopithecidae">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Cercopithecoidea"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Cercopithecinae -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Cercopithecinae">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Cercopithecidae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Cercopithecoidea -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Cercopithecoidea">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Catarhini"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Chimp -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Chimp">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Paninini"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Chordata -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Chordata">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Deuterostomia"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Colobinae -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Colobinae">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Cercopithecidae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Cynodontia -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Cynodontia">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Eueriodontia"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Deuterostomia -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Deuterostomia">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Nephrozoa"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Eotetrapodiformes -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Eotetrapodiformes">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Tetrapodomorpha"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Epicynodontia -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Epicynodontia">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Cynodontia"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Epistostegalia -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Epistostegalia">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Eotetrapodiformes"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Euarchonta -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Euarchonta">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Euarchontoglires"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Euarchontoglires -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Euarchontoglires">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Boreoeutheria"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Eucynodontia -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Eucynodontia">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Epicynodontia"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Eueria -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Eueria">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Theria"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Eueriodontia -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Eueriodontia">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Theriodont"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Eukaryota -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Eukaryota"/>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Eumetazoa -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Eumetazoa">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Animalia"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Eupelycosauria -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Eupelycosauria">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Synapsida"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Eutherapsida -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Eutherapsida">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Therapsida"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Exafroplacentalia -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Exafroplacentalia">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Placentalia"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Family -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Family">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Galago -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Galago">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Lorisiformes"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Genus -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Genus">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Gibbon -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Gibbon">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Hylobatidae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Gorilla -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Gorilla">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Gorillini"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Gorillini -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Gorillini">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Homininae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Haplorrhini -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Haplorrhini">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Primate"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Hominidae -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Hominidae">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Hominoidea"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Homininae -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Homininae">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Hominidae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Hominini -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Hominini">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Homininae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Hominoidea -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Hominoidea">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Catarhini"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Howler -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Howler">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Atelidae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Human -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Human">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Hominini"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Hylobatidae -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Hylobatidae">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Hominoidea"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Infraorder -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Infraorder">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Lemur -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Lemur">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Lemuriformes"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Lemuriformes -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Lemuriformes">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Strepsirrhini"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Lori -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Lori">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Lorisiformes"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Lorisiformes -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Lorisiformes">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Strepsirrhini"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Mammalia -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Mammalia">
+        <equivalentClass rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Mammal"/>
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Mammaliaformes"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Mammaliaformes -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Mammaliaformes">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Mammaliamorpha"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Mammaliamorpha -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Mammaliamorpha">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Prozostrodontia"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Marmoset -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Marmoset">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Callitrichidae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Muriquis -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Muriquis">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Atelidae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Neotherapsida -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Neotherapsida">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Eutherapsida"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Nephrozoa -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Nephrozoa">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Bilateria"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Night -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Night">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Aotidae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Orangutan -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Orangutan">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Ponginae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Order -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Order">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Osteichthyes -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Osteichthyes">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Chordata"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Paninini -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Paninini">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Homininae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Parvorder -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Parvorder">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Pitheciidae -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Pitheciidae">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Plathyrini"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Placentalia -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Placentalia">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Eueria"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Plathyrini -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Plathyrini">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Haplorrhini"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Ponginae -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Ponginae">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Hominidae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Potto -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Potto">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Lorisiformes"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Primate -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Primate">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Primatomorpha"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Primatomorpha -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Primatomorpha">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Euarchonta"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Probainognathia -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Probainognathia">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Eucynodontia"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Prozostrodontia -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Prozostrodontia">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Probainognathia"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#RangOfClassification -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#RangOfClassification"/>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Reptiliomorpha -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Reptiliomorpha">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Tetrapoda"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Saki -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Saki">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Pitheciidae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Sarcopterygii -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Sarcopterygii">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Osteichthyes"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Siamang -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Siamang">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Hylobatidae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Species -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Species">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Spheniacodontia -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Spheniacodontia">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Eupelycosauria"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Spheniacodontoidea -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Spheniacodontoidea">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Spheniacodontia"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Spider -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Spider">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Atelidae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Squirrel -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Squirrel">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Cebidae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Stegocephalia -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Stegocephalia">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Epistostegalia"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Strepsirrhini -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Strepsirrhini">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Primate"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Subfamily -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Subfamily">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Suborder -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Suborder">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Superfamily -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Superfamily">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Synapsida -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Synapsida">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Amniota"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Tarmarin -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Tarmarin">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Callitrichidae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Tarsier -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Tarsier">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Tarsiiformes"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Tarsiiformes -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Tarsiiformes">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Strepsirrhini"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Tetrapoda -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Tetrapoda">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Stegocephalia"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Tetrapodomorpha -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Tetrapodomorpha">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Sarcopterygii"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Therapsida -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Therapsida">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Spheniacodontoidea"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Theria -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Theria">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Mammalia"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Theriodont -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Theriodont">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Neotherapsida"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Titi -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Titi">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Pitheciidae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Tribe -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Tribe">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Uakari -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Uakari">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Pitheciidae"/>
+    </Class>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Wooly -->
+
+    <Class rdf:about="http://evoflex.tech/monkey#Wooly">
+        <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Atelidae"/>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal">
+        <disjointWith rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Plant"/>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Apple -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Apple">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#FruitingBody"/>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Berry -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Berry">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#FruitingBody"/>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Branch -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Branch">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#PlantParts"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#is-part-of"/>
+                <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Tree"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Branches are parts of trees.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Carnivore -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Carnivore">
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats"/>
+                        <allValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats"/>
+                        <allValuesFrom>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#is-proper-part-of"/>
+                                <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal"/>
+                            </Restriction>
+                        </allValuesFrom>
+                    </Restriction>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal"/>
+        <disjointWith rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Herbivore"/>
+        <disjointWith rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Omnivore"/>
+        <rdfs:comment xml:lang="en">Note: cf AWO1, the axiom changed from is-part-of to is-proper-part-of, which is what was really intended</rdfs:comment>
+        <rdfs:comment xml:lang="en">This informal definition does not really hold; see also the subclasses added and their descriptions. How to revise the ontology accordingly?</rdfs:comment>
+        <rdfs:isDefinedBy>Carnivores are exactly those animals that eat only animals.</rdfs:isDefinedBy>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#CarnivorousPlant -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#CarnivorousPlant">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Plant"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats"/>
+                <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">they do exist (https://en.wikipedia.org/wiki/Carnivorous_plant). Added in the ontology mainly to play with inconsistencies on domain and range axioms, like the &quot;only animals eat something&quot;, yet the carnivorous plant (disjoint from animals) also eats animals (insects and arthropods, mainly)</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Distribution -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Distribution">
+        <rdfs:comment xml:lang="en">Distribution of the individuals of a species</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class obviously should not be a top class, but somewhere else in a hierarchy of qualities etc.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Elephant -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Elephant">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Herbivore"/>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#FruitingBody -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#FruitingBody">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#PlantParts"/>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Giraffe -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Giraffe">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats"/>
+                <allValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Leaf"/>
+                            <rdf:Description rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Twig"/>
+                        </unionOf>
+                    </Class>
+                </allValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Lion"/>
+        <rdfs:comment>Giraffes are herbivores, and they eat only leaves.</rdfs:comment>
+        <rdfs:comment>they also eat twigs</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Grass -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Grass">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Plant"/>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Habitat -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Habitat">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#inhabits"/>
+                    </rdf:Description>
+                </onProperty>
+                <minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</minQualifiedCardinality>
+                <onClass>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal"/>
+                            <rdf:Description rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Plant"/>
+                        </unionOf>
+                    </Class>
+                </onClass>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Acknowledging extremophiles, in the scope of African Wildlife, each habitat is inhabited by at least two plants or animals</rdfs:comment>
+        <rdfs:comment xml:lang="en">See, e.g., The ENVO Environment ontology, that has habitats since the 2016 edition (textmined from the Encyclopedia of Life). A few have been added here for the sake of example. Can you generate a habitat module form teh ENVO and integrate it with the AWO? Is their notion of habitat the same as used here?</rdfs:comment>
+        <rdfs:comment xml:lang="en">the &quot;inverse (inhabits)&quot; amounts to inhabited by, showing the use of the inverse feature</rdfs:comment>
+        <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Habitat</rdfs:seeAlso>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Herbivore -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Herbivore">
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats"/>
+                        <allValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Plant"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats"/>
+                        <allValuesFrom>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#is-proper-part-of"/>
+                                <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Plant"/>
+                            </Restriction>
+                        </allValuesFrom>
+                    </Restriction>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal"/>
+        <disjointWith rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Omnivore"/>
+        <rdfs:comment>Herbivores are exactly those animals that eat only plants or parts of plants </rdfs:comment>
+        <rdfs:comment xml:lang="en">Note: cf AWO1, the axiom changed from is-part-of to is-proper-part-of, which is what was really intended</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Impala -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Impala">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Herbivore"/>
+        <rdfs:comment>An african antelope http://en.wikipedia.org/wiki/Impala</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Leaf -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Leaf">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#PlantParts"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#is-part-of"/>
+                <someValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Branch"/>
+                            <rdf:Description rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Twig"/>
+                        </unionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Leaves are parts of branches.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Lion -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Lion">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats"/>
+                        <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Herbivore"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats"/>
+                        <allValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Herbivore"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats"/>
+                <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Impala"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty>
+                    <rdf:Description>
+                        <inverseOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#inheres-in"/>
+                    </rdf:Description>
+                </onProperty>
+                <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Predator"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Lions are animals that eat only herbivores.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Note cf v1: I changed the &apos;only&apos; to &apos;some&apos; in the &quot;eats some herbivore&quot;, and made into equivalent class cf subclass, so I can get my lion1 be classified as an instance of Lion. and &apos;closed&apos; the axiom.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Omnivore -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Omnivore">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats"/>
+                        <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats"/>
+                        <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Plant"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats"/>
+                        <someValuesFrom>
+                            <Class>
+                                <unionOf rdf:parseType="Collection">
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#is-proper-part-of"/>
+                                        <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal"/>
+                                    </Restriction>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#is-proper-part-of"/>
+                                        <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Plant"/>
+                                    </Restriction>
+                                </unionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal"/>
+        <rdfs:comment xml:lang="en">An animal that eats both plants and animals (or parts thereof)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Note: cf AWO1, the axiom changed from is-part-of to is-proper-part-of, which is what was really intended</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Palmtree -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Palmtree">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#DeprecatedClass"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#has-part"/>
+                <someValuesFrom>
+                    <Class>
+                        <complementOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Branch"/>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Tree"/>
+        <deprecated xml:lang="en">it&apos;s a palm or a tree, not palm tree</deprecated>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Parsnip -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Parsnip">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Root"/>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Phloem -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Phloem">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#PlantParts"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#is-proper-part-of"/>
+                <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Stem"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Plant -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Plant">
+        <rdfs:comment xml:lang="en">&apos;plant&apos; is here a shorthand for plant kingdom</rdfs:comment>
+        <rdfs:comment>Plants are disjoint from animals.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#PlantParts -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#PlantParts">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#is-proper-part-of"/>
+                <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Plant"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Generally deemed easier to talk of in the &apos;from part to whole&apos; direction, but ontologically, the other direction is better. e.g., in the normal course of things, all plants have as part roots, but not all roots need to be part of some plant.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#RockDassie -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#RockDassie">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal"/>
+        <rdfs:comment>They eat grasses and broad-leafed plants</rdfs:comment>
+        <rdfs:comment>http://en.wikipedia.org/wiki/Rock_Hyrax</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Root -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Root">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#PlantParts"/>
+        <rdfs:comment xml:lang="en">note that this is different from a tuber (enlarged stem, like potato)</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Stem -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Stem">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#PlantParts"/>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Tasty-plant -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Tasty-plant">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Plant"/>
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eaten-by"/>
+                        <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Carnivore"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eaten-by"/>
+                        <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Herbivore"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>Plants eaten both by herbivores and carnivores</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Tree -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Tree">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Plant"/>
+        <rdfs:comment>Trees are a type of plant.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Twig -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Twig">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#PlantParts"/>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Warthog -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Warthog">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal"/>
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats"/>
+                        <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats"/>
+                        <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#FruitingBody"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats"/>
+                        <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Grass"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#eats"/>
+                        <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Root"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>Warthogs are mostly herbivourous but sometimes eat meat http://en.wikipedia.org/wiki/Warthog</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Xylem -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Xylem">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#PlantParts"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#is-proper-part-of"/>
+                <someValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Stem"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#AnimalCollective -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#AnimalCollective">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#has-member"/>
+                <allValuesFrom rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">There are more listed on:  https://safarisafricana.com/collective-nouns-animals-birds-africa/</rdfs:comment>
+        <rdfs:comment xml:lang="en">There is some &apos;overlap&apos; at least in English, in that some collective names are for several species and some species have several collective names (in general, or for a particualr configuration). How will that affect the representation?</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Bask -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Bask">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#AnimalCollective"/>
+        <rdfs:comment xml:lang="en">of crocodiles</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Carrot -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Carrot">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Root"/>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Cloud -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Cloud">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#AnimalCollective"/>
+        <rdfs:comment xml:lang="en">of insects, gnats, grasshoppers</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Colony -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Colony">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#AnimalCollective"/>
+        <rdfs:comment xml:lang="en">of ants</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Den -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Den">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#AnimalCollective"/>
+        <rdfs:comment xml:lang="en">of snakes</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#DeprecatedClass -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#DeprecatedClass">
+        <rdfs:comment xml:lang="en">For those classes on their way out...</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Flight -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Flight">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#AnimalCollective"/>
+        <rdfs:comment xml:lang="en">of butterflies, dragons</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Herd -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Herd">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#AnimalCollective"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#has-member"/>
+                <someValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Elephant"/>
+                            <rdf:Description rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Impala"/>
+                        </unionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The current axiom with just Elephant or Impala will have to be updated at some point. What about declaring it the other way around instead, like that elephants are member-of a herd etc.?</rdfs:comment>
+        <rdfs:comment xml:lang="en">of elephants, cattle, impala, springbok, zebra</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#HypoCarnivores -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#HypoCarnivores">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Carnivore"/>
+        <rdfs:comment xml:lang="en">their diet diet consists of at least 30 pct meat. practically can be considered to be omnivores...</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Kettle -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Kettle">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#AnimalCollective"/>
+        <rdfs:comment xml:lang="en">of vultures whilst circling</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#MesoCarnivore -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#MesoCarnivore">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Carnivore"/>
+        <rdfs:comment xml:lang="en">their diet diet consists of at least 50 pct meat</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Nest -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Nest">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#AnimalCollective"/>
+        <rdfs:comment xml:lang="en">of vipers</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#ObligateCarnivore -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#ObligateCarnivore">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Carnivore"/>
+        <rdfs:comment xml:lang="en">their diet diet consists of at least 70 pct meat</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Palm -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Palm">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Plant"/>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Predator -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Predator">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Prey -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Prey">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Role"/>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Rhumba -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Rhumba">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#AnimalCollective"/>
+        <rdfs:comment xml:lang="en">of rattlesnakes</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Role -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Role">
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#inheres-in"/>
+                <someValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Animal"/>
+                            <rdf:Description rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Plant"/>
+                        </unionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">to distinguish between the animal or plant and the role(s) they play (e.g., turning out to be something else&apos;s dinner)</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Scourge -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Scourge">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#AnimalCollective"/>
+        <rdfs:comment xml:lang="en">of mosquitos</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Swarm -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Swarm">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#AnimalCollective"/>
+        <rdfs:comment xml:lang="en">of locusts, bees</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Troop -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Troop">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#AnimalCollective"/>
+        <rdfs:comment xml:lang="en">of lions</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Zeal -->
+
+    <Class rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#Zeal">
+        <rdfs:subClassOf rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#AnimalCollective"/>
+        <rdfs:comment xml:lang="en">of zebra</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Adult_value -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Adult_value">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Age_group"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Child_value"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Age_group -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Age_group">
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Adult_value"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Child_value"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Elderly_value"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Infant_value"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Todler_value"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#ValuePartition"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Avoidance_means"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Dangerousness"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Domestication"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Risk_seriousness"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Risk_type"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Animal -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Animal">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Living_thing"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Plant"/>
+        <rdfs:comment>A short list of classes of animals - could be filled out in more detail. 
+
+Disjoint with Plant.
+
+Be sure to make all the primitive kinds of animals disjoint. </rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Antivenom_access -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Antivenom_access">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Avoidance_means"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Arm -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Arm">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_part_of"/>
+                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Finger"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Foot"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Hand"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Leg"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Toe"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Arm_or_part_of_Arm -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Arm_or_part_of_Arm">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Arm"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_part_of"/>
+                                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Arm"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body_part_or_part_of_Body_part"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Avoidance_means -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Avoidance_means">
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Antivenom_access"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Insecticidal_spraying"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Mosquito_netting"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Physical_separation"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#ValuePartition"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Dangerousness"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Domestication"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Risk_seriousness"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Risk_type"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Biped -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Biped">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_leg"/>
+                        <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</cardinality>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:comment>Animal that has two legs - i.e.
+has_leg = 2
+
+Defined class
+Demonstrates use of cardinality constraint on subproperty. </rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Bird -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Bird">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_leg"/>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_limb"/>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Fish"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Insect"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Mammal"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Reptile"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Body -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Body">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Body_or_part_of_body -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Body_or_part_of_body">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Body"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_part_of"/>
+                                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body_part_or_part_of_Body_part"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Body_part -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Body_part">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Domain_entity"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Body_part_or_part_of_Body_part -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Body_part_or_part_of_Body_part">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Domain_entity"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_part_of"/>
+                                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:comment>SEP Triples</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Bull -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Bull">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Cow"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_sex"/>
+                        <hasValue rdf:resource="http://www.owl-ontologies.com/unnamed.owl#male"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Calf -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Calf">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Cow"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_age_group"/>
+                        <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Child_value"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Care_and_attention -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Care_and_attention">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Avoidance_means"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Carnivore -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Carnivore">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#eats"/>
+                        <allValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:comment>Animal that only eats meat.
+
+Defined class
+</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Carp -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Carp">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Fish"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Carrying_disease -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Carrying_disease">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Risk_type"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Physical_attack"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Poisonous_bite"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Cat -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Cat">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Mammal"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#eats"/>
+                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_dangerousness"/>
+                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Dangerousness"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#eats"/>
+                <allValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_leg"/>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Cow"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Person"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Pig"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Child_value -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Child_value">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Age_group"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Cow -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Cow">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Mammal"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#eats"/>
+                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Grass"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#eats"/>
+                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Leafy_plant"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_dangerousness"/>
+                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Safe"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#eats"/>
+                <allValuesFrom>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Grass"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Leafy_plant"/>
+                        </unionOf>
+                    </Class>
+                </allValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_leg"/>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Person"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Pig"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Crocadilian -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Crocadilian">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Reptile"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_leg"/>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Dangerous -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Dangerous">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Dangerousness"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Risky"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Safe"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Dangerous_animal -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Dangerous_animal">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_dangerousness"/>
+                        <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Dangerous"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_quality"/>
+                        <someValuesFrom>
+                            <Class>
+                                <intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Risk"/>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_risk_seriousness"/>
+                                        <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Deadly_risk"/>
+                                    </Restriction>
+                                </intersectionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:comment>Animal that has_dangerousness Dangerous
+
+Defined class
+Demonstrates use of value partitions
+</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Dangerousness -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Dangerousness">
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Dangerous"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Risky"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Safe"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#ValuePartition"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Domestication"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Risk_seriousness"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Risk_type"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Deadly_risk -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Deadly_risk">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Risk_seriousness"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Injury_risk"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Painful_risk"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Disorder -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Disorder">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Domain_entity"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Domain_entity -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Domain_entity">
+        <rdfs:comment>The top class defined by the user that really pertains to the &quot;domain&quot; - in this case &quot;Living things&quot;.
+
+It is always a good idea to have your own top class under owl:Thing rather than using owl:Thing directly. </rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Domestic_cat -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Domestic_cat">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Cat"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_dangerousness"/>
+                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Safe"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Domestic_value -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Domestic_value">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Domestication"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Feral_value"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Wild_value"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Domestication -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Domestication">
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Domestic_value"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Feral_value"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Wild_value"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#ValuePartition"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Risk_seriousness"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Risk_type"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Elderly_value -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Elderly_value">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Adult_value"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Feature_of_Hiroshima_ken -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Feature_of_Hiroshima_ken">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Geographical_feature"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_location"/>
+                                <someValuesFrom>
+                                    <Restriction>
+                                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_subregion_of"/>
+                                        <hasValue rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Hiroshima_ken"/>
+                                    </Restriction>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_location"/>
+                                <hasValue rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Hiroshima_ken"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Feature_of_japan -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Feature_of_japan">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Geographical_feature"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_location"/>
+                                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Regions_of_Japan"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_location"/>
+                                <hasValue rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Japan"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Female_animal -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Female_animal">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_sex"/>
+                        <hasValue rdf:resource="http://www.owl-ontologies.com/unnamed.owl#female"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:comment>Animal that has sex female
+
+Defined class
+Demonstrates use of value sets</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Feral_value -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Feral_value">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Domestication"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Wild_value"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Finger -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Finger">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_part_of"/>
+                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Hand"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Foot"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Hand"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Leg"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Toe"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Finger_or_part_of_Finger -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Finger_or_part_of_Finger">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Finger"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_part_of"/>
+                                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Finger"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body_part_or_part_of_Body_part"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Fish -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Fish">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Insect"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Mammal"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Reptile"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Foot -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Foot">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_part_of"/>
+                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Leg"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Hand"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Leg"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Toe"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Foot_or_part_of_Foot -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Foot_or_part_of_Foot">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Foot"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_part_of"/>
+                                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Foot"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body_part_or_part_of_Body_part"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Geographical_entity -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Geographical_entity">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Domain_entity"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Geographical_feature -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Geographical_feature">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Geographical_entity"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Geographical_region -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Geographical_region">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Geographical_entity"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Goldfish -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Goldfish">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Carp"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Grass -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Grass">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Plant"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Tree"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Hand -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Hand">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_part_of"/>
+                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Arm"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Leg"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Toe"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Hand_or_part_of_Hand -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Hand_or_part_of_Hand">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Hand"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_part_of"/>
+                                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Hand"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body_part_or_part_of_Body_part"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Heiffer -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Heiffer">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Cow"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_sex"/>
+                        <hasValue rdf:resource="http://www.owl-ontologies.com/unnamed.owl#female"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Herbivore -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Herbivore">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#eats"/>
+                        <allValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Plant"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:comment>Animal that only eats plants
+
+Defined class.  
+Demonstrates use of &apos;only&apos; and closure axioms.
+
+Be sure that Cow classifies under Herbivore.  Be sure you know why.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Infant_value -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Infant_value">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Child_value"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Todler_value"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Injury -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Injury">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Disorder"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Injury_risk -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Injury_risk">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Risk_seriousness"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Painful_risk"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Injury_to_Finger -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Injury_to_Finger">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Injury"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_locus"/>
+                        <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Finger_or_part_of_Finger"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Injury_to_Hand -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Injury_to_Hand">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Injury"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_locus"/>
+                        <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Hand_or_part_of_Hand"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Injury_to_arm -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Injury_to_arm">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Injury"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_locus"/>
+                        <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Arm_or_part_of_Arm"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Injury_to_body -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Injury_to_body">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Injury"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_locus"/>
+                        <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body_or_part_of_body"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Innoculation -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Innoculation">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Avoidance_means"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Insect -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Insect">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Mammal"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Reptile"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Insecticidal_spraying -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Insecticidal_spraying">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Avoidance_means"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Leafy_plant -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Leafy_plant">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Plant"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Leg -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Leg">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_part_of"/>
+                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Toe"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Leg_or_part_of_leg -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Leg_or_part_of_leg">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Leg"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_part_of"/>
+                                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Leg"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body_part_or_part_of_Body_part"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Limb -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Limb">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Arm"/>
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Leg"/>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Lion -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Lion">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Cat"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_dangerousness"/>
+                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Dangerous"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_quality"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Risk"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_avoidance_means"/>
+                                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Physical_separation"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_risk_seriousness"/>
+                                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Deadly_risk"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_risk_type"/>
+                                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Physical_attack"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Lioness -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Lioness">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Lion"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_sex"/>
+                        <hasValue rdf:resource="http://www.owl-ontologies.com/unnamed.owl#female"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Living_thing -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Living_thing">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Domain_entity"/>
+        <rdfs:comment>The top notion in the Living Things ontology. </rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Lizard -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Lizard">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Reptile"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_leg"/>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Malaria_mosquito -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Malaria_mosquito">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Mosquito"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_quality"/>
+                <someValuesFrom>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Risk"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_avoidance_means"/>
+                                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Insecticidal_spraying"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_avoidance_means"/>
+                                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Mosquito_netting"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_risk_seriousness"/>
+                                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Deadly_risk"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_risk_type"/>
+                                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Carrying_disease"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </someValuesFrom>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The mosquitos that carry Malaria - technically Anopheles mosquitos.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Male_animal -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Male_animal">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_sex"/>
+                        <hasValue rdf:resource="http://www.owl-ontologies.com/unnamed.owl#male"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:comment>Animal that has sex male
+
+Defined class
+Demonstrates use of value sets</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Mammal -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Mammal">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_limb"/>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Reptile"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Mosquito -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Mosquito">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Insect"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Mosquito_netting -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Mosquito_netting">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Avoidance_means"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Omnivore -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Omnivore">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#eats"/>
+                        <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#eats"/>
+                        <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Plant"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:comment>Animal that east some animals and some plants.
+
+Note difference in definition with &quot;Herbivore&quot; and &quot;Carnivore&quot;.</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Painful_risk -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Painful_risk">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Risk_seriousness"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Person -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Person">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Mammal"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_leg"/>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Pig"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Physical_attack -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Physical_attack">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Risk_type"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Poisonous_bite"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Physical_separation -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Physical_separation">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Avoidance_means"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Pig -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Pig">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Mammal"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#eats"/>
+                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#eats"/>
+                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Plant"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_leg"/>
+                <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</cardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Piglet -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Piglet">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Pig"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_age_group"/>
+                        <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Child_value"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Plant -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Plant">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Living_thing"/>
+        <rdfs:comment>A short list of classes of plants - could be filled out in more detail. 
+
+Disjoint with Animal.
+
+Be sure to make all the primitive kinds of plants disjoint. </rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Poisonous_bite -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Poisonous_bite">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Risk_type"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Quadruped -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Quadruped">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#has_leg"/>
+                        <cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</cardinality>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:comment>Animal that has two legs - i.e.
+has_leg = 4
+
+Defined class
+Demonstrates use of cardinality constraint on subproperty. </rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Quality -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Quality">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Domain_entity"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Regions_of_Japan -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Regions_of_Japan">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Geographical_region"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_subregion_of"/>
+                        <hasValue rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Japan"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Reptile -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Reptile">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Animal"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Risk -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Risk">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Quality"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Risk_seriousness -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Risk_seriousness">
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Deadly_risk"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Injury_risk"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Painful_risk"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#ValuePartition"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Risk_type"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Risk_type -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Risk_type">
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Carrying_disease"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Physical_attack"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Poisonous_bite"/>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#ValuePartition"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Risky -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Risky">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Dangerousness"/>
+        <disjointWith rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Safe"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Safe -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Safe">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Dangerousness"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Sex_value -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Sex_value">
+        <equivalentClass>
+            <Class>
+                <oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#female"/>
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#male"/>
+                </oneOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Value"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Todler_value -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Todler_value">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Child_value"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Toe -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Toe">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_part_of"/>
+                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Foot"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Toe_or_part_of_Toe -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Toe_or_part_of_Toe">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Body_part"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Toe"/>
+                            <Restriction>
+                                <onProperty rdf:resource="http://www.owl-ontologies.com/unnamed.owl#is_part_of"/>
+                                <someValuesFrom rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Toe"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Body_part_or_part_of_Body_part"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Tree -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Tree">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Plant"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Value -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Value">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Domain_entity"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#ValuePartition -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#ValuePartition">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Domain_entity"/>
+    </Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Wild_value -->
+
+    <Class rdf:about="http://www.owl-ontologies.com/unnamed.owl#Wild_value">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Domestication"/>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://evoflex.tech/monkey#Aotidae -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Aotidae">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+        <monkey:habitat>Tropical rainforests of Central and South America</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Atelidae -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Atelidae">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+        <monkey:habitat>Central and South America</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Bonobo -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Bonobo">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Species"/>
+        <monkey:habitat>Forests of the Democratic Republic of Congo</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Callitrichidae -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Callitrichidae">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+        <monkey:habitat>South and Central America</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Capuchin -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Capuchin">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Tropical forests of Central and South America</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Catarhini -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Catarhini">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Infraorder"/>
+        <monkey:habitat>Varies depending on the species</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Cebidae -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Cebidae">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+        <monkey:habitat>Central and South America</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Cercopithecidae -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Cercopithecidae">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+        <monkey:habitat>Varies depending on the species</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Cercopithecinae -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Cercopithecinae">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Subfamily"/>
+        <monkey:habitat>Varies depending on the species</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Cercopithecoidea -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Cercopithecoidea">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Superfamily"/>
+        <monkey:habitat>Varies depending on the species</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Chimp -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Chimp">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Forests of Central and Western Africa</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Colobinae -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Colobinae">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Subfamily"/>
+        <monkey:habitat>Varies depending on the species</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Family -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Family"/>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Galago -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Galago">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Various habitats in sub-Saharan Africa</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Genus -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Genus"/>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Gibbon -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Gibbon">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Tropical rainforests of Southeast Asia</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Gorilla -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Gorilla">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Forests of Central and Western Africa</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Gorillini -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Gorillini">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Tribe"/>
+        <monkey:habitat>Forests of Central and Western Africa</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Haplorrhini -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Haplorrhini">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Suborder"/>
+        <monkey:habitat>Varies depending on the species</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Hominidae -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Hominidae">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+        <monkey:habitat>Varies depending on the species</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Homininae -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Homininae">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Subfamily"/>
+        <monkey:habitat>Varies depending on the species</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Hominini -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Hominini">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Tribe"/>
+        <monkey:habitat>Varies depending on the species</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Hominoidea -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Hominoidea">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Superfamily"/>
+        <monkey:habitat>Varies depending on the species</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Howler -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Howler">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Tropical forests of Central and South America</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Human -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Human">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Varies depending on the population</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Hylobatidae -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Hylobatidae">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+        <monkey:habitat>Southeast Asia</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Infraorder -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Infraorder"/>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Lemur -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Lemur">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Superfamily"/>
+        <monkey:habitat>Forests of Madagascar</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Lemuriformes -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Lemuriformes">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Infraorder"/>
+        <monkey:habitat>Forests of Madagascar</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Lori -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Lori">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Rainforests of Southeast Asia</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Lorisiformes -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Lorisiformes">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Infraorder"/>
+        <monkey:habitat>Tropical forests of South and Southeast Asia</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Marmoset -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Marmoset">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Tropical rainforests of South America</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Muriquis -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Muriquis">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Atlantic coastal forests of Brazil</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Night -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Night">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Tropical rainforests of Central and South America</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Orangutan -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Orangutan">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Rainforests of Borneo and Sumatra</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Order -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Order"/>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Paninini -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Paninini">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Tribe"/>
+        <monkey:habitat>Forests of Central and Western Africa</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Parvorder -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Parvorder"/>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Pitheciidae -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Pitheciidae">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+        <monkey:habitat>Tropical forests of South America</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Plathyrini -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Plathyrini">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Parvorder"/>
+        <monkey:habitat>Varies depending on the species</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Ponginae -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Ponginae">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Subfamily"/>
+        <monkey:habitat>Southeast Asia</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Potto -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Potto">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+        <monkey:habitat>Tropical forests of Central and West Africa</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Primate -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Primate">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Order"/>
+        <monkey:habitat>Varies depending on the species</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Saki -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Saki">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Tropical rainforests of South America</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Siamang -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Siamang">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Tropical rainforests of Southeast Asia</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Species -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Species"/>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Spider -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Spider">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Varies depending on the species</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Squirrel -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Squirrel">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Varies depending on the species</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Strepsirrhini -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Strepsirrhini">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Suborder"/>
+        <monkey:habitat>Varies depending on the species</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Subfamily -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Subfamily"/>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Suborder -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Suborder"/>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Superfamily -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Superfamily"/>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Tarsier -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Tarsier">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+        <monkey:habitat>Forests of Southeast Asia</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Tarsiiformes -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Tarsiiformes">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Infraorder"/>
+        <monkey:habitat>Southeast Asia</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Titi -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Titi">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Tropical forests of South America</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Tribe -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Tribe"/>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Uakari -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Uakari">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Amazon rainforest and flooded forests of South America</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://evoflex.tech/monkey#Wooly -->
+
+    <NamedIndividual rdf:about="http://evoflex.tech/monkey#Wooly">
+        <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+        <monkey:habitat>Tropical forests of South America</monkey:habitat>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Koko -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#Koko">
+        <rdf:type rdf:resource="http://evoflex.tech/monkey#Gorilla"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#RastsislauLipski -->
+
+    <NamedIndividual rdf:about="http://www.co-ode.org/ontologies/ont.owl#RastsislauLipski">
+        <rdf:type rdf:resource="http://evoflex.tech/monkey#Human"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#impala1 -->
+
+    <NamedIndividual rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#impala1">
+        <rdf:type rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Impala"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#lion1 -->
+
+    <NamedIndividual rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#lion1">
+        <AfricanWildlifeOntology1:eats rdf:resource="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology4.owl#impala1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Hiroshima -->
+
+    <NamedIndividual rdf:about="http://www.owl-ontologies.com/unnamed.owl#Hiroshima">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Geographical_region"/>
+        <unnamed:is_location_of rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Hiroshima_Prince_Hotel"/>
+        <unnamed:is_subregion_of rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Hiroshima_ken"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Hiroshima_Prince_Hotel -->
+
+    <NamedIndividual rdf:about="http://www.owl-ontologies.com/unnamed.owl#Hiroshima_Prince_Hotel">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Geographical_feature"/>
+        <unnamed:has_location rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Hiroshima"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Hiroshima_ken -->
+
+    <NamedIndividual rdf:about="http://www.owl-ontologies.com/unnamed.owl#Hiroshima_ken">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Geographical_region"/>
+        <unnamed:has_subregion rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Hiroshima"/>
+        <unnamed:is_subregion_of rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Honshu"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Honshu -->
+
+    <NamedIndividual rdf:about="http://www.owl-ontologies.com/unnamed.owl#Honshu">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Geographical_region"/>
+        <unnamed:has_subregion rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Hiroshima_ken"/>
+        <unnamed:is_location_of rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Mt_Fuji"/>
+        <unnamed:is_subregion_of rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Japan"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Japan -->
+
+    <NamedIndividual rdf:about="http://www.owl-ontologies.com/unnamed.owl#Japan">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Geographical_region"/>
+        <unnamed:has_subregion rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Honshu"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#Mt_Fuji -->
+
+    <NamedIndividual rdf:about="http://www.owl-ontologies.com/unnamed.owl#Mt_Fuji">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Geographical_feature"/>
+        <unnamed:has_location rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Honshu"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#female -->
+
+    <NamedIndividual rdf:about="http://www.owl-ontologies.com/unnamed.owl#female">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Sex_value"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/unnamed.owl#male -->
+
+    <NamedIndividual rdf:about="http://www.owl-ontologies.com/unnamed.owl#male">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/unnamed.owl#Sex_value"/>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Branch"/>
+            <rdf:Description rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Leaf"/>
+            <rdf:Description rdf:about="http://www.meteck.org/teaching/OEbook/ontologies/AfricanWildlifeOntology1.owl#Twig"/>
+        </members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
