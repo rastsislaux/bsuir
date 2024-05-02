@@ -1,0 +1,485 @@
+section_law_belarus_labor_legislation_dict
+=> nrel_main_idtf: [Раздел. Словарь по законодательству о труде и занятости населения Республики Беларусь] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Слоўнік па заканадаўстве аб працы і занятасці насельніцтва Рэспублікі Беларусь] (* <- lang_en;; *);
+=> nrel_main_idtf: [Dictionary of legislation on labor and employment of the population of the Republic of Belarus] (* <- lang_by;; *);
+<- dictionary;
+
+-> rrel_key_sc_element:
+  concept_employment_belarus(*
+    => nrel_main_idtf: [занятость] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [employment] (* <- lang_en;; *);;
+    => nrel_main_idtf: [занятасць] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [занятость – деятельность граждан Республики Беларусь, иностранных граждан и лиц без гражданства, постоянно проживающих в Республике Беларусь, иностранных граждан и лиц без гражданства, которым предоставлены статус беженца или убежище в Республике Беларусь (далее, если не указано иное, – граждане), связанная с удовлетворением личных и общественных потребностей, не противоречащая законодательству и приносящая им заработную плату, вознаграждение за выполненную работу (оказанную услугу, создание объектов интеллектуальной собственности), иной доход (далее – заработок)] (* <- lang_ru;; *);;
+   				 -> rrel_example: [employment - activities of citizens of the Republic of Belarus, foreign citizens and stateless persons permanently residing in the Republic of Belarus, foreign citizens and stateless persons who have been granted refugee status or asylum in the Republic of Belarus (hereinafter, unless otherwise indicated - citizens), related to satisfaction of personal and social needs, not contradicting the law and bringing them wages, remuneration for work performed (service provided, creation of intellectual property), other income (hereinafter referred to as earnings)] (* <- lang_en;; *);;
+   				 -> rrel_example: [занятасць - дзейнасць грамадзян Рэспублікі Беларусь, замежных грамадзян і асоб без грамадзянства, якія пастаянна пражываюць у Рэспубліцы Беларусь, замежных грамадзян і асоб без грамадзянства, якім прадастаўлены статус бежанца або прытулак у Рэспубліцы Беларусь (далей, калі не пазначана іншае, - грамадзяне), звязаная з задавальненнем асабістых і грамадскіх патрэб, не супярэчыць заканадаўству і прыносіць ім заработную плату, узнагароджанне за выкананую працу (аказаную паслугу, стварэнне аб'ектаў інтэлектуальнай уласнасці), іншы даход (далей - заробак)] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_unemployment_belarus(*
+    => nrel_main_idtf: [безработица] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [unemployment] (* <- lang_en;; *);;
+    => nrel_main_idtf: [беспрацоўе] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [безработица – явление в экономике, при котором часть трудоспособного населения, желающая работать на условиях трудового, гражданско-правового договоров или заниматься предпринимательской деятельностью, деятельностью по оказанию услуг в сфере агроэкотуризма, ремесленной деятельностью, не может применить свою рабочую силу] (* <- lang_ru;; *);;
+   				 -> rrel_example: [unemployment is a phenomenon in the economy in which part of the working population who wants to work under the terms of labor, civil law contracts or engage in entrepreneurial activities, activities in the provision of services in the field of agro-ecotourism, craft activities, cannot use their labor force] (* <- lang_en;; *);;
+   				 -> rrel_example: [беспрацоўе - з'ява ў эканоміцы, пры якім частка працаздольнага насельніцтва, якая жадае працаваць на ўмовах працоўнага, грамадзянска-прававога дагавораў або займацца прадпрымальніцкай дзейнасцю, дзейнасцю па аказанні паслуг у сферы аграэкатурызму, рамеснай дзейнасцю, не можа прымяніць сваю працоўную сілу] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_unemployed_belarus(*
+    => nrel_main_idtf: [безработный] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [unemployed] (* <- lang_en;; *);;
+    => nrel_main_idtf: [беспрацоўны] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [безработный – трудоспособный гражданин, не имеющий работы и заработка, который зарегистрирован в комитете по труду, занятости и социальной защите Минского городского исполнительного комитета, управлении (отделе) по труду, занятости и социальной защите городского, районного исполнительного комитета (далее – орган по труду, занятости и социальной защите) в целях поиска подходящей работы, ищет работу и готов приступить к ней] (* <- lang_ru;; *);;
+   				 -> rrel_example: [unemployed - an able-bodied citizen who does not have a job or income, who is registered with the committee for labor, employment and social protection of the Minsk city executive committee, the department (department) for labor, employment and social protection of the city, district executive committee (hereinafter referred to as the labor body, employment and social protection) in order to find suitable work, is looking for work and is ready to start work] (* <- lang_en;; *);;
+   				 -> rrel_example: [беспрацоўны - працаздольны грамадзянін, які не мае працы і заробку, які зарэгістраваны ў камітэце па працы, занятасці і сацыяльнай абароне Мінскага гарадскога выканаўчага камітэта, упраўленні (аддзеле) па працы, занятасці і сацыяльнай абароне гарадскога, раённага выканаўчага камітэта (далей - орган па працы, занятасці і сацыяльнай абароне) у мэтах пошуку прыдатнай працы, шукае працу і гатовы прыступіць да яе] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_paid_public_works_belarus(*
+    => nrel_main_idtf: [оплачиваемые общественные работы] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [paid public works] (* <- lang_en;; *);;
+    => nrel_main_idtf: [аплатныя грамадскія работы] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [оплачиваемые общественные работы – общедоступные виды работ, выполняемые по срочным трудовым или гражданско-правовым договорам, имеющие социально полезную направленность и организуемые в качестве дополнительной социальной поддержки безработных и граждан, ищущих работу] (* <- lang_ru;; *);;
+   				 -> rrel_example: [paid public works - generally available types of work performed under fixed-term employment or civil contracts, having a socially useful orientation and organized as additional social support for the unemployed and citizens seeking work] (* <- lang_en;; *);;
+   				 -> rrel_example: [аплатныя грамадскія работы - агульнадаступныя віды работ, якія выконваюцца па тэрміновых працоўных або грамадзянска-прававых дагаворах, маюць сацыяльна карысную накіраванасць і арганізуюцца ў якасці дадатковай сацыяльнай падтрымкі беспрацоўных і грамадзян, якія шукаюць працу.] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_bodies_of_the_state_employment_service_belarus(*
+    => nrel_main_idtf: [органы государственной службы занятости населения] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [bodies of the state employment service] (* <- lang_en;; *);;
+    => nrel_main_idtf: [органы дзяржаўнай службы занятасці насельніцтва] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [органы государственной службы занятости населения – Министерство труда и социальной защиты, комитеты по труду, занятости и социальной защите областных, Минского городского исполнительных комитетов, управления (отделы) по труду, занятости и социальной защите городских, районных исполнительных комитетов] (* <- lang_ru;; *);;
+   				 -> rrel_example: [bodies of the state employment service - the Ministry of Labor and Social Protection, committees for labor, employment and social protection of regional, Minsk city executive committees, departments (departments) for labor, employment and social protection of city, district executive committees] (* <- lang_en;; *);;
+   				 -> rrel_example: [органы дзяржаўнай службы занятасці насельніцтва - Міністэрства працы і сацыяльнай абароны, камітэты па працы, занятасці і сацыяльнай абароне абласных, Мінскага гарадскога выканаўчых камітэтаў, упраўлення (аддзелы) па працы, занятасці і сацыяльнай абароне гарадскіх, раённых выканаўчых камітэтаў] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_employees_under_threat_of_dismissal_belarus(*
+    => nrel_main_idtf: [работники, находящиеся под угрозой увольнения,] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [employees under threat of dismissal] (* <- lang_en;; *);;
+    => nrel_main_idtf: [работнікі, якія знаходзяцца пад пагрозай звальнення,] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [работники, находящиеся под угрозой увольнения, – работники, подлежащие увольнению в связи с ликвидацией организации, прекращением деятельности индивидуального предпринимателя, или предупрежденные о сокращении численности или штата работников, или работающие на условиях неполного рабочего времени по инициативе нанимателя, или находящиеся в отпуске без сохранения или с частичным сохранением заработной платы, предоставленном по инициативе нанимателя, или не работающие в связи с простоем не по вине работника] (* <- lang_ru;; *);;
+   				 -> rrel_example: [employees under threat of dismissal - employees subject to dismissal due to the liquidation of an organization, termination of the activities of an individual entrepreneur, or warned of a reduction in the number or staff of employees, or working part-time at the initiative of the employer, or on leave without pay or with partial retention of wages provided at the initiative of the employer, or not working due to downtime through no fault of the employee] (* <- lang_en;; *);;
+   				 -> rrel_example: [работнікі, якія знаходзяцца пад пагрозай звальнення, – работнікі, якія падлягаюць звальненню ў сувязі з ліквідацыяй арганізацыі, спыненнем дзейнасці індывідуальнага прадпрымальніка, або папярэджаныя аб скарачэнні колькасці або штата работнікаў, або якія працуюць на ўмовах няпоўнага працоўнага часу па ініцыятыве наймальніка, або якія знаходзяцца ў водпуску без захавання або з частковым захаваннем заработнай платы, прадастаўленым па ініцыятыве наймальніка, або якія не працуюць у сувязі з прастоем не па віне работніка] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_free_workplace_vacancy_belarus(*
+    => nrel_main_idtf: [свободное рабочее место (вакансия)] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [free workplace (vacancy)] (* <- lang_en;; *);;
+    => nrel_main_idtf: [свабоднае працоўнае месца (вакансія)] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [свободное рабочее место (вакансия) – предусмотренная штатным расписанием должность (профессия), которая не замещена работником, состоящим в трудовых отношениях с нанимателем на основании заключенного трудового договора по данной должности (профессии)] (* <- lang_ru;; *);;
+   				 -> rrel_example: [free workplace (vacancy) - a position (profession) provided for in the staffing table, which is not filled by an employee who is in an employment relationship with the employer on the basis of a concluded employment contract for this position (profession)] (* <- lang_en;; *);;
+   				 -> rrel_example: [свабоднае працоўнае месца (вакансія) – прадугледжаная штатным раскладам пасада (прафесія), якая не замешчана работнікам, які знаходзіцца ў працоўных адносінах з наймальнікам на падставе заключанага працоўнага дагавора па гэтай пасадзе (прафесіі)] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_employee_position_belarus(*
+    => nrel_main_idtf: [должность служащего] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [employee position] (* <- lang_en;; *);;
+    => nrel_main_idtf: [пасада служачага] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [должность служащего – род трудовой деятельности в соответствии со служебным положением, должностными обязанностями, определенными на основании Единого квалификационного справочника должностей служащих либо иных актов законодательства] (* <- lang_ru;; *);;
+   				 -> rrel_example: [employee position - type of labor activity in accordance with official position, job responsibilities determined on the basis of the Unified Qualification Directory of Employee Positions or other acts of legislation] (* <- lang_en;; *);;
+   				 -> rrel_example: [пасада служачага - род працоўнай дзейнасці ў адпаведнасці са службовым становішчам, службовымі абавязкамі, вызначанымі на падставе Адзінага кваліфікацыйнага даведніка пасад служачых або іншых актаў заканадаўства] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_labor_legislation_belarus(*
+    => nrel_main_idtf: [законодательство о труде] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [labor legislation] (* <- lang_en;; *);;
+    => nrel_main_idtf: [заканадаўства аб працы] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [законодательство о труде – совокупность нормативных правовых актов, регулирующих общественные отношения в сфере трудовых и связанных с ними отношений] (* <- lang_ru;; *);;
+   				 -> rrel_example: [labor legislation - a set of normative legal acts regulating social relations in the field of labor and related relations] (* <- lang_en;; *);;
+   				 -> rrel_example: [заканадаўства аб працы - сукупнасць нарматыўных прававых актаў, якія рэгулююць грамадскія адносіны ў сферы працоўных і звязаных з імі адносін] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_qualification_belarus(*
+    => nrel_main_idtf: [квалификация] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [qualification] (* <- lang_en;; *);;
+    => nrel_main_idtf: [кваліфікацыя] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [квалификация – признание освоенных знаний, умений и полученного опыта, необходимых для осуществления трудовой деятельности, подтвержденное установленными законодательством видами документов] (* <- lang_ru;; *);;
+   				 -> rrel_example: [qualification - recognition of acquired knowledge, skills and experience necessary for carrying out work activities, confirmed by the types of documents established by law] (* <- lang_en;; *);;
+   				 -> rrel_example: [кваліфікацыя - прызнанне асвоеных ведаў, уменняў і атрыманага вопыту, неабходных для ажыццяўлення працоўнай дзейнасці, пацверджанае ўстаноўленымі заканадаўствам відамі дакументаў] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_contract_belarus(*
+    => nrel_main_idtf: [контракт] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [contract] (* <- lang_en;; *);;
+    => nrel_main_idtf: [кантракт] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [контракт – срочный трудовой договор, заключаемый в письменной форме на определенный в нем срок для выполнения работы и содержащий особенности регулирования трудовых отношений между нанимателем и работником] (* <- lang_ru;; *);;
+   				 -> rrel_example: [contract - a fixed-term employment contract concluded in writing for a period specified in it for the performance of work and containing the features of regulating labor relations between the employer and the employee] (* <- lang_en;; *);;
+   				 -> rrel_example: [кантракт - тэрміновы працоўны дагавор, які заключаецца ў пісьмовай форме на вызначаны ў ім тэрмін для выканання работы і змяшчае асаблівасці рэгулявання працоўных адносін паміж наймальнікам і работнікам] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_local_legal_acts_belarus(*
+    => nrel_main_idtf: [локальные правовые акты] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [local legal acts] (* <- lang_en;; *);;
+    => nrel_main_idtf: [лакальныя прававыя акты] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [локальные правовые акты – коллективные договоры, соглашения, правила внутреннего трудового распорядка и иные принятые в установленном порядке акты, регулирующие трудовые и связанные с ними отношения у конкретного нанимателя] (* <- lang_ru;; *);;
+   				 -> rrel_example: [local legal acts - collective agreements, agreements, internal labor regulations and other acts adopted in accordance with the established procedure regulating labor and related relations with a specific employer] (* <- lang_en;; *);;
+   				 -> rrel_example: [лакальныя прававыя акты - калектыўныя дагаворы, пагадненні, правілы ўнутранага працоўнага распарадку і іншыя прынятыя ва ўстаноўленым парадку акты, якія рэгулююць працоўныя і звязаныя з імі адносіны ў канкрэтнага наймальніка] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_employer_belarus(*
+    => nrel_main_idtf: [наниматель] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [employer] (* <- lang_en;; *);;
+    => nrel_main_idtf: [наймальнік] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [наниматель – юридическое или физическое лицо, которому законодательством предоставлено право заключения и прекращения трудового договора с работником] (* <- lang_ru;; *);;
+   				 -> rrel_example: [employer - a legal or natural person who is granted by law the right to conclude and terminate an employment contract with an employee] (* <- lang_en;; *);;
+   				 -> rrel_example: [наймальнік - юрыдычная або фізічная асоба, якой заканадаўствам прадастаўлена права заключэння і спынення працоўнага дагавора з работнікам] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_a_separate_division_of_an_organization_belarus(*
+    => nrel_main_idtf: [обособленное подразделение организации] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [a separate division of an organization] (* <- lang_en;; *);;
+    => nrel_main_idtf: [адасобленае падраздзяленне арганізацыі] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [обособленное подразделение организации – филиал, представительство, структурное подразделение организации, расположенное вне места ее нахождения либо по месту ее нахождения, которым для совершения операций организацией открыт текущий (расчетный) банковский счет с предоставлением права распоряжаться денежными средствами на счете должностным лицам этих обособленных подразделений на основании доверенности] (* <- lang_ru;; *);;
+   				 -> rrel_example: [a separate division of an organization - a branch, representative office, structural subdivision of an organization located outside its location or at its location, in which a current (settlement) bank account has been opened for the organization to carry out operations with the granting of the right to dispose of funds in the account to officials of these separate divisions on the basis powers of attorney] (* <- lang_en;; *);;
+   				 -> rrel_example: [адасобленае падраздзяленне арганізацыі - філіял, прадстаўніцтва, структурнае падраздзяленне арганізацыі, размешчанае па-за месцам яе знаходжання або па месцы яе знаходжання, якім для здзяйснення аперацый арганізацыяй адкрыты бягучы (разліковы) банкаўскі рахунак з прадастаўленнем права распараджацца грашовымі сродкамі на рахунку службовым асобам гэтых адасобленых падраздзяленняў на падставе даверанасці] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_association_of_employers_belarus(*
+    => nrel_main_idtf: [объединение нанимателей] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [association of employers] (* <- lang_en;; *);;
+    => nrel_main_idtf: [аб'яднанне наймальнікаў] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [объединение нанимателей – некоммерческая организация, объединяющая на основе добровольного членства нанимателей для представительства и защиты их прав и законных интересов в социально-трудовой сфере] (* <- lang_ru;; *);;
+   				 -> rrel_example: [association of employers - a non-profit organization that unites employers on the basis of voluntary membership for the representation and protection of their rights and legitimate interests in the social and labor sphere] (* <- lang_en;; *);;
+   				 -> rrel_example: [аб'яднанне наймальнікаў - некамерцыйная арганізацыя, якая аб'ядноўвае на аснове добраахвотнага членства наймальнікаў для прадстаўніцтва і абароны іх правоў і законных інтарэсаў у сацыяльна-працоўнай сферы] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_single_parent_belarus(*
+    => nrel_main_idtf: [одинокий родитель] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [single parent] (* <- lang_en;; *);;
+    => nrel_main_idtf: [самотны бацька] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [одинокий родитель – мать (отец), не состоящая (не состоящий) в браке и воспитывающая (воспитывающий) несовершеннолетнего ребенка в случае, когда другой родитель умер, лишен родительских прав, признан недееспособным, объявлен умершим или признан безвестно отсутствующим; мать, не состоящая в браке и воспитывающая несовершеннолетнего ребенка, сведения об отце которого внесены в запись акта о рождении ребенка по ее указанию или по указанию другого лица, подавшего заявление о регистрации рождения; усыновитель (удочеритель), не состоящий в браке и воспитывающий несовершеннолетнего ребенка] (* <- lang_ru;; *);;
+   				 -> rrel_example: [single parent - a mother (father) who is not married and is raising (raising) a minor child in the case where the other parent has died, been deprived of parental rights, been declared incompetent, declared dead or declared missing; a mother who is unmarried and raising a minor child, information about whose father is included in the child’s birth certificate at her direction or at the direction of another person who filed an application to register the birth; unmarried adoptive parent raising a minor child] (* <- lang_en;; *);;
+   				 -> rrel_example: [самотны бацька - маці (бацька), якая не знаходзіцца (якая не знаходзіцца) у шлюбе і выхоўвае (якая выхоўвае) непаўналетняга дзіцяці ў выпадку, калі іншы бацька памёр, пазбаўлены бацькоўскіх правоў, прызнаны недзеяздольным, аб'яўлены памерлым або прызнаны без вестак адсутным; маці, якая не знаходзіцца ў шлюбе і выхоўвае непаўналетняга дзіцяці, звесткі аб бацьку якога ўнесены ў запіс акта аб нараджэнні дзіцяці па яе ўказанні або па ўказанні іншай асобы, якая падала заяву аб рэгістрацыі нараджэння; усынавіцель (удачарыцель), які не знаходзіцца ў шлюбе і выхоўвае непаўналетняга дзіцяці] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_trade_union_belarus(*
+    => nrel_main_idtf: [профессиональный союз (профсоюз)] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [trade union (trade union)] (* <- lang_en;; *);;
+    => nrel_main_idtf: [прафесійны саюз (прафсаюз)] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [профессиональный союз (профсоюз) – добровольная общественная организация, объединяющая граждан, в том числе обучающихся в учреждениях профессионально-технического, среднего специального, высшего образования, связанных общими интересами по роду деятельности как в производственной, так и в непроизводственной сферах, для защиты трудовых, социально-экономических прав и интересов] (* <- lang_ru;; *);;
+   				 -> rrel_example: [trade union (trade union) is a voluntary public organization that unites citizens, including students in institutions of vocational, secondary special, higher education, connected by common interests by type of activity in both production and non-production spheres, for the protection of labor, social -economic rights and interests] (* <- lang_en;; *);;
+   				 -> rrel_example: [прафесійны саюз (прафсаюз) – добраахвотная грамадская арганізацыя, якая аб'ядноўвае грамадзян, у тым ліку навучэнцаў ва ўстановах прафесійна-тэхнічнай, сярэдняй спецыяльнай, вышэйшай адукацыі, звязаных агульнымі інтарэсамі па роду дзейнасці як у вытворчай, так і ў невытворчай сферах, для абароны працоўных, сацыяльна. -эканамічных правоў і інтарэсаў] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_workers_profession_belarus(*
+    => nrel_main_idtf: [профессия рабочего] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [worker's profession] (* <- lang_en;; *);;
+    => nrel_main_idtf: [прафесія рабочага] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [профессия рабочего – род трудовой деятельности, требующий знаний и навыков по определенной совокупности работ, регламентированных Единым тарифно-квалификационным справочником работ и профессий рабочих] (* <- lang_ru;; *);;
+   				 -> rrel_example: [worker's profession - a type of labor activity that requires knowledge and skills for a certain set of works regulated by the Unified Tariff and Qualification Directory of Work and Professions of Workers] (* <- lang_en;; *);;
+   				 -> rrel_example: [прафесія рабочага - род працоўнай дзейнасці, які патрабуе ведаў і навыкаў па пэўнай сукупнасці работ, рэгламентаваных Адзіным тарыфна-кваліфікацыйным даведнікам работ і прафесій рабочых] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_employee_belarus(*
+    => nrel_main_idtf: [работник] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [employee] (* <- lang_en;; *);;
+    => nrel_main_idtf: [работнік] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [работник – физическое лицо, состоящее в трудовых отношениях с нанимателем на основании заключенного трудового договора] (* <- lang_ru;; *);;
+   				 -> rrel_example: [employee - an individual who is in an employment relationship with an employer on the basis of a concluded employment contract] (* <- lang_en;; *);;
+   				 -> rrel_example: [работнік - фізічная асоба, якая знаходзіцца ў працоўных адносінах з наймальнікам на падставе заключанага працоўнага дагавора] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_parties_to_the_employment_contract_belarus(*
+    => nrel_main_idtf: [стороны трудового договора] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [parties to the employment contract] (* <- lang_en;; *);;
+    => nrel_main_idtf: [бакі працоўнай дамовы] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [стороны трудового договора – наниматель и работник] (* <- lang_ru;; *);;
+   				 -> rrel_example: [parties to the employment contract – employer and employee] (* <- lang_en;; *);;
+   				 -> rrel_example: [бакі працоўнай дамовы – наймальнік і працаўнік] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_tariff_rate_belarus(*
+    => nrel_main_idtf: [тарифная ставка (тарифный оклад)] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [tariff rate (tariff salary)] (* <- lang_en;; *);;
+    => nrel_main_idtf: [тарыфная стаўка (тарыфны аклад)] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [тарифная ставка (тарифный оклад) – минимальный размер оплаты труда работника за исполнение трудовых обязанностей за единицу времени (час, месяц) без учета иных выплат, установленных системой оплаты труда] (* <- lang_ru;; *);;
+   				 -> rrel_example: [tariff rate (tariff salary) - the minimum wage of an employee for the performance of job duties per unit of time (hour, month) without taking into account other payments established by the remuneration system] (* <- lang_en;; *);;
+   				 -> rrel_example: [тарыфная стаўка (тарыфны аклад) – мінімальны памер аплаты працы работніка за выкананне працоўных абавязкаў за адзінку часу (гадзіну, месяц) без уліку іншых выплат, устаноўленых сістэмай аплаты працы] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_labor_function_belarus(*
+    => nrel_main_idtf: [трудовая функция] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [labor function] (* <- lang_en;; *);;
+    => nrel_main_idtf: [працоўная функцыя] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [трудовая функция – работа по одной или нескольким должностям служащих (профессиям рабочих) с указанием квалификации в соответствии со штатным расписанием, должностной (рабочей) инструкцией, технологическими картами и другими документами] (* <- lang_ru;; *);;
+   				 -> rrel_example: [labor function - work in one or more employee positions (worker professions) indicating qualifications in accordance with the staffing table, job description (work) instructions, technological maps and other documents] (* <- lang_en;; *);;
+   				 -> rrel_example: [працоўная функцыя - праца па адной або некалькім пасадам служачых (прафесіям працоўных) з указаннем кваліфікацыі ў адпаведнасці са штатным раскладам, службовай (працоўнай) інструкцыяй, тэхналагічнымі картамі і іншымі дакументамі] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_employment_contract_belarus(*
+    => nrel_main_idtf: [трудовой договор] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [employment contract] (* <- lang_en;; *);;
+    => nrel_main_idtf: [працоўны дагавор] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [трудовой договор – соглашение между работником и нанимателем, в соответствии с которым работник обязуется выполнять работу по определенным одной или нескольким должностям служащих (профессиям рабочих) соответствующей квалификации согласно штатному расписанию и соблюдать внутренний трудовой распорядок, а наниматель обязуется предоставлять работнику обусловленную трудовым договором работу, обеспечивать условия труда, предусмотренные законодательством о труде, локальными правовыми актами и соглашением сторон, своевременно выплачивать работнику заработную плату] (* <- lang_ru;; *);;
+   				 -> rrel_example: [employment contract - an agreement between an employee and an employer, according to which the employee undertakes to perform work in certain one or more employee positions (worker professions) of appropriate qualifications in accordance with the staffing table and comply with internal labor regulations, and the employer undertakes to provide the employee with the work stipulated by the employment contract, to provide working conditions provided for by labor legislation, local legal acts and agreement of the parties, pay the employee wages on time] (* <- lang_en;; *);;
+   				 -> rrel_example: [працоўны дагавор - пагадненне паміж работнікам і наймальнікам, у адпаведнасці з якім работнік абавязуецца выконваць работу па пэўных адной або некалькіх пасадах служачых (прафесіях рабочых) адпаведнай кваліфікацыі згодна са штатным раскладам і выконваць унутраны працоўны распарадак, а наймальнік абавязваецца прадастаўляць работніку абумоўленую працоўным дагаворам работу, забяспечваць умовы працы, прадугледжаныя заканадаўствам аб працы, лакальнымі прававымі актамі і пагадненнем бакоў, своечасова выплачваць работніку заработную плату] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);
+
+
+concept_authorized_official_of_the_employer_belarus(*
+    => nrel_main_idtf: [уполномоченное должностное лицо нанимателя] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [authorized official of the employer] (* <- lang_en;; *);;
+    => nrel_main_idtf: [упаўнаважаная службовая асоба наймальніка] (* <- lang_by;; *);;
+    <- rrel_key_sc_element:
+   	 ...
+   	 (*
+   		 <- definition;;
+   		 <= nrel_sc_text_translation: ...
+   			 (*
+   				 -> rrel_example: [уполномоченное должностное лицо нанимателя – руководитель (его заместители) организации (ее обособленного подразделения), руководитель структурного подразделения (его заместители), иной работник, которым нанимателем предоставлено право принимать все или отдельные решения, вытекающие из трудовых и связанных с ними отношений, или иное лицо, которому такое право предоставлено законодательством] (* <- lang_ru;; *);;
+   				 -> rrel_example: [authorized official of the employer - the head (his deputies) of the organization (its separate division), the head of a structural unit (his deputies), another employee who has been granted the right by the employer to make all or individual decisions arising from labor and related relations, or another person , to whom such a right is granted by law] (* <- lang_en;; *);;
+   				 -> rrel_example: [упаўнаважаная службовая асоба наймальніка - кіраўнік (яго намеснікі) арганізацыі (яе адасобленага падраздзялення), кіраўнік структурнага падраздзялення (яго намеснікі), іншы работнік, якім наймальнікам прадастаўлена права прымаць усе або асобныя рашэнні, якія вынікаюць з працоўных і звязаных з імі адносін, або іншая асоба , якому такое права прадастаўлена заканадаўствам] (* <- lang_by;; *);;
+   		 *);;
+   	 *);;
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+*);;

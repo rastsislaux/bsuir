@@ -1,0 +1,53 @@
+sc_model_of_knowledge_base
+  => nrel_main_idtf: [SC-модель базы знаний] (* <- lang_ru;; *);;
+
+not_enough_formed_structure
+  => nrel_main_idtf: [недостаточно сформированная структура] (* <- lang_ru;; *);;
+
+belarus_legislation
+  => nrel_main_idtf: [Законодательство Республики Беларусь] (* <- lang_ru;; *);;
+
+nrel_legal_act
+  => nrel_main_idtf: [законодательный акт*] (* <- lang_ru;; *);;
+
+concept_technical_act
+  => nrel_main_idtf: [технический акт] (* <- lang_ru;; *);;
+
+country_by
+  => nrel_main_idtf: [Беларусь] (* <- lang_ru;; *);;
+
+belarus_technical_act
+  => nrel_main_idtf: [технический акт (РБ)] (* <- lang_ru;; *);;
+
+subject_domain_of_marriage_legislation
+  => nrel_main_idtf: [Предметная область законодательства о браке и семье] (* <- lang_ru;; *);;
+
+concept_marriage
+  => nrel_main_idtf: [брак] (* <- lang_ru;; *);;
+
+concept_family
+  => nrel_main_idtf: [семья] (* <- lang_ru;; *);;
+
+subject_domain_of_labor_legislation
+  => nrel_main_idtf: [Предметная область трудового законодательства] (* <- lang_ru;; *);;
+
+belarus_labor_legislation
+  => nrel_main_idtf: [Законодательсто о труде и занятости Республики Беларусь] (* <- lang_ru;; *);;
+
+concept_individual_act
+  => nrel_main_idtf: [акт индивидуального применения и разового характера] (* <- lang_ru;; *);;
+
+subject_domain_of_individual_acts
+  => nrel_main_idtf: [Предметная область актов индивидуального применения и разового характера] (* <- lang_ru;; *);;
+
+concept_housing
+  => nrel_main_idtf: [жильё] (* <- lang_ru;; *);;
+
+subject_domain_of_housing_legislation
+  => nrel_main_idtf: [Предметная область жилищного законодательства] (* <- lang_ru;; *);;
+
+subject_domain_of_technical_regulations
+  => nrel_main_idtf: [Предметная область технических актов] (* <-lang_ru;; *);;
+
+belarus_marriage_legislation
+  => nrel_main_idtf: [Предметная область законодательства о браке и семье] (* <- lang_ru;; *);;

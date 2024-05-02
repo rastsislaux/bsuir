@@ -1,0 +1,21 @@
+# common
+!ostis-web-platform/ims.ostis.kb
+ostis-web-platform/ims.ostis.kb/ims/ostis_tech/semantic_network_represent/section_sc_code
+ostis-web-platform/ims.ostis.kb/ims/ostis_tech/lib_ostis/sectn_lib_of_reusable_comp_ui/ui_menu/na_view_kb
+ostis-web-platform/ims.ostis.kb/ims/ostis_tech/lib_ostis/sectn_lib_of_reusable_comp_ui/ui_menu/na_view_kb_base
+ostis-web-platform/ims.ostis.kb/ims/ostis_tech/lib_ostis/sectn_lib_of_reusable_comp_ui/ui_menu/na_view_kb_extended
+ostis-web-platform/ims.ostis.kb/ims/ostis_tech/lib_ostis/sectn_lib_of_reusable_comp_ui/ui_menu/na_view_kb_identifiers
+ostis-web-platform/ims.ostis.kb/ims/ostis_tech/lib_ostis/sectn_lib_of_reusable_comp_ui/ui_menu/na_view_kb_pattern
+ostis-web-platform/ims.ostis.kb/ims/ostis_tech/lib_ostis/sectn_lib_of_reusable_comp_ui/ui_menu/na_view_kb_semantic_square
+ostis-web-platform/ims.ostis.kb/ims/ostis_tech/lib_ostis/sectn_lib_of_reusable_comp_ui/ui_menu/na_view_kb_structure
+ostis-web-platform/ims.ostis.kb/ims/ostis_tech/lib_ostis/sectn_lib_of_reusable_comp_ui/ui_menu/search/authorized_users
+ostis-web-platform/ims.ostis.kb/ims/ostis_tech/unificated_models/section_unificated_models_kb
+ostis-web-platform/ims.ostis.kb/ui
+ostis-web-platform/ims.ostis.kb/to_check
+
+# components
+legal.kb/
+
+# specifications
+problem-solver/cxx/exampleModule/specifications/agent_of_isomorphic_search
+problem-solver/cxx/exampleModule/specifications/agent_of_subdividing_search

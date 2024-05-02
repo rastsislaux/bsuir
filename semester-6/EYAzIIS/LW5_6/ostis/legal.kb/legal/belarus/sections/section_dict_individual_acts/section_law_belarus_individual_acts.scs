@@ -1,0 +1,37 @@
+section_law_belarus_individual_acts
+=> nrel_main_idtf: [Раздел. Правовые акты индивидуального применения и разового характера Республики Беларусь] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Section. Legal acts of individual application and one-time nature of the Republic of Belarus] (* <- lang_en;; *);
+=> nrel_main_idtf: [Раздзел. Прававыя акты індывідуальнага прымянення і разавага характару Рэспублікі Беларусь] (* <- lang_by;; *);
+
+<= nrel_section_decomposition: {
+  section_law_belarus_individual_acts_dict
+};
+
+-> rrel_key_sc_element:
+  concept_individual_act;
+  country_by;
+
+<- non_atomic_section;;
+
+section_law_belarus_individual_acts = [*
+
+  subject_domain_of_law_belarus_individual_acts
+    => nrel_main_idtf: [Предметная область правовых актов индивидуального применения и разового характера Республики Беларусь] (* <- lang_ru;; *);
+    => nrel_main_idtf: [Subject area of legal acts of individual application and one-time nature of the Republic of Belarus] (* <- lang_en;; *);
+    => nrel_main_idtf: [Прадметная вобласць прававых актаў індывідуальнага прымянення і разавага характару Рэспублікі Беларусь] (* <- lang_by;; *);
+
+    -> rrel_maximum_studied_object_class:
+      concept_individual_act;
+
+    // -> rrel_not_maximum_studied_object_class:
+
+    -> rrel_explored_relation:
+      nrel_legal_act;
+
+    <= nrel_private_subject_domain:
+      subject_domain_of_law_belarus;
+      subject_domain_of_individual_acts;
+
+    <- subject_domain;;
+
+*];;

@@ -1,0 +1,10 @@
+ui_menu_na_acts
+<- ui_user_command_class_noatom;
+=> nrel_main_idtf:
+  [Команды для поиска актов] (* <- lang_ru;; *);
+  [Act search commands] (* <- lang_en;; *);
+  [Каманды для пошуку актау] (* <- lang_by;; *);
+
+<= nrel_ui_commands_decomposition: {
+  search_act_by_term
+};;

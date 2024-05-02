@@ -1,0 +1,26 @@
+<mat-sidenav-container>
+
+  <mat-sidenav class="sidebar" #sidenav mode="side" opened position="end" style="display: flex; flex-direction: column;">
+    <h1 style="color: #438D6E; text-align: center;">YURI</h1>
+
+    <button mat-button class="settings-button" (click)="redirectToChat()">⚙ Чат</button>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
+    <table>
+      <tr>
+        <th>Понятие</th>
+        <!--<th>Источник</th>-->
+        <th>Определение</th>
+      </tr>
+      <tr *ngFor="let term of terms">
+        <td>{{ term.idtf }}</td>
+        <!--<td>{{ term.from }}</td>-->
+        <td>{{ term.def }}</td>
+      </tr>
+    </table>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

@@ -1,0 +1,47 @@
+section_law_belarus
+=> nrel_main_idtf: [Раздел. Законодательство Республики Беларусь] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Section. Legislation of the Republic of Belarus] (* <-lang_en;; *);
+=> nrel_main_idtf: [Раздзел. Заканадаўства Рэспублікі Беларусь] (* <- lang_by;; *);
+
+<= nrel_section_decomposition: {
+  // section_law_belarus_adminstrative_legislation;
+  // section_law_belarus_civil_legislationl;
+  // section_law_belarus_constitutional_legislation;
+  // section_law_belarus_criminal_legislation;
+  // section_law_belarus_customs_legislaton;
+  // section_law_belarus_defence_legislation;
+  // section_law_belarus_education_legislation;
+  // section_law_belarus_enterprenurtial_legislation;
+  // section_law_belarus_environment_legislation;
+  // section_law_belarus_finance_legislation;
+  // section_law_belarus_foreign_policy_legislation;
+  // section_law_belarus_health_legislation;
+  section_law_belarus_housing_legislation;
+  section_law_belarus_individual_acts;
+  // section_law_belarus_international_org_legislation;
+  section_law_belarus_labor_legislation;
+  section_law_belarus_marriage_family_legislation;
+  // section_law_belarus_social_legislation;
+  section_law_belarus_technical_acts
+};
+
+<- substantive_part_of_the_knowledge_base;;
+
+section_law_belarus = [*
+
+  subject_domain_of_law_belarus
+    => nrel_main_idtf: [Предметная область законодательства Республики Беларусь] (* <- lang_ru;; *);
+    => nrel_main_idtf: [Subject domain of legislation of the Republic of Belarus] (* <- lang_en;; *);
+    => nrel_main_idtf: [Прадметная вобласць заканадаўства Рэспублікі Беларусь] (* <- lang_by;; *);
+
+    -> rrel_maximum_studied_object_class:
+      belarus_legislation;
+
+    // -> rrel_not_maximum_studied_object_class:
+
+    -> rrel_explored_relation:
+      nrel_legal_act;
+
+    <- subject_domain;;
+
+*];;

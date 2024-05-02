@@ -1,0 +1,482 @@
+section_law_belarus_marriage_dict
+=> nrel_main_idtf: [Раздел. Словарь по законодательству о браке и семье Республики Беларусь] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Section. Dictionary on the legislation on marriage and family of the Republic of Belarus] (* <- lang_en;; *);
+=> nrel_main_idtf: [Раздзел. Слоўнік па заканадаўстве аб шлюбе і сям'і Рэспублікі Беларусь] (* <- lang_by;; *);
+
+-> rrel_key_sc_element:
+
+  concept_marriage_belarus (*
+    => nrel_main_idtf: [брак] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [marriage] (* <- lang_en;; *);;
+    => nrel_main_idtf: [брак] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Брак – это добровольный союз женщины и мужчины, который заключается на условиях, предусмотренных настоящим Кодексом, направлен на создание семьи и порождает для сторон взаимные права и обязанности.] (* <- lang_ru;; *);;
+            -> rrel_example: [Шлюб - гэта добраахвотны саюз жанчыны і мужчыны, які заключаецца на ўмовах, прадугледжаных гэтым Кодэксам, накіраваны на стварэнне сям'і і спараджае для бакоў узаемныя правы і абавязкі.] (* <- lang_by;; *);;
+            -> rrel_example: [Marriage is a voluntary union of a woman and a man, which is concluded on the terms provided for by this Code, is aimed at creating a family and gives rise to mutual rights and obligations for the parties.] (* <- lang_en;; *);;
+					*);;
+			*);;
+
+    <- concept_marriage;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+
+      concept_near_relativity_belarus (*
+    => nrel_main_idtf: [близкое родство] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [immediate relationship] (* <- lang_en;; *);;
+    => nrel_main_idtf: [блізкае сваяцтва] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Отношения, вытекающие из кровного родства между родителями и детьми, родными братьями и сестрами, дедом, бабкой и внуками, считаются близким родством.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_near_relativity;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_marriage_belarus (*
+    => nrel_main_idtf: [брак] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [marriage] (* <- lang_en;; *);;
+    => nrel_main_idtf: [шлюб] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Брак – это добровольный союз женщины и мужчины, который заключается на условиях, предусмотренных настоящим Кодексом, направлен на создание семьи и порождает для сторон взаимные права и обязанности.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_marriage;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_marriage_contract_belarus (*
+    => nrel_main_idtf: [брачный договор] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [marriage contract] (* <- lang_en;; *);;
+    => nrel_main_idtf: [шлюбны дагавор] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Брачным договором признается соглашение лиц, вступающих в брак, либо супругов об определении их личных неимущественных и (или) имущественных прав и обязанностей как в период брака, так и после его расторжения.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_marriage_contract;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_raising_belarus (*
+    => nrel_main_idtf: [воспитание] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [upbringing] (* <- lang_en;; *);;
+    => nrel_main_idtf: [выхаванне] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Воспитание – целенаправленный процесс формирования разносторонне развитой, нравственно зрелой, творческой личности обучающегося.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_raising;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_property_rights_of_parents_belarus (*
+    => nrel_main_idtf: [имущественные права и обязанности родителей] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [property rights and duties of parents] (* <- lang_en;; *);;
+    => nrel_main_idtf: [маёмасныя правы і абавязкі бацькоў] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [К имущественным правам и обязанностям родителей относятся права и обязанности по управлению делами и имуществом несовершеннолетних детей, обязанности по предоставлению содержания несовершеннолетним детям, нуждающимся в помощи нетрудоспособным совершеннолетним детям, а также обязанности по возмещению расходов на содержание детей, находящихся на государственном обеспечении.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_property_rights_of_parents;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_underage_belarus (*
+    => nrel_main_idtf: [малолетний] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [juvenile] (* <- lang_en;; *);;
+    => nrel_main_idtf: [малалетні] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Малолетний – физическое лицо, которое на день совершения административного правонарушения не достигло возраста четырнадцати лет.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_underage;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_large_family_belarus (*
+    => nrel_main_idtf: [многодетная семья] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [family with many children] (* <- lang_en;; *);;
+    => nrel_main_idtf: [шматдзетная сям'я] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Многодетная семья – семья, в которой на иждивении и воспитании находятся трое и более несовершеннолетних детей.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_large_family;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_single_parent_family_belarus (*
+    => nrel_main_idtf: [неполная семья] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [single-parent family] (* <- lang_en;; *);;
+    => nrel_main_idtf: [няпоўная сям'я] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [ Неполной считается семья, в которой дети находятся на иждивении и воспитании одного родителя.
+ К неполным относятся семьи:
+ женщин, родивших детей вне брака и не состоящих в браке;
+ вдов (вдовцов), не вступивших в новый брак, на воспитании которых находятся несовершеннолетние дети;
+ родителя, расторгнувшего брак и воспитывающего несовершеннолетних детей;
+ родителя, не заключившего новый брак, если второй из них признан безвестно отсутствующим;
+ одиноких граждан, усыновивших детей.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_single_parent_family;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_minor_person_belarus (*
+    => nrel_main_idtf: [несовершеннолетний] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [minor] (* <- lang_en;; *);;
+    => nrel_main_idtf: [непаўналетні] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Несовершеннолетний – физическое лицо, которое на день совершения административного правонарушения не достигло возраста восемнадцати лет.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_minor_person;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_common_property_of_spouses_belarus (*
+    => nrel_main_idtf: [общая совместная собственность супругов] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [joint property of marital partners] (* <- lang_en;; *);;
+    => nrel_main_idtf: [агульная сумесная ўласнасць сужэнцаў] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Имущество, нажитое супругами в период брака, независимо от того, на кого из супругов оно приобретено либо на кого или кем из супругов внесены денежные средства, является их общей совместной собственностью.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_common_property_of_spouses;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_foster_care_belarus (*
+    => nrel_main_idtf: [патронатное воспитание] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [foster care] (* <- lang_en;; *);;
+    => nrel_main_idtf: [патранатнае выхаванне] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Патронатное воспитание является формой участия граждан в воспитании детей-сирот, детей, оставшихся без попечения родителей, находящихся в детских интернатных учреждениях, учреждениях образования, реализующих образовательные программы профессионально-технического, среднего специального, высшего образования, образовательную программу подготовки лиц к поступлению в учреждения образования Республики Беларусь.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_foster_care;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_teenager_belarus (*
+    => nrel_main_idtf: [подросток] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [teenager] (* <- lang_en;; *);;
+    => nrel_main_idtf: [падлетак] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Несовершеннолетний в возрасте от четырнадцати до восемнадцати лет считается подростком.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_teenager;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_foster_family_belarus (*
+    => nrel_main_idtf: [приемная семья, детский дом семейного типа] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [foster family, family-type children's home] (* <- lang_en;; *);;
+    => nrel_main_idtf: [прыёмная сям'я, дзіцячы дом сямейнага тыпа] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Приемная семья, детский дом семейного типа являются формами устройства детей-сирот, детей, оставшихся без попечения родителей, на воспитание в семью.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_foster_family;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_property_belarus (*
+    => nrel_main_idtf: [свойство] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [affinity] (* <- lang_en;; *);;
+    => nrel_main_idtf: [сваяцтва] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Отношения между супругом и близкими родственниками другого супруга считаются отношениями свойства.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_property;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_family_belarus (*
+    => nrel_main_idtf: [семья] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [family] (* <- lang_en;; *);;
+    => nrel_main_idtf: [сям'я] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Семья – это объединение лиц, связанных между собой моральной и материальной общностью и поддержкой, ведением общего хозяйства, правами и обязанностями, вытекающими из брака, близкого родства, усыновления.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_family;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_property_of_spouses_belarus (*
+    => nrel_main_idtf: [собственность супругов] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [property of spouses] (* <- lang_en;; *);;
+    => nrel_main_idtf: [уласнасць сужэнцаў] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [ Имущество, принадлежавшее  супругам до вступления в брак, а также полученное ими в период брака в дар или  в  порядке наследования, является собственностью каждого из них.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_property_of_spouses;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_socially_dangerous_situation_belarus (*
+    => nrel_main_idtf: [социально опасное положение] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [socially dangerous situation] (* <- lang_en;; *);;
+    => nrel_main_idtf: [сацыяльна небяспечнае становішча] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Под социально опасным положением понимается обстановка, при которой:
+не удовлетворяются основные жизненные потребности ребенка (не обеспечиваются безопасность, надзор или уход за ребенком, потребности ребенка в пище, жилье, одежде, получение ребенком необходимой медицинской помощи, не создаются санитарно-гигиенические условия для жизни ребенка и т.д.);
+ребенок вследствие отсутствия надзора за его поведением и образом жизни совершает деяния, содержащие признаки административного правонарушения либо преступления;
+лица, принимающие участие в воспитании и содержании ребенка, ведут аморальный образ жизни, что оказывает вредное воздействие на ребенка, злоупотребляют своими правами и (или) жестоко обращаются с ним либо иным образом ненадлежаще выполняют обязанности по воспитанию и содержанию ребенка, в связи с чем имеет место опасность для его жизни или здоровья.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_socially_dangerous_situation;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_socially_dangerous_situation_for_kid_belarus (*
+    => nrel_main_idtf: [социально опасное положение ребенка] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [social risk of a child] (* <- lang_en;; *);;
+    => nrel_main_idtf: [сацыяльна небяспечнае становішча дзіцяці] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Под социально опасным положением понимается обстановка, при которой:
+не удовлетворяются основные жизненные потребности ребенка (не обеспечиваются безопасность, надзор или уход за ребенком, потребности ребенка в пище, жилье, одежде, получение ребенком необходимой медицинской помощи, не создаются санитарно-гигиенические условия для жизни ребенка и т.д.);
+ребенок вследствие беспризорности или безнадзорности совершает деяния, содержащие признаки административного правонарушения либо преступления;
+лица, принимающие участие в воспитании и содержании ребенка, ведут аморальный образ жизни, что оказывает вредное воздействие на ребенка, злоупотребляют своими правами и (или) жестоко обращаются с ним либо иным образом ненадлежаще выполняют обязанности по воспитанию и содержанию ребенка, в связи с чем имеет место опасность для его жизни или здоровья.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_socially_dangerous_situation_for_kid;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_adoption_belarus (*
+    => nrel_main_idtf: [усыновление] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [adoption] (* <- lang_en;; *);;
+    => nrel_main_idtf: [усынаўленне] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Усыновление - основанный на судебном решении юридический акт, в силу которого между усыновителем и усыновленным возникают такие же права и обязанности, как между родителями и детьми.] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_adoption;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);
+  
+    concept_fictitious_marriage_belarus (*
+    => nrel_main_idtf: [фиктивный брак] (* <- lang_ru;; *);;
+    => nrel_main_idtf: [fictitious marriage] (* <- lang_en;; *);;
+    => nrel_main_idtf: [фіктыўны шлюб] (* <- lang_by;; *);;
+
+    <- rrel_key_sc_element:
+			... 
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Брак признается недействительным при нарушении условий, установленных статьями 17–19 настоящего Кодекса, а также в случаях регистрации заключения брака без намерения создать семью (фиктивный брак).] (* <- lang_ru;; *);;
+					*);;
+			*);;
+
+    <- concept_fictitious_marriage;;
+    => nrel_legal_act: by_act_hk9900278;;
+
+    <- belarus_legal_term;;
+    <- sc_node_not_relation;;
+  *);;

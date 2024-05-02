@@ -1,0 +1,7 @@
+section_law_belarus_marriage_acts
+=> nrel_main_idtf: [Раздел. Закондательные акты о браке и семье Республики Беларусь] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Section. Legislative acts on marriage and family of the Republic of Belarus] (* <- lang_en;; *);
+=> nrel_main_idtf: [Раздел. Заканадаўчыя акты аб шлюбе і сям'і Рэспублікі Беларусь] (* <- lang_by;; *);
+
+-> rrel_key_sc_element:
+  by_act_hk9900278;;

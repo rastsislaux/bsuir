@@ -1,0 +1,9 @@
+services:
+
+  react-web:
+    image: ostis/sc-web:0.8.1-Unlock
+    command:
+      - "--server-host=172.20.0.1"
+      - "--allowed_origins=http://localhost:3000" # <- add this line
+    ports:
+      - "8000:8000"

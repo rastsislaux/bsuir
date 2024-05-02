@@ -1,0 +1,6 @@
+section_law
+=> nrel_main_idtf: [Раздел. Юриспруденция] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Section. Jurisprudence] (* <-lang_en;; *);
+=> nrel_main_idtf: [Раздзел. Юрыспрудэнцыя] (* <- lang_by;; *);
+
+<- substantive_part_of_the_knowledge_base;;

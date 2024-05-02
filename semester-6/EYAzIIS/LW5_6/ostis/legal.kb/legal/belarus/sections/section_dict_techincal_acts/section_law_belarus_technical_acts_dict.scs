@@ -1,0 +1,285 @@
+section_law_belarus_technical_acts_dict
+=> nrel_main_idtf: [Раздел. Словарь по техническим нормативно правовым актам Республики Беларусь] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Section. Dictionary for technical regulations of the Republic of Belarus] (* <- lang_en;; *);
+=> nrel_main_idtf: [Раздзел. Слоўнік па тэхнічных нарматыўна прававых актах Рэспублікі Беларусь] (* <- lang_by;; *);
+
+
+-> rrel_key_sc_element:
+		concept_standard_belarus(*
+			=> nrel_main_idtf: [стандарт] (* <- lang_ru;; *);;
+			=> nrel_main_idtf: [standard] (* <- lang_en;; *);;
+			=> nrel_main_idtf: [стандарт] (* <- lang_by;; *);;
+			<- rrel_key_sc_element:
+			...
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [стандарт – документ, разработанный в процессе стандартизации на основе согласия большинства заинтересованных субъектов технического нормирования и стандартизации и содержащий технические требования к объектам стандартизации] (* <- lang_ru;; *);;
+						-> rrel_example: [standard - a document developed in the standardization process based on the consent of the majority of interested subjects of technical regulation and standardization and containing technical requirements for standardization objects] (* <- lang_en;; *);;
+						-> rrel_example: [стандарт - дакумент, распрацаваны ў працэсе стандартызацыі на аснове згоды большасці зацікаўленых суб'ектаў тэхнічнага нарміравання і стандартызацыі і змяшчае тэхнічныя патрабаванні да аб'ектаў стандартызацыі] (* <- lang_by;; *);;
+				*);;
+			*);;
+			<- belarus_legal_term;;
+			<- sc_node_not_relation;;
+		*);
+
+
+		concept_products_belarus(*
+			=> nrel_main_idtf: [продукция] (* <- lang_ru;; *);;
+			=> nrel_main_idtf: [products] (* <- lang_en;; *);;
+			=> nrel_main_idtf: [прадукцыя] (* <- lang_by;; *);;
+			<- rrel_key_sc_element:
+			...
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [продукция – результат деятельности, представленный в материально-вещественной форме и предназначенный для дальнейшего использования в хозяйственных и иных целях] (* <- lang_ru;; *);;
+						-> rrel_example: [products - the result of an activity, presented in tangible form and intended for further use for economic and other purposes] (* <- lang_en;; *);;
+						-> rrel_example: [прадукцыя - вынік дзейнасці, прадстаўлены ў матэрыяльна-рэчыўнай форме і прызначаны для далейшага выкарыстання ў гаспадарчых і іншых мэтах] (* <- lang_by;; *);;
+				*);;
+			*);;
+			<- belarus_legal_term;;
+			<- sc_node_not_relation;;
+		*);
+
+
+		concept_objects_of_technical_regulation_belarus(*
+			=> nrel_main_idtf: [объекты технического нормирования] (* <- lang_ru;; *);;
+			=> nrel_main_idtf: [objects of technical regulation] (* <- lang_en;; *);;
+			=> nrel_main_idtf: [аб'екты тэхнічнага нарміравання] (* <- lang_by;; *);;
+			<- rrel_key_sc_element:
+			...
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [объекты технического нормирования – продукция либо продукция и связанные с техническими требованиями к продукции процессы разработки, проектирования, изысканий, производства, строительства, монтажа, наладки, эксплуатации (использования), хранения, перевозки (транспортирования), реализации и утилизации] (* <- lang_ru;; *);;
+						-> rrel_example: [objects of technical regulation - products or products and processes of development, design, research, production, construction, installation, commissioning, operation (use), storage, transportation (transportation), sales and disposal related to technical requirements for products] (* <- lang_en;; *);;
+						-> rrel_example: [аб'екты тэхнічнага нарміравання - прадукцыя або прадукцыя і звязаныя з тэхнічнымі патрабаваннямі да прадукцыі працэсы распрацоўкі, праектавання, пошукаў, вытворчасці, будаўніцтва, мантажу, наладкі, эксплуатацыі (выкарыстання), захоўвання, перавозкі (транспартавання), рэалізацыі і ўтылізацыі] (* <- lang_by;; *);;
+				*);;
+			*);;
+			<- belarus_legal_term;;
+			<- sc_node_not_relation;;
+		*);
+
+
+		concept_national_classifier_belarus(*
+			=> nrel_main_idtf: [общегосударственный классификатор] (* <- lang_ru;; *);;
+			=> nrel_main_idtf: [national classifier] (* <- lang_en;; *);;
+			=> nrel_main_idtf: [агульнадзяржаўны класіфікатар] (* <- lang_by;; *);;
+			<- rrel_key_sc_element:
+			...
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [общегосударственный классификатор – технический нормативный правовой акт, разработанный в процессе стандартизации и содержащий обязательные для соблюдения технические требования, направленные на распределение технико-экономической и социальной информации в соответствии с ее классификацией (классами, группами, видами и другими классификационными группировками)] (* <- lang_ru;; *);;
+						-> rrel_example: [national classifier - a technical regulatory legal act developed in the process of standardization and containing mandatory technical requirements aimed at distributing technical, economic and social information in accordance with its classification (classes, groups, types and other classification groupings)] (* <- lang_en;; *);;
+						-> rrel_example: [агульнадзяржаўны класіфікатар - тэхнічны нарматыўны прававы акт, распрацаваны ў працэсе стандартызацыі і змяшчае абавязковыя для захавання тэхнічныя патрабаванні, накіраваныя на размеркаванне тэхніка-эканамічнай і сацыяльнай інфармацыі ў адпаведнасці з яе класіфікацыяй (класамі, групамі, відамі і іншымі класіфікацыйнымі групоўкамі)] (* <- lang_by;; *);;
+				*);;
+			*);;
+			<- belarus_legal_term;;
+			<- sc_node_not_relation;;
+		*);
+
+
+		concept_international_standard_belarus(*
+			=> nrel_main_idtf: [международный стандарт] (* <- lang_ru;; *);;
+			=> nrel_main_idtf: [international standard] (* <- lang_en;; *);;
+			=> nrel_main_idtf: [міжнародны стандарт] (* <- lang_by;; *);;
+			<- rrel_key_sc_element:
+			...
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [международный стандарт – стандарт, принятый международной организацией по стандартизации] (* <- lang_ru;; *);;
+						-> rrel_example: [international standard – a standard adopted by an international standardization organization] (* <- lang_en;; *);;
+						-> rrel_example: [міжнародны стандарт - стандарт, прыняты міжнароднай арганізацыяй па стандартызацыі] (* <- lang_by;; *);;
+				*);;
+			*);;
+			<- belarus_legal_term;;
+			<- sc_node_not_relation;;
+		*);
+
+
+		concept_interstate_standard_belarus(*
+			=> nrel_main_idtf: [межгосударственный стандарт] (* <- lang_ru;; *);;
+			=> nrel_main_idtf: [interstate standard] (* <- lang_en;; *);;
+			=> nrel_main_idtf: [міждзяржаўны стандарт] (* <- lang_by;; *);;
+			<- rrel_key_sc_element:
+			...
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [межгосударственный стандарт – региональный стандарт, принятый Межгосударственным советом по стандартизации, метрологии и сертификации Содружества Независимых Государств] (* <- lang_ru;; *);;
+						-> rrel_example: [interstate standard - a regional standard adopted by the Interstate Council for Standardization, Metrology and Certification of the Commonwealth of Independent States] (* <- lang_en;; *);;
+						-> rrel_example: [міждзяржаўны стандарт - рэгіянальны стандарт, прыняты Міждзяржаўнай радай па стандартызацыі, метралогіі і сертыфікацыі Садружнасці Незалежных Дзяржаў.] (* <- lang_by;; *);;
+				*);;
+			*);;
+			<- belarus_legal_term;;
+			<- sc_node_not_relation;;
+		*);
+
+
+		concept_state_standard_belarus(*
+			=> nrel_main_idtf: [государственный стандарт] (* <- lang_ru;; *);;
+			=> nrel_main_idtf: [state standard] (* <- lang_en;; *);;
+			=> nrel_main_idtf: [дзяржаўны стандарт] (* <- lang_by;; *);;
+			<- rrel_key_sc_element:
+			...
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [государственный стандарт – стандарт, являющийся техническим нормативным правовым актом и утвержденный Государственным комитетом по стандартизации] (* <- lang_ru;; *);;
+						-> rrel_example: [state standard - a standard that is a technical regulatory legal act and approved by the State Committee for Standardization] (* <- lang_en;; *);;
+						-> rrel_example: [дзяржаўны стандарт - стандарт, які з'яўляецца тэхнічным нарматыўным прававым актам і зацверджаны Дзяржаўным камітэтам па стандартызацыі] (* <- lang_by;; *);;
+				*);;
+			*);;
+			<- belarus_legal_term;;
+			<- sc_node_not_relation;;
+		*);
+
+
+		concept_state_product_cataloging_system_belarus(*
+			=> nrel_main_idtf: [государственная система каталогизации продукции] (* <- lang_ru;; *);;
+			=> nrel_main_idtf: [state product cataloging system] (* <- lang_en;; *);;
+			=> nrel_main_idtf: [дзяржаўная сістэма каталагізацыі прадукцыі] (* <- lang_by;; *);;
+			<- rrel_key_sc_element:
+			...
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Государственная система каталогизации продукции – государственная информационная система, обеспечивающая сбор, обработку, накопление, хранение, распространение и (или) предоставление информации, полученной при каталогизации продукции] (* <- lang_ru;; *);;
+						-> rrel_example: [State product cataloging system - a state information system that ensures the collection, processing, accumulation, storage, distribution and (or) provision of information obtained during product cataloging] (* <- lang_en;; *);;
+						-> rrel_example: [Дзяржаўная сістэма каталагізацыі прадукцыі - дзяржаўная інфармацыйная сістэма, якая забяспечвае збор, апрацоўку, назапашванне, захоўванне, распаўсюджванне і (або) прадастаўленне інфармацыі, атрыманай пры каталагізацыі прадукцыі] (* <- lang_by;; *);;
+				*);;
+			*);;
+			<- belarus_legal_term;;
+			<- sc_node_not_relation;;
+		*);
+
+
+		concept_the_national_system_of_technical_regulation_and_standardization_of_the_republic_of_belarus_belarus(*
+			=> nrel_main_idtf: [национальная система технического нормирования и стандартизации республики беларусь] (* <- lang_ru;; *);;
+			=> nrel_main_idtf: [the national system of technical regulation and standardization of the republic of belarus] (* <- lang_en;; *);;
+			=> nrel_main_idtf: [нацыянальная сістэма тэхнічнага нарміравання і стандартызацыі рэспублікі беларусь] (* <- lang_by;; *);;
+			<- rrel_key_sc_element:
+			...
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [Национальная система технического нормирования и стандартизации Республики Беларусь – совокупность технических нормативных правовых актов в области технического нормирования и стандартизации, информационных ресурсов, содержащих такие акты, субъектов технического нормирования и стандартизации, а также правил и процедур функционирования системы в целом] (* <- lang_ru;; *);;
+						-> rrel_example: [The national system of technical regulation and standardization of the Republic of Belarus is a set of technical regulatory legal acts in the field of technical regulation and standardization, information resources containing such acts, subjects of technical regulation and standardization, as well as rules and procedures for the functioning of the system as a whole] (* <- lang_en;; *);;
+						-> rrel_example: [Нацыянальная сістэма тэхнічнага нарміравання і стандартызацыі Рэспублікі Беларусь - сукупнасць тэхнічных нарматыўных прававых актаў у галіне тэхнічнага нарміравання і стандартызацыі, інфармацыйных рэсурсаў, якія змяшчаюць такія акты, суб'ектаў тэхнічнага нарміравання і стандартызацыі, а таксама правіл і працэдур функцыянавання сістэмы ў цэлым] (* <- lang_by;; *);;
+				*);;
+			*);;
+			<- belarus_legal_term;;
+			<- sc_node_not_relation;;
+		*);
+
+
+		concept_work_belarus(*
+			=> nrel_main_idtf: [работа] (* <- lang_ru;; *);;
+			=> nrel_main_idtf: [work] (* <- lang_en;; *);;
+			=> nrel_main_idtf: [работа] (* <- lang_by;; *);;
+			<- rrel_key_sc_element:
+			...
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [работа – деятельность, результаты которой имеют материальное выражение и могут быть реализованы для удовлетворения потребностей юридических лиц Республики Беларусь, иностранных или международных юридических лиц (организаций, не являющихся юридическими лицами) (далее, если не определено иное, – юридические лица) либо граждан Республики Беларусь, иностранных граждан или лиц без гражданства, в том числе индивидуальных предпринимателей (далее, если не определено иное, – физические лица)] (* <- lang_ru;; *);;
+						-> rrel_example: [work - activity, the results of which have a material expression and can be implemented to meet the needs of legal entities of the Republic of Belarus, foreign or international legal entities (organizations that are not legal entities) (hereinafter, unless otherwise specified - legal entities) or citizens of the Republic of Belarus , foreign citizens or stateless persons, including individual entrepreneurs (hereinafter, unless otherwise specified - individuals)] (* <- lang_en;; *);;
+						-> rrel_example: [работа - дзейнасць, вынікі якой маюць матэрыяльны выраз і могуць быць рэалізаваны для задавальнення патрэбнасцей юрыдычных асоб Рэспублікі Беларусь, замежных або міжнародных юрыдычных асоб (арганізацый, якія не з'яўляюцца юрыдычнымі асобамі) (далей, калі не вызначана іншае, - юрыдычныя асобы) або грамадзян Рэспублікі Беларусь , замежных грамадзян або асоб без грамадзянства, у тым ліку індывідуальных прадпрымальнікаў (далей, калі не вызначана іншае, - фізічныя асобы)] (* <- lang_by;; *);;
+				*);;
+			*);;
+			<- belarus_legal_term;;
+			<- sc_node_not_relation;;
+		*);
+
+
+		concept_standardization_belarus(*
+			=> nrel_main_idtf: [стандартизация] (* <- lang_ru;; *);;
+			=> nrel_main_idtf: [standardization] (* <- lang_en;; *);;
+			=> nrel_main_idtf: [стандартызацыя] (* <- lang_by;; *);;
+			<- rrel_key_sc_element:
+			...
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [стандартизация – деятельность по установлению технических требований к объектам стандартизации в целях их многократного и добровольного, если иное не установлено настоящим Законом, правовыми актами Президента Республики Беларусь или международными договорами Республики Беларусь, применения в отношении постоянно повторяющихся существующих или потенциальных задач, направленная на достижение оптимальной степени упорядочения в определенной области, связанной с объектами стандартизации, и основным результатом которой является разработка технических кодексов установившейся практики, общегосударственных классификаторов, стандартов, технических условий] (* <- lang_ru;; *);;
+						-> rrel_example: [standardization - activity to establish technical requirements for standardization objects for the purpose of their repeated and voluntary, unless otherwise established by this Law, legal acts of the President of the Republic of Belarus or international treaties of the Republic of Belarus, application in relation to constantly recurring existing or potential tasks, aimed at achieving the optimal degree streamlining in a certain area related to standardization objects, and the main result of which is the development of technical codes of established practice, national classifiers, standards, technical specifications] (* <- lang_en;; *);;
+						-> rrel_example: [стандартызацыя – дзейнасць па ўстанаўленні тэхнічных патрабаванняў да аб'ектаў стандартызацыі ў мэтах іх шматразовага і добраахвотнага, калі іншае не ўстаноўлена гэтым Законам, прававымі актамі Прэзідэнта Рэспублікі Беларусь або міжнароднымі дагаворамі Рэспублікі Беларусь, прымянення ў адносінах да існуючых або патэнцыяльных задач, якія пастаянна паўтараюцца, накіраваная на дасягненне аптымальнай ступені. упарадкавання ў пэўнай галіне, звязанай з аб'ектамі стандартызацыі, і асноўным вынікам якой з'яўляецца распрацоўка тэхнічных кодэксаў практыкі, якая ўсталявалася, агульнадзяржаўных класіфікатараў, стандартаў, тэхнічных умоў.] (* <- lang_by;; *);;
+				*);;
+			*);;
+			<- belarus_legal_term;;
+			<- sc_node_not_relation;;
+		*);
+
+
+		concept_technical_requirements_belarus(*
+			=> nrel_main_idtf: [технические требования] (* <- lang_ru;; *);;
+			=> nrel_main_idtf: [technical requirements] (* <- lang_en;; *);;
+			=> nrel_main_idtf: [тэхнічныя патрабаванні] (* <- lang_by;; *);;
+			<- rrel_key_sc_element:
+			...
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [технические требования – количественные и (или) качественные требования (словесные и (или) цифровые показатели, нормативы, характеристики, правила, методики, классификации, словесные и графические описания) к объектам технического нормирования или объектам стандартизации, носящие технический характер] (* <- lang_ru;; *);;
+						-> rrel_example: [technical requirements - quantitative and (or) qualitative requirements (verbal and (or) digital indicators, standards, characteristics, rules, methods, classifications, verbal and graphic descriptions) for objects of technical regulation or objects of standardization that are of a technical nature] (* <- lang_en;; *);;
+						-> rrel_example: [тэхнічныя патрабаванні - колькасныя і (або) якасныя патрабаванні (славесныя і (або) лічбавыя паказчыкі, нарматывы, характарыстыкі, правілы, методыкі, класіфікацыі, слоўныя і графічныя апісанні) да аб'ектаў тэхнічнага нарміравання або аб'ектаў стандартызацыі, якія носяць тэхнічны характар] (* <- lang_by;; *);;
+				*);;
+			*);;
+			<- belarus_legal_term;;
+			<- sc_node_not_relation;;
+		*);
+
+
+		concept_technical_specifications_belarus(*
+			=> nrel_main_idtf: [технические условия] (* <- lang_ru;; *);;
+			=> nrel_main_idtf: [technical specifications] (* <- lang_en;; *);;
+			=> nrel_main_idtf: [тэхнічныя ўмовы] (* <- lang_by;; *);;
+			<- rrel_key_sc_element:
+			...
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [технические условия – технический нормативный правовой акт, разработанный в процессе стандартизации, утвержденный юридическим лицом Республики Беларусь или индивидуальным предпринимателем и содержащий технические требования к конкретным типу, марке, модели, виду реализуемой ими продукции или к выполняемой работе, оказываемой услуге, включая правила приемки продукции, работ, услуг и методики (методы) контроля] (* <- lang_ru;; *);;
+						-> rrel_example: [technical specifications - a technical regulatory legal act developed in the process of standardization, approved by a legal entity of the Republic of Belarus or an individual entrepreneur and containing technical requirements for a specific type, brand, model, type of product sold by them or for work performed, service provided, including rules for acceptance of products, works, services and methods (methods) of control] (* <- lang_en;; *);;
+						-> rrel_example: [тэхнічныя ўмовы – тэхнічны нарматыўны прававы акт, распрацаваны ў працэсе стандартызацыі, зацверджаны юрыдычнай асобай Рэспублікі Беларусь або індывідуальным прадпрымальнікам і змяшчае тэхнічныя патрабаванні да канкрэтнага тыпу, маркі, мадэлі, віду рэалізуемай імі прадукцыі або да работы, што аказваецца паслугай, уключаючы паслугу прыёмкі прадукцыі, работ, паслуг і методыкі (метады) кантролю] (* <- lang_by;; *);;
+				*);;
+			*);;
+			<- belarus_legal_term;;
+			<- sc_node_not_relation;;
+		*);
+
+
+		concept_technical_standardization_belarus(*
+			=> nrel_main_idtf: [техническое нормирование] (* <- lang_ru;; *);;
+			=> nrel_main_idtf: [technical standardization] (* <- lang_en;; *);;
+			=> nrel_main_idtf: [тэхнічнае нарміраванне] (* <- lang_by;; *);;
+			<- rrel_key_sc_element:
+			...
+			(*
+				<- definition;;
+				<= nrel_sc_text_translation: ...
+					(*
+						-> rrel_example: [техническое нормирование – деятельность по установлению обязательных для соблюдения технических требований к объектам технического нормирования, основным результатом которой является разработка технических регламентов Республики Беларусь и технических регламентов Евразийского экономического союза] (* <- lang_ru;; *);;
+						-> rrel_example: [technical standardization is an activity to establish mandatory technical requirements for objects of technical standardization, the main result of which is the development of technical regulations of the Republic of Belarus and technical regulations of the Eurasian Economic Union] (* <- lang_en;; *);;
+						-> rrel_example: [тэхнічнае нарміраванне - дзейнасць па ўстанаўленні абавязковых для выканання тэхнічных патрабаванняў да аб'ектаў тэхнічнага нарміравання, асноўным вынікам якой з'яўляецца распрацоўка тэхнічных рэгламентаў Рэспублікі Беларусь і тэхнічных рэгламентаў Еўразійскага эканамічнага саюза] (* <- lang_by;; *);;
+				*);;
+			*);;
+			<- belarus_legal_term;;
+			<- sc_node_not_relation;;
+		*);;

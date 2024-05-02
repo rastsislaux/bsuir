@@ -1,0 +1,38 @@
+section_law_belarus_housing_legislation
+=> nrel_main_idtf: [Раздел. Жилищное законодательство Республики Беларусь] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Section. Housing legislation of the Republic of Belarus] (* <- lang_en;; *);
+=> nrel_main_idtf: [Раздзел. Жыллёвае заканадаўства Рэспублікі Беларусь] (* <- lang_by;; *);
+
+<= nrel_section_decomposition: {
+  section_law_belarus_housing_legislation_acts;
+  section_law_belarus_housing_legislation_dict
+};
+
+-> rrel_key_sc_element:
+  concept_housing;
+  country_by;
+
+<- non_atomic_section;;
+
+section_law_belarus_housing_legislation = [*
+
+  subject_domain_of_law_belarus_housing_legislation
+    => nrel_main_idtf: [Предметная область жилищное законодательства Республики Беларусь] (* <- lang_ru;; *);
+    => nrel_main_idtf: [Subject area of housing legislation of the Republic of Belarus] (* <- lang_en;; *);
+    => nrel_main_idtf: [Прадметная вобласць жыллёвага заканадаўства Рэспублікі Беларусь] (* <- lang_by;; *);
+
+    -> rrel_maximum_studied_object_class:
+      concept_housing;
+
+    // -> rrel_not_maximum_studied_object_class:
+
+    -> rrel_explored_relation:
+      nrel_legal_act;
+
+    <= nrel_private_subject_domain:
+      subject_domain_of_law_belarus;
+      subject_domain_of_housing_legislation;
+
+    <- subject_domain;;
+
+*];;

@@ -1,0 +1,37 @@
+section_law_belarus_technical_acts
+=> nrel_main_idtf: [Раздел. Технические нормативно правовые акты Республики Беларусь] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Section. Technical regulations of the Republic of Belarus] (* <- lang_en;; *);
+=> nrel_main_idtf: [Раздзел. Тэхнічныя нарматыўна прававыя акты Рэспублікі Беларусь] (* <- lang_by;; *);
+
+<= nrel_section_decomposition: {
+  section_law_belarus_technical_acts_dict
+};
+
+-> rrel_key_sc_element:
+  concept_technical_act;
+  country_by;
+
+<- non_atomic_section;;
+
+section_law_belarus_technical_acts = [*
+
+  subject_domain_of_law_belarus_technical_acts
+    => nrel_main_idtf: [Предметная область технических нормативно правовых актов Республики Беларусь] (* <- lang_ru;; *);
+    => nrel_main_idtf: [Subject domain of technical normative legal acts of the Republic of Belarus] (* <- lang_en;; *);
+    => nrel_main_idtf: [Прадметная вобласць  тэхнічных нарматыўна прававых актаў Рэспублікі Беларусь] (* <- lang_by;; *);
+
+    -> rrel_maximum_studied_object_class:
+      belarus_technical_act;
+
+    // -> rrel_not_maximum_studied_object_class:
+
+    -> rrel_explored_relation:
+      nrel_legal_act;
+
+    <= nrel_private_subject_domain:
+      subject_domain_of_law_belarus;
+      subject_domain_of_technical_regulations;
+
+    <- subject_domain;;
+
+*];;

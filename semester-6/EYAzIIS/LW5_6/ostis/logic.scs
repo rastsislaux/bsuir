@@ -1,0 +1,34 @@
+nrel_generality
+  -> rule_circle_length_from_radius;;
+
+rule_circle_length_from_radius
+
+  -> rrel_bind_variables: [*
+    -> _c (* <- sc_var;; *);;
+    -> _r (* <- sc_var;; *);;
+    -> _l (* <- sc_var;; *);;
+  *];
+
+  -> ... (*
+
+    -> rrel_if: [*
+      <- atomic_observation;;
+
+      concept_circle _-> _c;;
+      _c _=> nrel_radius: _r;;
+      _r _<- concept_length_measurement;;
+    *];;
+
+    -> rrel_then: [*
+      <- atomic_observation;;
+
+      _c _=> nrel_length: _l;;
+      _l _<= nrel_multiplication_of_numbers: ... (*
+        _<- _r;;
+        <- number_two;;
+        <- number_pi;;
+      *);;
+
+    *];;
+
+  *);;

@@ -1,0 +1,12 @@
+legal_knowledge_base
+=> nrel_main_idtf: [База знаний по юриспруденции] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Legal knowledge base] (* <- lang_en;; *);
+=> nrel_main_idtf: [База ведаў па юрыспрудэнцыі] (* <- lang_by;; *);
+
+<- sc_model_of_knowledge_base;
+<- not_enough_formed_structure;
+
+<= nrel_section_decomposition: {
+    section_law_belarus;
+    section_law
+};;

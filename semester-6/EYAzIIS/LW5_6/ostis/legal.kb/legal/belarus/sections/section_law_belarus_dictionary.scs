@@ -1,0 +1,24 @@
+section_law_belarus_dictionary
+=> nrel_main_idtf: [Раздел. Словарь по законодательству Республики Беларусь] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Section. Dictionary on legislation of the Republic of Belarus] (* <-lang_en;; *);
+
+<= nrel_section_decomposition: {
+  section_dict_constitutional_legislation_belarus;
+  section_dict_civil_legislation_belarus;
+  section_dict_finance_credit_system_legislation_belarus;
+  section_dict_enterpreneurial_and_economic_activities_legislation_belarus;
+  section_dict_labor_legislation_belarus;
+  section_dict_marriage_and_family_legislation_belarus;
+  section_dict_housing_legilsation_belarus;
+  section_dict_health_legislation_belarus;
+  section_dict_education_legislation_belarus;
+  section_dict_environment_legislation_belarus;
+  section_dict_defence_legislation_belarus;
+  section_dict_administrative_legislation_belarus;
+  section_dict_criminal_legislation_belarus;
+  section_dict_customs_legislation_belarus;
+  section_dict_foreign_policy_legislation_belarus;
+  section_dict_international_org_legislation_belarus;
+  section_dict_individual_acts;
+  section_dict_techincal_acts
+};;

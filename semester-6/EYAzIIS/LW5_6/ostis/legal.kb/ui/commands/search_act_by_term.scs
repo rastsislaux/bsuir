@@ -1,0 +1,41 @@
+search_act_by_term
+=> nrel_main_idtf:
+  [Компонент библиотеки. Команда пользовательского интерфейса поиска законодательных актов по юридическому термину]
+    (* <- lang_ru;; *);
+  [Library component. UI command for searching legislation by legal term]
+    (* <- lang_en;; *);
+  [Кампанент бібліятэкі. Каманда карыстацкага інтэрфейсу пошуку заканадаўчых актаў па юрыдычным тэрміне]
+    (* <- lang_by;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_atomic_reusable_components;;
+
+search_act_by_term = [*
+
+  ui_menu_search_act_by_term
+    <- ui_user_command_class_atom;
+       ui_user_command_class_view_kb;
+       ui_one_argument_command_class;
+
+    => nrel_main_idtf:
+      [В каком законодательном акте дано определению данному понятию?] (* <- lang_ru;; *);
+      [У якім заканадаўчым акце дадзена азначэнні гэтаму паняццю?] (* <- lang_by;; *);
+      [Which legislative act defines this concept?] (* <- lang_en;; *);
+
+    => nrel_idtf:
+      [Поиск законодательных актов по заданному шаблону] (* <-lang_ru;; *);
+      [Search for legislative acts using a given template] (* <- lang_en;; *);
+      [Пошук заканадаўчых актаў па зададзеным шаблоне] (* <- lang_by;; *);
+
+    => ui_nrel_command_template:
+      [*
+        question_search_act_by_term _-> ._question_search_act_by_term_instance (* _-> ui_arg_1;; *);;
+        ._question_search_act_by_term_instance _<- question;;
+      *];
+  
+    => ui_nrel_command_lang_template:
+      [Какие акты удовлетворяют запросу $ui_arg_1] (* <- lang_ru;; *);
+      [Якія акты задавальняюць запыце $ui_arg_1] (* <- lang_by;; *);
+      [Which acts satisfy request $ui_arg_1] (* <- lang_en;; *);;
+
+*];;

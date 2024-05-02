@@ -1,0 +1,7 @@
+section_law_belarus_housing_legislation_acts
+=> nrel_main_idtf: [Раздел. Закондательные акты о жилищьном законодательстве Республики Беларусь] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Section. Legislative acts on housing legislation of the Republic of Belarus] (* <- lang_en;; *);
+=> nrel_main_idtf: [Раздзел. Заканадаўчыя акты аб жыллёвым заканадаўстве Рэспублікі Беларусь] (* <- lang_by;; *);
+
+-> rrel_key_sc_element:
+  by_act_hk1200428;;

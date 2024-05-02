@@ -1,0 +1,5 @@
+section_law_belarus_technical_acts_dict
+=> nrel_main_idtf: [Раздел. Словарь по техническим нормативно правовым актам Республики Беларусь] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Section. Dictionary for technical regulations of the Republic of Belarus] (* <- lang_en;; *);
+=> nrel_main_idtf: [Раздзел. Слоўнік па тэхнічных нарматыўна прававых актах Рэспублікі Беларусь] (* <- lang_by;; *);
+<- dictionary;;

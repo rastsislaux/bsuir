@@ -1,0 +1,4185 @@
+by_act_hk9900278
+  => nrel_main_idtf: [Кодекс Республики Беларусь о браке и семье] (* <- lang_ru;; *);
+  => nrel_main_idtf: [Code of the Republic of Belarus on Marriage and Family] (* <- lang_en;; *);
+  => nrel_main_idtf: [Кодэкс Рэспублікі Беларусь аб шлюбе і сям'і] (* <- lang_by;; *);
+
+=> nrel_article: by_act_hk9900278_article_1 (*
+
+    => nrel_main_idtf: [Статья 1. Задачи законодательства о браке и семье] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_1.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_2 (*
+
+    => nrel_main_idtf: [Статья 2. Отношения, регулируемые законодательством о браке и семье] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_2.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_3 (*
+
+    => nrel_main_idtf: [Статья 3. Защита семьи государством] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_3.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_4 (*
+
+    => nrel_main_idtf: [Статья 4. Правовое регулирование брачных и семейных отношений государством] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_4.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_5 (*
+
+    => nrel_main_idtf: [Статья 5. Осуществление прав, вытекающих из брачных и семейных отношений] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_5.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_6 (*
+
+    => nrel_main_idtf: [Статья 6. Защита прав, вытекающих из брачных и семейных отношений] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_6.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_7 (*
+
+    => nrel_main_idtf: [Статья 7. Законодательство о браке и семье] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_7.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_8 (*
+
+    => nrel_main_idtf: [Статья 8. Исковая давность] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_8.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_9 (*
+
+    => nrel_main_idtf: [Статья 9. Начало течения срока исковой давности] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_9.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_10 (*
+
+    => nrel_main_idtf: [Статья 10. Порядок применения исковой давности] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_10.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_11 (*
+
+    => nrel_main_idtf: [Статья 11. Исчисление сроков] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_11.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_12 (*
+
+    => nrel_main_idtf: [Статья 12. Брак] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_12.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_13 (*
+
+    => nrel_main_idtf: [Статья 13. Брачный договор] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_13.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_131 (*
+
+    => nrel_main_idtf: [Статья 131. Форма и порядок заключения Брачного договора] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_131.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_14 (*
+
+    => nrel_main_idtf: [Статья 14. Подготовка к браку] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_14.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_15 (*
+
+    => nrel_main_idtf: [Статья 15. Заключение брака] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_15.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_16 (*
+
+    => nrel_main_idtf: [Статья 16. Сроки заключения брака] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_16.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_17 (*
+
+    => nrel_main_idtf: [Статья 17. Условия заключения брака] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_17.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_18 (*
+
+    => nrel_main_idtf: [Статья 18. Брачный возраст] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_18.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_19 (*
+
+    => nrel_main_idtf: [Статья 19. Препятствия к заключению брака] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_19.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_20 (*
+
+    => nrel_main_idtf: [Статья 20. Возникновение прав и обязанностей супругов] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_20.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_201 (*
+
+    => nrel_main_idtf: [Статья 201. Равенство супругов в семейных отношениях] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_201.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_21 (*
+
+    => nrel_main_idtf: [Статья 21. Право супругов на выбор фамилии при заключении брака] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_21.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_22 (*
+
+    => nrel_main_idtf: [Статья 22. Право супругов на свободный выбор занятий, профессии и места жительства] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_22.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_23 (*
+
+    => nrel_main_idtf: [Статья 23. Общая совместная собственность супругов] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_23.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_24 (*
+
+    => nrel_main_idtf: [Статья 24. Определение долей в общей совместной собственности супругов при разделе имущества] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_24.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_25 (*
+
+    => nrel_main_idtf: [Статья 25. Вещи профессиональных занятий супругов] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_25.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_26 (*
+
+    => nrel_main_idtf: [Статья 26. Собственность супругов] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_26.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_27 (*
+
+    => nrel_main_idtf: [Статья 27. Имущественные сделки между супругами] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_27.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_28 (*
+
+    => nrel_main_idtf: [Статья 28. Обращение взыскания на имущество супругов] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_28.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_29 (*
+
+    => nrel_main_idtf: [Статья 29. Обязанности супругов по взаимному содержанию] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_29.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_30 (*
+
+    => nrel_main_idtf: [Статья 30. Сохранение права супругов на содержание после расторжения брака] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_30.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_31 (*
+
+    => nrel_main_idtf: [Статья 31. Размер средств, взыскиваемых на содержание супруга] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_31.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_32 (*
+
+    => nrel_main_idtf: [Статья 32. Освобождение супруга от обязанности по содержанию другого супруга либо ограничение этой обязанности сроком] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_32.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_33 (*
+
+    => nrel_main_idtf: [Статья 33. Утрата супругом права на содержание] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_33.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_34 (*
+
+    => nrel_main_idtf: [Статья 34. Прекращение брака] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_34.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_35 (*
+
+    => nrel_main_idtf: [Статья 35. Недопустимость расторжения брака] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_35.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_351 (*
+
+    => nrel_main_idtf: [Статья 351. Расторжение брака органом, регистрирующим акты гражданского состояния] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_351.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_36 (*
+
+    => nrel_main_idtf: [Статья 36. Расторжение брака судом] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_36.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_37 (*
+
+    => nrel_main_idtf: [Статья 37. Особый порядок расторжения брака судом] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_37.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_38 (*
+
+    => nrel_main_idtf: [Статья 38. Исключена] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_38.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_39 (*
+
+    => nrel_main_idtf: [Статья 39. Вопросы, разрешаемые судом при вынесении решения о расторжении брака] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_39.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_40 (*
+
+    => nrel_main_idtf: [Статья 40. Взыскание средств на содержание супруга] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_40.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_41 (*
+
+    => nrel_main_idtf: [Статья 41. Раздел общей совместной собственности супругов] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_41.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_42 (*
+
+    => nrel_main_idtf: [Статья 42. Оформление расторжения брака судом] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_42.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_43 (*
+
+    => nrel_main_idtf: [Статья 43. Выбор фамилии супругами при расторжении брака] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_43.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_44 (*
+
+    => nrel_main_idtf: [Статья 44. Восстановление брака в случае явки супруга, объявленного умершим или признанного безвестно отсутствующим] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_44.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_45 (*
+
+    => nrel_main_idtf: [Статья 45. Основания признания брака недействительным] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_45.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_46 (*
+
+    => nrel_main_idtf: [Статья 46. Порядок признания брака недействительным] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_46.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_47 (*
+
+    => nrel_main_idtf: [Статья 47. Признание брака недействительным в случае недостижения супругом брачного возраста] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_47.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_48 (*
+
+    => nrel_main_idtf: [Статья 48. Время, с которого брак считается недействительным] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_48.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_49 (*
+
+    => nrel_main_idtf: [Статья 49. Последствия признания брака недействительным] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_49.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_50 (*
+
+    => nrel_main_idtf: [Статья 50. Основания возникновения прав и обязанностей родителей и детей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_50.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_51 (*
+
+    => nrel_main_idtf: [Статья 51. Установление происхождения ребенка] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_51.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_52 (*
+
+    => nrel_main_idtf: [Статья 52. Установление происхождения детей, родившихся в результате применения вспомогательных репродуктивных технологий] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_52.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_53 (*
+
+    => nrel_main_idtf: [Статья 53. Исключена] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_53.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_54 (*
+
+    => nrel_main_idtf: [Статья 54. Запись о родителях ребенка] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_54.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_55 (*
+
+    => nrel_main_idtf: [Статья 55. Запись о родителях, если материнство и (или) отцовство не установлены] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_55.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_56 (*
+
+    => nrel_main_idtf: [Статья 56. Установление материнства в судебном порядке] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_56.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_57 (*
+
+    => nrel_main_idtf: [Статья 57. Установление отцовства в судебном порядке] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_57.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_58 (*
+
+    => nrel_main_idtf: [Статья 58. Оспаривание записи о родителях] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_58.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_59 (*
+
+    => nrel_main_idtf: [Статья 59. Семья] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_59.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_60 (*
+
+    => nrel_main_idtf: [Статья 60. Близкое родство] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_60.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_61 (*
+
+    => nrel_main_idtf: [Статья 61. Свойство] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_61.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_62 (*
+
+    => nrel_main_idtf: [Статья 62. Многодетная семья] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_62.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_63 (*
+
+    => nrel_main_idtf: [Статья 63. Неполная семья] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_63.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_64 (*
+
+    => nrel_main_idtf: [Статья 64. Основания возникновения прав и обязанностей семьи] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_64.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_65 (*
+
+    => nrel_main_idtf: [Статья 65. Права и обязанности семьи] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_65.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_66 (*
+
+    => nrel_main_idtf: [Статья 66. Семья как естественная среда ребенка] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_66.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_661 (*
+
+    => nrel_main_idtf: [Статья 661. Защита прав и законных интересов детей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_661.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_67 (*
+
+    => nrel_main_idtf: [Статья 67. Ненадлежащие воспитание и содержание детей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_67.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_68 (*
+
+    => nrel_main_idtf: [Статья 68. Личные неимущественные права и обязанности родителей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_68.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_69 (*
+
+    => nrel_main_idtf: [Статья 69. Фамилия, собственное имя и отчество ребенка] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_69.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_70 (*
+
+    => nrel_main_idtf: [Статья 70. Изменение фамилии ребенка] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_70.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_71 (*
+
+    => nrel_main_idtf: [Статья 71. Изменение собственного имени и отчества ребенка] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_71.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_72 (*
+
+    => nrel_main_idtf: [Статья 72. Гражданство ребенка] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_72.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_73 (*
+
+    => nrel_main_idtf: [Статья 73. Обязанности родителей по защите прав и законных интересов детей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_73.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_74 (*
+
+    => nrel_main_idtf: [Статья 74. Место жительства ребенка] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_74.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_75 (*
+
+    => nrel_main_idtf: [Статья 75. Воспитание детей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_75.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_76 (*
+
+    => nrel_main_idtf: [Статья 76. Равенство прав и обязанностей обоих родителей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_76.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_761 (*
+
+    => nrel_main_idtf: [Статья 761. Соглашение о детях] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_761.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_77 (*
+
+    => nrel_main_idtf: [Статья 77. Участие отдельно проживающего родителя в воспитании детей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_77.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_78 (*
+
+    => nrel_main_idtf: [Статья 78. Общение родных братьев и сестер друг с другом, деда и бабки с внуками, прадеда и прабабки с правнуками] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_78.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_79 (*
+
+    => nrel_main_idtf: [Статья 79. Защита родительских прав] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_79.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_80 (*
+
+    => nrel_main_idtf: [Статья 80. Лишение родительских прав] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_80.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_81 (*
+
+    => nrel_main_idtf: [Статья 81. Порядок возбуждения дела о лишении родительских прав] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_81.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_82 (*
+
+    => nrel_main_idtf: [Статья 82. Последствия лишения родительских прав] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_82.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_83 (*
+
+    => nrel_main_idtf: [Статья 83. Общение с ребенком родителей, лишенных родительских прав] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_83.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_84 (*
+
+    => nrel_main_idtf: [Статья 84. Восстановление в родительских правах] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_84.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_85 (*
+
+    => nrel_main_idtf: [Статья 85. Отобрание ребенка без лишения родительских прав по решению суда, органа опеки и попечительства] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_85.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_851 (*
+
+    => nrel_main_idtf: [Статья 851. Отобрание ребенка по решению комиссии по делам несовершеннолетних районного, городского исполнительного комитета, местной администрации района в городе] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_851.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_86 (*
+
+    => nrel_main_idtf: [Статья 86. Участие органов опеки и попечительства в рассмотрении споров, связанных с воспитанием детей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_86.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_87 (*
+
+    => nrel_main_idtf: [Статья 87. Исполнение решения суда о передаче или отобрании ребенка] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_87.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_88 (*
+
+    => nrel_main_idtf: [Статья 88. Имущественные права и обязанности родителей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_88.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_89 (*
+
+    => nrel_main_idtf: [Статья 89. Управление делами несовершеннолетнего ребенка] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_89.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_90 (*
+
+    => nrel_main_idtf: [Статья 90. Пределы полномочий родителей в управлении делами ребенка] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_90.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_91 (*
+
+    => nrel_main_idtf: [Статья 91. Обязанности родителей по содержанию детей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_91.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_92 (*
+
+    => nrel_main_idtf: [Статья 92. Размер алиментов, взыскиваемых с родителей на несовершеннолетних детей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_92.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_93 (*
+
+    => nrel_main_idtf: [Статья 93. Возмещение родителями расходов, затраченных государством на содержание детей, находящихся на государственном обеспечении] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_93.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_94 (*
+
+    => nrel_main_idtf: [Статья 94. Взыскание алиментов на детей с родителей, имеющих нерегулярный заработок и (или) доход или получающих часть его в натуре] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_94.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_95 (*
+
+    => nrel_main_idtf: [Статья 95. Виды заработка и (или) иного дохода родителей, подлежащих учету при определении размера алиментов, взыскиваемых на содержание несовершеннолетних детей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_95.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_96 (*
+
+    => nrel_main_idtf: [Статья 96. Участие родителей в дополнительных расходах] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_96.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_97 (*
+
+    => nrel_main_idtf: [Статья 97. Временное взыскание алиментов на детей до рассмотрения дела судом] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_97.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_98 (*
+
+    => nrel_main_idtf: [Статья 98. Изменение размера алиментов, взыскиваемых с родителей на детей по судебному постановлению] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_98.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_99 (*
+
+    => nrel_main_idtf: [Статья 99. Размер алиментов, взыскиваемых на нетрудоспособных совершеннолетних детей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_99.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_100 (*
+
+    => nrel_main_idtf: [Статья 100. Обязанности детей в отношении родителей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_100.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_101 (*
+
+    => nrel_main_idtf: [Статья 101. Освобождение детей от обязанности по содержанию родителей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_101.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_102 (*
+
+    => nrel_main_idtf: [Статья 102. Размер алиментов, взыскиваемых на родителей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_102.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_103 (*
+
+    => nrel_main_idtf: [Статья 103. Изменение размера алиментов, взыскиваемых на родителей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_103.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_1031 (*
+
+    => nrel_main_idtf: [Статья 1031. Заключение Соглашения об уплате алиментов] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_1031.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_1032 (*
+
+    => nrel_main_idtf: [Статья 1032. Форма Соглашения об уплате алиментов] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_1032.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_1033 (*
+
+    => nrel_main_idtf: [Статья 1033. Порядок заключения, исполнения, изменения, расторжения и признания недействительным Соглашения об уплате алиментов] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_1033.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_1034 (*
+
+    => nrel_main_idtf: [Статья 1034. Признание недействительным Соглашения об уплате алиментов, нарушающего права и законные интересы детей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_1034.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_1035 (*
+
+    => nrel_main_idtf: [Статья 1035. Размер алиментов на несовершеннолетних детей, уплачиваемых по Соглашению об уплате алиментов] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_1035.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_1036 (*
+
+    => nrel_main_idtf: [Статья 1036. Способы и порядок уплаты алиментов по Соглашению об уплате алиментов] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_1036.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_1037 (*
+
+    => nrel_main_idtf: [Статья 1037. Индексация размера алиментов, уплачиваемых в твердой денежной сумме по Соглашению об уплате алиментов] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_1037.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_104 (*
+
+    => nrel_main_idtf: [Статья 104. Уплата алиментов в добровольном порядке] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_104.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_105 (*
+
+    => nrel_main_idtf: [Статья 105. Обязанность нанимателя, организации удерживать алименты] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_105.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_106 (*
+
+    => nrel_main_idtf: [Статья 106. Удержание алиментов на основании заявления] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_106.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_107 (*
+
+    => nrel_main_idtf: [Статья 107. Обязанность сообщать о перемене места работы лица, уплачивающего алименты] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_107.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_108 (*
+
+    => nrel_main_idtf: [Статья 108. Ответственность за утрату заявлений лица, уплачивающего алименты] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_108.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_109 (*
+
+    => nrel_main_idtf: [Статья 109. Сроки, в течение которых могут быть предъявлены и удовлетворены требования о взыскании алиментов] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_109.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_110 (*
+
+    => nrel_main_idtf: [Статья 110. Определение задолженности по алиментам] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_110.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_111 (*
+
+    => nrel_main_idtf: [Статья 111. Освобождение от уплаты или уменьшение задолженности по алиментам] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_111.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_1111 (*
+
+    => nrel_main_idtf: [Статья 1111. Ответственность за несвоевременную уплату алиментов] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_1111.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_112 (*
+
+    => nrel_main_idtf: [Статья 112. Недопустимость зачета или обратного взыскания алиментов] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_112.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_113 (*
+
+    => nrel_main_idtf: [Статья 113. Индексация алиментов] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_113.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_114 (*
+
+    => nrel_main_idtf: [Статья 114. Особенности исполнения алиментных обязательств гражданами, выезжающими на постоянное проживание за пределы Республики Беларусь] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_114.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_115 (*
+
+    => nrel_main_idtf: [Статья 115. Прекращение алиментных обязательств] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_115.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_116 (*
+
+    => nrel_main_idtf: [Статья 116. Защита прав и законных интересов детей-сирот, детей, оставшихся без попечения родителей, и детей, находящихся в социально опасном положении] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_116.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_117 (*
+
+    => nrel_main_idtf: [Статья 117. Выявление и учет детей-сирот, детей, оставшихся без попечения родителей, и детей, находящихся в социально опасном положении] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_117.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_118 (*
+
+    => nrel_main_idtf: [Статья 118. Устройство детей-сирот, детей, оставшихся без попечения родителей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_118.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_1181 (*
+
+    => nrel_main_idtf: [Статья 1181. Ответственность за нарушение законодательства при выявлении, учете и (или) устройстве детей-сирот, детей, оставшихся без попечения родителей, и детей, находящихся в социально опасном положении] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_1181.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_119 (*
+
+    => nrel_main_idtf: [Статья 119. Понятие усыновления] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_119.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_120 (*
+
+    => nrel_main_idtf: [Статья 120. Дети, в отношении которых допускается усыновление] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_120.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_121 (*
+
+    => nrel_main_idtf: [Статья 121. Орган, устанавливающий усыновление] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_121.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_122 (*
+
+    => nrel_main_idtf: [Статья 122. Порядок усыновления ребенка] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_122.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_123 (*
+
+    => nrel_main_idtf: [Статья 123. Учет детей, подлежащих усыновлению, и лиц, желающих усыновить детей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_123.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_124 (*
+
+    => nrel_main_idtf: [Статья 124. Недопустимость незаконных действий по усыновлению детей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_124.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_125 (*
+
+    => nrel_main_idtf: [Статья 125. Лица, имеющие право быть усыновителями] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_125.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_126 (*
+
+    => nrel_main_idtf: [Статья 126. Разница в возрасте между усыновителем и усыновляемым ребенком] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_126.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_127 (*
+
+    => nrel_main_idtf: [Статья 127. Согласие родителей на усыновление] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_127.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_128 (*
+
+    => nrel_main_idtf: [Статья 128. Усыновление ребенка без согласия родителей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_128.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_129 (*
+
+    => nrel_main_idtf: [Статья 129. Согласие опекуна, попечителя на усыновление детей-сирот, детей, оставшихся без попечения родителей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_129.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_130 (*
+
+    => nrel_main_idtf: [Статья 130. Согласие ребенка на усыновление] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_130.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_131 (*
+
+    => nrel_main_idtf: [Статья 131. Согласие супруга усыновителя на усыновление ребенка] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_131.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_132 (*
+
+    => nrel_main_idtf: [Статья 132. Фамилия, собственное имя, отчество усыновляемого ребенка, место и дата его рождения] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_132.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_133 (*
+
+    => nrel_main_idtf: [Статья 133. Запись усыновителей в качестве родителей усыновленного ребенка] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_133.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_134 (*
+
+    => nrel_main_idtf: [Статья 134. Правовые последствия усыновления] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_134.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_135 (*
+
+    => nrel_main_idtf: [Статья 135. Сохранение за усыновленным ребенком права на пенсию и пособия] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_135.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_136 (*
+
+    => nrel_main_idtf: [Статья 136. Тайна усыновления] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_136.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_137 (*
+
+    => nrel_main_idtf: [Статья 137. Отмена усыновления] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_137.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_138 (*
+
+    => nrel_main_idtf: [Статья 138. Основания к отмене усыновления] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_138.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_139 (*
+
+    => nrel_main_idtf: [Статья 139. Лица, обладающие правом требовать отмены усыновления] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_139.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_140 (*
+
+    => nrel_main_idtf: [Статья 140. Последствия отмены усыновления] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_140.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_141 (*
+
+    => nrel_main_idtf: [Статья 141. Недопустимость отмены усыновления по достижении усыновленным совершеннолетия] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_141.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_142 (*
+
+    => nrel_main_idtf: [Статья 142. Цели опеки и попечительства] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_142.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_143 (*
+
+    => nrel_main_idtf: [Статья 143. Органы опеки и попечительства] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_143.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_144 (*
+
+    => nrel_main_idtf: [Статья 144. Лица, над которыми устанавливается опека] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_144.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_145 (*
+
+    => nrel_main_idtf: [Статья 145. Лица, над которыми устанавливается попечительство] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_145.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_146 (*
+
+    => nrel_main_idtf: [Статья 146. Органы, устанавливающие опеку и попечительство] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_146.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_147 (*
+
+    => nrel_main_idtf: [Статья 147. Место установления опеки и попечительства] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_147.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_148 (*
+
+    => nrel_main_idtf: [Статья 148. Установление опеки или попечительства над несовершеннолетним, родители которого уклоняются от его воспитания] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_148.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_149 (*
+
+    => nrel_main_idtf: [Статья 149. Установление опеки или попечительства над несовершеннолетним при временном отсутствии родителей (единственного родителя) по уважительной причине] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_149.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_150 (*
+
+    => nrel_main_idtf: [Статья 150. Обязанность суда сообщать органам опеки и попечительства о необходимости установления опеки или попечительства] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_150.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_151 (*
+
+    => nrel_main_idtf: [Статья 151. Назначение опекуна или попечителя] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_151.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_152 (*
+
+    => nrel_main_idtf: [Статья 152. Выбор опекуна или попечителя] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_152.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_153 (*
+
+    => nrel_main_idtf: [Статья 153. Лица, имеющие право быть опекунами и попечителями] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_153.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_154 (*
+
+    => nrel_main_idtf: [Статья 154. Контроль за деятельностью опекунов и попечителей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_154.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_155 (*
+
+    => nrel_main_idtf: [Статья 155. Опека над имуществом, находящимся не по месту жительства подопечного] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_155.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_156 (*
+
+    => nrel_main_idtf: [Статья 156. Безвозмездность выполнения обязанностей опекунов и попечителей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_156.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_157 (*
+
+    => nrel_main_idtf: [Статья 157. Обязанности опекунов и попечителей по охране личности и здоровья несовершеннолетних, совершеннолетних подопечных и защите их прав и законных интересов] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_157.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_158 (*
+
+    => nrel_main_idtf: [Статья 158. Права и обязанности опекунов, попечителей по воспитанию несовершеннолетних] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_158.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_159 (*
+
+    => nrel_main_idtf: [Статья 159. Право опекунов, попечителей требовать возврата подопечных от лиц, удерживающих их у себя без законных оснований] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_159.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_160 (*
+
+    => nrel_main_idtf: [Статья 160. Гражданско-правовые обязанности опекунов, попечителей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_160.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_161 (*
+
+    => nrel_main_idtf: [Статья 161. Сделки, для совершения которых требуется предварительное разрешение органов опеки и попечительства] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_161.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_162 (*
+
+    => nrel_main_idtf: [Статья 162. Сделки, которые не вправе совершать опекун, попечитель, и последствия их совершения] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_162.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_163 (*
+
+    => nrel_main_idtf: [Статья 163. Содержание подопечных] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_163.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_164 (*
+
+    => nrel_main_idtf: [Статья 164. Распоряжение текущими доходами (поступлениями) подопечных] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_164.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_165 (*
+
+    => nrel_main_idtf: [Статья 165. Управление имуществом подопечных] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_165.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_166 (*
+
+    => nrel_main_idtf: [Статья 166. Обжалование действий опекунов, попечителей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_166.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_167 (*
+
+    => nrel_main_idtf: [Статья 167. Освобождение опекунов, попечителей от выполнения ими своих обязанностей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_167.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_168 (*
+
+    => nrel_main_idtf: [Статья 168. Отстранение опекунов, попечителей в случае ненадлежащего выполнения ими своих обязанностей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_168.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_169 (*
+
+    => nrel_main_idtf: [Статья 169. Опекуны, попечители детей-сирот, детей, оставшихся без попечения родителей, и совершеннолетних подопечных] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_169.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_170 (*
+
+    => nrel_main_idtf: [Статья 170. Приемная семья, детский дом семейного типа] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_170.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_171 (*
+
+    => nrel_main_idtf: [Статья 171. Договор об условиях воспитания и содержания детей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_171.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_172 (*
+
+    => nrel_main_idtf: [Статья 172. Приемные родители, родители-воспитатели детского дома семейного типа, детской деревни, детского городка] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_172.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_173 (*
+
+    => nrel_main_idtf: [Статья 173. Передача детей на воспитание в приемную семью, детский дом семейного типа] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_173.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_174 (*
+
+    => nrel_main_idtf: [Статья 174. Патронатное воспитание] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_174.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_175 (*
+
+    => nrel_main_idtf: [Статья 175. Договор патронатного воспитания] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_175.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_176 (*
+
+    => nrel_main_idtf: [Статья 176. Передача детей на патронатное воспитание] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_176.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_177 (*
+
+    => nrel_main_idtf: [Статья 177. Права детей-сирот, детей, оставшихся без попечения родителей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_177.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_178 (*
+
+    => nrel_main_idtf: [Статья 178. Прекращение опеки, попечительства] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_178.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_179 (*
+
+    => nrel_main_idtf: [Статья 179. Определение возрастных границ] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_179.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_180 (*
+
+    => nrel_main_idtf: [Статья 180. Определение статуса ребенка] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_180.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_181 (*
+
+    => nrel_main_idtf: [Статья 181. Приоритет прав детей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_181.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_182 (*
+
+    => nrel_main_idtf: [Статья 182. Равноправие детей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_182.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_183 (*
+
+    => nrel_main_idtf: [Статья 183. Органы, осуществляющие защиту прав и законных интересов детей] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_183.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_184 (*
+
+    => nrel_main_idtf: [Статья 184. Право детей на жизнь, достойные условия жизни и охрану здоровья] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_184.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_185 (*
+
+    => nrel_main_idtf: [Статья 185. Право на жизнь в семье] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_185.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_186 (*
+
+    => nrel_main_idtf: [Статья 186. Право на образование и труд] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_186.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_187 (*
+
+    => nrel_main_idtf: [Статья 187. Право на отдых и досуг] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_187.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_188 (*
+
+    => nrel_main_idtf: [Статья 188. Гарантии свободы личности ребенка] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_188.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_189 (*
+
+    => nrel_main_idtf: [Статья 189. Право на защиту] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_189.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_190 (*
+
+    => nrel_main_idtf: [Статья 190. Обязанности ребенка вне семьи] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_190.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_191 (*
+
+    => nrel_main_idtf: [Статья 191. Право на материальное обеспечение] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_191.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_192 (*
+
+    => nrel_main_idtf: [Статья 192. Право на жилище] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_192.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_193 (*
+
+    => nrel_main_idtf: [Статья 193. Регистрация актов гражданского состояния] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_193.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_194 (*
+
+    => nrel_main_idtf: [Статья 194. Органы, регистрирующие акты гражданского состояния] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_194.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_195 (*
+
+    => nrel_main_idtf: [Статья 195. Правовая основа деятельности органов, регистрирующих акты гражданского состояния] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_195.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_196 (*
+
+    => nrel_main_idtf: [Статья 196. Принципы деятельности органов, регистрирующих акты гражданского состояния] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_196.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_197 (*
+
+    => nrel_main_idtf: [Статья 197. Язык, на котором осуществляется регистрация актов гражданского состояния] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_197.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_198 (*
+
+    => nrel_main_idtf: [Статья 198. Компетенция органов, регистрирующих акты гражданского состояния] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_198.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_199 (*
+
+    => nrel_main_idtf: [Статья 199. Порядок осуществления органами, регистрирующими акты гражданского состояния, своих полномочий] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_199.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_200 (*
+
+    => nrel_main_idtf: [Статья 200. Документы и (или) сведения, представляемые для регистрации актов гражданского состояния] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_200.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_201 (*
+
+    => nrel_main_idtf: [Статья 201. Совершение записи актов гражданского состояния] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_201.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_202 (*
+
+    => nrel_main_idtf: [Статья 202. Выдача повторных свидетельств о регистрации актов гражданского состояния] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_202.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_203 (*
+
+    => nrel_main_idtf: [Статья 203. Отказ в регистрации актов гражданского состояния] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_203.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_204 (*
+
+    => nrel_main_idtf: [Статья 204. Порядок регистрации рождения] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_204.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_205 (*
+
+    => nrel_main_idtf: [Статья 205. Заявление о регистрации рождения] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_205.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_206 (*
+
+    => nrel_main_idtf: [Статья 206. Срок подачи заявления о регистрации рождения] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_206.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_207 (*
+
+    => nrel_main_idtf: [Статья 207. Запись акта о рождении] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_207.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_208 (*
+
+    => nrel_main_idtf: [Статья 208. Регистрация рождения ребенка, родившегося после смерти отца либо объявления его в судебном порядке умершим] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_208.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_209 (*
+
+    => nrel_main_idtf: [Статья 209. Регистрация рождения ребенка, родившегося после расторжения брака или признания брака недействительным] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_209.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_210 (*
+
+    => nrel_main_idtf: [Статья 210. Порядок регистрации заключения брака] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_210.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_211 (*
+
+    => nrel_main_idtf: [Статья 211. Заявление о регистрации заключения брака] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_211.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_212 (*
+
+    => nrel_main_idtf: [Статья 212. Ознакомление лиц, вступающих в брак, с условиями и порядком регистрации заключения брака, правами и обязанностями супругов] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_212.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_213 (*
+
+    => nrel_main_idtf: [Статья 213. Назначение дня регистрации заключения брака и регистрация заключения брака] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_213.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_214 (*
+
+    => nrel_main_idtf: [Статья 214. Порядок регистрации установления материнства и (или) отцовства] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_214.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_215 (*
+
+    => nrel_main_idtf: [Статья 215. Изменение записи акта о рождении в связи с установлением материнства и (или) отцовства] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_215.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_216 (*
+
+    => nrel_main_idtf: [Статья 216. Порядок регистрации усыновления] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_216.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_217 (*
+
+    => nrel_main_idtf: [Статья 217. Внесение изменений в запись акта о рождении усыновленного] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_217.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_218 (*
+
+    => nrel_main_idtf: [Статья 218. Аннулирование и изменение записей актов гражданского состояния в связи с отменой усыновления] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_218.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_219 (*
+
+    => nrel_main_idtf: [Статья 219. Порядок регистрации смерти] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_219.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_220 (*
+
+    => nrel_main_idtf: [Статья 220. Заявление о регистрации смерти] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_220.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_221 (*
+
+    => nrel_main_idtf: [Статья 221. Срок подачи заявления о регистрации смерти] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_221.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_222 (*
+
+    => nrel_main_idtf: [Статья 222. Заявление о регистрации перемены фамилии, собственного имени, отчества] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_222.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_223 (*
+
+    => nrel_main_idtf: [Статья 223. Регистрация перемены фамилии, собственного имени, отчества] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_223.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_224 (*
+
+    => nrel_main_idtf: [Статья 224. Изменение записи актов гражданского состояния в связи с переменой фамилии, собственного имени, отчества] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_224.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_2241 (*
+
+    => nrel_main_idtf: [Статья 2241. Порядок регистрации расторжения брака в соответствии со статьей 351 настоящего Кодекса] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_2241.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_2242 (*
+
+    => nrel_main_idtf: [Статья 2242. Порядок регистрации расторжения брака по решениям судов, вступившим в законную силу до 1 сентября 1999 г.] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_2242.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_2243 (*
+
+    => nrel_main_idtf: [Статья 2243. Заявление о регистрации расторжения брака] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_2243.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_225 (*
+
+    => nrel_main_idtf: [Статья 225. Порядок изменения, дополнения, исправления и восстановления записей актов гражданского состояния] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_225.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_226 (*
+
+    => nrel_main_idtf: [Статья 226. Изменение, дополнение, исправление записей актов гражданского состояния] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_226.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_227 (*
+
+    => nrel_main_idtf: [Статья 227. Аннулирование записей актов гражданского состояния] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_227.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_228 (*
+
+    => nrel_main_idtf: [Статья 228. Права и обязанности иностранных граждан и лиц без гражданства в брачных и семейных отношениях] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_228.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_229 (*
+
+    => nrel_main_idtf: [Статья 229. Заключение браков иностранных граждан и лиц без гражданства в Республике Беларусь] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_229.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_2291 (*
+
+    => nrel_main_idtf: [Статья 2291. Заключение браков граждан Республики Беларусь с иностранными гражданами или лицами без гражданства в Республике Беларусь] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_2291.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_230 (*
+
+    => nrel_main_idtf: [Статья 230. Заключение браков граждан Республики Беларусь в консульских учреждениях, а также дипломатических представительствах Республики Беларусь в случае выполнения ими консульских функций. Признание браков, заключенных за пределами Республики Беларусь] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_230.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_231 (*
+
+    => nrel_main_idtf: [Статья 231. Расторжение браков граждан Республики Беларусь с иностранными гражданами или лицами без гражданства и браков иностранных граждан между собой в Республике Беларусь. Признание расторжения браков, заключенных за пределами Республики Беларусь] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_231.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_232 (*
+
+    => nrel_main_idtf: [Статья 232. Установление материнства и (или) отцовства в Республике Беларусь. Признание материнства и (или) отцовства, установленных за пределами Республики Беларусь] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_232.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_233 (*
+
+    => nrel_main_idtf: [Статья 233. Международное усыновление] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_233.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_234 (*
+
+    => nrel_main_idtf: [Статья 234. Опека, попечительство над несовершеннолетними гражданами Республики Беларусь, проживающими за пределами Республики Беларусь. Признание опеки, попечительства, установленных за пределами Республики Беларусь] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_234.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_235 (*
+
+    => nrel_main_idtf: [Статья 235. Установление международных опеки, попечительства над несовершеннолетними, проживающими на территории Республики Беларусь] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_235.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_2351 (*
+
+    => nrel_main_idtf: [Статья 2351. Возвращение ребенка и осуществление прав доступа на основании Конвенции о гражданских аспектах международного похищения детей от 25 октября 1980 года] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_2351.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_236 (*
+
+    => nrel_main_idtf: [Статья 236. Признание документов, выданных компетентными органами иностранных государств в удостоверение актов гражданского состояния] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_236.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_237 (*
+
+    => nrel_main_idtf: [Статья 237. Применение законодательства о браке и семье иностранных государств и международных договоров] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_237.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_238 (*
+
+    => nrel_main_idtf: [Статья 238. Регистрация актов гражданского состояния граждан Республики Беларусь, проживающих за пределами Республики Беларусь] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_238.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_239 (*
+
+    => nrel_main_idtf: [Статья 239. Вступление в силу настоящего Кодекса] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_239.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_240 (*
+
+    => nrel_main_idtf: [Статья 240. Приведение актов законодательства в соответствие с настоящим Кодексом] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_240.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+=> nrel_article: by_act_hk9900278_article_241 (*
+
+    => nrel_main_idtf: [Статья 241. Признание утратившими силу некоторых законодательных актов Республики Беларусь] (* <- lang_ru;; *);;
+
+    <- rrel_key_sc_element: ... (*
+      <- definition;;
+      <= nrel_sc_text_translation: ... (*
+        -> rrel_example: "file://text/by_act_hk9900278_article_241.html" (*
+          <- lang_ru;;
+          => nrel_format: format_html;;
+        *);;
+      *);;
+    *);;
+
+*);
+
+<- legal_act;
+<- legal_code;
+<- belarus_legal_act;
+<- sc_node_not_relation;;

@@ -1,0 +1,35 @@
+@startuml
+
+skinparam componentStyle uml2
+
+!define DarkGray #707070
+
+package "Пользовательский интерфейс" {
+  component "Визуальный компонент" as UIComponent
+  component "Компонент взаимодействия с интерфейсными агентами" as InteractionsComponent
+}
+
+package "Решатель задач на Kotlin" {
+  component "Решатель интерфейсных задач" as InterfaceSolver
+  component "Решатель прочих задач" as OtherSolver
+}
+
+actor User
+
+User ..> UIComponent : Ввод
+UIComponent ..> User : Отображение
+
+database "База знаний OSTIS-системы" as KnowledgeBase
+
+UIComponent -> InteractionsComponent
+InteractionsComponent -> UIComponent
+
+InteractionsComponent ..> InterfaceSolver : HTTP-запросы
+InterfaceSolver ..> InteractionsComponent : HTTP-ответы
+
+InterfaceSolver -> OtherSolver
+OtherSolver -> InterfaceSolver
+
+OtherSolver ..> KnowledgeBase
+
+@enduml

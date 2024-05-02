@@ -1,0 +1,38 @@
+section_law_belarus_labor_legislation
+=> nrel_main_idtf: [Раздел. Законодательство о труде и занятости населения Республики Беларусь] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Section. Legislation on labor and employment of the population of the Republic of Belarus] (* <- lang_en;; *);
+=> nrel_main_idtf: [Раздзел. Заканадаўства аб працы і занятасці насельніцтва Рэспублікі Беларусь] (* <- lang_by;; *);
+
+<= nrel_section_decomposition: {
+  section_law_belarus_labor_legislation_dict
+};
+
+-> rrel_key_sc_element:
+  concept_marriage;
+  concept_family;
+  country_by;
+
+<- non_atomic_section;;
+
+section_law_belarus_labor_legislation = [*
+
+  subject_domain_of_law_belarus_labor_legislation
+    => nrel_main_idtf: [Предметная область законодательства о труде и занятости населения Республики Беларусь] (* <- lang_ru;; *);
+    => nrel_main_idtf: [Subject domain of legislation on labor and employment of the population of the Republic of Belarus] (* <- lang_en;; *);
+    => nrel_main_idtf: [Прадметная вобласць заканадаўства аб працы і занятасці насельніцтва Рэспублікі Беларусь] (* <- lang_by;; *);
+
+    -> rrel_maximum_studied_object_class:
+      belarus_labor_legislation;
+
+    // -> rrel_not_maximum_studied_object_class:
+
+    -> rrel_explored_relation:
+      nrel_legal_act;
+
+    <= nrel_private_subject_domain:
+      subject_domain_of_law_belarus;
+      subject_domain_of_labor_legislation;
+
+    <- subject_domain;;
+
+*];;

@@ -1,0 +1,68 @@
+<mat-sidenav-container>
+
+  <mat-sidenav class="sidebar" #sidenav mode="side" opened position="end" style="display: flex; flex-direction: column;">
+    <h1 style="color: #438D6E; text-align: center;">YURI</h1>
+    <button mat-flat-button class="sidebar-button" color="primary" (click)="newChat()">💬 Начать новый чат</button>
+    <div style="padding: 10px;"></div>
+
+    <button *ngFor="let chat of chats" mat-flat-button class="chat-button" (click)="onChatButton(chat)">{{ chat.title }}</button>
+
+    <button mat-button class="settings-button" (click)="router.navigate(['terms'])">⚙ Таблица понятий</button>
+
+    <div class="user-div" style="margin-top: 80%;">
+      <img class="avatar" src="https://sun9-36.userapi.com/impg/8Ek0h-ho0E9vyLRpR1Ul6vidQgVaawvs1AK6cg/cf5-Bz2pRJI.jpg?size=1372x2160&quality=95&sign=536c25e13bf3ba045bc41954479f78d5&type=album">
+      <div>
+        <a style="font-size: 20px; font-weight: bold;">Ростислав Липский</a><br>
+        Режим чата
+      </div>
+    </div>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content style="display: flex; flex-direction: column; height: 100vh;">
+
+    <div style="display: flex; justify-content: center; color: #438D6E" *ngIf="messages.length === 0">
+      <div style="text-align: center;">
+        <div style="display: flex; justify-content: center; align-items: center">
+          <img src="assets/logo.svg" width="50px" style="margin: 12px;">
+          <h1 style="font-size: 42px;">YURI</h1>
+        </div>
+        <h2 style="color: black">Как я могу вам помочь?</h2>
+        <div>
+          <button mat-flat-button class="tip-button" (click)="tipButton('Что такое брак?')">Что такое брак?</button><br>
+          <button mat-flat-button class="tip-button" (click)="tipButton('В каком документе дано определение браку?')">В каком документе дано определение браку?</button><br>
+          <button mat-flat-button class="tip-button" (click)="tipButton('Какие термины есть в разделе о браке и семье?')">Какие термины есть в разделе о браке и семье?</button>
+        </div>
+      </div>
+    </div>
+
+    <div style="border: 1px solid; padding: 15px; border-radius: 30px; margin: 10px 10px 10px;" *ngFor="let message of messages"
+         [class.yuriMessage]="message.startsWith('Yuri:')"
+         [class.youMessage]="message.startsWith('You:')">
+      <p *ngFor="let p of message.substring(message.indexOf(':') + 2).split('\n')" [innerHTML]="p"></p>
+    </div>
+
+    <div style="display: flex; justify-content: center;" *ngIf="sendButton.disabled">
+      <mat-spinner></mat-spinner>
+    </div>
+
+    <div [class.dynamicbottommargin]="this.messages.length !== 0"
+         [class.dynamicbottommarginpre]="this.messages.length === 0"
+         style="
+    display: flex; justify-content: center;">
+      <input style="width: 50%; padding: 15px; border-radius: 30px; border: 1px solid;" matInput [(ngModel)]="textInput">
+
+      <button mat-mini-fab color="basic" style="box-shadow: none; display: none">
+        <mat-icon fontIcon="micro"></mat-icon>
+      </button>
+
+      <button #sendButton mat-mini-fab color="primary" style="margin: 10px; background-color: #438D6E;" (click)="sendChat()">
+        <mat-icon fontIcon="send"></mat-icon>
+      </button>
+
+    </div>
+
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

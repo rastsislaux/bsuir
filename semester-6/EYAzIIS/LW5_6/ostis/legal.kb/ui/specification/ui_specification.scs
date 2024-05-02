@@ -1,0 +1,322 @@
+concept_user_interface
+=> nrel_main_idtf: [пользовательский интерфейс] (* <- lang_ru;; *);
+=> nrel_explanation: [Пользовательский интерфейс — это система, которая обеспечивает пользователю возможность взаимодействовать с компьютером или приложением. Он состоит из графических элементов, таких как кнопки, меню, поля ввода и значки, которые позволяют пользователю выполнять задачи, получать доступ к информации и управлять системой.] (* <- lang_ru;; *);
+<- sc_node_class;;
+
+concept_user_interface_element
+=> nrel_main_idtf: [элемент пользовательского интерфейса] (* <- lang_ru;; *);
+<- sc_node_class;;
+
+concept_ui_button
+=> nrel_main_idtf: [кнопка пользовательского интерфейса] (* <- lang_ru;; *);
+<- concept_user_interface_element;
+<- sc_node_class;;
+
+concept_ui_button_icon
+=> nrel_main_idtf: [кнопока пользовательского интерфейса в виде иконки] (* <- lang_ru;; *);
+<- concept_user_interface_element;
+<- sc_node_class;;
+
+concept_ui_text
+=> nrel_main_idtf: [текст пользовательского интерфейса] (* <- lang_ru;; *);
+<- concept_user_interface_element;
+<- sc_node_class;;
+
+concept_ui_input
+=> nrel_main_idtf: [поле ввода пользовательского интерфейса] (* <- lang_ru;; *);
+<- concept_user_interface_element;
+<- sc_node_class;;
+
+concept_ui_text_input
+=> nrel_main_idtf: [текстовое поле ввода пользовательского интерфейса] (* <- lang_ru;; *);
+<- concept_user_interface_element;
+<- sc_node_class;;
+
+concept_ui_text_input_placeholder
+=> nrel_main_idtf: [заполнитель текстового поля ввода пользовательского интерфейса] (* <- lang_ru;; *);
+<- concept_user_interface_element;
+<- sc_node_class;;
+
+concept_ui_image
+=> nrel_main_idtf: [изображение пользовательского интерфейса] (* <- lang_ru;; *);
+<- concept_user_interface_element;
+<- sc_node_class;;
+
+concept_ui_container
+=> nrel_main_idtf: [контейнер пользовательского интерфейса] (* <- lang_ru;; *);
+<- concept_user_interface_element;
+<- sc_node_class;;
+
+concept_ui_sidebar
+=> nrel_main_idtf: [боковая панель пользовательского интерфейса] (* <- lang_ru;; *);
+<- concept_ui_container;
+<- sc_node_class;;
+
+concept_ui_scroll
+=> nrel_main_idtf: [элемент прокрутки пользовательского интерфейса] (* <- lang_ru;; *);
+<- concept_user_interface_element;
+<- sc_node_class;;
+
+concept_color
+=> nrel_main_idtf: [цвет] (* <- lang_ru;; *);
+<- sc_node_class;;
+
+color_ostis_legislation_green
+=> nrel_main_idtf: [зеленый (OSTIS Legislation)] (* <- lang_ru;; *);
+<- concept_color;
+=> nrel_rgb_hex: [#438D6E];;
+
+color_black
+=> nrel_main_idtf: [черный] (* <- lang_ru;; *);
+<- concept_color;
+=> nrel_rgb_hex: [#000000];;
+
+concept_font
+=> nrel_main_idtf: [шрифт] (* <- lang_ru;; *);
+<- sc_node_class;;
+
+font_lalezar
+=> nrel_main_idtf: [Lalezar] (* <- lang_en;; <- lang_ru;; *);;
+
+font_inter
+=> nrel_main_idtf: [Inter] (* <- lang_en;; <- lang_ru;; *);;
+
+concept_position
+=> nrel_main_idtf: [расположение] (* <- lang_ru;; *);
+<- sc_node_class;;
+
+position_center
+<- concept_position;
+=> nrel_main_idtf: [центр] (* <-lang_ru;; *);;
+
+position_bottom
+<- concept_position;
+=> nrel_main_idtf: [внизу] (* <-lang_ru;; *);;
+
+position_top
+<- concept_position;
+=> nrel_main_idtf: [вверху] (* <-lang_ru;; *);;
+
+position_left
+<- concept_position;
+=> nrel_main_idtf: [слева] (* <-lang_ru;; *);;
+
+position_right
+<- concept_position;
+=> nrel_main_idtf: [справа] (* <-lang_ru;; *);;
+
+nrel_horizontal_position
+=> nrel_main_idtf: [горизонтальное расположение*] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+
+nrel_vertical_position
+=> nrel_main_idtf: [вертикальное расположение*] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+
+nrel_ui_element
+=> nrel_main_idtf: [дочерний элемент пользовательского интерфейса*] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+
+nrel_text_content
+=> nrel_main_idtf: [текстовое содержимое элемента*] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+
+nrel_font
+=> nrel_main_idtf: [шрифт*] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+
+nrel_color
+=> nrel_main_idtf: [цвет*] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+
+nrel_above
+=> nrel_main_idtf: [расположен над*] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+
+nrel_under
+=> nrel_main_idtf: [расположен под*] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+
+nrel_to_the_left_of
+=> nrel_main_idtf: [расположен левее*] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+
+nrel_to_the_right_of
+=> nrel_main_idtf: [расположен правее*] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+
+nrel_rgb_hex
+=> nrel_main_idtf: [RGB-код цвета в формате HEX*] (* <- lang_ru;; *);
+<- sc_node_norole_relation;;
+ 
+ostis_legislation_ui = [*
+
+  ostis_legislation_ui
+  => nrel_main_idtf: [Интерфейс персонального ассистента по юриспруденции] (* <-lang_ru;; *);
+  <- concept_user_interface;;
+
+  ostis_legislation_ui_chat_sidebar
+  => nrel_main_idtf: [Боковая панель персонального ассистента по юриспруденции] (* <-lang_ru;; *);
+  <- concept_ui_sidebar;
+  => nrel_horizontal_position: position_right;
+  <= nrel_ui_element: ostis_legislation_ui;;
+
+  ostis_legislation_ui_sidebar_new_chat_button
+  => nrel_main_idtf: [Кнопка создания нового чата персонального ассистента по юриспруденции] (* <- lang_ru;; *);
+  <- concept_ui_button;
+  <= nrel_ui_element: ostis_legislation_ui_chat_sidebar;
+  => nrel_vertical_position: position_top;
+  => nrel_above: ostis_legislation_ui_sidebar_chat_buttons;
+  => nrel_color: color_ostis_legislation_green;
+  => nrel_text_content: [New chat];
+  => nrel_font: font_inter;;
+
+  ostis_legislation_ui_sidebar_chat_buttons
+  => nrel_main_idtf: [Кнопки переключения чатов персонального ассистента по юриспруденции] (* <- lang_ru;; *);
+  <- concept_ui_button;
+  <= nrel_ui_element: ostis_legislation_ui_chat_sidebar;
+  => nrel_vertical_position: position_center;
+  => nrel_under: ostis_legislation_ui_sidebar_new_chat_button;
+  => nrel_color: color_white;
+  => nrel_text_content: [<variable>];
+  => nrel_font: font_inter;;
+
+  ostis_legislation_ui_sidebar_new_chat_button_scroll
+  => nrel_main_idtf: [Элемент прокрутки кнопок переключения чатов персонального ассистента по юриспруденции] (* <- lang_ru;; *);
+  <- concept_ui_scroll;
+  <= nrel_ui_element: ostis_legislation_ui_sidebar_chat_buttons;
+  => nrel_horizontal_position: position_left;
+  => nrel_color: color_gray;;
+
+  ostis_legislation_ui_sidebar_settings_button
+  => nrel_main_idtf: [Кнопка настроек персонального ассистента по юриспруденции] (* <- lang_ru;; *);
+  <- concept_ui_button;
+  <= nrel_ui_element: ostis_legislation_ui_chat_sidebar;
+  => nrel_vertical_position: position_bottom;
+  => nrel_color: color_black;
+  => nrel_text_content: [Settings];;
+
+  ostis_legislation_ui_sidebar_bottom_container
+  => nrel_main_idtf: [Нижний контейнер боковой панели персонального ассистента по юриспруденции] (* <- lang_ru;; *);
+  <- concept_ui_container;
+  <= nrel_ui_element: ostis_legislation_ui_chat_sidebar;
+  => nrel_vertical_position: position_bottom;
+  => nrel_color: color_white;;
+
+  ostis_legislation_ui_sidebar_bottom_container_avatar
+  => nrel_main_idtf: [Аватар пользователя боковой панели персонального ассистента по юриспруденции] (* <- lang_ru;; *);
+  <- concept_ui_image;
+  <= nrel_ui_element: ostis_legislation_ui_sidebar_bottom_container;
+  => nrel_horizontal_position: position_left;;
+
+  ostis_legislation_ui_sidebar_bottom_container_username
+  => nrel_main_idtf: [Имя пользователя боковой панели персонального ассистента по юриспруденции] (* <- lang_ru;; *);
+  <- concept_ui_text;
+  <= nrel_ui_element: ostis_legislation_ui_sidebar_bottom_container;
+  => nrel_horizontal_position: position_right;
+  => nrel_color: color_black;
+  => nrel_font: font_inter;;
+
+  ostis_legislation_ui_chat_container
+  => nrel_main_idtf: [Контейнер чата персонального ассистента по юриспруденции] (* <-lang_ru;; *);
+  <- concept_ui_container;
+  => nrel_horizontal_position: position_left;
+  <= nrel_ui_element: ostis_legislation_ui;;
+
+  ostis_legislation_ui_chat_logo
+  => nrel_main_idtf: [Логотип чата персонального ассистента по юриспруденции] (* <-lang_ru;; *);
+  <- concept_ui_text;
+  <= nrel_ui_element: ostis_legislation_ui_chat_container;
+  => nrel_text_content: [YURI];
+  => nrel_font: font_lalezar;
+  => nrel_color: color_ostis_legislation_green;
+  => nrel_horizontal_position: position_center;
+  => nrel_vertical_position: position_center;
+  => nrel_above: ostis_legislation_ui_chat_slogan;;
+
+  ostis_legislation_ui_chat_slogan
+  => nrel_main_idtf: [Слоган чата персонального ассистента по юриспруденции] (* <-lang_ru;; *);
+  <- concept_ui_text;
+  <= nrel_ui_element: ostis_legislation_ui_chat_container;
+  => nrel_text_content: [How can I assist you?];
+  => nrel_font: font_inter;
+  => nrel_color: color_black;
+  => nrel_horizontal_position: position_center;
+  => nrel_vertical_position: position_center;
+  => nrel_under: ostis_legislation_ui_chat_logo;
+  => nrel_above: ostis_legislation_ui_chat_tip_buttons;;
+
+  ostis_legislation_ui_chat_tip_buttons
+  => nrel_main_idtf: [Кнопки с подсказками чата персонального ассистента по юриспруденции] (* <-lang_ru;; *);
+  <- concept_ui_container;
+  <= nrel_ui_element: ostis_legislation_ui_chat_container;
+  => nrel_horizontal_position: position_center;
+  => nrel_vertical_position: position_center;
+  => nrel_under: ostis_legislation_ui_chat_slogan;;
+
+  ostis_legislation_ui_chat_tip_button_1
+  => nrel_main_idtf: [Кнопка с подсказкой 1 персонального ассистента по юриспруденции] (* <-lang_ru;; *);
+  <- concept_ui_button;
+  <= nrel_ui_element: ostis_legislation_ui_chat_tip_buttons;
+  => nrel_above: ostis_legislation_ui_chat_tip_button_2;
+  => nrel_text_content: [<variable>];;
+
+  ostis_legislation_ui_chat_tip_button_2
+  => nrel_main_idtf: [Кнопка с подсказкой 2 персонального ассистента по юриспруденции] (* <-lang_ru;; *);
+  <- concept_ui_button;
+  <= nrel_ui_element: ostis_legislation_ui_chat_tip_buttons;
+  => nrel_under: ostis_legislation_ui_chat_tip_button_1;
+  => nrel_above: ostis_legislation_ui_chat_tip_button_3;
+  => nrel_text_content: [<variable>];;
+
+  ostis_legislation_ui_chat_tip_button_3
+  => nrel_main_idtf: [Кнопка с подсказкой 3 персонального ассистента по юриспруденции] (* <-lang_ru;; *);
+  <- concept_ui_button;
+  <= nrel_ui_element: ostis_legislation_ui_chat_tip_buttons;
+  => nrel_above: ostis_legislation_ui_chat_tip_button_2;
+  => nrel_text_content: [<variable>];;
+
+  ostis_legislation_ui_chat_prompt
+  => nrel_main_idtf: [Текстовое поле ввода чата персонального ассистента по юриспруденции] (* <-lang_ru;; *);
+  <- concept_ui_text_input;
+  <= nrel_ui_element: ostis_legislation_ui_chat_container;
+  => nrel_under: ostis_legislation_ui_chat_tip_buttons;
+  => nrel_above: ostis_legislation_disclaimer;
+  => nrel_vertical_position: position_bottom;;
+
+  ostis_legislation_ui_chat_prompt_placeholder
+  => nrel_main_idtf: [Заполнитель текстового поля ввода чата персонального ассистента по юриспруденции] (* <-lang_ru;; *);
+  <- concept_ui_text_input_placeholder;
+  <= nrel_ui_element: ostis_legislation_ui_chat_prompt;
+  => nrel_horizontal_position: position_left;
+  => nrel_font: font_inter;
+  => nrel_color: color_black;
+  => nrel_text_content: [Message Yuri...];;
+
+  ostis_legislation_ui_chat_prompt_voice_button
+  => nrel_main_idtf: [Кнопка активации голосового ввода текстового поля ввода чата персонального ассистента по юриспруденции] (* <-lang_ru;; *);
+  <- concept_ui_button_icon;
+  <= nrel_ui_element: ostis_legislation_ui_chat_prompt;
+  => nrel_horizontal_position: position_right;
+  => nrel_color: color_black;
+  => nrel_to_the_left_of: ostis_legislation_ui_chat_prompt_send_button;;
+
+  ostis_legislation_ui_chat_prompt_send_button
+  => nrel_main_idtf: [Кнопка отправки сообщения текстового поля ввода чата персонального ассистента по юриспруденции] (* <-lang_ru;; *);
+  <- concept_ui_button_icon;
+  <= nrel_ui_element: ostis_legislation_ui_chat_prompt;
+  => nrel_horizontal_position: position_right;
+  => nrel_color: color_ostis_legislation_green;
+  => nrel_to_the_right_of: ostis_legislation_ui_chat_prompt_voice_button;;
+
+  ostis_legislation_disclaimer
+  => nrel_main_idtf: [Дисклеймер чата персонального ассистента по юриспруденции] (* <-lang_ru;; *);
+  <- concept_ui_text;
+  <= nrel_ui_element: ostis_legislation_ui_chat_container;
+  => nrel_horizontal_position: position_center; 
+  => nrel_vertical_position: position_bottom;
+  => nrel_under: ostis_legislation_ui_chat_prompt;
+  => nrel_color: color_black;
+  => nrel_text_content: [Yuri can make mistakes. This is not a legal advice.];;
+
+*];;

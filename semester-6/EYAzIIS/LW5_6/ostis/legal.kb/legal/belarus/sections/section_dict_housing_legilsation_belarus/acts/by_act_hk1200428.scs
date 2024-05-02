@@ -1,0 +1,2430 @@
+by_act_hk1200428
+  => nrel_main_idtf: [Кодекс Республики Беларусь о жильи] (* <- lang_ru;; *);
+  => nrel_main_idtf: [Code of the Republic of Belarus on housing] (* <- lang_en;; *);
+  => nrel_main_idtf: [Кодэкс Рэспублікі Беларусь аб жiллi] (* <- lang_by;; *);
+
+=> nrel_article: by_act_hk1200428_article_1 (*
+
+	=> nrel_main_idtf: [Статья 1. Основные термины и их определения, используемые для целей настоящего Кодекса] (* <- lang_ru;; *);;
+
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_1.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+	
+*);
+
+=> nrel_article: by_act_hk1200428_article_2 (*
+	=> nrel_main_idtf: [Статья 2. Сфера действия настоящего Кодекса] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_2.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_3 (*
+	=> nrel_main_idtf: [Статья 3. Жилищное законодательство. Задачи и принципы жилищного законодательства] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_3.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_4 (*
+	=> nrel_main_idtf: [Статья 4. Компетенция Президента Республики Беларусь в области жилищных отношений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_4.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_5 (*
+	=> nrel_main_idtf: [Статья 5. Компетенция Совета Министров Республики Беларусь в области жилищных отношений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_5.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_6 (*
+	=> nrel_main_idtf: [Статья 6. Компетенция Министерства жилищно-коммунального хозяйства, иных республиканских органов государственного управления в области жилищных отношений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_6.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_7 (*
+	=> nrel_main_idtf: [Статья 7. Компетенция местных Советов депутатов в области жилищных отношений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_7.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_8 (*
+	=> nrel_main_idtf: [Статья 8. Компетенция областных, Минского городского исполнительных комитетов в области жилищных отношений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_8.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_9 (*
+	=> nrel_main_idtf: [Статья 9. Компетенция районных, городских, поселковых, сельских исполнительных комитетов, местных администраций районов в городах в области жилищных отношений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_9.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_10 (*
+	=> nrel_main_idtf: [Статья 10. Состав жилищного фонда] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_10.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_11 (*
+	=> nrel_main_idtf: [Статья 11. Основная задача и объекты государственного учета жилых помещений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_11.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_12 (*
+	=> nrel_main_idtf: [Статья 12. Государственный учет жилых помещений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_12.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_13 (*
+	=> nrel_main_idtf: [Статья 13. Управление государственным и частным жилищными фондами] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_13.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_14 (*
+	=> nrel_main_idtf: [Статья 14. Назначение и использование жилого помещения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_14.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_15 (*
+	=> nrel_main_idtf: [Статья 15. Проведение технических осмотров и обследования состояния многоквартирных, блокированных и одноквартирных жилых домов и их придомовых территорий, квартир в многоквартирных и блокированных жилых домах, общежитий] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_15.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_16 (*
+	=> nrel_main_idtf: [Статья 16. Признание многоквартирных, блокированных или одноквартирных жилых домов и их придомовых территорий, квартир в многоквартирных или блокированных жилых домах, общежитий не соответствующими установленным для проживания санитарным и техническим требованиям] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_16.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_17 (*
+	=> nrel_main_idtf: [Статья 17. Переустройство и (или) перепланировка] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_17.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_18 (*
+	=> nrel_main_idtf: [Статья 18. Основания для отказа в согласовании (разрешении) переустройства и (или) перепланировки] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_18.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_19 (*
+	=> nrel_main_idtf: [Статья 19. Последствия самовольных переустройства и (или) перепланировки] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_19.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_20 (*
+	=> nrel_main_idtf: [Статья 20. Реконструкция многоквартирных, блокированных и одноквартирных жилых домов] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_20.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_21 (*
+	=> nrel_main_idtf: [Статья 21. Перевод жилого помещения в нежилое и нежилого помещения в жилое] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_21.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_22 (*
+	=> nrel_main_idtf: [Статья 22. Основания для возникновения прав и обязанностей граждан и организаций в области жилищных отношений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_22.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_23 (*
+	=> nrel_main_idtf: [Статья 23. Основания для возникновения права владения и пользования жилым помещением] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_23.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_24 (*
+	=> nrel_main_idtf: [Статья 24. Письменные соглашения о признании членом семьи и о порядке пользования жилым помещением] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_24.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_25 (*
+	=> nrel_main_idtf: [Статья 25. Права граждан и организаций в области жилищных отношений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_25.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_26 (*
+	=> nrel_main_idtf: [Статья 26. Обязанности граждан и организаций в области жилищных отношений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_26.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_27 (*
+	=> nrel_main_idtf: [Статья 27. Защита прав и законных интересов граждан и организаций в области жилищных отношений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_27.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_28 (*
+	=> nrel_main_idtf: [Статья 28. Возмещение вреда] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_28.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_29 (*
+	=> nrel_main_idtf: [Статья 29. Обязанность по внесению платы за жилищно-коммунальные услуги и платы за пользование жилым помещением, возмещению расходов на электроэнергию] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_29.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_30 (*
+	=> nrel_main_idtf: [Статья 30. Структура платы за жилищно-коммунальные услуги] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_30.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_31 (*
+	=> nrel_main_idtf: [Статья 31. Порядок внесения платы за жилищно-коммунальные услуги, платы за пользование жилым помещением и возмещения расходов на электроэнергию. Плата за пользование арендным жильем] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_31.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_32 (*
+	=> nrel_main_idtf: [Статья 32. Порядок устранения повреждений вспомогательных помещений многоквартирного жилого дома. Поддержание и восстановление санитарного и технического состояния придомовой территории] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_32.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_33 (*
+	=> nrel_main_idtf: [Статья 33. Участие в расходах по плате за жилищно-коммунальные услуги, плате за пользование жилым помещением, возмещении расходов на электроэнергию] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_33.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_34 (*
+	=> nrel_main_idtf: [Статья 34. Ответственность за несвоевременное и (или) неполное внесение платы за жилищно-коммунальные услуги, платы за пользование жилым помещением, несвоевременное и (или) неполное возмещение расходов на электроэнергию. Погашение задолженности по плате за жилищно-коммунальные услуги, плате за пользование жилым помещением, возмещению расходов на электроэнергию] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_34.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_35 (*
+	=> nrel_main_idtf: [Статья 35. Возникновение у граждан права состоять на учете нуждающихся в улучшении жилищных условий] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_35.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_36 (*
+	=> nrel_main_idtf: [Статья 36. Основания для признания граждан нуждающимися в улучшении жилищных условий] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_36.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_37 (*
+	=> nrel_main_idtf: [Статья 37. Основания для отказа в принятии на учет нуждающихся в улучшении жилищных условий] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_37.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_38 (*
+	=> nrel_main_idtf: [Статья 38. Учет граждан, нуждающихся в улучшении жилищных условий] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_38.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_39 (*
+	=> nrel_main_idtf: [Статья 39. Принятие граждан на учет нуждающихся в улучшении жилищных условий] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_39.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_40 (*
+	=> nrel_main_idtf: [Статья 40. Документы, необходимые для принятия граждан на учет нуждающихся в улучшении жилищных условий] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_40.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_41 (*
+	=> nrel_main_idtf: [Статья 41. Рассмотрение заявления гражданина о принятии на учет нуждающихся в улучшении жилищных условий] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_41.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_42 (*
+	=> nrel_main_idtf: [Статья 42. Осуществление учета нуждающихся в улучшении жилищных условий] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_42.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_43 (*
+	=> nrel_main_idtf: [Статья 43. Изменение очередности граждан, состоящих на учете нуждающихся в улучшении жилищных условий] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_43.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_44 (*
+	=> nrel_main_idtf: [Статья 44. Уточнение данных, являющихся основанием для сохранения права граждан состоять на учете нуждающихся в улучшении жилищных условий] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_44.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_45 (*
+	=> nrel_main_idtf: [Статья 45. Снятие граждан с учета нуждающихся в улучшении жилищных условий] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_45.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_46 (*
+	=> nrel_main_idtf: [Статья 46. Сохранение за гражданами права состоять на учете нуждающихся в улучшении жилищных условий по месту жительства] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_46.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_47 (*
+	=> nrel_main_idtf: [Статья 47. Сохранение за гражданами права состоять на учете нуждающихся в улучшении жилищных условий по месту работы (службы)] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_47.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_48 (*
+	=> nrel_main_idtf: [Статья 48. Сохранение за членами семьи гражданина права состоять на учете нуждающихся в улучшении жилищных условий] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_48.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_49 (*
+	=> nrel_main_idtf: [Статья 49. Особенности реализации права граждан на улучшение жилищных условий] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_49.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_50 (*
+	=> nrel_main_idtf: [Статья 50. Общие положения о договоре найма жилого помещения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_50.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_51 (*
+	=> nrel_main_idtf: [Статья 51. Существенные условия договора найма жилого помещения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_51.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_52 (*
+	=> nrel_main_idtf: [Статья 52. Требования к жилым помещениям, предоставляемым по договорам найма жилых помещений отдельным категориям граждан] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_52.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_53 (*
+	=> nrel_main_idtf: [Статья 53. Заключение и регистрация договоров найма жилых помещений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_53.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_54 (*
+	=> nrel_main_idtf: [Статья 54. Акт о приеме-передаче во владение и пользование жилого помещения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_54.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_55 (*
+	=> nrel_main_idtf: [Статья 55. Права и обязанности наймодателя жилого помещения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_55.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_56 (*
+	=> nrel_main_idtf: [Статья 56. Права и обязанности нанимателя жилого помещения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_56.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_57 (*
+	=> nrel_main_idtf: [Статья 57. Право нанимателя жилого помещения на предоставление права владения и пользования занимаемым им жилым помещением членам своей семьи и другим гражданам] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_57.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_58 (*
+	=> nrel_main_idtf: [Статья 58. Права и обязанности членов, бывших членов семьи нанимателя жилого помещения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_58.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_59 (*
+	=> nrel_main_idtf: [Статья 59. Права и обязанности временно отсутствующих нанимателя жилого помещения и членов, бывших членов его семьи] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_59.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_60 (*
+	=> nrel_main_idtf: [Статья 60. Изменение договора найма жилого помещения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_60.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_61 (*
+	=> nrel_main_idtf: [Статья 61. Прекращение договора найма жилого помещения, особенности его изменения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_61.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_62 (*
+	=> nrel_main_idtf: [Статья 62. Расторжение договора найма жилого помещения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_62.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_63 (*
+	=> nrel_main_idtf: [Статья 63. Расторжение или изменение договора найма жилого помещения при переходе права собственности на жилое помещение] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_63.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_64 (*
+	=> nrel_main_idtf: [Статья 64. Последствия прекращения либо расторжения договора найма жилого помещения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_64.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_65 (*
+	=> nrel_main_idtf: [Статья 65. Признание договора найма жилого помещения недействительным] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_65.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_66 (*
+	=> nrel_main_idtf: [Статья 66. Последствия признания договора найма жилого помещения недействительным] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_66.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_67 (*
+	=> nrel_main_idtf: [Статья 67. Безвозмездное владение и пользование жилым помещением] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_67.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_68 (*
+	=> nrel_main_idtf: [Статья 68. Пользование жилым помещением, предоставленным по завещательному отказу] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_68.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_69 (*
+	=> nrel_main_idtf: [Статья 69. Пользование жилым помещением на основании договора пожизненного содержания с иждивением] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_69.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_70 (*
+	=> nrel_main_idtf: [Статья 70. Объекты сделок и ограничения по отчуждению и ипотеке жилых помещений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_70.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_71 (*
+	=> nrel_main_idtf: [Статья 71. Право граждан и организаций на приобретение жилых помещений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_71.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_72 (*
+	=> nrel_main_idtf: [Статья 72. Отчуждение жилых помещений государственного жилищного фонда] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_72.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_73 (*
+	=> nrel_main_idtf: [Статья 73. Отчуждение, ипотека, финансовая аренда (лизинг) жилых помещений частного жилищного фонда] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_73.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_74 (*
+	=> nrel_main_idtf: [Статья 74. Отчуждение, аренда, наем, залог, предоставление в безвозмездное пользование жилых помещений, принадлежащих на праве собственности гражданам отдельных категорий] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_74.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_75 (*
+	=> nrel_main_idtf: [Статья 75. Обмен жилых помещений государственного жилищного фонда] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_75.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_76 (*
+	=> nrel_main_idtf: [Статья 76. Обмен жилых помещений частного жилищного фонда] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_76.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_77 (*
+	=> nrel_main_idtf: [Статья 77. Обмен жилых помещений, находящихся на территории Республики Беларусь и территории иностранного государства] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_77.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_78 (*
+	=> nrel_main_idtf: [Статья 78. Общие положения о выселении граждан из жилых помещений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_78.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_79 (*
+	=> nrel_main_idtf: [Статья 79. Выселение граждан без предоставления им другого жилого помещения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_79.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_80 (*
+	=> nrel_main_idtf: [Статья 80. Выселение граждан, уклоняющихся от внесения платы за жилищно-коммунальные услуги, платы за пользование жилым помещением, возмещения расходов на электроэнергию, из жилых помещений государственного жилищного фонда] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_80.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_81 (*
+	=> nrel_main_idtf: [Статья 81. Выселение граждан из жилых помещений, являющихся предметом ипотеки] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_81.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_82 (*
+	=> nrel_main_idtf: [Статья 82. Выселение из жилого помещения в связи со сносом жилого дома либо с переводом жилого помещения в нежилое] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_82.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_83 (*
+	=> nrel_main_idtf: [Статья 83. Выселение из жилого помещения, находящегося в аварийном состоянии или грозящего обвалом, а также в связи с введением чрезвычайного положения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_83.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_84 (*
+	=> nrel_main_idtf: [Статья 84. Выселение из жилого помещения на время капитального ремонта или реконструкции жилого дома] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_84.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_85 (*
+	=> nrel_main_idtf: [Статья 85. Выселение из жилого помещения социального пользования] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_85.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_86 (*
+	=> nrel_main_idtf: [Статья 86. Выселение из арендного жилья] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_86.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_87 (*
+	=> nrel_main_idtf: [Статья 87. Выселение из жилого помещения государственного жилищного фонда в общежитии] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_87.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_88 (*
+	=> nrel_main_idtf: [Статья 88. Выселение из специальных жилых помещений. Выселение обязанных лиц] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_88.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_89 (*
+	=> nrel_main_idtf: [Статья 89. Выселение по требованию собственника жилого помещения членов, бывших членов его семьи, других граждан, имеющих право владения и пользования жилым помещением] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_89.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_90 (*
+	=> nrel_main_idtf: [Статья 90. Обязанности наймодателей жилых помещений государственного жилищного фонда, организаций, осуществляющих эксплуатацию жилищного фонда и (или) предоставляющих жилищно-коммунальные услуги, собственников жилых домов частного жилищного фонда по обеспечению сохранности жилых помещений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_90.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_91 (*
+	=> nrel_main_idtf: [Статья 91. Обязанности собственников жилых помещений частного жилищного фонда, лизингополучателей, нанимателей жилых помещений, дольщиков, заключивших договоры, предусматривающие передачу им во владение и пользование объектов долевого строительства, членов организаций застройщиков по обеспечению сохранности жилых помещений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_91.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_92 (*
+	=> nrel_main_idtf: [Статья 92. Эксплуатация жилищного фонда] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_92.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_93 (*
+	=> nrel_main_idtf: [Статья 93. Контроль за соблюдением жилищного законодательства] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_93.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_94 (*
+	=> nrel_main_idtf: [Статья 94. Общественные комиссии по жилищным вопросам] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_94.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_95 (*
+	=> nrel_main_idtf: [Статья 95. Предоставление государственными органами, другими организациями жилых помещений государственного жилищного фонда] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_95.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_96 (*
+	=> nrel_main_idtf: [Статья 96. Предоставление жилых помещений государственного жилищного фонда] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_96.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_97 (*
+	=> nrel_main_idtf: [Статья 97. Предоставление свободных (освободившихся) жилых помещений. Право повторного предоставления жилых помещений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_97.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_98 (*
+	=> nrel_main_idtf: [Статья 98. Очередность предоставления жилых помещений государственного жилищного фонда] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_98.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_99 (*
+	=> nrel_main_idtf: [Статья 99. Норма предоставления жилого помещения государственного жилищного фонда] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_99.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_100 (*
+	=> nrel_main_idtf: [Статья 100. Предоставление дополнительной площади жилого помещения государственного жилищного фонда] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_100.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_101 (*
+	=> nrel_main_idtf: [Статья 101. Предоставление жилого помещения государственного жилищного фонда меньшего размера взамен занимаемого] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_101.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_102 (*
+	=> nrel_main_idtf: [Статья 102. Предоставление жилого помещения государственного жилищного фонда в связи с капитальным ремонтом или реконструкцией жилого дома] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_102.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_103 (*
+	=> nrel_main_idtf: [Статья 103. Предоставление освободившейся жилой комнаты государственного жилищного фонда] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_103.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_104 (*
+	=> nrel_main_idtf: [Статья 104. Жилые помещения социального пользования] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_104.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_105 (*
+	=> nrel_main_idtf: [Статья 105. Граждане, имеющие право на получение жилого помещения социального пользования] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_105.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_106 (*
+	=> nrel_main_idtf: [Статья 106. Порядок предоставления жилых помещений социального пользования, владения и пользования ими] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_106.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_107 (*
+	=> nrel_main_idtf: [Статья 107. Право нанимателя жилого помещения социального пользования на предоставление права владения и пользования занимаемым им жилым помещением членам своей семьи] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_107.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_108 (*
+	=> nrel_main_idtf: [Статья 108. Договор найма жилого помещения социального пользования государственного жилищного фонда] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_108.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_109 (*
+	=> nrel_main_idtf: [Статья 109. Расторжение либо прекращение договора найма жилого помещения социального пользования государственного жилищного фонда] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_109.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_110 (*
+	=> nrel_main_idtf: [Статья 110. Арендное жилье] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_110.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_111 (*
+	=> nrel_main_idtf: [Статья 111. Граждане, имеющие первоочередное право на предоставление арендного жилья] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_111.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_112 (*
+	=> nrel_main_idtf: [Статья 112. Порядок предоставления арендного жилья, владения и пользования им] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_112.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_113 (*
+	=> nrel_main_idtf: [Статья 113. Договор найма арендного жилья] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_113.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_114 (*
+	=> nrel_main_idtf: [Статья 114. Расторжение либо прекращение договора найма арендного жилья] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_114.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_115 (*
+	=> nrel_main_idtf: [Статья 115. Жилые помещения государственного жилищного фонда в общежитиях] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_115.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_116 (*
+	=> nrel_main_idtf: [Статья 116. Порядок предоставления жилых помещений государственного жилищного фонда в общежитиях, владения и пользования ими] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_116.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_117 (*
+	=> nrel_main_idtf: [Статья 117. Специальные жилые помещения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_117.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_118 (*
+	=> nrel_main_idtf: [Статья 118. Порядок предоставления специальных жилых помещений, владения и пользования ими] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_118.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_119 (*
+	=> nrel_main_idtf: [Статья 119. Учет военнослужащих, нуждающихся в улучшении жилищных условий] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_119.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_120 (*
+	=> nrel_main_idtf: [Статья 120. Документы, необходимые для принятия военнослужащих на учет нуждающихся в улучшении жилищных условий по месту прохождения военной службы (службы)] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_120.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_121 (*
+	=> nrel_main_idtf: [Статья 121. Сохранение за военнослужащими и членами их семей права состоять на учете нуждающихся в улучшении жилищных условий] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_121.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_122 (*
+	=> nrel_main_idtf: [Статья 122. Обеспечение военнослужащих жилыми помещениями] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_122.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_123 (*
+	=> nrel_main_idtf: [Статья 123. Обеспечение военнослужащих арендным жильем] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_123.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_124 (*
+	=> nrel_main_idtf: [Статья 124. Обеспечение военнослужащих жилыми помещениями государственного жилищного фонда в общежитиях] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_124.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_125 (*
+	=> nrel_main_idtf: [Статья 125. Выселение военнослужащих, членов их семей и иных граждан из арендного жилья, специальных жилых помещений и жилых помещений государственного жилищного фонда в общежитиях, предоставленных военнослужащим] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_125.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_126 (*
+	=> nrel_main_idtf: [Статья 126. Предоставление военнослужащим государственной поддержки на строительство (реконструкцию) или приобретение жилых помещений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_126.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_127 (*
+	=> nrel_main_idtf: [Статья 127. Предоставление гражданам жилых помещений, построенных за счет средств республиканского бюджета, направляемых на преодоление последствий катастрофы на Чернобыльской АЭС] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_127.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_128 (*
+	=> nrel_main_idtf: [Статья 128. Порядок предоставления гражданам жилых помещений, построенных за счет средств республиканского бюджета, направляемых на преодоление последствий катастрофы на Чернобыльской АЭС] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_128.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_129 (*
+	=> nrel_main_idtf: [Статья 129. Предоставление временно свободных жилых помещений, принадлежащих на праве собственности обязанным лицам] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_129.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_130 (*
+	=> nrel_main_idtf: [Статья 130. Предоставление жилых помещений обязанным лицам, временно выселенным из занимаемых ими жилых помещений, владение и пользование такими жилыми помещениями] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_130.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_131 (*
+	=> nrel_main_idtf: [Статья 131. Предоставление незаселенных жилых помещений, принадлежащих на праве собственности детям-сиротам и детям, оставшимся без попечения родителей] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_131.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_132 (*
+	=> nrel_main_idtf: [Статья 132. Защита прав на жилые помещения детей-сирот и детей, оставшихся без попечения родителей, а также детей с особенностями психофизического развития, проживающих в домах-интернатах для детей-инвалидов с особенностями психофизического развития] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_132.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_133 (*
+	=> nrel_main_idtf: [Статья 133. Предоставление незаселенных жилых помещений, принадлежащих на праве собственности гражданам, признанным недееспособными и проживающим в учреждениях социального обслуживания, осуществляющих стационарное социальное обслуживание] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_133.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_134 (*
+	=> nrel_main_idtf: [Статья 134. Предоставление права владения и пользования ранее занимаемым жилым помещением гражданину, признанному в установленном порядке дееспособным] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_134.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_135 (*
+	=> nrel_main_idtf: [Статья 135. Основания для возникновения права собственности на жилые помещения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_135.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_136 (*
+	=> nrel_main_idtf: [Статья 136. Правомочия по осуществлению права собственности на жилые помещения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_136.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_137 (*
+	=> nrel_main_idtf: [Статья 137. Отчуждение жилого помещения в случае нарушения правил пользования жилыми помещениями, содержания жилых и вспомогательных помещений либо уклонения от внесения платы за жилищно-коммунальные услуги, возмещения расходов на электроэнергию] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_137.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_138 (*
+	=> nrel_main_idtf: [Статья 138. Раздел жилого помещения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_138.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_139 (*
+	=> nrel_main_idtf: [Статья 139. Права и обязанности членов, бывших членов семьи собственника жилого помещения, не имеющих доли в праве общей собственности на это жилое помещение] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_139.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_140 (*
+	=> nrel_main_idtf: [Статья 140. Права граждан и организаций при сносе жилого дома в связи с изъятием земельного участка для государственных нужд] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_140.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_141 (*
+	=> nrel_main_idtf: [Статья 141. Права граждан и организаций при утрате жилого дома] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_141.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_142 (*
+	=> nrel_main_idtf: [Статья 142. Права граждан и организаций при утрате жилого помещения в многоквартирном или блокированном жилом доме] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_142.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_143 (*
+	=> nrel_main_idtf: [Статья 143. Права граждан при утрате квартиры в связи с капитальным ремонтом или реконструкцией многоквартирного жилого дома] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_143.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_144 (*
+	=> nrel_main_idtf: [Статья 144. Предоставление, выселение и передача в собственность жилых помещений организациями негосударственной формы собственности] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_144.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_145 (*
+	=> nrel_main_idtf: [Статья 145. Предоставление организациями негосударственной формы собственности жилых помещений во владение и пользование по договору найма жилого помещения частного жилищного фонда или передача в собственность] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_145.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_146 (*
+	=> nrel_main_idtf: [Статья 146. Возникновение и прекращение совместного домовладения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_146.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_147 (*
+	=> nrel_main_idtf: [Статья 147. Обязанности участников совместного домовладения по несению расходов по эксплуатации общего имущества совместного домовладения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_147.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_148 (*
+	=> nrel_main_idtf: [Статья 148. Государственные социальные гарантии для участников совместного домовладения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_148.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_149 (*
+	=> nrel_main_idtf: [Статья 149. Контроль за эксплуатацией общего имущества совместного домовладения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_149.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_150 (*
+	=> nrel_main_idtf: [Статья 150. Общее имущество совместного домовладения. Доля в праве собственности на общее имущество совместного домовладения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_150.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_151 (*
+	=> nrel_main_idtf: [Статья 151. Способы управления общим имуществом совместного домовладения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_151.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_152 (*
+	=> nrel_main_idtf: [Статья 152. Управление общим имуществом совместного домовладения товариществом собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_152.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_153 (*
+	=> nrel_main_idtf: [Статья 153. Управление общим имуществом совместного домовладения непосредственно участниками совместного домовладения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_153.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_154 (*
+	=> nrel_main_idtf: [Статья 154. Управление общим имуществом совместного домовладения уполномоченным лицом] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_154.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_155 (*
+	=> nrel_main_idtf: [Статья 155. Договор на управление общим имуществом совместного домовладения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_155.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_156 (*
+	=> nrel_main_idtf: [Статья 156. Порядок проведения общего собрания участников совместного домовладения по вопросу создания товарищества собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_156.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_157 (*
+	=> nrel_main_idtf: [Статья 157. Общее собрание участников совместного домовладения по вопросу создания товарищества собственников, проводимое в форме письменного опроса] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_157.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_158 (*
+	=> nrel_main_idtf: [Статья 158. Участие нанимателей жилых помещений, арендаторов жилых и (или) нежилых помещений, лизингополучателей жилых помещений в управлении общим имуществом совместного домовладения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_158.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_159 (*
+	=> nrel_main_idtf: [Статья 159. Общее собрание участников совместного домовладения] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_159.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_160 (*
+	=> nrel_main_idtf: [Статья 160. Общие положения о создании и деятельности организации собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_160.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_161 (*
+	=> nrel_main_idtf: [Статья 161. Формирование организации застройщиков] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_161.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_162 (*
+	=> nrel_main_idtf: [Статья 162. Создание товарищества собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_162.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_163 (*
+	=> nrel_main_idtf: [Статья 163. Имущество организации собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_163.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_164 (*
+	=> nrel_main_idtf: [Статья 164. Устав организации собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_164.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_165 (*
+	=> nrel_main_idtf: [Статья 165. Органы управления организации собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_165.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_166 (*
+	=> nrel_main_idtf: [Статья 166. Общее собрание (собрание уполномоченных) членов организации собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_166.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_167 (*
+	=> nrel_main_idtf: [Статья 167. Исключительная компетенция общего собрания (собрания уполномоченных) членов организации собственников и порядок принятия им решений] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_167.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_168 (*
+	=> nrel_main_idtf: [Статья 168. Правление организации собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_168.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_169 (*
+	=> nrel_main_idtf: [Статья 169. Компетенция правления организации собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_169.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_170 (*
+	=> nrel_main_idtf: [Статья 170. Председатель правления организации собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_170.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_171 (*
+	=> nrel_main_idtf: [Статья 171. Ревизионная комиссия организации собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_171.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_172 (*
+	=> nrel_main_idtf: [Статья 172. Членство в организации застройщиков] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_172.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_173 (*
+	=> nrel_main_idtf: [Статья 173. Возникновение прав на объекты недвижимого имущества в жилом доме организации застройщиков] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_173.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_174 (*
+	=> nrel_main_idtf: [Статья 174. Прекращение членства в организации застройщиков] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_174.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_175 (*
+	=> nrel_main_idtf: [Статья 175. Исключение из членов организации застройщиков] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_175.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_176 (*
+	=> nrel_main_idtf: [Статья 176. Членство в товариществе собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_176.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_177 (*
+	=> nrel_main_idtf: [Статья 177. Права организации собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_177.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_178 (*
+	=> nrel_main_idtf: [Статья 178. Обязанности организации собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_178.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_179 (*
+	=> nrel_main_idtf: [Статья 179. Права и обязанности членов организации собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_179.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_180 (*
+	=> nrel_main_idtf: [Статья 180. Права и обязанности членов, бывших членов семьи гражданина, являющегося членом организации застройщиков] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_180.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_181 (*
+	=> nrel_main_idtf: [Статья 181. Права и обязанности собственника объектов недвижимого имущества, не являющегося членом организации застройщиков, и членов, бывших членов его семьи] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_181.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_182 (*
+	=> nrel_main_idtf: [Статья 182. Вступление граждан в организацию застройщиков в случае передачи им права на паенакопления либо смерти гражданина, являвшегося членом организации застройщиков] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_182.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_183 (*
+	=> nrel_main_idtf: [Статья 183. Порядок внесения взносов членами организации собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_183.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_184 (*
+	=> nrel_main_idtf: [Статья 184. Капитальный ремонт жилого дома организации собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_184.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_185 (*
+	=> nrel_main_idtf: [Статья 185. Реорганизация или ликвидация организации собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_185.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+=> nrel_article: by_act_hk1200428_article_186 (*
+	=> nrel_main_idtf: [Статья 186. Контроль за деятельностью, в том числе финансово-хозяйственной, организаций застройщиков, контроль за деятельностью товариществ собственников] (* <- lang_ru;; *);;
+	<- rrel_key_sc_element: ... (*
+		<- definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: "file://text/by_act_hk1200428_article_186.html" (*
+				<- lang_ru;;
+				=> nrel_format: format_html;;
+			*);;
+		*);;
+	*);;
+*);
+
+<- legal_act;
+<- legal_code;
+<- belarus_legal_act;
+<- sc_node_not_relation;;

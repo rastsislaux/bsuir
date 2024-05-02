@@ -1,0 +1,37 @@
+section_law_belarus_international_org_legislation
+=> nrel_main_idtf: [Раздел. Документы международных организаций и иных межгосударственных образований (объединений), участницей которых является Республика Беларусь] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Section. Documents of international organizations and other interstate entities (associations), of which the Republic of Belarus is a member] (* <- lang_en;; *);
+=> nrel_main_idtf: [Раздзел. Дакументы міжнародных арганізацый і іншых міждзяржаўных утварэнняў (аб'яднанняў), удзельніцай якіх з'яўляецца Рэспубліка Беларусь] (* <- lang_by;; *);
+
+<= nrel_section_decomposition: {
+  section_law_belarus_international_org_legislation_dict
+};
+
+-> rrel_key_sc_element:
+  concept_international_org;
+  country_by;
+
+<- non_atomic_section;;
+
+section_law_belarus_international_org_legislation = [*
+
+  subject_domain_of_law_belarus_international_org_legislation
+    => nrel_main_idtf: [Предметная область документов международных организаций и иных межгосударственных образований (объединений), участницей которых является Республика Беларусь] (* <- lang_ru;; *);
+    => nrel_main_idtf: [Subject domain of documents of international organizations and other interstate entities (associations), of which the Republic of Belarus is a member] (* <- lang_en;; *);
+    => nrel_main_idtf: [Прадметная вобласць дакументаў міжнародных арганізацый і іншых міждзяржаўных утварэнняў (аб'яднанняў), удзельніцай якіх з'яўляецца Рэспубліка Беларусь] (* <- lang_by;; *);
+
+    -> rrel_maximum_studied_object_class:
+      concept_international_org;
+
+    // -> rrel_not_maximum_studied_object_class:
+
+    -> rrel_explored_relation:
+      nrel_legal_act;
+
+    <= nrel_private_subject_domain:
+      subject_domain_of_law_belarus;
+      subject_domain_of_international_org;
+
+    <- subject_domain;;
+
+*];;

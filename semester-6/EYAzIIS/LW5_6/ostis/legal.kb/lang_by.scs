@@ -1,0 +1,20 @@
+lang_by
+  => nrel_main_idtf: [Белорусский язык] (* <- lang_ru;; *);
+  => nrel_main_idtf: [Belarusian language] (* <- lang_en;; *);
+  => nrel_main_idtf: [Беларуская мова] (* <- lang_by;; *);
+  <- sc_node_not_relation;
+  <- languages;;
+
+lang_by
+-> [асноўны ідэнтыфікатар*] (* <= nrel_main_idtf: nrel_main_idtf;; *);
+-> [дэкампазіцыя раздзела*] (* <= nrel_main_idtf: nrel_section_decomposition;; *);
+-> [стартавы sc-элемент]    (* <= nrel_main_idtf: ui_start_sc_element;; *);
+-> [sc-мадэль базы ведаў]   (* <= nrel_main_idtf: sc_model_of_knowledge_base;; *);
+-> [недастаткова сфарміраваная структура] (* <= nrel_main_idtf: not_enough_formed_structure;; *);
+-> [прадметная частка базы ведаў] (* <= nrel_main_idtf: substantive_part_of_the_knowledge_base;; *);
+-> [ключавы sc-элемент'] (* <= nrel_main_idtf: rrel_key_sc_element;; *);
+-> [неатамарны раздзел] (* <= nrel_main_idtf: non_atomic_section;; *);
+-> [прыватная прадметная вобласць*] (* <= nrel_main_idtf: nrel_private_subject_domain;; *);
+-> [максімальны клас аб'ектаў даследаванняў'] (* <= nrel_main_idtf: rrel_maximum_studied_object_class;; *);
+-> [даследаваныя адносіны'] (* <= nrel_main_idtf: rrel_explored_relation;; *);
+-> [прадметная вобласць] (* <= nrel_main_idtf: subject_domain;; *);;
