@@ -218,6 +218,7 @@ def generate_html(tokens):
                 if (newDep !== null) {
                     token.dataset.dep = newDep;
                 }
+                renewUnderlining();
             }
             function saveHtml() {
                 var html = document.documentElement.outerHTML;
@@ -240,112 +241,112 @@ def generate_html(tokens):
                     element.style.color = null;
                     
                     switch (dep) {
-    case 'Root':
-        element.style.color = "darkred";
-        break;
-    case 'Subject':
-    case 'Nominal subject':
-    case 'Clausal subject':
-        element.style.color = "darkgreen";
-        break;
-    case 'Direct object':
-    case 'Indirect object':
-    case 'Object of preposition':
-        element.style.color = "darkblue";
-        break;
-    case 'Attribute':
-        element.style.color = "purple";
-        break;
-    case 'Agent':
-        element.style.color = "darkorange";
-        break;
-    case 'Adverbial clause modifier':
-    case 'Adverbial modifier':
-    case 'Adjectival modifier':
-    case 'Appositional modifier':
-        element.style.color = "teal";
-        break;
-    case 'Auxiliary':
-    case 'Passive auxiliary':
-        element.style.color = "darkgoldenrod";
-        break;
-    case 'Coordinating conjunction':
-        element.style.color = "maroon";
-        break;
-    case 'Clausal complement':
-    case 'Open clausal complement':
-        element.style.color = "darkcyan";
-        break;
-    case 'Compound word':
-        element.style.color = "firebrick";
-        break;
-    case 'Conjunct':
-    case 'Preconjunct':
-        element.style.color = "darkolivegreen";
-        break;
-    case 'Dative':
-        element.style.color = "indigo";
-        break;
-    case 'Unspecified dependency':
-        element.style.color = "dimgray";
-        break;
-    case 'Determiner':
-    case 'Pre-determiner':
-        element.style.color = "fuchsia";
-        break;
-    case 'Expletive':
-    case 'Particle':
-        element.style.color = "navy";
-        break;
-    case 'Interjection':
-        element.style.color = "olive";
-        break;
-    case 'Marker':
-        element.style.color = "darkred";
-        break;
-    case 'Meta modifier':
-        element.style.color = "saddlebrown";
-        break;
-    case 'Negation modifier':
-        element.style.color = "limegreen";
-        break;
-    case 'Nominal modifier':
-        element.style.color = "coral";
-        break;
-    case 'Noun phrase as adverbial modifier':
-        element.style.color = "hotpink";
-        break;
-    case 'Numeric modifier':
-        element.style.color = "silver";
-        break;
-    case 'Object predicate':
-        element.style.color = "darkcyan";
-        break;
-    case 'Parataxis':
-        element.style.color = "darkgray";
-        break;
-    case 'Prepositional complement':
-        element.style.color = "darkorange";
-        break;
-    case 'Possession modifier':
-        element.style.color = "navy";
-        break;
-    case 'Prepositional modifier':
-        element.style.color = "goldenrod";
-        break;
-    case 'Punctuation':
-        // No specific color
-        break;
-    case 'Quantifier modifier':
-        element.style.color = "deepskyblue";
-        break;
-    case 'Relative clause modifier':
-        element.style.color = "deeppink";
-        break;
-    default:
-        // No specific color
-        break;
-}
+                        case 'Root':
+                            element.style.color = "darkred";
+                            break;
+                        case 'Subject':
+                        case 'Nominal subject':
+                        case 'Clausal subject':
+                            element.style.color = "darkgreen";
+                            break;
+                        case 'Direct object':
+                        case 'Indirect object':
+                        case 'Object of preposition':
+                            element.style.color = "darkblue";
+                            break;
+                        case 'Attribute':
+                            element.style.color = "purple";
+                            break;
+                        case 'Agent':
+                            element.style.color = "darkorange";
+                            break;
+                        case 'Adverbial clause modifier':
+                        case 'Adverbial modifier':
+                        case 'Adjectival modifier':
+                        case 'Appositional modifier':
+                            element.style.color = "teal";
+                            break;
+                        case 'Auxiliary':
+                        case 'Passive auxiliary':
+                            element.style.color = "darkgoldenrod";
+                            break;
+                        case 'Coordinating conjunction':
+                            element.style.color = "maroon";
+                            break;
+                        case 'Clausal complement':
+                        case 'Open clausal complement':
+                            element.style.color = "darkcyan";
+                            break;
+                        case 'Compound word':
+                            element.style.color = "firebrick";
+                            break;
+                        case 'Conjunct':
+                        case 'Preconjunct':
+                            element.style.color = "darkolivegreen";
+                            break;
+                        case 'Dative':
+                            element.style.color = "indigo";
+                            break;
+                        case 'Unspecified dependency':
+                            element.style.color = "dimgray";
+                            break;
+                        case 'Determiner':
+                        case 'Pre-determiner':
+                            element.style.color = "fuchsia";
+                            break;
+                        case 'Expletive':
+                        case 'Particle':
+                            element.style.color = "navy";
+                            break;
+                        case 'Interjection':
+                            element.style.color = "olive";
+                            break;
+                        case 'Marker':
+                            element.style.color = "darkred";
+                            break;
+                        case 'Meta modifier':
+                            element.style.color = "saddlebrown";
+                            break;
+                        case 'Negation modifier':
+                            element.style.color = "limegreen";
+                            break;
+                        case 'Nominal modifier':
+                            element.style.color = "coral";
+                            break;
+                        case 'Noun phrase as adverbial modifier':
+                            element.style.color = "hotpink";
+                            break;
+                        case 'Numeric modifier':
+                            element.style.color = "silver";
+                            break;
+                        case 'Object predicate':
+                            element.style.color = "darkcyan";
+                            break;
+                        case 'Parataxis':
+                            element.style.color = "darkgray";
+                            break;
+                        case 'Prepositional complement':
+                            element.style.color = "darkorange";
+                            break;
+                        case 'Possession modifier':
+                            element.style.color = "navy";
+                            break;
+                        case 'Prepositional modifier':
+                            element.style.color = "goldenrod";
+                            break;
+                        case 'Punctuation':
+                            // No specific color
+                            break;
+                        case 'Quantifier modifier':
+                            element.style.color = "deepskyblue";
+                            break;
+                        case 'Relative clause modifier':
+                            element.style.color = "deeppink";
+                            break;
+                        default:
+                            // No specific color
+                            break;
+                    }
                 })
             }
         </script>
