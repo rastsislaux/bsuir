@@ -141,9 +141,9 @@ You can leave this field empty, then no filtering will be performed.")
 
         self.tree = ttk.Treeview(self.table_frame, columns=self.columns, show="headings", height=20)
         Hovertip(self.tree, "This table represents the database of the application.\n\
-                 The first row shows the word for which all information is shown.\n\
-                 The second row shows morphologic information about the word.\n\
-                 The third row shows number of occurences of this word in analyzed texts.")
+The first row shows the word for which all information is shown.\n\
+The second row shows morphologic information about the word.\n\
+The third row shows number of occurences of this word in analyzed texts.")
 
         for col in self.columns:
             self.tree.heading(col, text=col)
