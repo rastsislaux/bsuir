@@ -1,0 +1,227 @@
+<div id="main">
+  <mat-tab-group dynamicHeight color="primary">
+    <mat-tab label="Classes">
+      <button mat-flat-button (click)="create()">Create new</button>
+
+      <table>
+        <tr>
+          <th>Class name</th>
+          <th>Actions</th>
+        </tr>
+        <tr *ngFor="let clazz of classes">
+          <td>{{ clazz }}</td>
+          <td>
+            <button mat-icon-button (click)="delete(clazz)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </table>
+    </mat-tab>
+
+    <mat-tab label="Object Properties">
+      <mat-form-field style="width: 100%">
+        <mat-label>Choose class...</mat-label>
+        <mat-select [(ngModel)]="selectedClazz" (selectionChange)="updateObjectProperties()">
+          <mat-option *ngFor="let clazz of classes" [value]="clazz">{{ clazz }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            Add new object property
+          </mat-expansion-panel-header>
+
+          Choose property:
+          <mat-form-field style="width: 100%">
+            <mat-select [(ngModel)]="selectedObjectProperty">
+              <mat-option *ngFor="let op of availableOps" [value]="op">
+                {{ op }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          Choose object:
+          <mat-form-field style="width: 100%">
+            <mat-select [(ngModel)]="selectedClazzForNewOp">
+              <mat-option *ngFor="let clazz of classes" [value]="clazz">{{ clazz }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <button mat-button (click)="addOPToEntity()">Create</button>
+
+        </mat-expansion-panel>
+      </mat-accordion>
+
+      <table>
+        <tr>
+          <th>Predicate</th>
+          <th>Object</th>
+          <th></th>
+        </tr>
+        <tr *ngFor="let op of ops">
+          <td>{{ op.prName }}</td>
+          <td>{{ op.obj }}</td>
+          <td>
+            <button mat-icon-button (click)="deleteOp(selectedClazz, op.prName, op.obj)"><mat-icon>delete</mat-icon></button>
+          </td>
+        </tr>
+      </table>
+    </mat-tab>
+
+    <mat-tab label="Primitive Properties">
+      <mat-form-field style="width: 100%">
+        <mat-label>Choose class...</mat-label>
+        <mat-select [(ngModel)]="selectedClazz" (selectionChange)="updatePrimitiveProperties()">
+          <mat-option *ngFor="let clazz of classes" [value]="clazz">{{ clazz }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            Add new primitive property
+          </mat-expansion-panel-header>
+
+          Choose property:
+          <mat-form-field style="width: 100%">
+            <mat-select [(ngModel)]="selectedObjectProperty">
+              <mat-option *ngFor="let op of availableOps" [value]="op">
+                {{ op }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          Choose object:
+          <mat-form-field style="width: 100%">
+            <input matInput placeholder="Input value..." [(ngModel)]="inputString">
+          </mat-form-field>
+
+          <button mat-button (click)="addPPToEntity(selectedClazz, selectedObjectProperty, inputString)">Create</button>
+
+        </mat-expansion-panel>
+      </mat-accordion>
+
+      <table>
+        <tr>
+          <th>Predicate</th>
+          <th>Object</th>
+          <th></th>
+        </tr>
+        <tr *ngFor="let op of pps">
+          <td>{{ op.prName }}</td>
+          <td>{{ op.obj }}</td>
+          <td>
+            <button mat-icon-button (click)="deletePP(selectedClazz, op.prName)"><mat-icon>delete</mat-icon></button>
+          </td>
+        </tr>
+      </table>
+    </mat-tab>
+
+    <mat-tab label="Individuals">
+
+      <mat-form-field style="width: 100%">
+        <mat-label>Choose class...</mat-label>
+        <mat-select [(ngModel)]="selectedClazz" (selectionChange)="updateIndividuals()">
+          <mat-option *ngFor="let clazz of classes" [value]="clazz">{{ clazz }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            Add individual
+          </mat-expansion-panel-header>
+
+          Choose object:
+          <mat-form-field style="width: 100%">
+            <input matInput placeholder="Input value..." [(ngModel)]="inputString">
+          </mat-form-field>
+
+          <button mat-button (click)="createIndividual(inputString)">Create</button>
+
+        </mat-expansion-panel>
+      </mat-accordion>
+
+      <table>
+        <tr>
+          <th>URI</th>
+          <th></th>
+        </tr>
+        <tr *ngFor="let op of inds">
+          <td>{{ op }}</td>
+          <td>
+            <button mat-icon-button (click)="deleteIndividual(op)"><mat-icon>delete</mat-icon></button>
+          </td>
+        </tr>
+      </table>
+    </mat-tab>
+
+    <mat-tab label="Ontologies">
+      Some user ontologies you can use:
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>URL</th>
+          <th></th>
+        </tr>
+
+        <tr>
+          <td>The RDF Schema vocabulary (RDFS)</td>
+          <td>http://www.w3.org/2000/01/rdf-schema</td>
+          <td>
+            <button mat-button (click)="loadOntology('http://www.w3.org/2000/01/rdf-schema')">Load</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Friend of a Friend</td>
+          <td>http://xmlns.com/foaf/spec/index.rdf</td>
+          <td>
+            <button mat-button (click)="loadOntology('http://xmlns.com/foaf/spec/index.rdf')">Load</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Animalia Kingdom</td>
+          <td>https://raw.githubusercontent.com/ayushdabra/Animalia-Kingdom-Ontology/main/AnimaliaKingdom.owl</td>
+          <td>
+            <button mat-button (click)="loadOntology('https://raw.githubusercontent.com/ayushdabra/Animalia-Kingdom-Ontology/main/AnimaliaKingdom.owl')">Load</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Monkeys</td>
+          <td>monkeys.owl</td>
+          <td>
+            <button mat-button (click)="loadOntology('monkeys.owl')">Load</button>
+          </td>
+        </tr>
+      </table>
+
+      <mat-form-field style="width: 100%">
+        <input matInput placeholder="Enter URL..." [(ngModel)]="ontologyURL">
+      </mat-form-field>
+
+      <button mat-button (click)="loadOntology(ontologyURL)">Read ontology</button>
+
+      <button mat-button (click)="clearOntology()">Clear ontology</button>
+
+      <button mat-button (click)="saveOntology()">Save ontology</button>
+
+      <br>
+      <hr>
+
+      <mat-form-field style="width: 100%">
+        <mat-label>SPARQL Query</mat-label>
+        <textarea matInput [(ngModel)]="sparqlQuery"></textarea>
+      </mat-form-field>
+
+      <button mat-button (click)="executeSparql()">Execute</button>
+      <br>
+
+      <pre>{{ sparqlResult }}</pre>
+    </mat-tab>
+  </mat-tab-group>
+</div>

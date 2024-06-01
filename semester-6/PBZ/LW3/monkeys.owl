@@ -1,0 +1,538 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:monkey="http://evoflex.tech/monkey#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Family">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#RangOfClassification"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Lemur">
+    <monkey:rang>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Superfamily"/>
+    </monkey:rang>
+    <monkey:habitat>Forests of Madagascar</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Lemuriformes"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Catarhini">
+    <monkey:rang>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Infraorder"/>
+    </monkey:rang>
+    <monkey:habitat>Varies depending on the species</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Haplorrhini"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Strepsirrhini">
+    <monkey:rang>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Suborder"/>
+    </monkey:rang>
+    <monkey:habitat>Varies depending on the species</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Primate"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Tribe">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Squirrel">
+    <monkey:rang>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Genus"/>
+    </monkey:rang>
+    <monkey:habitat>Varies depending on the species</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Cebidae"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Spheniacodontia">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Eupelycosauria"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Eueriodontia">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Theriodont"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Sarcopterygii">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Osteichthyes"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Reptiliomorpha">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Tetrapoda"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Primatomorpha">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Euarchonta"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Muriquis">
+    <monkey:rang>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Genus"/>
+    </monkey:rang>
+    <monkey:habitat>Atlantic coastal forests of Brazil</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Atelidae"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Hominini">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Tribe"/>
+    <monkey:habitat>Varies depending on the species</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Homininae"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Marmoset">
+    <monkey:rang>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Genus"/>
+    </monkey:rang>
+    <monkey:habitat>Tropical rainforests of South America</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Callitrichidae"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Titi">
+    <monkey:rang>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Genus"/>
+    </monkey:rang>
+    <monkey:habitat>Tropical forests of South America</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Pitheciidae"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Eutherapsida">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Therapsida"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Ponginae">
+    <monkey:rang>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Subfamily"/>
+    </monkey:rang>
+    <monkey:habitat>Southeast Asia</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Hominidae"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Deuterostomia">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Nephrozoa"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Tarsier">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+    <monkey:habitat>Forests of Southeast Asia</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Tarsiiformes"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Wooly">
+    <monkey:rang>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Genus"/>
+    </monkey:rang>
+    <monkey:habitat>Tropical forests of South America</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Atelidae"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Hylobatidae">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+    <monkey:habitat>Southeast Asia</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Hominoidea"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Homininae">
+    <monkey:rang>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Subfamily"/>
+    </monkey:rang>
+    <monkey:habitat>Varies depending on the species</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Hominidae"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Theriodont">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Neotherapsida"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Superfamily">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Eupelycosauria">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Synapsida"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Species">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Hominoidea">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Superfamily"/>
+    <monkey:habitat>Varies depending on the species</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Catarhini"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Bonobo">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Species"/>
+    <monkey:habitat>Forests of the Democratic Republic of Congo</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Paninini"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Stegocephalia">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Epistostegalia"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Bilateria">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Eumetazoa"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Suborder">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Human">
+    <monkey:rang>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Genus"/>
+    </monkey:rang>
+    <monkey:habitat>Varies depending on the population</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Hominini"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Chordata">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Deuterostomia"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Primate">
+    <monkey:rang>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Order"/>
+    </monkey:rang>
+    <monkey:habitat>Varies depending on the species</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Primatomorpha"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Galago">
+    <monkey:rang>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Genus"/>
+    </monkey:rang>
+    <monkey:habitat>Various habitats in sub-Saharan Africa</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Lorisiformes"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Potto">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+    <monkey:habitat>Tropical forests of Central and West Africa</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Lorisiformes"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Cercopithecinae">
+    <monkey:rang>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Subfamily"/>
+    </monkey:rang>
+    <monkey:habitat>Varies depending on the species</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Cercopithecidae"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Subfamily">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Eueria">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Theria"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Tarsiiformes">
+    <monkey:rang>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Infraorder"/>
+    </monkey:rang>
+    <monkey:habitat>Southeast Asia</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Strepsirrhini"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Chimp">
+    <monkey:rang>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Genus"/>
+    </monkey:rang>
+    <monkey:habitat>Forests of Central and Western Africa</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Paninini"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Therapsida">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Spheniacodontoidea"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Mammaliamorpha">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Prozostrodontia"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Colobinae">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Subfamily"/>
+    <monkey:habitat>Varies depending on the species</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Cercopithecidae"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Amniota">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Reptiliomorpha"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Spider">
+    <monkey:rang>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Genus"/>
+    </monkey:rang>
+    <monkey:habitat>Varies depending on the species</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Atelidae"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Mammalia">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Mammaliaformes"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Epicynodontia">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Cynodontia"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Genus">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Orangutan">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+    <monkey:habitat>Rainforests of Borneo and Sumatra</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Ponginae"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Nephrozoa">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Bilateria"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Plathyrini">
+    <monkey:rang>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Parvorder"/>
+    </monkey:rang>
+    <monkey:habitat>Varies depending on the species</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Haplorrhini"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Order">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Animalia">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Eukaryota"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Cebidae">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+    <monkey:habitat>Central and South America</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Plathyrini"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Epistostegalia">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Eotetrapodiformes"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Atelidae">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+    <monkey:habitat>Central and South America</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Plathyrini"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Tarmarin">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Callitrichidae"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Infraorder">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Hominidae">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+    <monkey:habitat>Varies depending on the species</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Hominoidea"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Eucynodontia">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Epicynodontia"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Saki">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+    <monkey:habitat>Tropical rainforests of South America</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Pitheciidae"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Mammaliaformes">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Mammaliamorpha"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Euarchontoglires">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Boreoeutheria"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Neotherapsida">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Eutherapsida"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Euarchonta">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Euarchontoglires"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Exafroplacentalia">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Placentalia"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Pitheciidae">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+    <monkey:habitat>Tropical forests of South America</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Plathyrini"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Parvorder">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Prozostrodontia">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Probainognathia"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Synapsida">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Amniota"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Eumetazoa">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Animalia"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Spheniacodontoidea">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Spheniacodontia"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Osteichthyes">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Chordata"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Haplorrhini">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Suborder"/>
+    <monkey:habitat>Varies depending on the species</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Primate"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Siamang">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+    <monkey:habitat>Tropical rainforests of Southeast Asia</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Hylobatidae"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Probainognathia">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Eucynodontia"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Boreoeutheria">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Exafroplacentalia"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Gorillini">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Tribe"/>
+    <monkey:habitat>Forests of Central and Western Africa</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Homininae"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Capuchin">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+    <monkey:habitat>Tropical forests of Central and South America</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Cebidae"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Howler">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+    <monkey:habitat>Tropical forests of Central and South America</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Atelidae"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Theria">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Mammalia"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Cynodontia">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Eueriodontia"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Gorilla">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+    <monkey:habitat>Forests of Central and Western Africa</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Gorillini"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Night">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+    <monkey:habitat>Tropical rainforests of Central and South America</monkey:habitat>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Aotidae"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Lemuriformes">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Infraorder"/>
+    <monkey:habitat>Forests of Madagascar</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Strepsirrhini"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Placentalia">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Eueria"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Lorisiformes">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Infraorder"/>
+    <monkey:habitat>Tropical forests of South and Southeast Asia</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Strepsirrhini"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Cercopithecoidea">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Superfamily"/>
+    <monkey:habitat>Varies depending on the species</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Catarhini"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Callitrichidae">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+    <monkey:habitat>South and Central America</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Plathyrini"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Tetrapoda">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Stegocephalia"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Cercopithecidae">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+    <monkey:habitat>Varies depending on the species</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Cercopithecoidea"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Aotidae">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Family"/>
+    <monkey:habitat>Tropical rainforests of Central and South America</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Plathyrini"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Uakari">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+    <monkey:habitat>Amazon rainforest and flooded forests of South America</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Pitheciidae"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Lori">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+    <monkey:habitat>Rainforests of Southeast Asia</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Lorisiformes"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Eotetrapodiformes">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://evoflex.tech/monkey#Tetrapodomorpha"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Tetrapodomorpha">
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Sarcopterygii"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Gibbon">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Genus"/>
+    <monkey:habitat>Tropical rainforests of Southeast Asia</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Hylobatidae"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://evoflex.tech/monkey#Paninini">
+    <monkey:rang rdf:resource="http://evoflex.tech/monkey#Tribe"/>
+    <monkey:habitat>Forests of Central and Western Africa</monkey:habitat>
+    <rdfs:subClassOf rdf:resource="http://evoflex.tech/monkey#Homininae"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://evoflex.tech/monkey#habitat">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://evoflex.tech/monkey#Animalia"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://evoflex.tech/monkey#rang">
+    <rdfs:range rdf:resource="http://evoflex.tech/monkey#RangOfClassification"/>
+    <rdfs:domain rdf:resource="http://evoflex.tech/monkey#Eukaryota"/>
+  </owl:DatatypeProperty>
+</rdf:RDF>
