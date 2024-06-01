@@ -1,20 +1,20 @@
 const canvas = document.getElementById("cnv");
 
-const topCanvas = document.createElement("canvas")
-topCanvas.width = canvas.width
-topCanvas.height = canvas.height
-topCanvas.style.position = 'absolute';
-topCanvas.style.left = canvas.offsetLeft + 'px';
-topCanvas.style.top = canvas.offsetTop + 'px';
-topCanvas.style.width = canvas.width + 'px';
-topCanvas.style.height = canvas.height + 'px';
-topCanvas.style.fillStyle = "transparent"
-const tempCtx = topCanvas.getContext('2d');
+const canvas = document.createElement("canvas")
+canvas.width = canvas.width
+canvas.height = canvas.height
+canvas.style.position = 'absolute';
+canvas.style.left = canvas.offsetLeft + 'px';
+canvas.style.top = canvas.offsetTop + 'px';
+canvas.style.width = canvas.width + 'px';
+canvas.style.height = canvas.height + 'px';
+canvas.style.fillStyle = "transparent"
+const tempCtx = canvas.getContext('2d');
 tempCtx.clearRect(0, 0, canvas.width, canvas.height);
-topCanvas.addEventListener("click", (event) => {
+canvas.addEventListener("click", (event) => {
     canvas.click(event)
 })
-document.body.appendChild(topCanvas);
+document.body.appendChild(canvas);
 
 const ctx = canvas.getContext("2d");
 let drawCtx = {}
@@ -327,7 +327,7 @@ const drawTemporaryCross = (x, y) => {
 }
 
 const clearTemporary = () => {
-    tempCtx.clearRect(0, 0, topCanvas.width, topCanvas.height);
+    tempCtx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
 const putPixel = (x, y) => {
@@ -335,7 +335,7 @@ const putPixel = (x, y) => {
 }
 
 // Обработчик события клика по холсту
-topCanvas.addEventListener("click", function(event) {
+canvas.addEventListener("click", function(event) {
     const x = event.offsetX;
     const y = event.offsetY;
     const selectedTool = document.querySelector('input[name="tool"]:checked').value;

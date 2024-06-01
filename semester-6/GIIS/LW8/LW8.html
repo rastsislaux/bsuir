@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Графический редактор 1337</title>
+    <title>Графический редактор</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -47,32 +47,29 @@
             margin-right: 5px;
         }
     </style>
+
+    <script defer src="LW6.js"></script>
 </head>
 <body>
     <div id="container">
         <div id="canvasContainer">
-            <canvas id="cnv" width="1300" height="800"></canvas>
+            <canvas id="canvas" width="1300" height="800"></canvas>
         </div>
         <div id="toolPanel">
             <div class="toolGroup">
-                <label>Прямые линии</label>
 
                 <div class="tool">
-                    <input type="radio" name="tool" value="dda" id="tool-dda" checked>
-                    <label for="tool-dda">ЦДА-линия</label>
+                    <input type="radio" name="tool" value="coen" id="tool-coen" checked>
+                    <label for="tool-coen">Алгоритм Коэна — Сазерленда</label>
                 </div>
                 <div class="tool">
-                    <input type="radio" name="tool" value="bresenham" id="tool-bresenham">
-                    <label for="tool-bresenham">Линия Брезенхэма</label>
-                </div>
-                <div class="tool">
-                    <input type="radio" name="tool" value="wu" id="tool-wu">
-                    <label for="tool-wu">Линия Ву</label>
+                    <input type="radio" name="tool" value="liang" id="tool-liang">
+                    <label for="tool-liang">Алгоритм Лианга — Барски</label>
                 </div>
             </div>
         </div>
     </div>
 
-    <script defer src="LW1.js"></script>
+    <script defer src="LW8.js"></script>
 </body>
 </html>
