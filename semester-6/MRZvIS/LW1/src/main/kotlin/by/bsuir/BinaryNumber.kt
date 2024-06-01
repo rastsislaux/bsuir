@@ -66,7 +66,7 @@ class BinaryNumber(val bits: Int, private val number: List<Boolean>) {
     }
 
     fun toBinaryString(): String {
-        return "0b" + number.map { if (it) '1' else '0' }.joinToString("").dropWhile { it == '0' }
+        return number.map { if (it) '1' else '0' }.joinToString("")
     }
 
     override fun equals(other: Any?): Boolean {
