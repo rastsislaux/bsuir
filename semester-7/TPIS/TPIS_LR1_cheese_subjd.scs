@@ -1,0 +1,341 @@
+subject_domain_of_law_belarus_marriage
+    => nrel_main_idtf: [Предметная область сыров] (* <- lang_ru;; *);
+    => nrel_main_idtf: [Subject domain of cheese] (* <- lang_en;; *);
+
+    -> rrel_maximum_studied_object_class:
+        concept_cheese;
+
+    -> rrel_not_maximum_studied_object_class:
+        concept_hard_cheese;
+        concept_semi_hard_cheese;
+        concept_soft_cheese;
+
+    -> rrel_explored_relation:
+        nrel_manufacturer;
+        nrel_origin;
+        nrel_recipe;
+
+    // <= nrel_private_subject_domain:
+    //   subject_domain_of_law_belarus;
+    //   subject_domain_of_marriage_legislation;
+
+    <- subject_domain;;
+
+concept_country
+=> nrel_main_idtf:
+	[страна] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[country] (* <- lang_en;; *);;
+
+country_Greece
+=> nrel_main_idtf:
+	[Греция] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Greece] (* <- lang_en;; *);;
+country_Italy
+=> nrel_main_idtf:
+	[Италия] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Italy] (* <- lang_en;; *);;
+country_Russia
+=> nrel_main_idtf:
+	[Россия] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Russia] (* <- lang_en;; *);;
+country_Switzerland
+=> nrel_main_idtf:
+	[Швейцария] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Switzerland] (* <- lang_en;; *);;
+
+nrel_origin
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[происхождение*] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[origin*] (* <- lang_en;; *);
+=> nrel_first_domain: concept_cheese;
+=> nrel_second_domain: concept_country;
+=> nrel_definitional_domain:
+   ...
+   (*
+        <= nrel_combination:
+        	{
+            	concept_cheese;
+            	concept_country
+        	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+          [Опр. (происхождение*)]
+          (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+           ...
+           (*
+              -> rrel_example:
+               [Происхождение - отношение связывающее сущность и страну, в которой данная сущность была изобретена.]
+               (* <- lang_ru;; *);;
+           *);;
+      <= nrel_using_constants:
+		{
+            concept_cheese;
+            concept_country
+        };;
+  *);;
+
+nrel_recipe
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[рецепт*] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[recipe*] (* <- lang_en;; *);
+=> nrel_first_domain: concept_cheese;
+=> nrel_second_domain: concept_recipe;
+=> nrel_definitional_domain:
+   ...
+   (*
+        <= nrel_combination:
+        	{
+            	concept_cheese;
+            	concept_recipe
+        	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+          [Опр. (рецепт*)]
+          (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+           ...
+           (*
+              -> rrel_example:
+               [Рецепт - отношение, связывающее еду с рецептом её приготовления.]
+               (* <- lang_ru;; *);;
+           *);;
+      <= nrel_using_constants:
+		{
+            concept_cheese;
+            concept_recipe
+        };;
+  *);;
+
+nrel_manufacturer
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[производитель*] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[manufacturer*] (* <- lang_en;; *);
+=> nrel_first_domain: concept_cheese;
+=> nrel_second_domain: concept_company;
+=> nrel_definitional_domain:
+   ...
+   (*
+        <= nrel_combination:
+        	{
+            	concept_cheese;
+            	concept_company
+        	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+          [Опр. (производитель*)]
+          (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+           ...
+           (*
+              -> rrel_example:
+               [Производитель - предприятие, занимающеемся производством продукта]
+               (* <- lang_ru;; *);;
+           *);;
+      <= nrel_using_constants:
+		{
+            concept_cheese;
+            concept_company
+        };;
+  *);;
+
+concept_cheese
+<- sc_node_class;
+=> nrel_main_idtf:
+	[сыр] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[cheese] (* <- lang_en;; *);
+=> nrel_note:
+	[Сыр — пищевой продукт в виде твёрдой или полутвёрдой массы, получаемый в процессе сыроделия из заквашиваемого особым способом молока.] (* <- lang_ru;; *);;
+
+concept_hard_cheese
+<= nrel_inclusion: concept_cheese;
+=> nrel_main_idtf:
+	[твердый сыр] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[hard cheese] (* <- lang_en;; *);;
+
+concept_parmesan
+<= nrel_inclusion: concept_cheese;
+<= nrel_inclusion: concept_hard_cheese;
+=> nrel_main_idtf:
+	[пармезан] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[parmesan] (* <- lang_en;; *);
+=> nrel_origin:
+    country_Italy;;
+
+syrnyy_ray_parmesan_light
+<= nrel_inclusion: concept_cheese;
+<= nrel_inclusion: concept_hard_cheese;
+<= nrel_inclusion: concept_parmesan;
+=> nrel_main_idtf:
+	["Пармезан Лайт" (Сырный Рай)] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	["Parmesan Light" (Cheese Heaven)] (* <- lang_en;; *);
+=> nrel_manufacturer:
+    syrnyy_ray;;
+
+concept_peccorino
+<= nrel_inclusion: concept_cheese;
+<= nrel_inclusion: concept_hard_cheese;
+=> nrel_main_idtf:
+	[пеккорино] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[пеккорино] (* <- lang_en;; *);
+=> nrel_origin:
+    country_Italy;;
+
+gastronomia_grand_peccorino
+<= nrel_inclusion: concept_cheese;
+<= nrel_inclusion: concept_hard_cheese;
+<= nrel_inclusion: concept_peccorino;
+=> nrel_main_idtf:
+	["Гранд Пеккорино" (Gastronomia)] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	["Grand Peccorino" (Gastronomia)] (* <- lang_en;; *);
+=> nrel_manufacturer:
+    gastronomia;;
+
+concept_maasdam
+<= nrel_inclusion: concept_cheese;
+<= nrel_inclusion: concept_hard_cheese;
+=> nrel_main_idtf:
+	[маасдам] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[maasdam] (* <- lang_en;; *);
+=> nrel_origin:
+    country_Switzerland;;
+
+brest_litovsk_maasdam
+<= nrel_inclusion: concept_cheese;
+<= nrel_inclusion: concept_hard_cheese;
+<= nrel_inclusion: concept_maasdam;
+=> nrel_main_idtf:
+	["Маасдам" (Брест-Литовск)] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	["Maasdam" (Brest-Litovsk)] (* <- lang_en;; *);
+=> nrel_manufacturer:
+    brest_litovsk;;
+
+concept_semi_hard_cheese
+<= nrel_inclusion: concept_cheese;
+=> nrel_main_idtf:
+	[полутвердый сыр] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[semi-hard cheese] (* <- lang_en;; *);;
+
+concept_russian_cheese
+<= nrel_inclusion: concept_cheese;
+<= nrel_inclusion: concept_semi_hard_cheese;
+=> nrel_main_idtf:
+	[сыр российский] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[russian cheese] (* <- lang_en;; *);
+=> nrel_origin:
+    country_Russia;;
+
+concept_costromsky
+<= nrel_inclusion: concept_cheese;
+<= nrel_inclusion: concept_semi_hard_cheese;
+=> nrel_main_idtf:
+	[сыр костромской] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[costromsky cheese] (* <- lang_en;; *);
+=> nrel_origin:
+    country_Russia;;
+
+concept_poshehonsky
+<= nrel_inclusion: concept_cheese;
+<= nrel_inclusion: concept_semi_hard_cheese;
+=> nrel_main_idtf:
+	[сыр пошехонский] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[poshehonsky cheese] (* <- lang_en;; *);
+=> nrel_origin:
+    country_Russia;;
+
+concept_soft_cheese
+<= nrel_inclusion: concept_cheese;
+=> nrel_main_idtf:
+	[мягкий сыр] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[soft cheese] (* <- lang_en;; *);;
+
+concept_mozarella
+<= nrel_inclusion: concept_cheese;
+<= nrel_inclusion: concept_soft_cheese;
+=> nrel_main_idtf:
+	[моцарелла] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[mozarella] (* <- lang_en;; *);
+=> nrel_origin:
+    country_Italy;;
+
+concept_mascarpone
+<= nrel_inclusion: concept_cheese;
+<= nrel_inclusion: concept_soft_cheese;
+=> nrel_main_idtf:
+	[маскарпоне] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[mascarpone] (* <- lang_en;; *);
+=> nrel_origin:
+    country_Italy;;
+
+concept_feta
+<= nrel_inclusion: concept_cheese;
+<= nrel_inclusion: concept_soft_cheese;
+=> nrel_main_idtf:
+	[фета] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[feta] (* <- lang_en;; *);
+=> nrel_origin:
+    country_Greece;;
+
+concept_smoked_cheese
+<= nrel_inclusion: concept_cheese;
+=> nrel_main_idtf:
+	[копченый сыр] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[smoked cheese] (* <- lang_en;; *);;
